@@ -10,7 +10,12 @@ export default {
     './error.vue',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        shippori: ['"Shippori Mincho B1"', 'serif'],
+        amiri: ['Amiri', 'serif'],
+      },
+    },
   },
   plugins: [],
 } satisfies Config
