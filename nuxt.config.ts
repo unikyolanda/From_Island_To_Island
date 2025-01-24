@@ -1,6 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  ssr: false,
   app: {
+    baseURL: '/From_Island_To_Island/', // GitHub repository name
     head: {
       title: 'From Island To Island',
       meta: [
