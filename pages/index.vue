@@ -58,7 +58,7 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-col w-full items-center mt-[188px] still">
+      <div class="flex flex-col w-full items-center mt-[100px] still">
         <p class="font-shippori text-white text-[22px] tracking-[8px] mt-7">記憶像水一樣流動</p>
         <p class="font-shippori text-white text-[22px] tracking-[8px] mt-7">我們可以選擇如何記憶</p>
         <p class="font-shippori text-white text-[22px] tracking-[8px] mt-7">也是在重塑我們</p>
@@ -75,36 +75,49 @@
 </template>
 
 <script setup>
-  const { $gsap: gsap } = useNuxtApp()
+  const { $gsap: gsap, $ScrollTrigger: ScrollTrigger } = useNuxtApp()
 
   onMounted(() => {
     const images = document.querySelectorAll('.image-box img:not(:first-child)')
     const textElements = document.querySelectorAll('.still p')
     const stills1Image = document.querySelector('.stills1')
-    const rippleEffect = document.querySelector('.ripple-effect')
     const lastImageIndex = images.length - 1
 
-    gsap.timeline({
+    // Set up ScrollTrigger for ripple effect
+    // Main scroll trigger for the entire section
+    ScrollTrigger.create({
+      trigger: '.ripple-effect',
+      pin: true,
+      start: 'top top',
+      end: 'bottom bottom',
+      scrub: 1,
+    })
+
+    // Title fade animation - synced with last image and text animations
+    gsap.to('.title', {
       scrollTrigger: {
-        trigger: '.title',
-        pin: true,
-        start: 'top top',
-        end: 'bottom top',
+        trigger: '.image-box',
+        start: `top+=${lastImageIndex * 200 + 800} top`, // Start after images and text begin
+        end: `top+=${lastImageIndex * 200 + 1200} top`, // Extended fade duration
         scrub: 1,
         // markers: true,
       },
+      opacity: 0,
+      duration: 1,
     })
 
     images.forEach((img, index) => {
       gsap.set(img, {
-        y: (index + 1) * window.innerHeight,
+        y: 200,
+        opacity: 0,
       })
     })
     // Create animations for images
     images.forEach((img, index) => {
       gsap.to(img, {
         y: 0,
-        ease: 'none',
+        opacity: 0.4,
+        ease: true,
         scrollTrigger: {
           trigger: '.image-box',
           start: `top+=${index * 200} top`,
@@ -161,7 +174,7 @@
         },
       })
       .to(stills1Image, {
-        scale: 1,
+        scale: 1.1,
         opacity: 1,
         ease: 'none',
       })
