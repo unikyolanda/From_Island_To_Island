@@ -13,7 +13,7 @@ export default defineNuxtConfig({
       link: [
         {
           rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;700;800&family=Amiri:wght@400;700&display=swap',
+          href: 'https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;700;800&family=Amiri:wght@400;700&display=swap&family=Wix+Madefor+Display:wght@400..800&display=swapfamily=Noto+Sans:ital,wght@0,100..900;1,100..900',
         },
       ],
     },

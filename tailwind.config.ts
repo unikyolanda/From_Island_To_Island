@@ -14,6 +14,8 @@ export default {
       fontFamily: {
         shippori: ['"Shippori Mincho B1"', 'serif'],
         amiri: ['Amiri', 'serif'],
+        wix: ['"Wix Madefor Display"', 'sans-serif'],
+        noto: ['"Noto Sans"', 'sans-serif'],
       },
     },
   },

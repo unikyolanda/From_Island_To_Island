@@ -1,9 +1,10 @@
 <template>
-  <div class="min-h-[150vh] relative">
-    <div class="ripple-effect absolute flex flex-col items-center w-full h-auto">
+  <div class="h-[150vh] relative overflow-x-hidden">
+    <SideMenu ref="menuRef" @close="closeMenu" />
+    <div class="ripple-effect absolute flex flex-col items-center w-full h-[150vh]">
       <div class="title w-full">
-        <div class="absolute right-12 top-10 cursor-pointer">
-          <img src="/images/menu.svg" alt="menu" class="w-10 h-8" />
+        <div class="absolute right-12 top-10 cursor-pointer z-10">
+          <img src="/images/menu.svg" alt="menu" class="w-10 h-8" @click="toggleMenu" />
         </div>
         <div class="flex flex-col w-full">
           <div class="flex px-[162px] justify-center relative w-full">
@@ -66,7 +67,7 @@
         <img
           src="/images/second_stills1.jpg"
           alt="stills1"
-          class="stills1 opacity-50 mt-7 w-full origin-center"
+          class="stills1 opacity-50 mt-16 w-full origin-center"
         />
       </div>
     </div>
@@ -76,6 +77,15 @@
 
 <script setup>
   const { $gsap: gsap, $ScrollTrigger: ScrollTrigger } = useNuxtApp()
+  const menuRef = ref(null)
+
+  const toggleMenu = () => {
+    menuRef.value.show()
+  }
+
+  const closeMenu = () => {
+    menuRef.value.hide()
+  }
 
   onMounted(() => {
     const images = document.querySelectorAll('.image-box img:not(:first-child)')
@@ -184,6 +194,8 @@
 <style>
   .ripple-effect {
     background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
     background-image: url('/images/first_bg.jpg');
   }
 </style>
