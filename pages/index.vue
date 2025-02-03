@@ -78,6 +78,9 @@
 <script setup>
   const { $gsap: gsap, $ScrollTrigger: ScrollTrigger } = useNuxtApp()
   const menuRef = ref(null)
+  const currentIndex = ref(0)
+  const lastScrollY = ref(0)
+  const scrollThreshold = 100 // Minimum scroll amount to trigger image change
 
   const toggleMenu = () => {
     menuRef.value.show()
@@ -88,13 +91,12 @@
   }
 
   onMounted(() => {
-    const images = document.querySelectorAll('.image-box img:not(:first-child)')
+    const imageBox = document.querySelector('.image-box')
+    const allImages = Array.from(document.querySelectorAll('.image-box img'))
     const textElements = document.querySelectorAll('.still p')
     const stills1Image = document.querySelector('.stills1')
-    const lastImageIndex = images.length - 1
 
     // Set up ScrollTrigger for ripple effect
-    // Main scroll trigger for the entire section
     ScrollTrigger.create({
       trigger: '.ripple-effect',
       pin: true,
@@ -103,91 +105,127 @@
       scrub: 1,
     })
 
-    // Title fade animation - synced with last image and text animations
-    gsap.to('.title', {
-      scrollTrigger: {
-        trigger: '.image-box',
-        start: `top+=${lastImageIndex * 200 + 800} top`, // Start after images and text begin
-        end: `top+=${lastImageIndex * 200 + 1200} top`, // Extended fade duration
-        scrub: 1,
-        // markers: true,
-      },
-      opacity: 0,
-      duration: 1,
+    // Initialize images - photo5 visible, others hidden
+    allImages.forEach((img, index) => {
+      if (index === 0) {
+        // photo5
+        gsap.set(img, {
+          y: 0,
+          opacity: 0.4,
+          zIndex: 1,
+        })
+      } else {
+        gsap.set(img, {
+          y: 100,
+          opacity: 0,
+          zIndex: index + 1,
+        })
+      }
     })
 
-    images.forEach((img, index) => {
-      gsap.set(img, {
-        y: 200,
-        opacity: 0,
-      })
+    // Handle scroll
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY
+      const scrollDiff = currentScrollY - lastScrollY.value
+
+      // Only trigger if scroll amount exceeds threshold
+      if (Math.abs(scrollDiff) > scrollThreshold) {
+        if (scrollDiff > 0 && currentIndex.value < allImages.length - 1) {
+          // Scrolling down - show next image
+          const nextIndex = currentIndex.value + 1
+          gsap.to(allImages[nextIndex], {
+            y: 0,
+            opacity: 0.4,
+            duration: 0.5,
+            ease: 'power2.out',
+          })
+          currentIndex.value = nextIndex
+        } else if (scrollDiff < 0 && currentIndex.value > 0) {
+          // Scrolling up - hide current image
+          gsap.to(allImages[currentIndex.value], {
+            y: 150,
+            opacity: 0,
+            duration: 0.5,
+            ease: 'power2.out',
+          })
+          currentIndex.value--
+        }
+        lastScrollY.value = currentScrollY
+      }
+    }
+
+    // Throttle scroll handler
+    let ticking = false
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          handleScroll()
+          ticking = false
+        })
+        ticking = true
+      }
     })
-    // Create animations for images
-    images.forEach((img, index) => {
-      gsap.to(img, {
-        y: 0,
-        opacity: 0.4,
-        ease: true,
-        scrollTrigger: {
-          trigger: '.image-box',
-          start: `top+=${index * 200} top`,
-          end: `top+=${index * 200} end`,
-          scrub: 1,
-          // markers: true,
-        },
-      })
-    })
+
+    // Text animations
+    const textObserver = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            gsap.to(entry.target, {
+              opacity: 1,
+              y: 0,
+              duration: 0.5,
+              ease: 'power2.out',
+            })
+          }
+        })
+      },
+      {
+        threshold: 0.5,
+        rootMargin: '-10% 0px -10% 0px',
+      }
+    )
 
     textElements.forEach(text => {
       gsap.set(text, {
         opacity: 0,
         y: 30,
       })
+      textObserver.observe(text)
     })
 
-    // Create timeline for text animations
-    const textTimeline = gsap.timeline({
-      scrollTrigger: {
-        trigger: '.image-box',
-        start: `top+=${lastImageIndex * 200 + 300} top`, // Start after last image animation
-        end: '+=500',
-        scrub: 1,
-        // markers: true,
-      },
-    })
-
-    // Add text animations to timeline
-    textElements.forEach((text, index) => {
-      textTimeline.to(
-        text,
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.5,
-        },
-        index * 0.2
-      ) // Stagger the text animations
-    })
-
+    // Stills1 image animation
     gsap.set(stills1Image, {
       scale: 0.5,
     })
 
-    gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: stills1Image,
-          start: 'top center+=200',
-          end: 'bottom top-=200',
-          scrub: 1,
-          // markers: true,
-        },
-      })
-      .to(stills1Image, {
-        scale: 1.1,
-        opacity: 1,
-        ease: 'none',
-      })
+    const stills1Observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            gsap.to(entry.target, {
+              scale: 1.1,
+              opacity: 1,
+              duration: 1,
+              ease: 'none',
+            })
+          }
+        })
+      },
+      {
+        threshold: 0.5,
+        rootMargin: '-20% 0px -20% 0px',
+      }
+    )
+
+    stills1Observer.observe(stills1Image)
+
+    // Cleanup
+    onUnmounted(() => {
+      window.removeEventListener('scroll', handleScroll)
+      textObserver.disconnect()
+      stills1Observer.disconnect()
+    })
   })
 </script>
 
