@@ -112,7 +112,7 @@
             // Scrolling down
             gsap.to(text, {
               opacity: 1 - progress,
-              y: progress * 30,
+              y: progress * -30,
               duration: 1.25,
               delay: delay,
               ease: 'power2.out',
@@ -121,7 +121,7 @@
             // Scrolling up
             gsap.to(text, {
               opacity: progress,
-              y: (1 - progress) * -30,
+              y: (1 - progress) * 30,
               duration: 1.25,
               delay: delay,
               ease: 'power2.out',
@@ -184,9 +184,9 @@
 </style>
 
 <template>
-  <div class="h-[150vh] relative overflow-x-hidden">
+  <div class="h-[2164px] relative overflow-x-hidden">
     <SideMenu ref="menuRef" @close="closeMenu" />
-    <div class="ripple-effect absolute flex flex-col items-center w-full h-[160vh]">
+    <div class="ripple-effect absolute flex flex-col items-center w-full h-[2164px]">
       <div class="title w-full h-auto relative">
         <div class="absolute right-12 top-10 cursor-pointer z-10">
           <img src="/images/menu.svg" alt="menu" class="w-10 h-8" @click="toggleMenu" />
@@ -257,12 +257,12 @@
       </div>
     </div>
   </div>
-  <div class="h-auto flex third-bg p-10 justify-center">
-    <div class="max-w-[1000px] flex gap-x-[142px] my-[120px]">
+  <div class="h-auto flex third-bg justify-center">
+    <div class="max-w-[1000px] flex gap-x-[142px] my-[236px]">
       <div class="flex flex-col gap-y-14">
         <p class="font-wix text-white tracking-[4px]">FILM</p>
         <p class="font-shippori text-white text-[50px] tracking-[8px]">由島至島</p>
-        <p class="font-noto text-white w-[386px]">
+        <p class="font-noto text-white tracking-[2px] w-[412px] leading-[2]">
           台灣在二戰期間是日本帝國的一部分。本片以此為主題，努力挖掘和重新整理台灣在二戰期間的隱藏記憶，探索在日本帝國內的台灣士兵、醫生與生活在東南亞的海外台灣人之經歷。全片從兒子對父親的提問開場，透過跨世代的對話、家書、日記和家庭成員之間的影片，探討台灣歷史記憶的複雜性，以及這一時期存在的各種身分。
         </p>
         <button class="font-wix text-white text-lg border border-white py-4 w-[162px]">
@@ -270,10 +270,30 @@
         </button>
       </div>
       <div class="flex flex-col">
-        <div class="w-[568px] h-[362px] bg-slate-100 mt-20"></div>
+        <div class="w-[568px] h-[362px] bg-slate-100 mt-24"></div>
         <img src="/images/forth_logo.png" alt="forth_logo" class="mt-20" />
       </div>
     </div>
   </div>
-  <div class="h-auto forth-bg text-[26px]"></div>
+  <div class="h-auto flex forth-bg justify-center">
+    <div class="max-w-[1600px] flex my-[224px]">
+      <div class="rotate-90 opacity-15 mr-[112px]">
+        <p class="font-shippori text-white text-[59px] tracking-[36px]">移動與邊界</p>
+        <p class="font-shippori text-white text-[59px] tracking-[36px] mt-7 ml-12">加害與被害</p>
+        <p class="font-shippori text-white text-[59px] tracking-[36px] mt-7">共犯結構</p>
+        <p class="font-shippori text-white text-[59px] tracking-[36px] mt-7 ml-12">克服過去</p>
+        <p class="font-shippori text-white text-[59px] tracking-[36px] mt-7">為什麼要記憶</p>
+      </div>
+      <div class="flex flex-col gap-y-14">
+        <p class="font-wix text-white tracking-[4px]">LESSON</p>
+        <p class="font-shippori text-white text-[50px] tracking-[8px]">主題教案</p>
+        <p class="font-noto text-white tracking-[2px] w-[412px] leading-[2]">
+          《由島至島》教育推廣規劃，從本片中節選出５個主題的片段，發展搭配教案，免費開放老師申請作為課程教授素材。五大主題為：移動與邊界、加害與被害、共犯結構－日本擴張行動、克服過去、為什麼要記憶，各有台灣、日本及馬來西亞教案可下載。
+        </p>
+        <button class="font-wix text-white text-lg border border-white py-4 w-[162px]">
+          View more
+        </button>
+      </div>
+    </div>
+  </div>
 </template>
