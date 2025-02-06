@@ -4,6 +4,37 @@
   const currentIndex = ref(0)
   const lastScrollY = ref(0)
   const scrollThreshold = 100 // Minimum scroll amount to trigger image change
+  const windowWidth = ref(window.innerWidth)
+
+  // Calculate dynamic height based on window width
+  const containerHeight = computed(() => {
+    // Base height for mobile
+    let height = 2000
+
+    // Adjust height based on window width
+    if (windowWidth.value >= 2200) {
+      height = 2300
+    } else if (windowWidth.value >= 1920) {
+      height = 2200
+    } else if (windowWidth.value >= 1440) {
+      height = 1864
+    } else if (windowWidth.value >= 1024) {
+      height = 1750
+    } else if (windowWidth.value >= 768) {
+      height = 1600
+    }
+
+    return height
+  })
+
+  watch(containerHeight, newHeight => {
+    console.log('containerHeight changed:', newHeight)
+  })
+
+  // Update window width on resize
+  const updateWindowWidth = () => {
+    windowWidth.value = window.innerWidth
+  }
 
   const toggleMenu = () => {
     menuRef.value.show()
@@ -14,10 +45,16 @@
   }
 
   onMounted(() => {
+    // Initial window width
+    updateWindowWidth()
+
+    // Listen for window resize
+    window.addEventListener('resize', updateWindowWidth)
     const imageBox = document.querySelector('.image-box')
     const allImages = Array.from(document.querySelectorAll('.image-box img'))
     const textElements = document.querySelectorAll('.still p')
     const stills1Image = document.querySelector('.stills1')
+    const stills2Image = document.querySelector('.stills2')
 
     // Set up ScrollTrigger for ripple effect
     ScrollTrigger.create({
@@ -131,22 +168,35 @@
       },
     })
 
-    // Stills1 image animation
+    // Initialize stills1 and stills2
     gsap.set(stills1Image, {
       scale: 0.5,
       opacity: 0.5,
     })
+    gsap.set(stills2Image, {
+      opacity: 0,
+    })
 
+    // Create ScrollTrigger for both images
     ScrollTrigger.create({
       trigger: stills1Image,
-      start: 'top 75%', // 目標元素進入可視範圍
-      end: 'bottom 50%', // 滾動離開可視範圍
-      scrub: true, // 平滑動畫
+      start: 'top 75%',
+      end: 'bottom 50%',
+      scrub: true,
       onUpdate: self => {
-        const progress = self.progress // 滾動進度 (0 到 1)
+        const progress = self.progress
+        // Animate stills1
         gsap.to(stills1Image, {
-          scale: 0.5 + progress * 0.6, // 從 0.5 放大到 1.1
+          scale: 0.4 + progress * 0.3,
           opacity: 0.5 + progress * 0.1,
+          duration: 0.2,
+          ease: 'power1.out',
+        })
+        // Animate stills2
+        // Only start showing stills2 after progress reaches 0.5
+        // Then scale opacity from 0 to 1 in the remaining progress
+        gsap.to(stills2Image, {
+          opacity: progress < 0.5 ? 0 : (progress - 0.5) * 2,
           duration: 0.2,
           ease: 'power1.out',
         })
@@ -156,6 +206,7 @@
     // Cleanup
     onUnmounted(() => {
       window.removeEventListener('scroll', handleScroll)
+      window.removeEventListener('resize', updateWindowWidth)
       stills1Observer.disconnect()
       ScrollTrigger.getAll().forEach(trigger => trigger.kill())
     })
@@ -165,6 +216,7 @@
 <style>
   .ripple-effect {
     background-size: cover;
+    object-fit: cover;
     background-position: center top;
     background-repeat: no-repeat;
     background-image: url('/images/first_bg.jpg');
@@ -184,9 +236,11 @@
 </style>
 
 <template>
-  <div class="h-[2164px] relative overflow-x-hidden">
+  <div class="relative overflow-x-hidden" :style="{ height: containerHeight + 'px' }">
     <SideMenu ref="menuRef" @close="closeMenu" />
-    <div class="ripple-effect absolute flex flex-col items-center w-full h-[2164px]">
+    <div
+      class="ripple-effect absolute flex flex-col items-center min-w-full h-full overflow-x-hidden"
+    >
       <div class="title w-full h-auto relative">
         <div class="absolute right-12 top-10 cursor-pointer z-10">
           <img src="/images/menu.svg" alt="menu" class="w-10 h-8" @click="toggleMenu" />
@@ -244,7 +298,7 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-col w-full h-auto items-center mt-[100px] still">
+      <div class="flex flex-col w-full h-auto items-center still relative -mt-10">
         <p class="font-shippori text-white text-[22px] tracking-[8px] mt-7">記憶像水一樣流動</p>
         <p class="font-shippori text-white text-[22px] tracking-[8px] mt-7">我們可以選擇如何記憶</p>
         <p class="font-shippori text-white text-[22px] tracking-[8px] mt-7">也是在重塑我們</p>
@@ -252,7 +306,12 @@
         <img
           src="/images/second_stills1.jpg"
           alt="stills1"
-          class="stills1 opacity-50 mt-[92px] w-full origin-center"
+          class="stills1 opacity-50 w-full origin-center"
+        />
+        <img
+          src="/images/second_stills2.jpg"
+          alt="stills2"
+          class="stills2 w-full origin-center absolute top-[248px] opacity-0"
         />
       </div>
     </div>
