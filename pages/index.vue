@@ -393,19 +393,23 @@
     </div>
   </div>
   <div
-    class="w-full bg-white h-[200px] -mt-[100px] flex flex-col sm:flex-row sm:items-center p-10 sm:px-[162px] justify-between"
+    class="w-full bg-white h-[160px] sm:h-[200px] -mt-[100px] flex flex-col sm:flex-row items-center p-10 sm:px-[162px] justify-between"
   >
-    <div class="flex flex-row sm:flex-col justify-between items-center w-full">
-      <div class="text-[#aaa] text-[16px] sm:text-xl font-noto sm:tracking-[8px]">蜂鳥影像</div>
+    <div
+      class="flex flex-row sm:flex-col justify-between items-end sm:items-start w-full sm:w-auto"
+    >
+      <div class="text-[#aaa] text-[16px] sm:text-xl font-noto tracking-[6px] sm:tracking-[8px]">
+        蜂鳥影像
+      </div>
       <div class="text-[#aaa] text-[14px] sm:text-[17px] font-wix sm:mt-4">
         Facebook ｜ Youtube ｜ Vimeo
       </div>
     </div>
-    <div class="flex flex-col-reverse sm:flex-col items-start sm:items-end">
-      <div class="z-10 text-[#aaa] text-xs sm:text-sm font-noto tracking-[1px] mt-2 sm:mt-0">
+    <div class="flex flex-col-reverse sm:flex-col items-start sm:items-end w-full sm:w-auto">
+      <div class="text-[#aaa] text-xs sm:text-sm font-noto tracking-[1px] mt-2 sm:mt-0">
         隱私權政策
       </div>
-      <div class="z-10 text-[#aaa] text-xs sm:text-[15px] font-wix sm:mt-2 mt-0">
+      <div class="text-[#aaa] text-xs sm:text-[15px] font-wix sm:mt-2 mt-0">
         Copyright © HUMMINGBIRD Production
       </div>
     </div>
