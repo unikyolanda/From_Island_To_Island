@@ -3,33 +3,6 @@
   const menuRef = ref(null)
   const windowWidth = ref(window.innerWidth)
 
-  // Calculate dynamic height based on window width
-  const containerHeight = computed(() => {
-    // Base height for mobile
-    let height = 2000
-
-    // Adjust height based on window width
-    if (windowWidth.value >= 2200) {
-      height = 2300
-    } else if (windowWidth.value >= 1920) {
-      height = 2200
-    } else if (windowWidth.value >= 1620) {
-      height = 2000
-    } else if (windowWidth.value >= 1440) {
-      height = 1864
-    } else if (windowWidth.value >= 1024) {
-      height = 1750
-    } else if (windowWidth.value >= 768) {
-      height = 1600
-    }
-
-    return height
-  })
-
-  watch(containerHeight, newHeight => {
-    console.log('containerHeight changed:', newHeight)
-  })
-
   // Update window width on resize
   const updateWindowWidth = () => {
     windowWidth.value = window.innerWidth
@@ -49,33 +22,22 @@
 
     // Listen for window resize
     window.addEventListener('resize', updateWindowWidth)
-    const imageBox = document.querySelector('.image-box')
     const allImages = Array.from(document.querySelectorAll('.image-box img'))
     const textElements = document.querySelectorAll('.still p')
-    const stills1Image = document.querySelector('.stills1')
     const stills2Image = document.querySelector('.stills2')
-
-    // Set up ScrollTrigger for ripple effect
-    ScrollTrigger.create({
-      trigger: '.ripple-effect',
-      pin: true,
-      start: 'top top',
-      end: 'bottom bottom',
-      scrub: 1,
-    })
 
     // Initialize all images as hidden
     allImages.forEach((img, index) => {
       gsap.set(img, {
         opacity: 0,
         y: 5,
-        filter: 'blur(10px)',
+        filter: 'blur(5px)',
         zIndex: index + 1, // photo5 (index 0) gets z-index 1, photo1 (index 4) gets z-index 5
       })
     })
 
     // Create sequential animation for images
-    const tl = gsap.timeline({ delay: 1 })
+    const tl = gsap.timeline({ delay: 0.1 })
     allImages.forEach((img, index) => {
       tl.to(
         img,
@@ -86,7 +48,7 @@
           duration: 1.5,
           ease: 'power1.inOut',
         },
-        index * 1.5
+        index * 0.8
       ) // Stagger the animations
     })
 
@@ -95,13 +57,14 @@
       gsap.set(text, {
         opacity: 0,
         y: 30,
+        filter: 'blur(5px)',
       })
     })
 
     ScrollTrigger.create({
       trigger: '.still',
-      start: 'top 25%',
-      end: 'bottom center',
+      start: 'top center',
+      end: 'bottom bottom',
       scrub: true,
       onUpdate: self => {
         const progress = self.progress
@@ -114,6 +77,7 @@
             gsap.to(text, {
               opacity: progress * 1.5,
               y: progress * -30,
+              filter: 'blur(0px)',
               duration: 1.25,
               delay: delay,
               ease: 'power2.out',
@@ -123,6 +87,7 @@
             gsap.to(text, {
               opacity: progress,
               y: (1 - progress) * 30,
+              filter: 'blur(5px)',
               duration: 1.25,
               delay: delay,
               ease: 'power2.out',
@@ -132,35 +97,55 @@
       },
     })
 
-    // Initialize stills1 and stills2
-    gsap.set(stills1Image, {
-      scale: 0.5,
-      opacity: 0.5,
-    })
     gsap.set(stills2Image, {
       opacity: 0,
+      maskImage: 'linear-gradient(to top, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 0) 100%)',
     })
 
     // Create ScrollTrigger for both images
     ScrollTrigger.create({
-      trigger: stills1Image,
-      start: 'top 75%',
-      end: 'bottom 50%',
+      trigger: stills2Image,
+      start: 'top bottom',
+      end: 'bottom bottom',
+
       scrub: true,
       onUpdate: self => {
         const progress = self.progress
-        // Animate stills1
-        gsap.to(stills1Image, {
-          scale: 0.4 + progress * 0.3,
-          opacity: 0.5 + progress * 0.1,
+
+        gsap.to(stills2Image, {
+          opacity: progress < 0.5 ? 0 : (progress - 0.5) * 2,
+          duration: 0.2,
+          maskImage: `linear-gradient(to top, rgba(0, 0, 0, 1) ${20 + progress * 50}%, rgba(0, 0, 0, 0) 100%)`,
+          ease: 'power1.out',
+        })
+      },
+    })
+
+    gsap.set('.film', { y: 0 })
+    ScrollTrigger.create({
+      trigger: '.film',
+      start: 'top bottom',
+      end: 'bottom bottom',
+      scrub: true,
+      onUpdate: self => {
+        const progress = self.progress
+        gsap.to('.film', {
+          y: progress * -100,
           duration: 0.2,
           ease: 'power1.out',
         })
-        // Animate stills2
-        // Only start showing stills2 after progress reaches 0.5
-        // Then scale opacity from 0 to 1 in the remaining progress
-        gsap.to(stills2Image, {
-          opacity: progress < 0.5 ? 0 : (progress - 0.5) * 2,
+      },
+    })
+
+    ScrollTrigger.create({
+      trigger: '.lesson',
+      start: 'top bottom',
+      end: 'bottom bottom',
+      scrub: true,
+      onUpdate: self => {
+        const progress = self.progress
+        gsap.to('.lesson', {
+          y: progress * -100,
           duration: 0.2,
           ease: 'power1.out',
         })
@@ -178,14 +163,13 @@
 <style>
   .ripple-effect {
     background-size: cover;
-    object-fit: cover;
     background-position: center top;
     background-repeat: no-repeat;
     background-image: url('/images/first_bg.jpg');
   }
   .third-bg {
     background-size: cover;
-    background-position: center top;
+    background-position: center center;
     background-repeat: no-repeat;
     background-image: url('/images/third_bg.jpg');
   }
@@ -198,98 +182,96 @@
   .rotateText {
     writing-mode: vertical-rl;
   }
+  .mask-leathers {
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+  }
 </style>
 
 <template>
-  <div class="relative overflow-x-hidden" :style="{ height: containerHeight + 'px' }">
+  <div class="relative overflow-x-hidden h-[300vh]">
     <SideMenu ref="menuRef" @close="closeMenu" />
     <div
       class="ripple-effect absolute flex flex-col items-center min-w-full h-full overflow-x-hidden"
     >
-      <div class="title w-full h-screen relative">
+      <div class="title w-full min-h-screen relative flex items-center">
         <div class="absolute right-12 top-10 cursor-pointer z-10">
           <img src="/images/menu.svg" alt="menu" class="w-10 h-8" @click="toggleMenu" />
         </div>
-        <div class="flex flex-col w-full">
-          <div class="flex px-[162px] justify-center relative w-full">
-            <div class="flex flex-col absolute top-[447px] left-[162px]">
-              <p class="font-shippori text-white text-[50px] font-light tracking-[12px]">
-                由島至島
+        <div class="flex px-[162px] justify-center relative w-full h-auto">
+          <div class="flex flex-col absolute top-[447px] left-[162px]">
+            <p class="font-shippori text-white text-[50px] font-light tracking-[12px]">由島至島</p>
+            <p class="font-shippori text-white text-[50px] font-light tracking-[12px]">
+              記憶與對話
+            </p>
+            <p class="font-amiri italic text-[25px] text-white tracking-[3px] mt-7">From Island</p>
+            <p class="font-amiri italic text-[25px] text-white tracking-[3px]">to Island</p>
+            <p class="font-amiri italic text-[25px] text-white tracking-[3px]">
+              Memory and Dialogue
+            </p>
+          </div>
+          <div class="image-box mt-[100px] relative">
+            <img src="/images/first_photo5.png" alt="photo5" class="opacity-40 h-[709px]" />
+            <img
+              src="/images/first_photo4.png"
+              alt="photo4"
+              class="opacity-40 h-[709px] absolute top-0"
+            />
+            <img
+              src="/images/first_photo3.png"
+              alt="photo3"
+              class="opacity-40 h-[709px] absolute top-0"
+            />
+            <img
+              src="/images/first_photo2.png"
+              alt="photo2"
+              class="opacity-40 h-[709px] absolute top-0"
+            />
+            <img
+              src="/images/first_photo1.png"
+              alt="photo1"
+              class="opacity-40 h-[709px] absolute top-0"
+            />
+          </div>
+          <div class="absolute top-[106px] right-[162px] flex flex-col">
+            <img src="/images/title.png" alt="title" class="w-[276px] h-[160px]" />
+            <div class="mt-24 -translate-x-2 flex">
+              <p class="font-shippori text-white text-xl tracking-[8px] rotateText mr-8">
+                為什麼要記憶
               </p>
-              <p class="font-shippori text-white text-[50px] font-light tracking-[12px]">
-                記憶與對話
+              <p class="font-shippori text-white text-xl tracking-[8px] rotateText mr-8">
+                克服過去
               </p>
-              <p class="font-amiri italic text-[25px] text-white tracking-[3px] mt-7">
-                From Island
+              <p class="font-shippori text-white text-xl tracking-[8px] rotateText mr-8">
+                共犯結構
               </p>
-              <p class="font-amiri italic text-[25px] text-white tracking-[3px]">to Island</p>
-              <p class="font-amiri italic text-[25px] text-white tracking-[3px]">
-                Memory and Dialogue
+              <p class="font-shippori text-white text-xl tracking-[8px] rotateText mr-8">
+                加害與被害
               </p>
-            </div>
-            <div class="image-box mt-[111px] relative">
-              <img src="/images/first_photo5.png" alt="photo5" class="opacity-40 h-[709px]" />
-              <img
-                src="/images/first_photo4.png"
-                alt="photo4"
-                class="opacity-40 h-[709px] absolute top-0"
-              />
-              <img
-                src="/images/first_photo3.png"
-                alt="photo3"
-                class="opacity-40 h-[709px] absolute top-0"
-              />
-              <img
-                src="/images/first_photo2.png"
-                alt="photo2"
-                class="opacity-40 h-[709px] absolute top-0"
-              />
-              <img
-                src="/images/first_photo1.png"
-                alt="photo1"
-                class="opacity-40 h-[709px] absolute top-0"
-              />
-            </div>
-            <div class="absolute top-[146px] right-[162px] flex flex-col">
-              <img src="/images/title.png" alt="title" class="w-[276px] h-[160px]" />
-              <div class="mt-24 -translate-x-2 flex">
-                <p class="font-shippori text-white text-xl tracking-[8px] rotateText mr-8">
-                  為什麼要記憶
-                </p>
-                <p class="font-shippori text-white text-xl tracking-[8px] rotateText mr-8">
-                  克服過去
-                </p>
-                <p class="font-shippori text-white text-xl tracking-[8px] rotateText mr-8">
-                  共犯結構
-                </p>
-                <p class="font-shippori text-white text-xl tracking-[8px] rotateText mr-8">
-                  加害與被害
-                </p>
-                <p class="font-shippori text-white text-xl tracking-[8px] rotateText">移動與邊界</p>
-              </div>
+              <p class="font-shippori text-white text-xl tracking-[8px] rotateText">移動與邊界</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="flex flex-col w-full h-auto items-center still relative -mt-10">
+      <div class="flex flex-col w-full min-h-screen items-center justify-center still relative">
         <p class="font-shippori text-white text-[22px] tracking-[8px] mt-7">記憶像水一樣流動</p>
         <p class="font-shippori text-white text-[22px] tracking-[8px] mt-7">我們可以選擇如何記憶</p>
         <p class="font-shippori text-white text-[22px] tracking-[8px] mt-7">也是在重塑我們</p>
         <p class="font-shippori text-white text-[22px] tracking-[8px] mt-7">作為人的意義</p>
-        <img
-          src="/images/second_stills1.jpg"
-          alt="stills1"
-          class="stills1 opacity-50 w-full origin-center"
-        />
+      </div>
+      <div
+        class="flex w-full h-screen translate-y-[var(--parallax-y)] mask-leathers"
+        :style="`--parallax-y: ${parallaxY}px`"
+      >
         <img
           src="/images/second_stills2.jpg"
           alt="stills2"
-          class="stills2 w-full origin-center absolute top-[248px] opacity-0"
+          class="stills2 size-full origin-center object-cover"
         />
       </div>
     </div>
   </div>
-  <div class="h-auto flex third-bg justify-center">
+  <div class="h-[100vh] flex third-bg justify-center items-center film">
     <div class="max-w-[1000px] flex gap-x-[142px] my-[236px]">
       <div class="flex flex-col gap-y-14">
         <p class="font-wix text-white tracking-[4px] text-[26px]">FILM</p>
@@ -309,7 +291,7 @@
       </div>
     </div>
   </div>
-  <div class="h-auto flex forth-bg justify-center">
+  <div class="h-screen flex forth-bg justify-center items-center lesson -mt-[200px]">
     <div class="max-w-[1600px] flex my-[224px]">
       <div class="flex opacity-15 mr-[112px]">
         <p class="font-shippori text-white text-[59px] tracking-[36px] rotateText mr-7">
@@ -335,6 +317,18 @@
         >
           View more
         </button>
+      </div>
+    </div>
+  </div>
+  <div class="w-full bg-white h-[200px] -mt-[100px] flex items-center px-[162px] justify-between">
+    <div>
+      <div class="z-10 text-[#aaa] text-xl font-noto tracking-[8px]">蜂鳥影像</div>
+      <div class="z-10 text-[#aaa] text-[17px] font-wix mt-4">Facebook ｜ Youtube ｜ Vimeo</div>
+    </div>
+    <div class="flex flex-col items-end">
+      <div class="z-10 text-[#aaa] text-sm font-noto tracking-[1px]">隱私權政策</div>
+      <div class="z-10 text-[#aaa] text-[15px] font-wix mt-2">
+        Copyright © HUMMINGBIRD Production
       </div>
     </div>
   </div>
