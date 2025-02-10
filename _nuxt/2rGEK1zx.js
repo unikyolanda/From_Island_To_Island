@@ -1,1 +1,0 @@
-import{_ as n}from"./Bp6bQD7K.js";import{c as a,a as o,b as r,w as s,o as l,d as u}from"./czFMl0NM.js";const i={__name:"about",setup(p){return(_,t)=>{const e=n;return l(),a("div",null,[t[1]||(t[1]=o("h1",null,"關於頁面",-1)),t[2]||(t[2]=o("p",null,"這是關於頁面的內容",-1)),r(e,{to:"/"},{default:s(()=>t[0]||(t[0]=[u("返回首頁")])),_:1})])}}};export{i as default};
