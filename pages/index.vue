@@ -327,7 +327,7 @@
   </div>
   <div class="h-auto sm:h-[100vh] flex third-bg justify-center items-center film">
     <div
-      class="sm:max-w-[1000px] w-screen h-full flex flex-col items-center sm:flex-row sm:gap-x-[142px] sm:my-[236px] filmContent px-10 py-16 sm:py-0"
+      class="sm:max-w-[1200px] w-screen h-full flex flex-col items-center sm:flex-row sm:gap-x-[142px] sm:mb-[236px] filmContent px-10 py-16 sm:py-0 mb-14 sm:mb-0"
     >
       <div class="flex flex-col gap-y-6 sm:gap-y-14 items-center sm:items-start">
         <p class="font-wix text-white tracking-[4px] text-lg sm:text-[26px]">FILM</p>
