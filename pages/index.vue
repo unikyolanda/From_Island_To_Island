@@ -25,6 +25,7 @@
     const allImages = Array.from(document.querySelectorAll('.image-box img'))
     const textElements = document.querySelectorAll('.still p')
     const stills2Image = document.querySelector('.stills2')
+    const filmContent = document.querySelector('.filmContent')
 
     // Initialize all images as hidden
     allImages.forEach((img, index) => {
@@ -121,7 +122,7 @@
       },
     })
 
-    gsap.set('.film', { y: 0 })
+    gsap.set(['.filmContent', 'lessonContent'], { opacity: 0, y: 30, filter: 'blur(5px)' })
     ScrollTrigger.create({
       trigger: '.film',
       start: 'top bottom',
@@ -131,6 +132,13 @@
         const progress = self.progress
         gsap.to('.film', {
           y: progress * -100,
+          duration: 0.2,
+          ease: 'power1.out',
+        })
+        gsap.to('.filmContent', {
+          opacity: progress,
+          y: (1 - progress) * 30,
+          filter: `blur(${(1 - progress) * 5}px)`,
           duration: 0.2,
           ease: 'power1.out',
         })
@@ -146,6 +154,13 @@
         const progress = self.progress
         gsap.to('.lesson', {
           y: progress * -100,
+          duration: 0.2,
+          ease: 'power1.out',
+        })
+        gsap.to('.lessonContent', {
+          opacity: progress,
+          y: (1 - progress) * 30,
+          filter: `blur(${(1 - progress) * 5}px)`,
           duration: 0.2,
           ease: 'power1.out',
         })
@@ -272,7 +287,7 @@
     </div>
   </div>
   <div class="h-[100vh] flex third-bg justify-center items-center film">
-    <div class="max-w-[1000px] flex gap-x-[142px] my-[236px]">
+    <div class="max-w-[1000px] flex gap-x-[142px] my-[236px] filmContent">
       <div class="flex flex-col gap-y-14">
         <p class="font-wix text-white tracking-[4px] text-[26px]">FILM</p>
         <p class="font-shippori text-white text-[50px] tracking-[8px]">由島至島</p>
@@ -280,7 +295,7 @@
           台灣在二戰期間是日本帝國的一部分。本片以此為主題，努力挖掘和重新整理台灣在二戰期間的隱藏記憶，探索在日本帝國內的台灣士兵、醫生與生活在東南亞的海外台灣人之經歷。全片從兒子對父親的提問開場，透過跨世代的對話、家書、日記和家庭成員之間的影片，探討台灣歷史記憶的複雜性，以及這一時期存在的各種身分。
         </p>
         <button
-          class="font-wix text-white text-lg border border-white py-4 w-[162px] hover:bg-white hover:text-[#aaa]"
+          class="font-wix text-white text-lg border border-white py-4 w-[162px] hover:bg-white hover:text-[#aaa] transition-all duration-500"
         >
           View more
         </button>
@@ -292,7 +307,7 @@
     </div>
   </div>
   <div class="h-screen flex forth-bg justify-center items-center lesson -mt-[200px]">
-    <div class="max-w-[1600px] flex my-[224px]">
+    <div class="max-w-[1600px] flex my-[224px] lessonContent">
       <div class="flex opacity-15 mr-[112px]">
         <p class="font-shippori text-white text-[59px] tracking-[36px] rotateText mr-7">
           為什麼要記憶
@@ -313,7 +328,7 @@
           《由島至島》教育推廣規劃，從本片中節選出５個主題的片段，發展搭配教案，免費開放老師申請作為課程教授素材。五大主題為：移動與邊界、加害與被害、共犯結構－日本擴張行動、克服過去、為什麼要記憶，各有台灣、日本及馬來西亞教案可下載。
         </p>
         <button
-          class="font-wix text-white text-lg border border-white py-4 w-[162px] hover:bg-white hover:text-[#aaa]"
+          class="font-wix text-white text-lg border border-white py-4 w-[162px] hover:bg-white hover:text-[#aaa] transition-all duration-500"
         >
           View more
         </button>
