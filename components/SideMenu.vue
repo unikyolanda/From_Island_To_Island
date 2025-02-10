@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fixed top-0 right-0 h-full w-[710px] bg-black/90 transform translate-x-full z-20"
+    class="fixed top-0 right-0 h-full w-full sm:w-[710px] bg-black/90 transform translate-x-full z-20"
     ref="menuRef"
   >
     <div class="flex flex-col items-end p-12 text-white">
@@ -11,36 +11,66 @@
       </div>
       <nav class="flex flex-col items-end space-y-12 w-full">
         <div class="flex justify-between w-full items-center">
-          <div class="flex flex-col items-center w-1/2">
-            <p class="font-shippori text-[28px] tracking-[4px]">由島至島</p>
-            <p class="font-wix text-lg tracking-[4px]">FILM</p>
+          <div class="flex flex-col items-center w-1/2 ml-1">
+            <p class="font-shippori text-[22px] sm:text-[28px] tracking-[8px] sm:tracking-[12px]">
+              由島至島
+            </p>
+            <p class="font-wix text-[13px] sm:text-lg tracking-[3px] sm:tracking-[4px] mt-2">
+              FILM
+            </p>
           </div>
-          <div class="flex flex-col items-start space-y-5 w-1/2 ml-8">
-            <a href="#" class="font-noto text-lg tracking-[3px]">電影介紹</a>
-            <a href="#" class="font-noto text-lg tracking-[3px]">座談與報導</a>
-            <a href="#" class="font-noto text-lg tracking-[3px]">包場資訊</a>
-          </div>
-        </div>
-        <div class="flex justify-between w-full items-center">
-          <div class="flex flex-col items-center w-1/2">
-            <p class="font-shippori text-[28px] tracking-[4px]">主題教案</p>
-            <p class="font-wix text-lg tracking-[4px]">LESSON</p>
-          </div>
-          <div class="flex flex-col items-start space-y-5 w-1/2 ml-8">
-            <a href="#" class="font-noto text-lg tracking-[3px]">移動與邊界</a>
-            <a href="#" class="font-noto text-lg tracking-[3px]">加害與被害</a>
-            <a href="#" class="font-noto text-lg tracking-[3px]">共犯結構</a>
-            <a href="#" class="font-noto text-lg tracking-[3px]">克服過去</a>
-            <a href="#" class="font-noto text-lg tracking-[3px]">為什麼要記憶</a>
+          <div class="flex flex-col items-start space-y-6 w-1/2 ml-8">
+            <a href="#" class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
+              >電影介紹</a
+            >
+            <a href="#" class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
+              >座談與報導</a
+            >
+            <a href="#" class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
+              >包場資訊</a
+            >
           </div>
         </div>
         <div class="flex justify-between w-full items-center">
-          <div class="flex flex-col items-center w-1/2">
-            <p class="font-shippori text-[28px] tracking-[4px]">聯絡我們</p>
-            <p class="font-wix text-lg tracking-[4px]">CONTACT</p>
+          <div class="flex flex-col items-center w-1/2 ml-1">
+            <p class="font-shippori text-[22px] sm:text-[28px] tracking-[8px] sm:tracking-[12px]">
+              主題教案
+            </p>
+            <p class="font-wix text-[13px] sm:text-lg tracking-[3px] sm:tracking-[4px] mt-2">
+              LESSON
+            </p>
           </div>
-          <div class="flex flex-col items-start space-y-5 w-1/2 ml-8">
-            <a href="#" class="font-noto text-lg tracking-[3px]">捐款支持</a>
+          <div class="flex flex-col items-start space-y-6 w-1/2 ml-8">
+            <a href="#" class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
+              >移動與邊界</a
+            >
+            <a href="#" class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
+              >加害與被害</a
+            >
+            <a href="#" class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
+              >共犯結構</a
+            >
+            <a href="#" class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
+              >克服過去</a
+            >
+            <a href="#" class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
+              >為什麼要記憶</a
+            >
+          </div>
+        </div>
+        <div class="flex justify-between w-full items-center">
+          <div class="flex flex-col items-center w-1/2 ml-1">
+            <p class="font-shippori text-[22px] sm:text-[28px] tracking-[8px] sm:tracking-[12px]">
+              聯絡我們
+            </p>
+            <p class="font-wix text-[13px] sm:text-lg tracking-[3px] sm:tracking-[4px] mt-2">
+              CONTACT
+            </p>
+          </div>
+          <div class="flex flex-col items-start space-y-6 w-1/2 ml-8">
+            <a href="#" class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
+              >捐款支持</a
+            >
           </div>
         </div>
         <div class="flex flex-col items-end space-y-4">
