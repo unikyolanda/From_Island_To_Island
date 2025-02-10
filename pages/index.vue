@@ -126,7 +126,7 @@
     ScrollTrigger.create({
       trigger: '.film',
       start: 'top bottom',
-      end: 'bottom bottom',
+      end: 'top 25%',
       scrub: true,
       onUpdate: self => {
         const progress = self.progress
@@ -148,7 +148,7 @@
     ScrollTrigger.create({
       trigger: '.lesson',
       start: 'top bottom',
-      end: 'bottom bottom',
+      end: 'top 25%',
       scrub: true,
       onUpdate: self => {
         const progress = self.progress
@@ -204,51 +204,74 @@
 </style>
 
 <template>
-  <div class="relative overflow-x-hidden h-[300vh]">
+  <div class="relative overflow-x-hidden h-[300vh] w-full">
     <SideMenu ref="menuRef" @close="closeMenu" />
-    <div
-      class="ripple-effect absolute flex flex-col items-center min-w-full h-full overflow-x-hidden"
-    >
+    <div class="ripple-effect absolute flex flex-col items-center w-full h-full overflow-x-hidden">
       <div class="title w-full min-h-screen relative flex items-center">
-        <div class="absolute right-12 top-10 cursor-pointer z-10">
+        <div class="sm:hidden absolute left-10 z-10 top-[55px]">
+          <img src="/images/title.png" alt="title" class="w-[140px] h-[81px]" />
+        </div>
+        <div class="absolute right-10 sm:right-12 top-10 cursor-pointer z-10">
           <img src="/images/menu.svg" alt="menu" class="w-10 h-8" @click="toggleMenu" />
         </div>
-        <div class="flex px-[162px] justify-center relative w-full h-auto">
-          <div class="flex flex-col absolute top-[447px] left-[162px]">
-            <p class="font-shippori text-white text-[50px] font-light tracking-[12px]">由島至島</p>
-            <p class="font-shippori text-white text-[50px] font-light tracking-[12px]">
+        <div class="flex sm:px-[162px] justify-center relative w-full h-auto">
+          <div
+            class="flex flex-col absolute top-[480px] sm:top-[447px] left-[60px] sm:left-[162px]"
+          >
+            <p
+              class="font-shippori text-white text-[32px] sm:text-[50px] font-light tracking-[8px] sm:tracking-[12px]"
+            >
+              由島至島
+            </p>
+            <p
+              class="font-shippori text-white text-[32px] sm:text-[50px] font-light tracking-[8px] sm:tracking-[12px]"
+            >
               記憶與對話
             </p>
-            <p class="font-amiri italic text-[25px] text-white tracking-[3px] mt-7">From Island</p>
-            <p class="font-amiri italic text-[25px] text-white tracking-[3px]">to Island</p>
-            <p class="font-amiri italic text-[25px] text-white tracking-[3px]">
+            <p
+              class="font-amiri italic text-xl sm:text-[25px] text-white tracking-[1px] sm:tracking-[3px] mt-7"
+            >
+              From Island
+            </p>
+            <p
+              class="font-amiri italic text-xl sm:text-[25px] text-white tracking-[1px] sm:tracking-[3px]"
+            >
+              to Island
+            </p>
+            <p
+              class="font-amiri italic text-xl sm:text-[25px] text-white tracking-[1px] sm:tracking-[3px]"
+            >
               Memory and Dialogue
             </p>
           </div>
-          <div class="image-box mt-[100px] relative">
-            <img src="/images/first_photo5.png" alt="photo5" class="opacity-40 h-[709px]" />
+          <div class="image-box mt-16 sm:mt-[100px] relative flex justify-center w-screen">
+            <img
+              src="/images/first_photo5.png"
+              alt="photo5"
+              class="opacity-40 h-[437px] min-w-[514.12px] sm:h-[709px] sm:min-w-[834px]"
+            />
             <img
               src="/images/first_photo4.png"
               alt="photo4"
-              class="opacity-40 h-[709px] absolute top-0"
+              class="opacity-40 h-[437px] min-w-[514.12px] sm:h-[709px] sm:min-w-[834px] absolute top-0"
             />
             <img
               src="/images/first_photo3.png"
               alt="photo3"
-              class="opacity-40 h-[709px] absolute top-0"
+              class="opacity-40 h-[437px] min-w-[514.12px] sm:h-[709px] sm:min-w-[834px] absolute top-0"
             />
             <img
               src="/images/first_photo2.png"
               alt="photo2"
-              class="opacity-40 h-[709px] absolute top-0"
+              class="opacity-40 h-[437px] min-w-[514.12px] sm:h-[709px] sm:min-w-[834px] absolute top-0"
             />
             <img
               src="/images/first_photo1.png"
               alt="photo1"
-              class="opacity-40 h-[709px] absolute top-0"
+              class="opacity-40 h-[437px] min-w-[514.12px] sm:h-[709px] sm:min-w-[834px] absolute top-0"
             />
           </div>
-          <div class="absolute top-[106px] right-[162px] flex flex-col">
+          <div class="hidden absolute top-[106px] right-[162px] sm:flex flex-col">
             <img src="/images/title.png" alt="title" class="w-[276px] h-[160px]" />
             <div class="mt-24 -translate-x-2 flex">
               <p class="font-shippori text-white text-xl tracking-[8px] rotateText mr-8">
@@ -269,10 +292,26 @@
         </div>
       </div>
       <div class="flex flex-col w-full min-h-screen items-center justify-center still relative">
-        <p class="font-shippori text-white text-[22px] tracking-[8px] mt-7">記憶像水一樣流動</p>
-        <p class="font-shippori text-white text-[22px] tracking-[8px] mt-7">我們可以選擇如何記憶</p>
-        <p class="font-shippori text-white text-[22px] tracking-[8px] mt-7">也是在重塑我們</p>
-        <p class="font-shippori text-white text-[22px] tracking-[8px] mt-7">作為人的意義</p>
+        <p
+          class="font-shippori text-white text-[17px] sm:text-[22px] tracking-[5px] sm:tracking-[8px] mt-[220px] sm:mt-7"
+        >
+          記憶像水一樣流動
+        </p>
+        <p
+          class="font-shippori text-white text-[17px] sm:text-[22px] tracking-[5px] sm:tracking-[8px] mt-7"
+        >
+          我們可以選擇如何記憶
+        </p>
+        <p
+          class="font-shippori text-white text-[17px] sm:text-[22px] tracking-[5px] sm:tracking-[8px] mt-7"
+        >
+          也是在重塑我們
+        </p>
+        <p
+          class="font-shippori text-white text-[17px] sm:text-[22px] tracking-[5px] sm:tracking-[8px] mt-7"
+        >
+          作為人的意義
+        </p>
       </div>
       <div
         class="flex w-full h-screen translate-y-[var(--parallax-y)] mask-leathers"
@@ -286,29 +325,45 @@
       </div>
     </div>
   </div>
-  <div class="h-[100vh] flex third-bg justify-center items-center film">
-    <div class="max-w-[1000px] flex gap-x-[142px] my-[236px] filmContent">
-      <div class="flex flex-col gap-y-14">
-        <p class="font-wix text-white tracking-[4px] text-[26px]">FILM</p>
-        <p class="font-shippori text-white text-[50px] tracking-[8px]">由島至島</p>
-        <p class="font-noto text-white tracking-[2px] w-[412px] leading-[36px]">
+  <div class="h-auto sm:h-[100vh] flex third-bg justify-center items-center film">
+    <div
+      class="sm:max-w-[1000px] w-screen h-full flex flex-col items-center sm:flex-row sm:gap-x-[142px] sm:my-[236px] filmContent px-10 py-16 sm:py-0"
+    >
+      <div class="flex flex-col gap-y-6 sm:gap-y-14 items-center sm:items-start">
+        <p class="font-wix text-white tracking-[4px] text-lg sm:text-[26px]">FILM</p>
+        <p class="font-shippori text-white text-[36px] sm:text-[50px] tracking-[8px]">由島至島</p>
+        <p
+          class="hidden sm:flex font-noto text-white tracking-[2px] w-full sm:w-[412px] leading-[36px] text-sm sm:text-[16px]"
+        >
           台灣在二戰期間是日本帝國的一部分。本片以此為主題，努力挖掘和重新整理台灣在二戰期間的隱藏記憶，探索在日本帝國內的台灣士兵、醫生與生活在東南亞的海外台灣人之經歷。全片從兒子對父親的提問開場，透過跨世代的對話、家書、日記和家庭成員之間的影片，探討台灣歷史記憶的複雜性，以及這一時期存在的各種身分。
         </p>
         <button
-          class="font-wix text-white text-lg border border-white py-4 w-[162px] hover:bg-white hover:text-[#aaa] transition-all duration-500"
+          class="hidden sm:block font-wix text-white text-lg border border-white py-4 w-[162px] hover:bg-white hover:text-[#aaa] transition-all duration-500"
         >
           View more
         </button>
       </div>
       <div class="flex flex-col">
-        <div class="w-[568px] h-[362px] bg-slate-100 mt-24"></div>
-        <img src="/images/forth_logo.png" alt="forth_logo" class="mt-20" />
+        <div class="w-full sm:w-[568px] h-[220px] sm:h-[362px] bg-slate-100 mt-10 sm:mt-24"></div>
+        <img src="/images/forth_logo.png" alt="forth_logo" class="mt-6 sm:mt-20" />
+      </div>
+      <div class="flex flex-col mt-9 sm:hidden items-center">
+        <p
+          class="font-noto text-white tracking-[1px] sm:tracking-[2px] w-full sm:w-[412px] leading-[36px] text-sm sm:text-[16px]"
+        >
+          台灣在二戰期間是日本帝國的一部分。本片以此為主題，努力挖掘和重新整理台灣在二戰期間的隱藏記憶，探索在日本帝國內的台灣士兵、醫生與生活在東南亞的海外台灣人之經歷。全片從兒子對父親的提問開場，透過跨世代的對話、家書、日記和家庭成員之間的影片，探討台灣歷史記憶的複雜性，以及這一時期存在的各種身分。
+        </p>
+        <button
+          class="font-wix text-white text-lg border border-white py-4 w-[162px] hover:bg-white hover:text-[#aaa] transition-all duration-500 mt-8"
+        >
+          View more
+        </button>
       </div>
     </div>
   </div>
-  <div class="h-screen flex forth-bg justify-center items-center lesson -mt-[200px]">
+  <div class="h-screen flex forth-bg justify-center items-center lesson -mt-[88px] sm:-mt-[200px]">
     <div class="max-w-[1600px] flex my-[224px] lessonContent">
-      <div class="flex opacity-15 mr-[112px]">
+      <div class="hidden sm:flex opacity-15 mr-[112px]">
         <p class="font-shippori text-white text-[59px] tracking-[36px] rotateText mr-7">
           為什麼要記憶
         </p>
@@ -321,10 +376,12 @@
         </p>
         <p class="font-shippori text-white text-[59px] tracking-[36px] rotateText">移動與邊界</p>
       </div>
-      <div class="flex flex-col gap-y-14">
-        <p class="font-wix text-white tracking-[4px] text-[26px]">LESSON</p>
-        <p class="font-shippori text-white text-[50px] tracking-[8px]">主題教案</p>
-        <p class="font-noto text-white tracking-[2px] w-[412px] leading-[36px]">
+      <div class="flex flex-col items-center sm:items-start gap-y-6 sm:gap-y-14 px-10 sm:px-0">
+        <p class="font-wix text-white tracking-[4px] text-lg sm:text-[26px]">LESSON</p>
+        <p class="font-shippori text-white text-[36px] sm:text-[50px] tracking-[8px]">主題教案</p>
+        <p
+          class="font-noto text-white tracking-[1px] sm:tracking-[2px] w-full sm:w-[412px] leading-[36px] text-[14px] sm:text-[16px]"
+        >
           《由島至島》教育推廣規劃，從本片中節選出５個主題的片段，發展搭配教案，免費開放老師申請作為課程教授素材。五大主題為：移動與邊界、加害與被害、共犯結構－日本擴張行動、克服過去、為什麼要記憶，各有台灣、日本及馬來西亞教案可下載。
         </p>
         <button
@@ -335,14 +392,20 @@
       </div>
     </div>
   </div>
-  <div class="w-full bg-white h-[200px] -mt-[100px] flex items-center px-[162px] justify-between">
-    <div>
-      <div class="z-10 text-[#aaa] text-xl font-noto tracking-[8px]">蜂鳥影像</div>
-      <div class="z-10 text-[#aaa] text-[17px] font-wix mt-4">Facebook ｜ Youtube ｜ Vimeo</div>
+  <div
+    class="w-full bg-white h-[200px] -mt-[100px] flex flex-col sm:flex-row sm:items-center p-10 sm:px-[162px] justify-between"
+  >
+    <div class="flex flex-row sm:flex-col justify-between items-center w-full">
+      <div class="text-[#aaa] text-[16px] sm:text-xl font-noto sm:tracking-[8px]">蜂鳥影像</div>
+      <div class="text-[#aaa] text-[14px] sm:text-[17px] font-wix sm:mt-4">
+        Facebook ｜ Youtube ｜ Vimeo
+      </div>
     </div>
-    <div class="flex flex-col items-end">
-      <div class="z-10 text-[#aaa] text-sm font-noto tracking-[1px]">隱私權政策</div>
-      <div class="z-10 text-[#aaa] text-[15px] font-wix mt-2">
+    <div class="flex flex-col-reverse sm:flex-col items-start sm:items-end">
+      <div class="z-10 text-[#aaa] text-xs sm:text-sm font-noto tracking-[1px] mt-2 sm:mt-0">
+        隱私權政策
+      </div>
+      <div class="z-10 text-[#aaa] text-xs sm:text-[15px] font-wix sm:mt-2 mt-0">
         Copyright © HUMMINGBIRD Production
       </div>
     </div>
