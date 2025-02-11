@@ -27,8 +27,17 @@
     const stills2Image = document.querySelector('.stills2')
     const titleSections = document.querySelectorAll('.title-text-section, .vertical-text-section')
     const lessonTopic = document.querySelectorAll('.lessonTopic p')
+    const filmContentElements = document.querySelectorAll(
+      '.filmContent > .filmText, .filmContent > div:nth-child(2), .filmContent > div:nth-child(3)'
+    )
 
     // Set initial state for title sections
+    gsap.set(filmContentElements, {
+      opacity: 0,
+      y: 30,
+      filter: 'blur(5px)',
+    })
+
     gsap.set(titleSections, {
       opacity: 0,
       filter: 'blur(15px)',
@@ -185,6 +194,34 @@
           filter: `blur(${(1 - progress) * 5}px)`,
           duration: 0.2,
           ease: 'power1.out',
+        })
+      },
+    })
+
+    ScrollTrigger.create({
+      trigger: '.film',
+      start: 'top 75%',
+      end: 'top 25%',
+      scrub: true,
+      onUpdate: self => {
+        const progress = self.progress
+        const direction = self.direction
+        const totalElements = filmContentElements.length
+
+        filmContentElements.forEach((element, index) => {
+          const delay =
+            direction === 1
+              ? index * 0.3 // Faster sequence when scrolling down
+              : (totalElements - 1 - index) * 0.3 // Reverse order when scrolling up
+
+          gsap.to(element, {
+            opacity: progress,
+            y: (1 - progress) * 30,
+            filter: direction === 1 ? 'blur(0px)' : 'blur(5px)',
+            duration: 1.5,
+            delay: delay,
+            ease: 'power2.out',
+          })
         })
       },
     })
@@ -389,9 +426,9 @@
   </div>
   <div class="h-auto sm:h-[100vh] flex third-bg justify-center items-center film">
     <div
-      class="sm:max-w-[1200px] w-screen h-full flex flex-col items-center sm:flex-row sm:gap-x-[142px] sm:mb-[236px] filmContent px-10 py-16 sm:py-0 mb-14 mt-10"
+      class="sm:max-w-[1200px] w-screen h-full min-h-screen flex flex-col items-center justify-center sm:flex-row sm:gap-x-[142px] sm:mb-24 filmContent px-10"
     >
-      <div class="flex flex-col gap-y-6 sm:gap-y-14 items-center sm:items-start">
+      <div class="flex flex-col gap-y-6 sm:gap-y-14 items-center sm:items-start filmText">
         <div class="flex flex-col items-center sm:items-start">
           <p class="font-amiri italic text-white tracking-[6px] text-lg sm:text-[28px]">FILM</p>
           <p class="font-shippori text-white text-[36px] sm:text-[44px] tracking-[8px]">由島至島</p>
@@ -409,7 +446,7 @@
       </div>
       <div class="flex flex-col">
         <iframe
-          src="https://www.youtube.com/embed/gdy83Hj66dE"
+          src="https://www.youtube.com/embed/YkEfOmfF5FM?si=y8Clq6RWv6QLCHfb"
           class="w-full sm:w-[568px] h-[220px] sm:h-[362px] mt-10 sm:mt-24 shadow-md"
           title="由島至島 From Island to Island"
           frameborder="0"
@@ -433,7 +470,7 @@
       </div>
     </div>
   </div>
-  <div class="h-screen flex forth-bg justify-center items-center lesson -mt-[88px] sm:-mt-[200px]">
+  <div class="h-screen flex forth-bg justify-center items-center lesson -mt-[100px]">
     <div class="max-w-[1600px] flex my-[224px] lessonContent">
       <div class="hidden sm:flex opacity-15 mr-[112px] lessonTopic">
         <p class="font-shippori text-white text-[59px] tracking-[36px] rotateText mr-7">
