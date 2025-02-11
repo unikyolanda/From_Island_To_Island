@@ -25,7 +25,22 @@
     const allImages = Array.from(document.querySelectorAll('.image-box img'))
     const textElements = document.querySelectorAll('.still p')
     const stills2Image = document.querySelector('.stills2')
-    const filmContent = document.querySelector('.filmContent')
+    const titleSections = document.querySelectorAll('.title-text-section, .vertical-text-section')
+
+    // Set initial state for title sections
+    gsap.set(titleSections, {
+      opacity: 0,
+      filter: 'blur(15px)',
+    })
+
+    // Animate title sections
+    gsap.to(titleSections, {
+      opacity: 1,
+      filter: 'blur(0px)',
+      duration: 2,
+      delay: 0.5,
+      ease: 'power2.out',
+    })
 
     // Initialize all images as hidden
     allImages.forEach((img, index) => {
@@ -70,16 +85,22 @@
       onUpdate: self => {
         const progress = self.progress
         const direction = self.direction
+        const totalElements = textElements.length
 
         textElements.forEach((text, index) => {
-          const delay = index * 0.1
+          // Calculate delay based on scroll direction
+          const delay =
+            direction === 1
+              ? index * 1 // Original order when scrolling down
+              : (totalElements - 1 - index) * 1 // Reverse order when scrolling up
+
           if (direction === 1) {
             // Scrolling down
             gsap.to(text, {
               opacity: progress * 1.5,
               y: progress * -30,
               filter: 'blur(0px)',
-              duration: 1.25,
+              duration: 2.5,
               delay: delay,
               ease: 'power2.out',
             })
@@ -89,7 +110,7 @@
               opacity: progress,
               y: (1 - progress) * 30,
               filter: 'blur(5px)',
-              duration: 1.25,
+              duration: 2.5,
               delay: delay,
               ease: 'power2.out',
             })
@@ -216,7 +237,7 @@
         </div>
         <div class="flex sm:px-[162px] justify-center relative w-full h-auto">
           <div
-            class="flex flex-col absolute top-[480px] sm:top-[447px] left-[60px] sm:left-[162px]"
+            class="title-text-section flex flex-col absolute top-[480px] sm:top-[447px] left-[60px] sm:left-[162px]"
           >
             <p
               class="font-shippori text-white text-[32px] sm:text-[50px] font-light tracking-[8px] sm:tracking-[12px]"
@@ -271,7 +292,9 @@
               class="opacity-40 h-[437px] min-w-[514.12px] sm:h-[709px] sm:min-w-[834px] absolute top-0"
             />
           </div>
-          <div class="hidden absolute top-[106px] right-[162px] sm:flex flex-col">
+          <div
+            class="vertical-text-section hidden absolute top-[106px] right-[162px] sm:flex flex-col"
+          >
             <img src="/images/title.png" alt="title" class="w-[276px] h-[160px]" />
             <div class="mt-24 -translate-x-2 flex">
               <p class="font-shippori text-white text-xl tracking-[8px] rotateText mr-8">
@@ -293,22 +316,22 @@
       </div>
       <div class="flex flex-col w-full min-h-screen items-center justify-center still relative">
         <p
-          class="font-shippori text-white text-[17px] sm:text-[22px] tracking-[5px] sm:tracking-[8px] mt-[220px] sm:mt-7"
+          class="font-shippori text-white text-[17px] sm:text-[22px] tracking-[5px] sm:tracking-[8px] mt-[220px] sm:mt-12"
         >
           記憶像水一樣流動
         </p>
         <p
-          class="font-shippori text-white text-[17px] sm:text-[22px] tracking-[5px] sm:tracking-[8px] mt-7"
+          class="font-shippori text-white text-[17px] sm:text-[22px] tracking-[5px] sm:tracking-[8px] mt-12"
         >
           我們可以選擇如何記憶
         </p>
         <p
-          class="font-shippori text-white text-[17px] sm:text-[22px] tracking-[5px] sm:tracking-[8px] mt-7"
+          class="font-shippori text-white text-[17px] sm:text-[22px] tracking-[5px] sm:tracking-[8px] mt-12"
         >
           也是在重塑我們
         </p>
         <p
-          class="font-shippori text-white text-[17px] sm:text-[22px] tracking-[5px] sm:tracking-[8px] mt-7"
+          class="font-shippori text-white text-[17px] sm:text-[22px] tracking-[5px] sm:tracking-[8px] mt-12"
         >
           作為人的意義
         </p>
@@ -327,11 +350,13 @@
   </div>
   <div class="h-auto sm:h-[100vh] flex third-bg justify-center items-center film">
     <div
-      class="sm:max-w-[1200px] w-screen h-full flex flex-col items-center sm:flex-row sm:gap-x-[142px] sm:mb-[236px] filmContent px-10 py-16 sm:py-0 mb-14 sm:mb-0"
+      class="sm:max-w-[1200px] w-screen h-full flex flex-col items-center sm:flex-row sm:gap-x-[142px] sm:mb-[236px] filmContent px-10 py-16 sm:py-0 mb-14 mt-10"
     >
       <div class="flex flex-col gap-y-6 sm:gap-y-14 items-center sm:items-start">
-        <p class="font-wix text-white tracking-[4px] text-lg sm:text-[26px]">FILM</p>
-        <p class="font-shippori text-white text-[36px] sm:text-[50px] tracking-[8px]">由島至島</p>
+        <div class="flex flex-col items-center sm:items-start">
+          <p class="font-amiri italic text-white tracking-[6px] text-lg sm:text-[28px]">FILM</p>
+          <p class="font-shippori text-white text-[36px] sm:text-[44px] tracking-[8px]">由島至島</p>
+        </div>
         <p
           class="hidden sm:flex font-noto text-white tracking-[2px] w-full sm:w-[412px] leading-[36px] text-sm sm:text-[16px]"
         >
@@ -344,7 +369,15 @@
         </button>
       </div>
       <div class="flex flex-col">
-        <div class="w-full sm:w-[568px] h-[220px] sm:h-[362px] bg-slate-100 mt-10 sm:mt-24"></div>
+        <iframe
+          src="https://www.youtube.com/embed/gdy83Hj66dE"
+          class="w-full sm:w-[568px] h-[220px] sm:h-[362px] mt-10 sm:mt-24 shadow-md"
+          title="由島至島 From Island to Island"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        >
+        </iframe>
         <img src="/images/forth_logo.png" alt="forth_logo" class="mt-6 sm:mt-20" />
       </div>
       <div class="flex flex-col mt-9 sm:hidden items-center">
@@ -377,8 +410,10 @@
         <p class="font-shippori text-white text-[59px] tracking-[36px] rotateText">移動與邊界</p>
       </div>
       <div class="flex flex-col items-center sm:items-start gap-y-6 sm:gap-y-14 px-10 sm:px-0">
-        <p class="font-wix text-white tracking-[4px] text-lg sm:text-[26px]">LESSON</p>
-        <p class="font-shippori text-white text-[36px] sm:text-[50px] tracking-[8px]">主題教案</p>
+        <div class="flex flex-col items-center sm:items-start">
+          <p class="font-amiri italic text-white tracking-[6px] text-lg sm:text-[28px]">LESSON</p>
+          <p class="font-shippori text-white text-[36px] sm:text-[44px] tracking-[8px]">主題教案</p>
+        </div>
         <p
           class="font-noto text-white tracking-[1px] sm:tracking-[2px] w-full sm:w-[412px] leading-[36px] text-[14px] sm:text-[16px]"
         >
