@@ -26,6 +26,7 @@
     const textElements = document.querySelectorAll('.still p')
     const stills2Image = document.querySelector('.stills2')
     const titleSections = document.querySelectorAll('.title-text-section, .vertical-text-section')
+    const lessonTopic = document.querySelectorAll('.lessonTopic p')
 
     // Set initial state for title sections
     gsap.set(titleSections, {
@@ -188,6 +189,47 @@
       },
     })
 
+    // Set initial state for lessonTopic
+    lessonTopic.forEach(text => {
+      gsap.set(text, {
+        opacity: 0,
+        filter: 'blur(5px)',
+      })
+    })
+
+    ScrollTrigger.create({
+      trigger: '.lesson',
+      start: 'top 75%',
+      end: 'top 25%',
+      scrub: true,
+      onUpdate: self => {
+        const progress = self.progress
+        const direction = self.direction
+        const totalElements = lessonTopic.length
+
+        lessonTopic.forEach((text, index) => {
+          // Calculate delay based on scroll direction and odd/even index
+          const isOdd = index % 2 !== 0
+          const adjustedIndex = isOdd
+            ? Math.floor(totalElements / 2) + Math.floor(index / 2)
+            : Math.floor(index / 2)
+
+          const delay =
+            direction === 1
+              ? adjustedIndex * 0.5 // Odd indices first when scrolling down
+              : (totalElements - 1 - adjustedIndex) * 0.5 // Reverse order when scrolling up
+
+          gsap.to(text, {
+            opacity: progress,
+            filter: direction === 1 ? 'blur(0px)' : 'blur(5px)',
+            duration: 2.5,
+            delay: delay,
+            ease: 'power2.out',
+          })
+        })
+      },
+    })
+
     // Cleanup
     onUnmounted(() => {
       window.removeEventListener('resize', updateWindowWidth)
@@ -336,10 +378,7 @@
           作為人的意義
         </p>
       </div>
-      <div
-        class="flex w-full h-screen translate-y-[var(--parallax-y)] mask-leathers"
-        :style="`--parallax-y: ${parallaxY}px`"
-      >
+      <div class="flex w-full h-screen translate-y-[var(--parallax-y)] mask-leathers">
         <img
           src="/images/second_stills2.jpg"
           alt="stills2"
@@ -396,7 +435,7 @@
   </div>
   <div class="h-screen flex forth-bg justify-center items-center lesson -mt-[88px] sm:-mt-[200px]">
     <div class="max-w-[1600px] flex my-[224px] lessonContent">
-      <div class="hidden sm:flex opacity-15 mr-[112px]">
+      <div class="hidden sm:flex opacity-15 mr-[112px] lessonTopic">
         <p class="font-shippori text-white text-[59px] tracking-[36px] rotateText mr-7">
           為什麼要記憶
         </p>
