@@ -200,11 +200,13 @@
           <img
             src="/images/historical.png"
             alt="historical"
-            class="w-[663px] h-[502px] -translate-x-28 mt-[246px]"
+            class="w-[443px] h-[502px] mt-[246px]"
           />
         </div>
         <div class="flex flex-col mr-[182px] items-center">
-          <p class="font-noto text-white tracking-[2px] leading-[36px] w-[710px] mt-[238px]">
+          <p
+            class="font-noto text-white tracking-[2px] leading-[36px] w-[710px] mt-[238px] text-justify"
+          >
             藍適齊，美國芝加哥大學歷史學博士。曾執教於新加坡南洋理工大學及國立中正大學，現爲國立政治大學歷史系副教授。另曾任日本東京大學特任客座教授、日本立教大學客座研究員、日本京都大學外国人研究員（客座副教授）。主要研究興趣爲近現代東亞史、帝國主義與二戰、歷史記憶、移民史。研究成果曾發表於positions:
             Asia Critique（美國）、China
             Journal（美國）、《軍事史学》（日本）、《東方學志》（韓國）等期刊。近期的中文著作有〈因「美援」而交會的台灣「高等」與「僑生」教育：以政治大學新聞系為例〉，收入《文化冷戰與知識外交：美國戰略與東亞方針》（2024
