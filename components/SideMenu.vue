@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fixed top-0 right-0 h-full w-full sm:w-[710px] bg-black/90 transform translate-x-full z-20"
+    class="fixed top-0 right-0 h-full w-full sm:w-[710px] bg-black/90 transform translate-x-full z-30"
     ref="menuRef"
   >
     <div class="flex flex-col items-end p-12 text-white">
@@ -20,8 +20,10 @@
             </p>
           </div>
           <div class="flex flex-col items-start space-y-6 w-1/2 ml-8">
-            <a href="#" class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
-              >電影介紹</a
+            <NuxtLink
+              to="/film"
+              class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
+              >電影介紹</NuxtLink
             >
             <a href="#" class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
               >座談與報導</a
