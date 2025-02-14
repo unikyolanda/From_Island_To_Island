@@ -11,15 +11,25 @@
   }
 
   onMounted(() => {
-    gsap.to('#parallax-content', {
-      y: '15%',
-      ease: 'none',
-      scrollTrigger: {
-        trigger: '#parallax-container',
-        start: 'top bottom',
-        end: 'bottom top',
-        scrub: 1,
-      },
+    const parallaxElements = document.querySelectorAll('#parallax-content')
+
+    parallaxElements.forEach(element => {
+      // Set initial position
+      gsap.set(element, {
+        y: '-30%', // Start higher up to allow room for movement
+      })
+
+      // Create the parallax effect
+      gsap.to(element, {
+        y: '0%', // Move down to show bottom portion
+        ease: 'none',
+        scrollTrigger: {
+          trigger: element.parentElement,
+          start: 'top bottom',
+          end: 'bottom 25%',
+          scrub: 1,
+        },
+      })
     })
   })
 </script>
@@ -80,7 +90,7 @@
               src="/images/stills/still_1.jpg"
               alt="still1"
               id="parallax-content"
-              class="absolute left-0 w-[120%] h-[120%]"
+              class="absolute left-0 top-0 max-w-[120%] h-[120%] object-cover object-top"
             />
           </div>
           <div class="flex items-center w-[443px] justify-center mt-[665px]">
@@ -97,7 +107,7 @@
               src="/images/director.jpg"
               alt="director"
               id="parallax-content"
-              class="absoluto left-0 w-full h-full"
+              class="max-w-[100%] h-[120%] object-cover object-center"
             />
           </div>
           <div class="flex items-center w-[443px] justify-center mt-[423px]">
@@ -106,11 +116,17 @@
               <p class="font-wix text-white tracking-[2px] mt-1">Director's Quotes</p>
             </div>
           </div>
-          <img
-            src="/images/stills/lesson_2.jpg"
-            alt="lesson2"
-            class="w-[443px] h-[249px] mt-[368px]"
-          />
+          <div
+            id="parallax-container"
+            class="relative overflow-hidden w-[443px] h-[249px] mt-[318px]"
+          >
+            <img
+              src="/images/stills/lesson_2.jpg"
+              alt="lesson2"
+              id="parallax-content"
+              class="absolute max-w-[150%] h-[130%] oboject-cover object-top"
+            />
+          </div>
         </div>
         <div class="flex flex-col mr-[182px] items-center">
           <div class="flex gap-x-5">
@@ -130,13 +146,13 @@
           </p>
           <div
             id="parallax-container"
-            class="relative overflow-hidden w-[710px] h-[400px] flex items-center mt-[42px]"
+            class="relative overflow-hidden w-[710px] h-[350px] flex items-center mt-[42px]"
           >
             <img
               src="/images/stills/still_4.jpg"
               alt="still4"
               id="parallax-content"
-              class="w-[120%] h-[120%]"
+              class="max-w-[150%] h-[130%] object-cover object-center"
             />
           </div>
           <p class="font-noto text-white tracking-[2px] leading-[36px] mt-[191px] w-[710px]">
@@ -156,11 +172,17 @@
             International Film Festival, selected for the 38th Clermont-Ferrand International Short
             Film Festival.
           </p>
-          <img
-            src="/images/stills/lesson_5.jpg"
-            alt="lesson5"
-            class="w-[710px] h-[400px] mt-[100px]"
-          />
+          <div
+            id="parallax-container"
+            class="relative overflow-hidden w-[710px] h-[400px] flex items-center mt-[100px]"
+          >
+            <img
+              src="/images/stills/lesson_5.jpg"
+              alt="lesson5"
+              id="parallax-content"
+              class="max-w-[120%] h-[120%]"
+            />
+          </div>
           <p
             class="font-noto text-white tracking-[2px] leading-[36px] mt-[178px] w-[710px] text-justify"
           >
@@ -185,8 +207,13 @@
           </div>
         </div>
       </div>
-      <div class="w-full">
-        <img src="/images/stills/lesson_4.jpg" alt="lesson4" class="w-full" />
+      <div id="parallax-container" class="relative w-full aspect-[1440/810] overflow-hidden">
+        <img
+          src="/images/stills/lesson_4.jpg"
+          alt="lesson4"
+          id="parallax-content"
+          class="max-w-[120%] h-[120%]"
+        />
       </div>
       <div class="flex gap-x-[105px] mt-[73px] w-full justify-between">
         <div class="flex flex-col">
@@ -197,11 +224,17 @@
               <p class="font-wix text-white tracking-[2px] mt-1">historical consultant</p>
             </div>
           </div>
-          <img
-            src="/images/historical.png"
-            alt="historical"
-            class="w-[443px] h-[502px] mt-[246px]"
-          />
+          <div
+            id="parallax-container"
+            class="relative overflow-hidden w-[443px] h-[502px] flex items-center mt-[246px]"
+          >
+            <img
+              src="/images/historical.png"
+              alt="historical"
+              id="parallax-content"
+              class="max-w-[120%] h-[120%]"
+            />
+          </div>
         </div>
         <div class="flex flex-col mr-[182px] items-center">
           <p
@@ -237,8 +270,13 @@
           </p>
         </div>
       </div>
-      <div class="w-full mt-[118px]">
-        <img src="/images/stills/still_12.jpg" alt="still12" class="w-full" />
+      <div id="parallax-container" class="w-full aspect-[1440/810] overflow-hidden mt-[118px]">
+        <img
+          src="/images/stills/still_12.jpg"
+          alt="still12"
+          id="parallax-content"
+          class="max-w-[100%] h-[120%] object-cover object-center"
+        />
       </div>
       <div class="flex gap-x-[105px] mt-[73px] w-full justify-between">
         <div class="flex flex-col">
@@ -257,7 +295,7 @@
               src="/images/stills/still_1.jpg"
               alt="still1"
               id="parallax-content"
-              class="absolute left-0 w-[120%] h-[120%]"
+              class="absolute left-0 max-w-[100%] h-[150%] object-cover object-center"
             />
           </div>
           <div class="flex items-center w-[443px] justify-center mt-[748px]">
@@ -275,7 +313,7 @@
               src="/images/stills/lesson_3.jpg"
               alt="lesson3"
               id="parallax-content"
-              class="absolute left-0 w-[120%] h-[120%]"
+              class="max-w-[100%] h-[150%] object-cover object-center"
             />
           </div>
           <div
@@ -286,7 +324,7 @@
               src="/images/stills/still_13.jpg"
               alt="still13"
               id="parallax-content"
-              class="absolute left-0 w-[120%] h-[120%]"
+              class="max-w-[100%] h-[150%] object-cover object-center"
             />
           </div>
         </div>
@@ -331,11 +369,17 @@
               <p class="font-noto text-white tracking-[2px]">洪煒茜 HONG Wei-Qian</p>
             </div>
           </div>
-          <img
-            src="/images/stills/still_7.jpg"
-            alt="still7"
-            class="w-[710px] h-[400px] mt-[100px]"
-          />
+          <div
+            id="parallax-container"
+            class="relative overflow-hidden w-[710px] h-[400px] flex items-center mt-[100px]"
+          >
+            <img
+              src="/images/stills/still_7.jpg"
+              alt="still7"
+              id="parallax-content"
+              class="w-[710px] h-[400px] mt-[100px]"
+            />
+          </div>
           <div
             class="flex flex-col w-[716px] gap-y-2 mt-[120px] text-[14.5px] tracking-[0.5px] font-noto text-white"
           >
@@ -418,8 +462,13 @@
           </div>
         </div>
       </div>
-      <div class="w-full mt-[138px]">
-        <img src="/images/stills/still_15.jpg" alt="still15" class="w-full" />
+      <div id="parallax-container" class="w-full aspect-[1440/810] overflow-hidden mt-[138px]">
+        <img
+          src="/images/stills/still_15.jpg"
+          alt="still15"
+          id="parallax-content"
+          class="max-w-[100%] h-[120%] object-cover object-center"
+        />
       </div>
       <div class="w-full max-w-[1440px] h-[146px] flex px-20 items-center justify-between">
         <div class="flex gap-x-[77px]">
