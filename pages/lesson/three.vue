@@ -39,25 +39,26 @@
             <p class="font-amiri italic text-[#D0BC9C] tracking-[6px] text-lg sm:text-[28px]">
               LESSON
             </p>
-            <p class="text-[#D0BC9C] font-caveat text-[150px] font-semibold mb-10">1</p>
+            <p class="text-[#D0BC9C] font-caveat text-[150px] font-semibold mb-10">3</p>
           </div>
-          <p class="font-shippori text-[#999] text-[44px] tracking-[4px]">移動與邊界—</p>
-          <p class="font-shippori text-[#999] text-[44px] tracking-[4px]">旅外台灣人</p>
+          <p class="font-shippori text-[#999] text-[44px] tracking-[4px]">共犯結構—</p>
+          <p class="font-shippori text-[#999] text-[44px] tracking-[4px]">戰爭機器</p>
           <p class="font-amiri italic text-[#999] text-[24px] tracking-[2px] leading-[38px] mt-10">
-            Movement and Boundaries: <br />
-            Overseas Taiwanese
+            Perpetration and Victimization:
+            <br />
+            Yeow Chew Bok
           </p>
           <a
-            href="https://drive.google.com/drive/folders/19TnafgMPlVw79rdpa6jOPDCUtzlMs1qs"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScQxiV58k1T7PDf_2NiOaQOrz2sjgu5JQr9PD2jYEAIZef_dQ/viewform"
             target="_blank"
             class="font-wix w-[162px] text-[#999] flex justify-center py-3 bg-white border border-[#999]/70 mt-10 mb-20"
           >
-            台灣教案預覽</a
+            教案申請表單</a
           >
         </div>
       </div>
       <div class="flex flex-col">
-        <img src="/images/stills/lesson_1.jpg" class="w-[895px] h-[532px] object-cover" />
+        <img src="/images/stills/lesson_2.jpg" class="w-[895px] h-[532px] object-cover" />
         <div class="w-full h-auto bg-white/50 flex justify-center py-6">
           <div class="w-[651px] flex flex-col">
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
@@ -67,12 +68,11 @@
               <p
                 class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] mt-9 leading-[30px]"
               >
-                二戰期間，梁盈秋女士的父親因參與抗日而遠赴印尼，但隨戰爭爆發，荷蘭殖民政府將包括臺灣人在內的日籍華僑抓捕並送往澳洲集中營。梁女士回憶，在船上未知命運的28天讓人忐忑，抵澳後卻因澳洲軍人的善意，學會了第一句英文：「Give
-                me, sir.」 集中營生活有童年的記憶，孩子們能讀書、拿零用錢，甚至野餐。 <br />
+                在馬來半島，日本軍政府利用馬來人希望獨立的情緒，拉攏馬來人社群組織軍隊與義警，幫助日本軍控制社會、維持治安與鎮壓抗日勢力。日本軍隊利用學校教育、歌曲創作、宗教宣傳、展示戰俘來證明協助日本人可以達成獨立的目標，並傳播大東亞共榮圈的概念。馬來人因此被動員，並與華人為主的抗日軍發生衝突。<br />
                 <br />
-                江貴秋先生回憶過去，荷蘭士兵強行沒收財物，男性被銬押至澳洲，父親更因病過世。江秀蓮女士多年後憑藉書信找回父親的照片，終於一睹父親的模樣，既是追憶，也是對家族情感的深刻連結。<br />
+                台灣除了被當作馬來人社群的訓練基地，也被用來生產鼓舞馬來人的物資。隨著日軍前往東南亞的台灣人，更是將自己視為日本人，在共享同樣的情緒時，也在國家動員之下，成為殘酷戰爭機器的一部份。<br />
                 <br />
-                ＊此片段為 17 分鐘，請填寫表單索取，僅供教育用途使用，版權歸《由島至島》所有。
+                ＊此片段為 14 分鐘，請填寫表單索取，僅供教育用途使用，版權歸《由島至島》所有。
               </p>
             </div>
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
@@ -82,12 +82,12 @@
               <p
                 class="font-shippori text-[28px] tracking-[4px] leading-[40px] text-[#757575] mt-7"
               >
-                過去到現在，<br />那些「離開與歸來」的人們
+                理所不當然：<br />如何看見歷史事件背後不同角色的選擇？
               </p>
               <p
                 class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] mt-9 leading-[30px]"
               >
-                本教案設計透過分組討論、新聞報導閱讀與情境模擬等活動，幫助學生深入了解不同時代臺灣人「離開家鄉」的歷程。藉由對比過去與現在的遷徙故事，引導學生思考每一次離開背後的情感與抉擇，並意識到並非所有人都能選擇歸來，進而反思如何在日常中保有同理心支持和接納那些離開家鄉的人。
+                本教案設計希望透過讓學生以角色扮演與核心問答的方式，了解馬來西亞與臺灣在二戰時期如何被日本軍事動員的過程，並且藉由扮演不同角色並進行討論與分享，讓學生更能同理在戰爭的時代背景與脈絡下，不同的人會因為立場、外在環境等種種因素，決定與誰合作以達成目標。
               </p>
             </div>
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
@@ -97,7 +97,7 @@
               <p
                 class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] mt-9 leading-[30px]"
               >
-                在了解旅外臺灣人遣送至澳洲集中營的困境後，藉由未來輪想像與模擬生命故事，讓學生同理「離開家鄉」的經驗，對於紀錄片被攝者之經歷產生情感共鳴，進而反思如何於生活中透過個人行動支持離開家鄉者。
+                藉由討論與歷史素材，幫助高中生了解接收資訊時，資訊傳遞者的立場、資訊的表達方式、資訊接収者面臨的環境，如何影響資訊產生的效果，進而能夠理解歷史事件的複雜性，並應用於對社會議題的理解與思考之中。
               </p>
             </div>
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
@@ -107,13 +107,13 @@
               <p
                 class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] mt-9 leading-[30px]"
               >
-                第二次世界大戰結束後，南洋地區的臺灣人為何被迫離開原地？他們在生活環境、心理或物質上會面臨哪些挑戰？
+                在複雜的歷史中，如何看見不同個體行動當下的選擇與背景？
               </p>
             </div>
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
               <div class="font-noto text-[17px] tracking-[2px] text-[#D0BC9C] font-semibold">
                 活動流程<span class="text-[14.5px] tracking-[0.5px] text-[#757575] font-normal"
-                  >（國中兩堂課·每堂45分鐘）</span
+                  >（國中兩堂課·每堂50分鐘）</span
                 >
               </div>
               <div class="flex mt-6 items-center">
@@ -122,12 +122,12 @@
                 >
                   第一節課
                 </p>
-                <div class="flex gap-x-3 ml-9 items-center">
+                <div class="flex gap-x-3 ml-7 items-center">
                   <div
                     class="bg-white w-[115px] h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
                   >
                     <div class="font-wix text-[36px] text-[#D0BC9C] font-semibold">
-                      5<span class="text-[16px] ml-[2px]">min</span>
+                      15<span class="text-[16px] ml-[2px]">min</span>
                     </div>
                     <p class="font-noto text-[#757575] text-[13px] font-semibold tracking-[2px]">
                       課程引導
@@ -138,10 +138,10 @@
                     class="bg-white w-[115px] h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
                   >
                     <div class="font-wix text-[36px] text-[#D0BC9C] font-semibold">
-                      20<span class="text-[16px] ml-[2px]">min</span>
+                      5<span class="text-[16px] ml-[2px]">min</span>
                     </div>
                     <p class="font-noto text-[#757575] text-[13px] font-semibold tracking-[2px]">
-                      活動體驗
+                      映前引導
                     </p>
                   </div>
                   <img src="/images/right.svg" class="w-[10px] h-[12px]" />
@@ -155,6 +155,17 @@
                       影片放映
                     </p>
                   </div>
+                  <img src="/images/right.svg" class="w-[10px] h-[12px]" />
+                  <div
+                    class="bg-white w-[115px] h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
+                  >
+                    <div class="font-wix text-[36px] text-[#D0BC9C] font-semibold">
+                      10<span class="text-[16px] ml-[2px]">min</span>
+                    </div>
+                    <p class="font-noto text-[#757575] text-[13px] font-semibold tracking-[2px]">
+                      活動體驗❶
+                    </p>
+                  </div>
                 </div>
               </div>
               <div class="flex mt-6 items-center">
@@ -163,7 +174,7 @@
                 >
                   第二節課
                 </p>
-                <div class="flex gap-x-3 ml-9 items-center">
+                <div class="flex gap-x-3 ml-7 items-center">
                   <div
                     class="bg-white w-[115px] h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
                   >
@@ -171,7 +182,7 @@
                       10<span class="text-[16px] ml-[2px]">min</span>
                     </div>
                     <p class="font-noto text-[#757575] text-[13px] font-semibold tracking-[2px]">
-                      映後討論
+                      回顧與引導
                     </p>
                   </div>
                   <img src="/images/right.svg" class="w-[10px] h-[12px]" />
@@ -179,10 +190,10 @@
                     class="bg-white w-[115px] h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
                   >
                     <div class="font-wix text-[36px] text-[#D0BC9C] font-semibold">
-                      20<span class="text-[16px] ml-[2px]">min</span>
+                      30<span class="text-[16px] ml-[2px]">min</span>
                     </div>
                     <p class="font-noto text-[#757575] text-[13px] font-semibold tracking-[2px]">
-                      議題分析
+                      活動體驗❷
                     </p>
                   </div>
                   <img src="/images/right.svg" class="w-[10px] h-[12px]" />
@@ -190,7 +201,7 @@
                     class="bg-white w-[115px] h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
                   >
                     <div class="font-wix text-[36px] text-[#D0BC9C] font-semibold">
-                      15<span class="text-[16px] ml-[2px]">min</span>
+                      10<span class="text-[16px] ml-[2px]">min</span>
                     </div>
                     <p class="font-noto text-[#757575] text-[13px] font-semibold tracking-[2px]">
                       延伸討論
@@ -206,7 +217,7 @@
               <p
                 class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] mt-9 leading-[30px]"
               >
-                旅外／海外臺灣人、澳洲集中營、身份、離開、歸來、遷徙
+                資訊環境、國家動員、宣傳、立場、能動性、人的局限性
               </p>
             </div>
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
@@ -217,14 +228,14 @@
                 <p
                   class="font-shippori text-[28px] tracking-[4px] leading-[40px] text-[#757575] mt-7"
                 >
-                  林宗洧
+                  崔家瑋
                 </p>
-                <img src="/images/author_1.png" class="w-[166px] h-[166px] ml-9" />
+                <img src="/images/author_4.png" class="w-[166px] h-[166px] ml-9" />
               </div>
               <p
                 class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] mt-9 leading-[30px]"
               >
-                出生於彰化的越南新二代，目前就讀於國立臺灣大學台灣文學研究所，大學畢業於臺大社會學系。文章曾多次獲得臺大文學獎，並曾獲選臺北電影節青少年評審團，撰寫影評並主責訪問影人。曾於課審會擔任國中組審查委員，並擔任國小及高中組跨組委員。目前研究領域為酷兒跨媒介再現。
+                國立臺灣大學法律系畢業，曾經參與舉辦「臺大法律學術工作坊」，於舉辦「臺大法律巡迴講座」期間巡迴全臺19縣市舉辦法普講座與引導討論。亦曾在臺大校內舉辦四六事件相關展覽。目前擔任法律白話文運動撰稿編輯。
               </p>
             </div>
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
@@ -251,13 +262,15 @@
               >
                 欲申請短片與教案，歡迎填寫《由島至島》申請表單。本教案適用：台灣。
               </p>
-              <a
-                href="https://drive.google.com/drive/folders/19TnafgMPlVw79rdpa6jOPDCUtzlMs1qs"
-                target="_blank"
-                class="font-wix w-[162px] text-[#999] flex justify-center py-3 bg-white border border-[#999]/70 mt-6 mb-20"
-              >
-                台灣教案預覽</a
-              >
+              <div class="flex gap-x-6">
+                <a
+                  href="https://drive.google.com/drive/folders/1IPMMCSWYWwCXt4ds5-xRXdol_V-Y-8DR"
+                  target="_blank"
+                  class="font-wix w-[162px] text-[#999] flex justify-center py-3 bg-white border border-[#999]/70 mt-6 mb-20"
+                >
+                  台灣教案預覽</a
+                >
+              </div>
             </div>
           </div>
         </div>
