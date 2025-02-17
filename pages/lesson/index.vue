@@ -88,7 +88,8 @@
             適用教案：台灣
           </p>
         </NuxtLink>
-        <div
+        <NuxtLink
+          to="/lesson/two"
           class="w-[1075px] h-[227px] bg-white rounded-[15px] shadow-md flex relative hover:shadow-lg"
         >
           <div
@@ -120,7 +121,7 @@
           >
             適用教案：台／日／馬
           </p>
-        </div>
+        </NuxtLink>
         <div
           class="w-[1075px] h-[227px] bg-white rounded-[15px] shadow-md flex relative hover:shadow-lg"
         >
