@@ -217,7 +217,7 @@
     <div class="w-full z-10 opacity-90">
       <img src="/images/stills/still_10.jpg" alt="still" class="w-full mt-24" />
     </div>
-    <div class="flex mt-[73px] w-full justify-start px-[184px] z-10 opacity-90">
+    <div class="flex mt-[73px] w-full justify-between px-[184px] z-10 opacity-90">
       <div class="flex flex-col w-[372px]">
         <div class="flex items-center w-full">
           <div class="flex flex-col">
@@ -244,98 +244,125 @@
           <div class="font-noto text-[20px] font-semibold text-white tracking-[2px] leading-[36px]">
             釀電影<span class="text-[14px]">／何欣潔</span>
           </div>
-          <div
+          <a
+            href="https://filmaholic.tw/films/6735a780fd89780001dc5b9d/"
+            target="_blank"
+            rel="noopener noreferrer"
             class="font-noto text-[16px] font-light underline underline-offset-4 text-white tracking-[2px]"
           >
             《由島至島》：戰爭是什麼？台灣人的戰爭責任又是什麼？
-          </div>
+          </a>
         </div>
         <div class="flex flex-col">
           <div class="font-noto text-[20px] font-semibold text-white tracking-[2px] leading-[36px]">
             釀電影<span class="text-[14px]">／黃曦</span>
           </div>
-          <div
+          <a
+            href="https://filmaholic.tw/people/67344728fd89780001dc17b2/"
+            target="_blank"
+            rel="noopener noreferrer"
             class="font-noto text-[16px] font-light underline underline-offset-4 text-white tracking-[2px]"
           >
             致新世界的答辯──專訪《由島至島》導演廖克發
-          </div>
+          </a>
         </div>
         <div class="flex flex-col">
           <div class="font-noto text-[20px] font-semibold text-white tracking-[2px] leading-[36px]">
             公民行動影音紀錄資料庫<span class="text-[14px]">／燦爛時光會客室</span>
           </div>
-          <div
+          <a
+            href="https://www.civilmedia.tw/archives/129050?fbclid=IwY2xjawGTMqBleHRuA2FlbQIxMAABHZol7wGR9geScddjT0mf8ttifF5Z-nkfiiwTuS4yyTBm8PhbqQPI-Kkjog_aem_atB4ud1HnpWeCD_dJ4z2Og"
+            target="_blank"
+            rel="noopener noreferrer"
             class="font-noto text-[16px] font-light underline underline-offset-4 text-white tracking-[2px]"
           >
             選擇？沈默？共犯？對話？ 關於記憶與人性的《由島至島》
-          </div>
+          </a>
         </div>
         <div class="flex flex-col">
           <div class="font-noto text-[20px] font-semibold text-white tracking-[2px] leading-[36px]">
             TIDF<span class="text-[14px]">／李旻</span>
           </div>
-          <div
+          <a
+            href="https://www.tidf.org.tw/zh-hant/reportsandarticle/134835"
+            target="_blank"
+            rel="noopener noreferrer"
             class="font-noto text-[16px] font-light underline underline-offset-4 text-white tracking-[2px]"
           >
             《由島至島》世界首映映後座談逐字記錄
-          </div>
+          </a>
         </div>
         <div class="flex flex-col">
           <div class="font-noto text-[20px] font-semibold text-white tracking-[2px] leading-[36px]">
             關鍵評論網<span class="text-[14px]">／杜晉軒</span>
           </div>
-          <div
+          <a
+            href="https://www.thenewslens.com/feature/golden-horse-awards-2024/204203"
+            target="_blank"
+            rel="noopener noreferrer"
             class="font-noto text-[16px] font-light underline underline-offset-4 text-white tracking-[2px]"
           >
             《由島至島》廖克發：為何親歷二戰的馬來西亞華人恨台灣人？如何理解史觀的歧義？
-          </div>
+          </a>
         </div>
         <div class="flex flex-col">
           <div class="font-noto text-[20px] font-semibold text-white tracking-[2px] leading-[36px]">
             紀工報<span class="text-[14px]">／壁虎先生</span>
           </div>
-          <div
+          <a
+            href="https://docworker.blogspot.com/2024/06/blog-post_7.html?fbclid=IwY2xjawGTNPFleHRuA2FlbQIxMAABHezj3wsPxJBxVszESVDyXb7dY4Jc_XKGhs0w4ztIpn4jTJsJ6fSdI4Mb0A_aem_dhvNQ_ToZ0lFxwJYzMULIA"
+            target="_blank"
+            rel="noopener noreferrer"
             class="font-noto text-[16px] font-light underline underline-offset-4 text-white tracking-[2px]"
           >
             《由島至島》：叢林中的記憶暗河
-          </div>
+          </a>
         </div>
         <div class="flex flex-col">
           <div class="font-noto text-[20px] font-semibold text-white tracking-[2px] leading-[36px]">
             放映週報<span class="text-[14px]">／韋晢</span>
           </div>
-          <div
+          <a
+            href="https://funscreen.tfai.org.tw/article/38684"
+            target="_blank"
+            rel="noopener noreferrer"
             class="font-noto text-[16px] font-light underline underline-offset-4 text-white tracking-[2px]"
           >
             凝視臺灣歷史，還原個體乘載的殊異記憶──導演廖克發談《由島至島》
-          </div>
+          </a>
         </div>
         <div class="flex flex-col">
           <div class="font-noto text-[20px] font-semibold text-white tracking-[2px] leading-[36px]">
             端傳媒<span class="text-[14px]">／阿潑</span>
           </div>
-          <div
+          <a
+            href="https://theinitium.com/article/20240521-culture-lau-kek-huat-interview-from-island-to-island"
+            target="_blank"
+            rel="noopener noreferrer"
             class="font-noto text-[16px] font-light underline underline-offset-4 text-white tracking-[2px]"
           >
             加害者？受害者？台灣兵在二戰時期的東南亞做了什麼｜《由島至島》導演廖克發
-          </div>
+          </a>
         </div>
         <div class="flex flex-col">
           <div class="font-noto text-[20px] font-semibold text-white tracking-[2px] leading-[36px]">
             關鍵評論網<span class="text-[14px]">／TIDF 編採小隊</span>
           </div>
-          <div
+          <a
+            href="https://www.thenewslens.com/article/201944"
+            target="_blank"
+            rel="noopener noreferrer"
             class="font-noto text-[16px] font-light underline underline-offset-4 text-white tracking-[2px]"
           >
             《由島至島》導演廖克發：當兵是去人性化的事，我們怎麼思考二戰時期的台籍日本兵？
-          </div>
+          </a>
         </div>
       </div>
     </div>
     <div class="w-full z-10 opacity-90">
       <img src="/images/stills/still_11.jpg" alt="still" class="w-full mt-28" />
     </div>
-    <div class="w-full z-10 opacity-80 flex pt-[97px] justify-start px-[184px] bg-audience">
+    <div class="w-full z-10 opacity-80 flex pt-[97px] justify-between px-[184px] bg-audience">
       <div class="flex flex-col w-[372px]">
         <div class="flex items-center w-full">
           <div class="flex flex-col">
@@ -448,7 +475,7 @@
       </div>
     </div>
     <div
-      class="w-full max-w-[1440px] h-[146px] flex px-20 items-center justify-between bg-black/50 z-10"
+      class="w-full max-w-[1440px] h-[146px] flex px-20 items-center justify-between bg-black z-10"
     >
       <div class="flex gap-x-[77px]">
         <p class="font-shippori text-[18px] text-white tracking-[10px]">蜂鳥影像</p>
