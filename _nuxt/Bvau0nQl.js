@@ -1,0 +1,1 @@
+import{p as s}from"./Bg2QgckY.js";const t=s("/images/stills/lesson_2.jpg"),i=s("/images/stills/lesson_5.jpg"),l=s("/images/stills/lesson_4.jpg"),_=s("/images/stills/lesson_3.jpg");export{t as _,i as a,l as b,_ as c};
