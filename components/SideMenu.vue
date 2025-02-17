@@ -26,7 +26,7 @@
               >電影介紹</NuxtLink
             >
             <NuxtLink
-              to="/repports"
+              to="/reports"
               class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
               >座談與報導</NuxtLink
             >
