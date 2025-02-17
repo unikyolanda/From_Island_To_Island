@@ -25,8 +25,10 @@
     <div class="fixed inset-0 bg-shadow z-0"></div>
     <div class="absolute top-11 left-12 w-10 h-[61px] flex flex-col z-20">
       <NuxtLink to="/"><img src="/images/logo_gray.png" /></NuxtLink>
-      <p class="font-wix text-[#999] tracking-[4px] text-xs mt-7">FILM</p>
-      <p class="font-wix text-[#999] tracking-[4px] text-xs mt-5">LESSON</p>
+      <NuxtLink to="/film" class="font-wix text-[#999] tracking-[4px] text-xs mt-7">FILM</NuxtLink>
+      <NuxtLink to="/lesson" class="font-wix text-[#999] tracking-[4px] text-xs mt-5"
+        >LESSON</NuxtLink
+      >
       <p class="font-wix text-[#999] tracking-[4px] text-xs mt-5">CONTACT</p>
     </div>
     <SideMenu ref="menuRef" @close="closeMenu" />
@@ -51,7 +53,8 @@
         </div>
       </div>
       <div class="flex flex-col my-12 gap-y-11">
-        <div
+        <NuxtLink
+          to="/lesson/one"
           class="w-[1075px] h-[227px] bg-white rounded-[15px] shadow-md flex relative hover:shadow-lg"
         >
           <div
@@ -84,7 +87,7 @@
           >
             適用教案：台灣
           </p>
-        </div>
+        </NuxtLink>
         <div
           class="w-[1075px] h-[227px] bg-white rounded-[15px] shadow-md flex relative hover:shadow-lg"
         >
@@ -286,18 +289,27 @@
         </p>
       </div>
     </div>
-    <div
-      class="w-full max-w-[1440px] h-[146px] bg-white flex px-20 items-center justify-between z-10"
-    >
-      <div class="flex gap-x-[77px]">
-        <p class="font-shippori text-[18px] text-[#999] tracking-[10px]">蜂鳥影像</p>
-        <p class="font-shippori text-[18px] text-[#999] tracking-[10px]">最新場次</p>
-      </div>
-      <div class="flex gap-x-[30px]">
-        <p class="font-noto text-[12px] text-[#999] tracking-[1px]">
-          網站製作｜西打藍好內容有限公司
-        </p>
-        <p class="font-wix text-[13px] text-[#999]">Copyright © HUMMINGBIRD Production</p>
+    <div class="w-full h-[146px] bg-white flex px-20 items-center justify-center z-10">
+      <div class="max-w-[1440px] w-full flex items-center justify-between">
+        <div class="flex gap-x-[77px]">
+          <a
+            href="https://www.facebook.com/hummingbirdproductiontaiwan"
+            target="_blank"
+            class="font-shippori text-[18px] text-[#999] tracking-[10px]"
+            >蜂鳥影像</a
+          >
+          <p class="font-shippori text-[18px] text-[#999] tracking-[10px]">最新場次</p>
+        </div>
+        <div class="flex gap-x-[30px]">
+          <a
+            href="https://siddharam.com/"
+            target="_blank"
+            class="font-noto text-[12px] text-[#999] tracking-[1px]"
+          >
+            網站製作｜西打藍好內容有限公司
+          </a>
+          <p class="font-wix text-[13px] text-[#999]">Copyright © HUMMINGBIRD Production</p>
+        </div>
       </div>
     </div>
   </div>
