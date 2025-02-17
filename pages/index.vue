@@ -372,7 +372,7 @@
             />
           </div>
           <div
-            class="vertical-text-section hidden absolute top-[106px] right-[162px] sm:flex flex-col"
+            class="vertical-text-section hidden absolute top-[106px] right-[162px] sm:flex flex-col z-10"
           >
             <img src="/images/title.png" alt="title" class="w-[276px] h-[160px]" />
             <div class="mt-24 -translate-x-2 flex">
@@ -382,13 +382,23 @@
               <p class="font-shippori text-white text-xl tracking-[8px] rotateText mr-8">
                 克服過去
               </p>
-              <p class="font-shippori text-white text-xl tracking-[8px] rotateText mr-8">
+              <NuxtLink
+                to="/lesson/three"
+                class="font-shippori text-white text-xl tracking-[8px] rotateText mr-8"
+              >
                 共犯結構
-              </p>
-              <p class="font-shippori text-white text-xl tracking-[8px] rotateText mr-8">
+              </NuxtLink>
+              <NuxtLink
+                to="/lesson/two"
+                class="font-shippori text-white text-xl tracking-[8px] rotateText mr-8"
+              >
                 加害與被害
-              </p>
-              <p class="font-shippori text-white text-xl tracking-[8px] rotateText">移動與邊界</p>
+              </NuxtLink>
+              <NuxtLink
+                to="/lesson/one"
+                class="font-shippori text-white text-xl tracking-[8px] rotateText"
+                >移動與邊界</NuxtLink
+              >
             </div>
           </div>
         </div>
@@ -481,11 +491,22 @@
         <p class="font-shippori text-white text-[59px] tracking-[36px] rotateText mr-7 mt-12">
           克服過去
         </p>
-        <p class="font-shippori text-white text-[59px] tracking-[36px] rotateText mr-7">共犯結構</p>
-        <p class="font-shippori text-white text-[59px] tracking-[36px] rotateText mr-7 mt-12">
+        <NuxtLink
+          to="/lesson/three"
+          class="font-shippori text-white text-[59px] tracking-[36px] rotateText mr-7"
+          >共犯結構</NuxtLink
+        >
+        <NuxtLink
+          to="/lesson/two"
+          class="font-shippori text-white text-[59px] tracking-[36px] rotateText mr-7 mt-12"
+        >
           加害與被害
-        </p>
-        <p class="font-shippori text-white text-[59px] tracking-[36px] rotateText">移動與邊界</p>
+        </NuxtLink>
+        <NuxtLink
+          to="/lesson/one"
+          class="font-shippori text-white text-[59px] tracking-[36px] rotateText"
+          >移動與邊界</NuxtLink
+        >
       </div>
       <div class="flex flex-col items-center sm:items-start gap-y-6 sm:gap-y-14 px-10 sm:px-0">
         <div class="flex flex-col items-center sm:items-start">
