@@ -25,8 +25,10 @@
               class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
               >電影介紹</NuxtLink
             >
-            <a href="#" class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
-              >座談與報導</a
+            <NuxtLink
+              to="/repports"
+              class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
+              >座談與報導</NuxtLink
             >
             <a href="#" class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
               >包場資訊</a

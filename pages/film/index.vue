@@ -200,7 +200,7 @@
           </p>
           <div class="w-full flex justify-end mb-20">
             <NuxtLink
-              to="/film"
+              to="/reports"
               class="font-noto text-white tracking-[2px] mt-20 border border-white px-6 py-2 hover:bg-white hover:text-[#aaa] transition-all duration-500"
               >座談與報導</NuxtLink
             >
