@@ -16,6 +16,7 @@ export default {
         amiri: ['Amiri', 'serif'],
         wix: ['"Wix Madefor Display"', 'sans-serif'],
         noto: ['"Noto Sans"', 'sans-serif'],
+        caveat: ['Caveat', 'cursive'],
       },
     },
   },

@@ -36,14 +36,14 @@
           </div>
         </div>
         <div class="flex justify-between w-full items-center">
-          <div class="flex flex-col items-center w-1/2 ml-1">
+          <NuxtLink to="/lesson" class="flex flex-col items-center w-1/2 ml-1">
             <p class="font-shippori text-[22px] sm:text-[28px] tracking-[8px] sm:tracking-[12px]">
               主題教案
             </p>
             <p class="font-wix text-[13px] sm:text-lg tracking-[3px] sm:tracking-[4px] mt-2">
               LESSON
             </p>
-          </div>
+          </NuxtLink>
           <div class="flex flex-col items-start space-y-6 w-1/2 ml-8">
             <a href="#" class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
               >移動與邊界</a

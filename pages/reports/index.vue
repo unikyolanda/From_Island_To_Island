@@ -46,7 +46,7 @@
         </div>
       </div>
     </div>
-    <div class="flex mt-[73px] w-full justify-between px-[184px] z-10 opacity-90">
+    <div class="flex mt-[73px] w-full justify-between px-[184px] z-10 opacity-85">
       <div class="flex flex-col w-[372px]">
         <div class="flex items-center w-[443px]">
           <div class="flex flex-col">
