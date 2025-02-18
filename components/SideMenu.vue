@@ -60,11 +60,15 @@
               class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
               >共犯結構</NuxtLink
             >
-            <a href="#" class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
-              >克服過去</a
+            <NuxtLink
+              to="/lesson/four"
+              class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
+              >克服過去</NuxtLink
             >
-            <a href="#" class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
-              >為什麼要記憶</a
+            <NuxtLink
+              to="/lesson/five"
+              class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
+              >為什麼要記憶</NuxtLink
             >
           </div>
         </div>
@@ -78,8 +82,10 @@
             </p>
           </div>
           <div class="flex flex-col items-start space-y-6 w-1/2 ml-8">
-            <a href="#" class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
-              >捐款支持</a
+            <NuxtLink
+              to="/reservation"
+              class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
+              >教育公播</NuxtLink
             >
           </div>
         </div>

@@ -39,14 +39,13 @@
             <p class="font-amiri italic text-[#D0BC9C] tracking-[6px] text-lg sm:text-[28px]">
               LESSON
             </p>
-            <p class="text-[#D0BC9C] font-caveat text-[150px] font-semibold mb-10">2</p>
+            <p class="text-[#D0BC9C] font-caveat text-[150px] font-semibold mb-10">4</p>
           </div>
-          <p class="font-shippori text-[#999] text-[44px] tracking-[4px]">加害與被害—</p>
-          <p class="font-shippori text-[#999] text-[44px] tracking-[4px]">楊樹木</p>
+          <p class="font-shippori text-[#999] text-[44px] tracking-[4px]">克服過去—</p>
+          <p class="font-shippori text-[#999] text-[44px] tracking-[4px]">日本和平教育團</p>
           <p class="font-amiri italic text-[#999] text-[24px] tracking-[2px] leading-[38px] mt-10">
-            Perpetration and Victimization:
-            <br />
-            Yeow Chew Bok
+            Vergangenheitsbewältigung:<br />
+            Japanese Peace Education Tour
           </p>
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLScQxiV58k1T7PDf_2NiOaQOrz2sjgu5JQr9PD2jYEAIZef_dQ/viewform"
@@ -58,7 +57,7 @@
         </div>
       </div>
       <div class="flex flex-col">
-        <img src="/images/stills/lesson_2.jpg" class="w-[895px] h-[532px] object-cover" />
+        <img src="/images/stills/lesson_4.jpg" class="w-[895px] h-[532px] object-cover" />
         <div class="w-full h-auto bg-white/50 flex justify-center py-6">
           <div class="w-[651px] flex flex-col">
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
@@ -68,28 +67,28 @@
               <p
                 class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] mt-9 leading-[30px]"
               >
-                楊樹木先生在 1930
-                年代自臺灣移居檳城，二戰期間在當地受日本占領軍徵用擔任憲兵隊通譯；戰爭結束之後遭到英軍逮捕。英國軍事法庭將楊樹木以加害當地人的戰爭犯罪罪名起訴，於
-                1946 年將他定罪判處死刑、而後處決。楊樹木死後，他的妻子和後代都繼續居住於檳城。<br />
+                台灣在二戰期間是日本帝國的殖民地，其中有不少台灣人志願或被雇用，成為日本軍隊的一員，參與日本在東南亞的戰爭。而在日本攻佔新加坡、馬來西亞的三年又八個月中，軍隊虐殺戰俘、迫使婦女成為慰安婦，甚至有計劃地屠殺當地華人。<br />
                 <br />
-                楊炳煒先生作為第三代的戰爭遺族、第三代的海外臺灣人，祖父楊樹木卻成了家中禁忌。爾後楊炳煒先生任教於曾發生屠殺的鍾靈中學老師，史料與審判記錄逐步揭開這段複雜的歷史，開啟他自我身份認同的追尋。<br />
+                然而二戰後，遭軍事法庭審判犯下違反和平罪、傳統戰爭罪或違反人道罪而處以死刑的日本「軍事犯人」，在行刑前寫下的一百六十五封遺書中，卻只有一封提到了遭受日本軍隊凌虐、屠殺的受害者。然而，當時來自殖民地台灣的人民，是否目睹，甚至參與了這些暴行？在暴行之後，我們能夠如何傾聽加害者、受難者和見證者的沈默？又能如何面對、克服過去？<br />
                 <br />
-                ＊此片段為 22 分鐘，請填寫表單索取，僅供教育用途使用，版權歸《由島至島》所有。
+                ＊此片段為 21 分鐘，請填寫表單索取，僅供教育用途使用，版權歸《由島至島》所有。
               </p>
             </div>
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
               <p class="font-noto text-[17px] tracking-[2px] text-[#D0BC9C] font-semibold">
                 教案名稱與設計理念
               </p>
-              <p
+              <div
                 class="font-shippori text-[28px] tracking-[4px] leading-[40px] text-[#757575] mt-7"
               >
-                從加害者遺族到歷史見證者：<br />戰爭下的抉擇與偏見
-              </p>
+                如何記憶二戰，克服過去<span class="font-shippori tracking-[0.5px] text-[14.5px]"
+                  >（Vergangenheitsbewältigung）</span
+                >？
+              </div>
               <p
                 class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] mt-9 leading-[30px]"
               >
-                本教案設計希望讓學生理解楊樹木一家所面臨的歷史傷痛與現實困境。先透過體驗帶入角色，從不同觀點看待單一事件。再藉由歷史背景與情境說明，試著回想彼時時空脈絡下，個體的觀點與抉擇，理解他人處境。最後設計推理遊戲，讓同學意識到身而為人存有的偏見，進而嘗試減少偏見，達到減少傷害的可能。
+                本教案從中日戰爭、歐戰爆發後，日本帝國向東南亞的侵略，以及二戰開打後，日本對殖民地台灣的志願兵政策導入。藉由紀錄短片、文本，讓學生探究台籍日本兵、軍夫、軍屬在日本軍隊中的遭遇，其在日本於東南亞的戰爭與暴行中的角色，以及東南亞當地人民在二戰期間的遭遇。進而分析、覺察不同史料的差異與重要性，及其如何影響對歷史的理解與詮釋，進而反思自身對二戰的認知與其建構的過程，並發想個人能夠如何記憶戰爭，克服過去。
               </p>
             </div>
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
@@ -99,7 +98,7 @@
               <p
                 class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] mt-9 leading-[30px]"
               >
-                希望同學藉由活動理解個人的認知與偏見影響對於事實的判斷。透過置換身分位置、分析角色情感與動機，逐步了解偏見形成的可能原因。期待經由遊戲體驗牽引出的無意識偏見，能帶給同學自我覺察力，在未來保有同理心。
+                在學生既有的、對於二戰如何在「國家間」發生與其影響（國中）的理解下，使學生從人民／個人的角度出發，深化對台籍日本兵、軍夫、軍屬在日本軍隊中的遭遇，及其在日本於東南亞的戰爭與暴行中的角色；以及東南亞當地人民在二戰期間的遭遇的理解。進而討論、覺察不同史料的差異與重要性，及其如何影響對歷史的理解與詮釋。最終反思自身對二戰的認知與其建構的過程，並發想個人能夠如何記憶戰爭，克服過去。
               </p>
             </div>
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
@@ -109,7 +108,7 @@
               <p
                 class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] mt-9 leading-[30px]"
               >
-                當人們慣以選擇性看見或聽見事物表象時，我們能如何覺察偏見，進而減少偏見的發生？
+                在暴行之後，我們能夠如何傾聽加害者、受難者和見證者的沈默？又能如何面對、克服過去？
               </p>
             </div>
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
@@ -124,12 +123,12 @@
                 >
                   第一節課
                 </p>
-                <div class="flex gap-x-3 ml-9 items-center">
+                <div class="flex gap-x-3 ml-7 items-center">
                   <div
                     class="bg-white w-[115px] h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
                   >
                     <div class="font-wix text-[36px] text-[#D0BC9C] font-semibold">
-                      5<span class="text-[16px] ml-[2px]">min</span>
+                      10<span class="text-[16px] ml-[2px]">min</span>
                     </div>
                     <p class="font-noto text-[#757575] text-[13px] font-semibold tracking-[2px]">
                       課程引導
@@ -140,10 +139,10 @@
                     class="bg-white w-[115px] h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
                   >
                     <div class="font-wix text-[36px] text-[#D0BC9C] font-semibold">
-                      15<span class="text-[16px] ml-[2px]">min</span>
+                      20<span class="text-[16px] ml-[2px]">min</span>
                     </div>
                     <p class="font-noto text-[#757575] text-[13px] font-semibold tracking-[2px]">
-                      活動體驗❶
+                      影片放映
                     </p>
                   </div>
                   <img src="/images/right.svg" class="w-[10px] h-[12px]" />
@@ -151,10 +150,10 @@
                     class="bg-white w-[115px] h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
                   >
                     <div class="font-wix text-[36px] text-[#D0BC9C] font-semibold">
-                      30<span class="text-[16px] ml-[2px]">min</span>
+                      20<span class="text-[16px] ml-[2px]">min</span>
                     </div>
                     <p class="font-noto text-[#757575] text-[13px] font-semibold tracking-[2px]">
-                      影片放映
+                      映後討論
                     </p>
                   </div>
                 </div>
@@ -165,15 +164,15 @@
                 >
                   第二節課
                 </p>
-                <div class="flex gap-x-3 ml-9 items-center">
+                <div class="flex gap-x-3 ml-7 items-center">
                   <div
                     class="bg-white w-[115px] h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
                   >
                     <div class="font-wix text-[36px] text-[#D0BC9C] font-semibold">
-                      25<span class="text-[16px] ml-[2px]">min</span>
+                      14<span class="text-[16px] ml-[2px]">min</span>
                     </div>
                     <p class="font-noto text-[#757575] text-[13px] font-semibold tracking-[2px]">
-                      映後討論
+                      文本討論
                     </p>
                   </div>
                   <img src="/images/right.svg" class="w-[10px] h-[12px]" />
@@ -181,21 +180,10 @@
                     class="bg-white w-[115px] h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
                   >
                     <div class="font-wix text-[36px] text-[#D0BC9C] font-semibold">
-                      15<span class="text-[16px] ml-[2px]">min</span>
+                      36<span class="text-[16px] ml-[2px]">min</span>
                     </div>
                     <p class="font-noto text-[#757575] text-[13px] font-semibold tracking-[2px]">
-                      活動體驗❷
-                    </p>
-                  </div>
-                  <img src="/images/right.svg" class="w-[10px] h-[12px]" />
-                  <div
-                    class="bg-white w-[115px] h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
-                  >
-                    <div class="font-wix text-[36px] text-[#D0BC9C] font-semibold">
-                      10<span class="text-[16px] ml-[2px]">min</span>
-                    </div>
-                    <p class="font-noto text-[#757575] text-[13px] font-semibold tracking-[2px]">
-                      延伸討論
+                      分享與回饋
                     </p>
                   </div>
                 </div>
@@ -208,7 +196,7 @@
               <p
                 class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] mt-9 leading-[30px]"
               >
-                平庸之惡／惡的平庸性、責任、事實、真相、偏見、謊言
+                國家／個人、受害者／加害者、見證、克服過去（Vergangenheitsbewältigung）、行動
               </p>
             </div>
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
@@ -219,14 +207,18 @@
                 <p
                   class="font-shippori text-[28px] tracking-[4px] leading-[40px] text-[#757575] mt-7"
                 >
-                  黃詩婷
+                  林于玄
                 </p>
-                <img src="/images/author_3.png" class="w-[166px] h-[166px] ml-9" />
+                <img src="/images/author_5.png" class="w-[166px] h-[166px] ml-9" />
               </div>
               <p
                 class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] mt-9 leading-[30px]"
               >
-                現就讀臺灣藝術大學電影研究所，投入影像創作、影像教育與影展執行，曾於客家電視台新聞部攝影組、國家影視聽中心教育推廣組、台北電影節節目組等實習，曾任青少年影像教育講師、《電影ê鋩鋩角角》系列教學點子書等影像教案作者與臺灣國際人權影展聚落串聯執行等。擔任《由島至島》國藝會巡演計畫與教育推廣計畫總籌。
+                臺灣師範大學社會教育系，作家，著有《換貓上場了》（詩集）、《傷兵不在街頭》（合著）。
+                長期關注台灣創傷歷史之書寫、記憶與推廣，曾任台灣共生青年協會「抵抗與敘述：文學選讀與二二八事件創作培育計畫」協同主持、「黎明破曉前：2021
+                四六事件紀念系列活動」總籌、「2019 臺灣國際人權影展 x 師大串聯場」總籌、2018
+                台北電影節青少年觀摩獎評審團等。「永別的記憶／記憶：張亦絢《永別書：在我不在的時代》中的歷史書寫、創傷敘事與記憶政治」獲
+                110 年度科技部大專生研究補助。
               </p>
             </div>
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
@@ -255,18 +247,11 @@
               </p>
               <div class="flex gap-x-6">
                 <a
-                  href="https://drive.google.com/drive/folders/19RqpumNJaq8OuCKYZiBD6D1mAoEEu9QB"
+                  href="https://drive.google.com/drive/folders/1sn_54ICsVtrOTuRy1WU8PDiGdugvh3nU"
                   target="_blank"
                   class="font-wix w-[162px] text-[#999] flex justify-center py-3 bg-white border border-[#999]/70 mt-6 mb-20"
                 >
                   台灣教案預覽</a
-                >
-                <a
-                  href="https://drive.google.com/drive/folders/1uxc0ITIpvGf7Y38-UTZzOVRZQaETQkLi"
-                  target="_blank"
-                  class="font-wix w-[162px] text-[#999] flex justify-center py-3 bg-white border border-[#999]/70 mt-6 mb-20"
-                >
-                  馬來西亞教案預覽</a
                 >
               </div>
             </div>

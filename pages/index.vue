@@ -491,22 +491,11 @@
         <p class="font-shippori text-white text-[59px] tracking-[36px] rotateText mr-7 mt-12">
           克服過去
         </p>
-        <NuxtLink
-          to="/lesson/three"
-          class="font-shippori text-white text-[59px] tracking-[36px] rotateText mr-7"
-          >共犯結構</NuxtLink
-        >
-        <NuxtLink
-          to="/lesson/two"
-          class="font-shippori text-white text-[59px] tracking-[36px] rotateText mr-7 mt-12"
-        >
+        <p class="font-shippori text-white text-[59px] tracking-[36px] rotateText mr-7">共犯結構</p>
+        <p class="font-shippori text-white text-[59px] tracking-[36px] rotateText mr-7 mt-12">
           加害與被害
-        </NuxtLink>
-        <NuxtLink
-          to="/lesson/one"
-          class="font-shippori text-white text-[59px] tracking-[36px] rotateText"
-          >移動與邊界</NuxtLink
-        >
+        </p>
+        <p class="font-shippori text-white text-[59px] tracking-[36px] rotateText">移動與邊界</p>
       </div>
       <div class="flex flex-col items-center sm:items-start gap-y-6 sm:gap-y-14 px-10 sm:px-0">
         <div class="flex flex-col items-center sm:items-start">

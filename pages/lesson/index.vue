@@ -156,7 +156,8 @@
             適用教案：台／日／馬
           </p>
         </NuxtLink>
-        <div
+        <NuxtLink
+          to="/lesson/four"
           class="w-[1075px] h-[227px] bg-white rounded-[15px] shadow-md flex relative hover:shadow-lg"
         >
           <div
@@ -190,8 +191,9 @@
           >
             適用教案：台／日
           </p>
-        </div>
-        <div
+        </NuxtLink>
+        <NuxtLink
+          to="/lesson/five"
           class="w-[1075px] h-[227px] bg-white rounded-[15px] shadow-md flex relative hover:shadow-lg"
         >
           <div
@@ -223,7 +225,7 @@
           >
             適用教案：台／馬
           </p>
-        </div>
+        </NuxtLink>
       </div>
       <div class="w-[1075px] h-auto flex flex-col items-center mt-14 border-b border-[#999]/70">
         <p class="font-shippori text-[#999] text-[28px] tracking-[4px]">免費教材申請</p>

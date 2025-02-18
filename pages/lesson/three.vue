@@ -20,7 +20,7 @@
 <template>
   <div class="flex flex-col bg-white w-screen h-auto min-h-screen items-center">
     <div class="fixed inset-0 bg-shadow z-0"></div>
-    <div class="absolute top-11 left-12 w-10 h-[61px] flex flex-col z-20">
+    <div class="fixed top-11 left-12 w-10 h-[61px] flex flex-col z-20">
       <NuxtLink to="/"><img src="/images/logo_gray.png" /></NuxtLink>
       <NuxtLink to="/film" class="font-wix text-[#999] tracking-[4px] text-xs mt-7">FILM</NuxtLink>
       <NuxtLink to="/lesson" class="font-wix text-[#999] tracking-[4px] text-xs mt-5"
@@ -29,12 +29,12 @@
       <p class="font-wix text-[#999] tracking-[4px] text-xs mt-5">CONTACT</p>
     </div>
     <SideMenu ref="menuRef" @close="closeMenu" />
-    <div class="absolute right-10 sm:right-12 top-10 cursor-pointer z-20">
+    <div class="fixed right-10 sm:right-12 top-10 cursor-pointer z-20">
       <img src="/images/menu_gray.svg" alt="menu" class="w-10 h-8" @click="toggleMenu" />
     </div>
     <div class="flex w-full z-10 opacity-85 justify-center bg-[#d9d9d9]/30">
       <div class="flex mt-[221px] w-[548px] justify-center">
-        <div class="flex flex-col">
+        <div class="fixed flex flex-col">
           <div class="flex items-center">
             <p class="font-amiri italic text-[#D0BC9C] tracking-[6px] text-lg sm:text-[28px]">
               LESSON
@@ -44,9 +44,8 @@
           <p class="font-shippori text-[#999] text-[44px] tracking-[4px]">共犯結構—</p>
           <p class="font-shippori text-[#999] text-[44px] tracking-[4px]">戰爭機器</p>
           <p class="font-amiri italic text-[#999] text-[24px] tracking-[2px] leading-[38px] mt-10">
-            Perpetration and Victimization:
-            <br />
-            Yeow Chew Bok
+            Structures of Complicity:<br />
+            War Machine
           </p>
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLScQxiV58k1T7PDf_2NiOaQOrz2sjgu5JQr9PD2jYEAIZef_dQ/viewform"
@@ -58,7 +57,7 @@
         </div>
       </div>
       <div class="flex flex-col">
-        <img src="/images/stills/lesson_2.jpg" class="w-[895px] h-[532px] object-cover" />
+        <img src="/images/stills/lesson_3.jpg" class="w-[895px] h-[532px] object-cover" />
         <div class="w-full h-auto bg-white/50 flex justify-center py-6">
           <div class="w-[651px] flex flex-col">
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
@@ -276,7 +275,7 @@
         </div>
       </div>
     </div>
-    <div class="w-full h-[146px] bg-white flex px-20 items-center justify-center z-10">
+    <div class="w-full h-[146px] bg-white flex px-20 items-center justify-center z-10 opacity-60">
       <div class="max-w-[1440px] w-full flex items-center justify-between">
         <div class="flex gap-x-[77px]">
           <a
