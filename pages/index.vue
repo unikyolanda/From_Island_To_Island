@@ -311,7 +311,7 @@
         <div class="sm:hidden absolute left-10 z-10 top-[55px]">
           <img src="/images/title.png" alt="title" class="w-[140px] h-[81px]" />
         </div>
-        <div class="absolute right-10 sm:right-12 top-10 cursor-pointer z-10">
+        <div class="fixed right-10 sm:right-12 top-10 cursor-pointer z-10">
           <img src="/images/menu.svg" alt="menu" class="w-10 h-8" @click="toggleMenu" />
         </div>
         <div class="flex sm:px-[162px] justify-center relative w-full h-auto">
@@ -376,12 +376,18 @@
           >
             <img src="/images/title.png" alt="title" class="w-[276px] h-[160px]" />
             <div class="mt-24 -translate-x-2 flex">
-              <p class="font-shippori text-white text-xl tracking-[8px] rotateText mr-8">
+              <NuxtLink
+                to="/lesson/five"
+                class="font-shippori text-white text-xl tracking-[8px] rotateText mr-8"
+              >
                 為什麼要記憶
-              </p>
-              <p class="font-shippori text-white text-xl tracking-[8px] rotateText mr-8">
+              </NuxtLink>
+              <NuxtLink
+                to="/lesson/four"
+                class="font-shippori text-white text-xl tracking-[8px] rotateText mr-8"
+              >
                 克服過去
-              </p>
+              </NuxtLink>
               <NuxtLink
                 to="/lesson/three"
                 class="font-shippori text-white text-xl tracking-[8px] rotateText mr-8"
@@ -516,26 +522,26 @@
       </div>
     </div>
   </div>
-  <div
-    class="w-full bg-white h-[160px] sm:h-[200px] -mt-[100px] flex flex-col sm:flex-row items-center p-10 sm:px-[162px] justify-between"
-  >
-    <div
-      class="flex flex-row sm:flex-col justify-between items-end sm:items-start w-full sm:w-auto"
-    >
-      <div class="text-[#aaa] text-[16px] sm:text-xl font-noto tracking-[6px] sm:tracking-[8px]">
-        蜂鳥影像
+  <div class="w-full h-[146px] bg-white -mt-[100px] flex px-20 items-center justify-center z-10">
+    <div class="max-w-[1440px] w-full flex items-center justify-between">
+      <div class="flex gap-x-[77px]">
+        <a
+          href="https://www.facebook.com/fromislandtoisland"
+          target="_blank"
+          class="font-shippori text-[18px] text-[#999] tracking-[10px]"
+          >由島至島</a
+        >
+        <p class="font-shippori text-[18px] text-[#999] tracking-[10px]">最新場次</p>
       </div>
-      <div class="text-[#aaa] text-[14px] sm:text-[17px] font-wix sm:mt-4">
-        <a href="https://www.facebook.com/hummingbirdproductiontaiwan">Facebook</a> ｜ Youtube ｜
-        Vimeo
-      </div>
-    </div>
-    <div class="flex flex-col-reverse sm:flex-col items-start sm:items-end w-full sm:w-auto">
-      <div class="text-[#aaa] text-xs sm:text-sm font-noto tracking-[1px] mt-2 sm:mt-0">
-        隱私權政策
-      </div>
-      <div class="text-[#aaa] text-xs sm:text-[15px] font-wix sm:mt-2 mt-0">
-        Copyright © HUMMINGBIRD Production
+      <div class="flex gap-x-[30px]">
+        <a
+          href="https://siddharam.com/"
+          target="_blank"
+          class="font-noto text-[12px] text-[#999] tracking-[1px]"
+        >
+          網站製作｜西打藍好內容有限公司
+        </a>
+        <p class="font-wix text-[13px] text-[#999]">Copyright © HUMMINGBIRD Production</p>
       </div>
     </div>
   </div>
