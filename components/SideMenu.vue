@@ -83,7 +83,7 @@
           </div>
           <div class="flex flex-col items-start space-y-6 w-1/2 ml-8">
             <NuxtLink
-              to="/reservation"
+              to="/educational"
               class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
               >教育公播</NuxtLink
             >

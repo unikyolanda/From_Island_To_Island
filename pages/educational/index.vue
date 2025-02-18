@@ -39,7 +39,7 @@
       <div class="flex w-full px-[184px] pt-[233px] justify-between items-end mt-10">
         <div class="flex flex-col">
           <p class="font-amiri italic text-[#999] tracking-[6px] text-lg sm:text-[28px]">
-            Reservation
+            Educational Presentation
           </p>
           <p class="font-shippori text-[#999] text-[36px] sm:text-[44px] tracking-[8px]">
             教育公播
@@ -119,10 +119,10 @@
       <div class="max-w-[1440px] w-full flex items-center justify-between">
         <div class="flex gap-x-[77px]">
           <a
-            href="https://www.facebook.com/hummingbirdproductiontaiwan"
+            href="https://www.facebook.com/fromislandtoisland"
             target="_blank"
             class="font-shippori text-[18px] text-[#999] tracking-[10px]"
-            >蜂鳥影像</a
+            >由島至島</a
           >
           <p class="font-shippori text-[18px] text-[#999] tracking-[10px]">最新場次</p>
         </div>

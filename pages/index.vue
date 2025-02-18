@@ -427,7 +427,7 @@
       </div>
       <div class="flex w-full h-screen translate-y-[var(--parallax-y)] mask-leathers">
         <img
-          src="/images/second_stills2.jpg"
+          src="/images/still008.jpg"
           alt="stills2"
           class="stills2 size-full origin-center object-cover"
         />
@@ -526,7 +526,8 @@
         蜂鳥影像
       </div>
       <div class="text-[#aaa] text-[14px] sm:text-[17px] font-wix sm:mt-4">
-        Facebook ｜ Youtube ｜ Vimeo
+        <a href="https://www.facebook.com/hummingbirdproductiontaiwan">Facebook</a> ｜ Youtube ｜
+        Vimeo
       </div>
     </div>
     <div class="flex flex-col-reverse sm:flex-col items-start sm:items-end w-full sm:w-auto">

@@ -82,11 +82,6 @@
               影片講述二戰時旅外臺灣人被視為敵國日本子民，<br />遣送至澳洲集中營管理之經歷。
             </p>
           </div>
-          <p
-            class="font-noto text-[#d0bc9c] text-[13px] font-semibold tracking-[2px] absolute left-[890px] bottom-10"
-          >
-            適用教案：台灣
-          </p>
         </NuxtLink>
         <NuxtLink
           to="/lesson/two"
@@ -116,11 +111,6 @@
               參與日軍殘酷行動與其後代面臨困境。
             </p>
           </div>
-          <p
-            class="font-noto text-[#d0bc9c] text-[13px] font-semibold tracking-[2px] absolute left-[890px] bottom-10"
-          >
-            適用教案：台／日／馬
-          </p>
         </NuxtLink>
         <NuxtLink
           to="/lesson/three"
@@ -150,11 +140,6 @@
               動員民眾、徵召台籍日本兵，終面對戰敗。
             </p>
           </div>
-          <p
-            class="font-noto text-[#d0bc9c] text-[13px] font-semibold tracking-[2px] absolute left-[890px] bottom-10"
-          >
-            適用教案：台／日／馬
-          </p>
         </NuxtLink>
         <NuxtLink
           to="/lesson/four"
@@ -186,11 +171,6 @@
               思考國家下個人責任與行動。
             </p>
           </div>
-          <p
-            class="font-noto text-[#d0bc9c] text-[13px] font-semibold tracking-[2px] absolute left-[890px] bottom-10"
-          >
-            適用教案：台／日
-          </p>
         </NuxtLink>
         <NuxtLink
           to="/lesson/five"
@@ -220,11 +200,6 @@
               再論及如何處理創傷記憶。
             </p>
           </div>
-          <p
-            class="font-noto text-[#d0bc9c] text-[13px] font-semibold tracking-[2px] absolute left-[890px] bottom-10"
-          >
-            適用教案：台／馬
-          </p>
         </NuxtLink>
       </div>
       <div class="w-[1075px] h-auto flex flex-col items-center mt-14 border-b border-[#999]/70">
@@ -253,7 +228,7 @@
               撰寫教案
             </p>
             <p
-              class="font-noto text-[14.5px] text-[#999] tracking-[0.5px] leading-[30px] mt-7 text-center text-justify"
+              class="font-noto text-[14.5px] text-[#999] tracking-[0.5px] leading-[30px] mt-7 text-justify"
             >
               歡迎加入教案書寫，如將成果分享給《由島至島》團隊與其他申請《由島至島》教育推廣計畫的老師，則可獲得回饋品。
             </p>
@@ -263,7 +238,7 @@
               教案格式
             </p>
             <p
-              class="font-noto text-[14.5px] text-[#999] tracking-[0.5px] leading-[30px] mt-7 text-center text-justify"
+              class="font-noto text-[14.5px] text-[#999] tracking-[0.5px] leading-[30px] mt-7 text-justify"
             >
               老師需開發「兩堂課程」的教案：可以是連續兩堂或兩個單堂課程，教案需包含但不限於：教案名稱、使用說明、教案目標、教學對象、教具清單、核心問題、課程步驟與提醒、延伸問題與討論。
             </p>
@@ -273,7 +248,7 @@
               回饋機制
             </p>
             <p
-              class="font-noto text-[14.5px] text-[#999] tracking-[0.5px] leading-[30px] mt-7 text-center text-justify"
+              class="font-noto text-[14.5px] text-[#999] tracking-[0.5px] leading-[30px] mt-7 text-justify"
             >
               由島至島團隊在收到「完成之教案」之後，將贈與老師《由島至島》個人收藏USB，裝載 4K
               畫質《由島至島》正片隨身碟，一份教案贈與一個。
@@ -297,10 +272,10 @@
       <div class="max-w-[1440px] w-full flex items-center justify-between">
         <div class="flex gap-x-[77px]">
           <a
-            href="https://www.facebook.com/hummingbirdproductiontaiwan"
+            href="https://www.facebook.com/fromislandtoisland"
             target="_blank"
             class="font-shippori text-[18px] text-[#999] tracking-[10px]"
-            >蜂鳥影像</a
+            >由島至島</a
           >
           <p class="font-shippori text-[18px] text-[#999] tracking-[10px]">最新場次</p>
         </div>

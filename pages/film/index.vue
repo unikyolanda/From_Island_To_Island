@@ -47,7 +47,7 @@
 <template>
   <div class="flex flex-col bg-black w-screen h-auto min-h-screen items-center">
     <div class="fixed inset-0 bg-film z-0"></div>
-    <div class="absolute top-11 left-12 w-10 h-[61px] flex flex-col z-20">
+    <div class="fixed top-11 left-12 w-10 h-[61px] flex flex-col z-20">
       <NuxtLink to="/"><img src="/images/logo.png" /></NuxtLink>
       <NuxtLink to="/film" class="font-wix text-white tracking-[4px] text-xs mt-7">FILM</NuxtLink>
       <NuxtLink to="/lesson" class="font-wix text-white tracking-[4px] text-xs mt-5"
@@ -56,7 +56,7 @@
       <p class="font-wix text-white tracking-[4px] text-xs mt-5">CONTACT</p>
     </div>
     <SideMenu ref="menuRef" @close="closeMenu" />
-    <div class="absolute right-10 sm:right-12 top-10 cursor-pointer z-20">
+    <div class="fixed right-10 sm:right-12 top-10 cursor-pointer z-20">
       <img src="/images/menu.svg" alt="menu" class="w-10 h-8" @click="toggleMenu" />
     </div>
     <div class="flex flex-col w-full z-10 items-center opacity-80">
@@ -80,8 +80,8 @@
         <div class="flex flex-col">
           <div class="h-[692px] flex items-center w-[443px] justify-center">
             <div class="flex flex-col">
-              <p class="font-shippori text-[28px] text-white tracking-[3px]">電影大綱</p>
-              <p class="font-wix text-white tracking-[2px] mt-1">Introduce</p>
+              <p class="font-shippori text-[28px] text-white tracking-[3px]">電影簡介</p>
+              <p class="font-wix text-white tracking-[2px] mt-1">Synopsis</p>
             </div>
           </div>
           <div
@@ -98,7 +98,7 @@
           <div class="flex items-center w-[443px] justify-center mt-[665px]">
             <div class="flex flex-col">
               <p class="font-shippori text-[28px] text-white tracking-[3px]">廖克發導演</p>
-              <p class="font-wix text-white tracking-[2px] mt-1">LAU Kek-huat</p>
+              <p class="font-wix text-white tracking-[2px] mt-1">Director LAU Kek-huat</p>
             </div>
           </div>
           <div
@@ -223,7 +223,7 @@
             <div class="flex flex-col">
               <p class="font-shippori text-[28px] text-white tracking-[3px]">藍適齊</p>
               <p class="font-shippori text-[28px] text-white tracking-[3px]">歷史顧問</p>
-              <p class="font-wix text-white tracking-[2px] mt-1">historical consultant</p>
+              <p class="font-wix text-white tracking-[2px] mt-1">Historical consultant</p>
             </div>
           </div>
           <div
@@ -286,7 +286,7 @@
             <div class="flex flex-col">
               <p class="font-shippori text-[28px] text-white tracking-[3px]">電影</p>
               <p class="font-shippori text-[28px] text-white tracking-[3px]">受訪者名單</p>
-              <p class="font-wix text-white tracking-[2px] mt-1">Interviewee list</p>
+              <p class="font-wix text-white tracking-[2px] mt-1">Interviewee</p>
             </div>
           </div>
           <div
@@ -304,7 +304,7 @@
             <div class="flex flex-col">
               <p class="font-shippori text-[28px] text-white tracking-[3px]">電影</p>
               <p class="font-shippori text-[28px] text-white tracking-[3px]">工作人員名單</p>
-              <p class="font-wix text-white tracking-[2px] mt-1">Staff list</p>
+              <p class="font-wix text-white tracking-[2px] mt-1">Film Crew</p>
             </div>
           </div>
           <div
@@ -386,9 +386,9 @@
             class="flex flex-col w-[716px] gap-y-2 mt-[120px] text-[14.5px] tracking-[0.5px] font-noto text-white"
           >
             <p>製作／出品｜蜂鳥影像有限公司</p>
-            <p>Production and Present by Hummingbird Production</p>
+            <p>Produced and Presented by Hummingbird Production</p>
             <p class="mt-8">共同出品｜財團法人公共電視文化事業基金會</p>
-            <p>Co-Present by Taiwan Public Television Service</p>
+            <p>Co-Presented by Taiwan Public Television Service</p>
             <p class="mt-8">製片 Producer｜ 林婉玉 LIN Wan-Yu</p>
             <p>導演、攝影、剪輯、美術 a film by｜廖克發 LAU Kek-Huat</p>
             <p class="mt-8">執行製片Line producer 台灣 Taiwan｜ 周欣 CHOU Hsin</p>
@@ -475,10 +475,10 @@
       <div class="w-full max-w-[1440px] h-[146px] flex px-20 items-center justify-between">
         <div class="flex gap-x-[77px]">
           <a
-            href="https://www.facebook.com/hummingbirdproductiontaiwan"
+            href="https://www.facebook.com/fromislandtoisland"
             target="_blank"
             class="font-shippori text-[18px] text-white tracking-[10px]"
-            >蜂鳥影像</a
+            >由島至島</a
           >
           <p class="font-shippori text-[18px] text-white tracking-[10px]">最新場次</p>
         </div>

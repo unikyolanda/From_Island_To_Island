@@ -26,7 +26,7 @@
 <template>
   <div class="flex flex-col bg-black w-screen h-auto min-h-screen items-center">
     <div class="fixed inset-0 bg-reports z-0"></div>
-    <div class="absolute top-11 left-12 w-10 h-[61px] flex flex-col z-20">
+    <div class="fixed top-11 left-12 w-10 h-[61px] flex flex-col z-20">
       <NuxtLink to="/"><img src="/images/logo.png" /></NuxtLink>
       <NuxtLink to="/film" class="font-wix text-white tracking-[4px] text-xs mt-7">FILM</NuxtLink>
       <NuxtLink to="/lesson" class="font-wix text-white tracking-[4px] text-xs mt-5"
@@ -35,13 +35,15 @@
       <p class="font-wix text-white tracking-[4px] text-xs mt-5">CONTACT</p>
     </div>
     <SideMenu ref="menuRef" @close="closeMenu" />
-    <div class="absolute right-10 sm:right-12 top-10 cursor-pointer z-20">
+    <div class="fixed right-10 sm:right-12 top-10 cursor-pointer z-20">
       <img src="/images/menu.svg" alt="menu" class="w-10 h-8" @click="toggleMenu" />
     </div>
     <div class="flex flex-col w-full z-10 items-center opacity-80">
       <div class="flex w-full px-[184px] pt-[233px] justify-between items-end mt-10">
         <div class="flex flex-col">
-          <p class="font-amiri italic text-white tracking-[6px] text-lg sm:text-[28px]">REPORTS</p>
+          <p class="font-amiri italic text-white tracking-[6px] text-lg sm:text-[28px]">
+            Discussion & Reports
+          </p>
           <p class="font-shippori text-white text-[36px] sm:text-[44px] tracking-[8px]">
             座談與報導
           </p>
@@ -53,7 +55,7 @@
         <div class="flex items-center w-[443px]">
           <div class="flex flex-col">
             <p class="font-shippori text-[28px] text-white tracking-[3px]">映後座談</p>
-            <p class="font-wix text-white tracking-[2px] mt-1">Film Talk</p>
+            <p class="font-wix text-white tracking-[2px] mt-1">Post-Screening Discussion</p>
           </div>
         </div>
       </div>
@@ -224,7 +226,7 @@
         <div class="flex items-center w-full">
           <div class="flex flex-col">
             <p class="font-shippori text-[28px] text-white tracking-[3px]">專訪報導</p>
-            <p class="font-wix text-white tracking-[2px] mt-1">Media</p>
+            <p class="font-wix text-white tracking-[2px] mt-1">Interview & Reports</p>
           </div>
         </div>
       </div>
@@ -368,8 +370,8 @@
       <div class="flex flex-col w-[372px]">
         <div class="flex items-center w-full">
           <div class="flex flex-col">
-            <p class="font-shippori text-[28px] text-white tracking-[3px]">觀眾留言</p>
-            <p class="font-wix text-white tracking-[2px] mt-1">Audience</p>
+            <p class="font-shippori text-[28px] text-white tracking-[3px]">評論與回饋</p>
+            <p class="font-wix text-white tracking-[2px] mt-1">Film Reviews & Audience Feedback</p>
           </div>
         </div>
       </div>
@@ -481,10 +483,10 @@
     >
       <div class="flex gap-x-[77px]">
         <a
-          href="https://www.facebook.com/hummingbirdproductiontaiwan"
+          href="https://www.facebook.com/fromislandtoisland"
           target="_blank"
           class="font-shippori text-[18px] text-white tracking-[10px]"
-          >蜂鳥影像</a
+          >由島至島</a
         >
         <p class="font-shippori text-[18px] text-white tracking-[10px]">最新場次</p>
       </div>

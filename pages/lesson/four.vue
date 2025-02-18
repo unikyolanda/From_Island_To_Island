@@ -243,7 +243,7 @@
               <p
                 class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] mt-6 leading-[30px]"
               >
-                欲申請短片與教案，歡迎填寫《由島至島》申請表單。本教案適用：台灣。
+                欲申請短片與教案，歡迎填寫《由島至島》申請表單。本教案提供自：台灣。
               </p>
               <div class="flex gap-x-6">
                 <a
@@ -263,10 +263,10 @@
       <div class="max-w-[1440px] w-full flex items-center justify-between">
         <div class="flex gap-x-[77px]">
           <a
-            href="https://www.facebook.com/hummingbirdproductiontaiwan"
+            href="https://www.facebook.com/fromislandtoisland"
             target="_blank"
             class="font-shippori text-[18px] text-[#999] tracking-[10px]"
-            >蜂鳥影像</a
+            >由島至島</a
           >
           <p class="font-shippori text-[18px] text-[#999] tracking-[10px]">最新場次</p>
         </div>
