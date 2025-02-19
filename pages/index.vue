@@ -442,7 +442,7 @@
   </div>
   <div class="h-auto sm:h-[100vh] flex third-bg justify-center items-center film">
     <div
-      class="sm:max-w-[1200px] w-screen h-full min-h-screen flex flex-col items-center justify-center sm:flex-row sm:gap-x-[142px] sm:mb-24 filmContent px-10"
+      class="sm:max-w-[1200px] w-screen h-full min-h-screen flex flex-col items-center justify-center sm:flex-row sm:gap-x-[142px] sm:mb-24 filmContent pt-12 pb-[150px] sm:pb-0 px-10"
     >
       <div class="flex flex-col gap-y-6 sm:gap-y-14 items-center sm:items-start filmText">
         <div class="flex flex-col items-center sm:items-start">
@@ -522,26 +522,26 @@
       </div>
     </div>
   </div>
-  <div class="w-full h-[146px] bg-white -mt-[100px] flex px-20 items-center justify-center z-10">
+  <div class="w-full h-[146px] bg-black -mt-[100px] flex px-20 items-center justify-center z-10">
     <div class="max-w-[1440px] w-full flex items-center justify-between">
       <div class="flex gap-x-[77px]">
         <a
           href="https://www.facebook.com/fromislandtoisland"
           target="_blank"
-          class="font-shippori text-[18px] text-[#999] tracking-[10px]"
+          class="font-shippori text-[18px] text-white tracking-[10px]"
           >由島至島</a
         >
-        <p class="font-shippori text-[18px] text-[#999] tracking-[10px]">最新場次</p>
+        <p class="font-shippori text-[18px] text-white tracking-[10px]">最新場次</p>
       </div>
       <div class="flex gap-x-[30px]">
         <a
           href="https://siddharam.com/"
           target="_blank"
-          class="font-noto text-[12px] text-[#999] tracking-[1px]"
+          class="font-noto text-[12px] text-white tracking-[1px]"
         >
           網站製作｜西打藍好內容有限公司
         </a>
-        <p class="font-wix text-[13px] text-[#999]">Copyright © HUMMINGBIRD Production</p>
+        <p class="font-wix text-[13px] text-white">Copyright © HUMMINGBIRD Production</p>
       </div>
     </div>
   </div>
