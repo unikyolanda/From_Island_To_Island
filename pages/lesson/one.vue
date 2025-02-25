@@ -14,7 +14,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.05;
+    opacity: 0.2;
   }
 </style>
 <template>
@@ -32,27 +32,27 @@
     <div class="fixed right-10 sm:right-12 top-10 cursor-pointer z-20">
       <img src="/images/menu_gray.svg" alt="menu" class="w-10 h-8" @click="toggleMenu" />
     </div>
-    <div class="flex w-full z-10 opacity-85 justify-center bg-[#d9d9d9]/30">
+    <div class="flex w-full z-10 opacity-85 justify-center bg-[#d9d9d9]/10">
       <div class="flex mt-[221px] w-[548px] justify-center">
-        <div class="fixed flex flex-col">
+        <div class="fixed flex flex-col ml-24">
           <div class="flex items-center">
             <p class="font-amiri italic text-[#D0BC9C] tracking-[6px] text-lg sm:text-[28px]">
               LESSON
             </p>
             <p class="text-[#D0BC9C] font-caveat text-[150px] font-semibold mb-10">1</p>
           </div>
-          <p class="font-shippori text-[#999] text-[44px] tracking-[4px]">移動與邊界—</p>
+          <p class="font-shippori text-[#999] text-[44px] tracking-[4px] -mt-12">移動與邊界—</p>
           <p class="font-shippori text-[#999] text-[44px] tracking-[4px]">旅外台灣人</p>
           <p class="font-amiri italic text-[#999] text-[24px] tracking-[2px] leading-[38px] mt-10">
             Movement and Boundaries: <br />
             Overseas Taiwanese
           </p>
           <a
-            href="https://drive.google.com/drive/folders/19TnafgMPlVw79rdpa6jOPDCUtzlMs1qs"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScQxiV58k1T7PDf_2NiOaQOrz2sjgu5JQr9PD2jYEAIZef_dQ/viewform"
             target="_blank"
             class="font-wix w-[162px] text-[#999] flex justify-center py-3 bg-white border border-[#999]/70 mt-10 mb-20"
           >
-            台灣教案預覽</a
+            教案申請表單</a
           >
         </div>
       </div>

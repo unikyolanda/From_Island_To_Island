@@ -4,12 +4,12 @@
     ref="menuRef"
   >
     <div class="flex flex-col items-end p-12 text-white">
-      <div class="mb-20">
+      <div class="mb-12 sm:mb-20">
         <div class="cursor-pointer" @click="$emit('close')">
           <img src="/public/images/xmark.svg" />
         </div>
       </div>
-      <nav class="flex flex-col items-end space-y-12 w-full">
+      <nav class="flex flex-col items-end space-y-12 sm:space-y-20 w-full">
         <div class="flex justify-between w-full items-center">
           <div class="flex flex-col items-center w-1/2 ml-1">
             <p class="font-shippori text-[22px] sm:text-[28px] tracking-[8px] sm:tracking-[12px]">
@@ -29,9 +29,6 @@
               to="/reports"
               class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
               >座談與報導</NuxtLink
-            >
-            <a href="#" class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
-              >包場資訊</a
             >
           </div>
         </div>
@@ -86,6 +83,12 @@
               to="/educational"
               class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
               >教育公播</NuxtLink
+            >
+            <a href="#" class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
+              >包場資訊</a
+            >
+            <a href="#" class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
+              >聯絡資訊</a
             >
           </div>
         </div>

@@ -433,7 +433,7 @@
       </div>
       <div class="flex w-full h-screen translate-y-[var(--parallax-y)] mask-leathers">
         <img
-          src="/images/still008.jpg"
+          src="/images/still_3.jpg"
           alt="stills2"
           class="stills2 size-full origin-center object-cover"
         />
