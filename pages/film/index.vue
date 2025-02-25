@@ -12,23 +12,38 @@
 
   onMounted(() => {
     const parallaxElements = document.querySelectorAll('#parallax-content')
+    const images = Array.from(parallaxElements)
 
-    parallaxElements.forEach(element => {
-      // Set initial position
-      gsap.set(element, {
-        y: '-30%', // Start higher up to allow room for movement
-      })
+    // Check if each image is loaded
+    const imagePromises = images.map(img => {
+      if (img.complete) {
+        return Promise.resolve()
+      } else {
+        return new Promise(resolve => {
+          img.onload = resolve
+        })
+      }
+    })
 
-      // Create the parallax effect
-      gsap.to(element, {
-        y: '0%', // Move down to show bottom portion
-        ease: 'none',
-        scrollTrigger: {
-          trigger: element.parentElement,
-          start: 'top bottom',
-          end: 'bottom 25%',
-          scrub: 1,
-        },
+    // Initialize parallax after all images are loaded
+    Promise.all(imagePromises).then(() => {
+      parallaxElements.forEach(element => {
+        // Set initial position
+        gsap.set(element, {
+          y: '-30%', // Start higher up to allow room for movement
+        })
+
+        // Create the parallax effect
+        gsap.to(element, {
+          y: '0%', // Move down to show bottom portion
+          ease: 'none',
+          scrollTrigger: {
+            trigger: element.parentElement,
+            start: 'top bottom',
+            end: 'bottom 25%',
+            scrub: 1,
+          },
+        })
       })
     })
   })
