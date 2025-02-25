@@ -142,7 +142,7 @@
             「「阿嬤在爪哇開雜貨店的日子，是她一輩子過得最好的時期。」朱惠足教授分享自己的祖父母
             1938
             年前往爪哇島開設雜貨店，家裡聘請傭人、生活條件理想。因為「受日本殖民」的身份，台灣人到了東南亞反而成為「日本人」，得以享有比當地人更優渥的資源與更高的權力，歷史學者稱之為「暫時的殖民者」。直到各國對日戰事升溫，任何旅居荷屬印尼的台灣人一概被視為敵國（日本）子民，才讓一切風雲變色⋯⋯
-            <span class="font-semibold cursor-pointer">看全文</span>
+            <NuxtLink href="/reports/chu" class="font-semibold cursor-pointer">看全文</NuxtLink>
           </div>
         </div>
         <div class="flex flex-col border-b pb-10">
