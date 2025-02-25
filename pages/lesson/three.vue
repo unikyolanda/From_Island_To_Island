@@ -33,15 +33,15 @@
       <img src="/images/menu_gray.svg" alt="menu" class="w-10 h-8" @click="toggleMenu" />
     </div>
     <div class="flex w-full z-10 opacity-85 justify-center bg-[#d9d9d9]/30">
-      <div class="flex mt-[221px] w-[548px] justify-center">
-        <div class="fixed flex flex-col">
+      <div class="flex mt-[221px] w-[548px]">
+        <div class="fixed flex flex-col ml-36">
           <div class="flex items-center">
             <p class="font-amiri italic text-[#D0BC9C] tracking-[6px] text-lg sm:text-[28px]">
               LESSON
             </p>
             <p class="text-[#D0BC9C] font-caveat text-[150px] font-semibold mb-10">3</p>
           </div>
-          <p class="font-shippori text-[#999] text-[44px] tracking-[4px]">共犯結構—</p>
+          <p class="font-shippori text-[#999] text-[44px] tracking-[4px] -mt-12">共犯結構—</p>
           <p class="font-shippori text-[#999] text-[44px] tracking-[4px]">戰爭機器</p>
           <p class="font-amiri italic text-[#999] text-[24px] tracking-[2px] leading-[38px] mt-10">
             Structures of Complicity:<br />

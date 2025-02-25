@@ -33,8 +33,8 @@
       <img src="/images/menu_gray.svg" alt="menu" class="w-10 h-8" @click="toggleMenu" />
     </div>
     <div class="flex w-full z-10 opacity-85 justify-center bg-[#d9d9d9]/10">
-      <div class="flex mt-[221px] w-[548px] justify-center">
-        <div class="fixed flex flex-col ml-24">
+      <div class="flex mt-[221px] w-[548px]">
+        <div class="fixed flex flex-col ml-36">
           <div class="flex items-center">
             <p class="font-amiri italic text-[#D0BC9C] tracking-[6px] text-lg sm:text-[28px]">
               LESSON

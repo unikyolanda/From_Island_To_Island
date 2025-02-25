@@ -82,7 +82,7 @@
             class="text-white font-noto text-[14.5px] tracking-[0.5px] text-justify font-light leading-[30px] mt-8"
           >
             「克發導演作為大馬新住民，有別於台灣人背負的歷史包袱、提供新鮮的觀點，《由島至島》填補了台灣二戰之後長期的歷史空缺、甚至是記憶的黑洞。」蔡崇隆導演觀察新住民導演正因與台灣隔了一段距離，視野更為清晰，其妻子阮金紅為越南裔新住民，同樣身為導演，她紀錄下這個世代台灣人跨國婚姻與家庭的歷史，克發導演則拍攝父祖輩在大東亞戰爭之下的記憶，相較於從國族出發的大敘事，兩者皆從屬於人民記憶的小敘事開展⋯⋯
-            <span class="font-semibold cursor-pointer">看全文</span>
+            <NuxtLink href="/reports/tsai" class="font-semibold cursor-pointer">看全文</NuxtLink>
           </div>
         </div>
         <div class="flex flex-col border-b pb-10">
