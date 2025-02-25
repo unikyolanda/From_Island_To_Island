@@ -167,7 +167,7 @@
             class="text-white font-noto text-[14.5px] tracking-[0.5px] text-justify font-light leading-[30px] mt-8"
           >
             「當克發導演讀過我的研究，說有興趣把這些比較沒有人知道的歷史拍成紀錄片的時候，大概真的是我自己做歷史研究最開心的一個時刻。」適齊老師分享，閱讀文字與觀看動態影像，對於情感的攪動與觸發全然不同，藉由影像這個媒介，除了易於進入大眾視野，更重要是當觀眾走過紀錄片五小時片長，感受到在那個歷史現場的人，不管是台灣人、還是在馬來亞的華人、日本士兵，或者是戰後繼續在討論這些戰爭歷史的人，他們到底在當下感受到什麼⋯⋯
-            <span class="font-semibold cursor-pointer">看全文</span>
+            <NuxtLink href="/reports/lan" class="font-semibold cursor-pointer">看全文</NuxtLink>
           </div>
         </div>
         <div class="flex flex-col border-b pb-10">

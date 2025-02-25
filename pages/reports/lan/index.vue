@@ -1,0 +1,72 @@
+<script setup>
+  const router = useRouter()
+  const menuRef = ref(null)
+  const toggleMenu = () => {
+    menuRef.value.show()
+  }
+
+  const closeMenu = () => {
+    menuRef.value.hide()
+  }
+</script>
+<template>
+  <div class="flex flex-col bg-black w-screen h-auto min-h-screen items-center">
+    <div class="fixed top-11 left-12 w-10 h-[61px] flex flex-col z-20">
+      <NuxtLink to="/"><img src="/images/logo.png" /></NuxtLink>
+      <NuxtLink to="/film" class="font-wix text-white tracking-[4px] text-xs mt-7">FILM</NuxtLink>
+      <NuxtLink to="/lesson" class="font-wix text-white tracking-[4px] text-xs mt-5"
+        >LESSON</NuxtLink
+      >
+      <p class="font-wix text-white tracking-[4px] text-xs mt-5">CONTACT</p>
+    </div>
+    <SideMenu ref="menuRef" @close="closeMenu" />
+    <div class="fixed right-10 sm:right-12 top-10 cursor-pointer z-20">
+      <img src="/images/menu.svg" alt="menu" class="w-10 h-8" @click="toggleMenu" />
+    </div>
+    <div class="w-[1116px] relative flex flex-col items-center">
+      <div @click="() => router.back()" class="fixed top-12 right-56 cursor-pointer">
+        <img src="/images/xmark.svg" />
+      </div>
+      <img src="/images/reports/popbox/popbox_4_1.png" class="w-screen h-auto" />
+      <div class="flex items-center gap-x-12 my-16">
+        <img
+          src="/images/reports/lan.jpg"
+          alt="lan"
+          class="rounded-full w-[134px] h-[134px] object-cover"
+        />
+        <div class="flex flex-col h-full justify-center">
+          <div class="font-noto font-semibold text-[20px] text-white tracking-[2px]">
+            藍適齊<span class="text-[14px] font-light"
+              >／國立政治大學歷史系副教授、《由島至島》歷史顧問</span
+            >
+          </div>
+          <p class="font-noto text-white font-light text-[13px] tracking-[2px] opacity-60 mt-2">
+            台北欣欣秀泰影城（2024.10.27）
+          </p>
+        </div>
+      </div>
+
+      <p class="font-noto tracking-[2px] text-white w-[841px] text-justify leading-[36px]">
+        <span class="font-semibold"> 《由島至島》紀錄片映演計畫——台北場</span><br /><br />
+        映演計畫第三場抵達台北，很感謝《由島至島》歷史顧問、國立政治大學歷史學系藍適齊副教授與導演廖克發帶來映後座談。<br /><br />
+        「當克發導演讀過我的研究，說有興趣把這些比較沒有人知道的歷史拍成紀錄片的時候，大概真的是我自己做歷史研究最開心的一個時刻。」適齊老師分享，閱讀文字與觀看動態影像，對於情感的攪動與觸發全然不同，藉由影像這個媒介，除了易於進入大眾視野，更重要是當觀眾走過紀錄片五小時片長，感受到在那個歷史現場的人，不管是台灣人、還是在馬來亞的華人、日本士兵，或者是戰後繼續在討論這些戰爭歷史的人，他們到底在當下感受到什麼？面對鏡頭時，受訪者可能談得更多，講出過去可能沒有意識到的某些感受或想法，這部片珍貴地紀錄下來，讓觀眾體認到當事人的情感。
+      </p>
+      <div class="flex gap-x-4 my-12">
+        <img src="/images/reports/popbox/popbox_4_2.png" class="w-[412px] h-auto" />
+        <img src="/images/reports/popbox/popbox_4_3.png" class="w-[412px] h-auto" />
+      </div>
+      <p class="font-noto tracking-[2px] text-white w-[841px] text-justify leading-[36px]">
+        很多年前適齊老師在新加坡教書時，和一位做新加坡與馬來西亞社會歷史研究的澳洲同事閒聊，同事提到二戰日軍佔領馬來半島、新加坡幾件事情，「可是他知道我是台灣來的，突然講了一句話，開啟我過去十年的研究。『日軍很壞，但台灣人也很壞/甚至更壞。』這是當地老一輩華人告訴他的，將近二十年前的事情。」那時才意識到原來台灣在二戰期間，因為人的流動、送去擔任軍屬與執行各種軍事工作，與東南亞有非常密切的關係。片名《由島至島》，可以看見台灣跟外界的連結
+        ，過去所熟知的經貿關係與文化交流之外，不要忘記我們在歷史上有一些比較痛苦的時刻。戰爭其實也讓台灣跟世界連結在一起。
+      </p>
+      <div class="flex gap-x-4 my-12">
+        <img src="/images/reports/popbox/popbox_4_4.png" class="w-[412px] h-auto" />
+        <img src="/images/reports/popbox/popbox_4_5.png" class="w-[412px] h-auto" />
+      </div>
+      <p class="font-noto tracking-[2px] text-white w-[841px] text-justify leading-[36px]">
+        「我越學歷史越體會到，特別從這個紀錄片中——我們其實都是在一個群體當中。」不只是台灣這個群體，包含我們所到之地：東南亞各地、日本、太平洋戰爭的各個戰場，跟這些人們或許良善、對立、甚至互相傷害的互動，都是歷史的一部分，克發導演帶觀眾看到另一個面向，其他人在戰爭中經歷了什麼、他們如何面對與記得這段歷史，這也許啟動我們想要知道得更多。
+      </p>
+      <img src="/images/reports/popbox/popbox_4_6.png" class="w-screen h-auto mt-12 mb-[97px]" />
+    </div>
+  </div>
+</template>
