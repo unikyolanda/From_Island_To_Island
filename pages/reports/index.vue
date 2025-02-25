@@ -190,7 +190,7 @@
             class="text-white font-noto text-[14.5px] tracking-[0.5px] text-justify font-light leading-[30px] mt-8"
           >
             「我們容易自溺於自身的立場。」陳柏棕助理研究員分享，起初對於《由島至島》影像所呈現的也曾抗拒，覺得和認識的不一樣。後來思考許久，才明白要了解一個群體不能只記得良善，而是好壞皆需記錄。對於過去所認知到的台籍日本兵，大多在理解他們的受苦，卻往往忽略身為士兵，不論軍伕或其他角色，在異國為日軍服務本就是侵略性的角色——即使不拿槍，有些通譯雖不動武，卻可能透過語言傷害他人。這是過去他未曾理解的。⋯⋯
-            <span class="font-semibold cursor-pointer">看全文</span>
+            <NuxtLink href="/reports/chen" class="font-semibold cursor-pointer">看全文</NuxtLink>
           </div>
         </div>
         <div class="flex flex-col">
