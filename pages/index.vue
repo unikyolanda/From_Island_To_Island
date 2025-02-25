@@ -311,7 +311,7 @@
         <div class="sm:hidden absolute left-10 z-10 top-[55px]">
           <img src="/images/title.png" alt="title" class="w-[140px] h-[81px]" />
         </div>
-        <div class="fixed right-10 sm:right-12 top-10 cursor-pointer z-10">
+        <div class="fixed right-10 sm:right-12 top-10 cursor-pointer z-20">
           <img src="/images/menu.svg" alt="menu" class="w-10 h-8" @click="toggleMenu" />
         </div>
         <div class="flex sm:px-[162px] justify-center relative w-full h-auto">

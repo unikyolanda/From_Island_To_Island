@@ -115,7 +115,7 @@
             class="text-white font-noto text-[14.5px] tracking-[0.5px] text-justify font-light leading-[30px] mt-16"
           >
             「《不即不離》、《還有一些樹》像是一種回望歷史動態的一種速寫，但《由島至島》超越了回望，以一種更逼近、甚至更為逼迫的視角，對於觀眾來說激進地、殘酷地把隱匿的事實一點一點挖開來，進而提問、尋找答案。」適芳老師點出導演作品經由重訪歷史，提出一種不同於教科書、不同於國家記憶的非主流敘事，以紀錄片來顯影這些被隱匿的歷史或禁忌題材。「正是透過這些歷史的見證，進行批判性地反省與反思，在歷史經驗裡思考人性與寬容。」力昕老師回應⋯⋯
-            <span class="font-semibold cursor-pointer">看全文</span>
+            <NuxtLink href="/reports/kuo" class="font-semibold cursor-pointer">看全文</NuxtLink>
           </div>
         </div>
         <div class="flex flex-col border-b pb-10">
