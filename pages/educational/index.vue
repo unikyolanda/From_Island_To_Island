@@ -9,7 +9,7 @@
   }
 </script>
 <style>
-  .bg-shadow {
+  .bg-shoes {
     background-image: url('/images/stills/still_1.jpg');
     background-size: cover;
     background-position: center;
@@ -22,7 +22,7 @@
 </style>
 <template>
   <div class="flex flex-col bg-white w-screen h-auto min-h-screen items-center">
-    <div class="fixed inset-0 bg-shadow z-0"></div>
+    <div class="fixed inset-0 bg-shoes z-0"></div>
     <div class="fixed top-11 left-12 w-10 h-[61px] flex flex-col z-20">
       <NuxtLink to="/"><img src="/images/logo_gray.png" /></NuxtLink>
       <NuxtLink to="/film" class="font-wix text-[#999] tracking-[4px] text-xs mt-7">FILM</NuxtLink>
