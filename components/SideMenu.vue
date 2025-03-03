@@ -84,7 +84,9 @@
               class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
               >教育公播</NuxtLink
             >
-            <a href="#" class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
+            <a
+              href="/booking"
+              class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
               >包場資訊</a
             >
             <a href="#" class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
