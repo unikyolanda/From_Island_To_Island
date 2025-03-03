@@ -210,13 +210,7 @@
           >
             Q4: 您的姓名
           </p>
-          <input
-            v-model="formData.name"
-            class="px-3 py-2"
-            type="text"
-            placeholder="您的回答"
-            required
-          />
+          <input v-model="formData.name" class="px-3 py-2" type="text" required />
         </div>
 
         <div class="flex flex-col w-full gap-y-4">
@@ -225,13 +219,7 @@
           >
             Q5: 您的E-mail
           </p>
-          <input
-            v-model="formData.email"
-            class="px-3 py-2"
-            type="email"
-            placeholder="您的回答"
-            required
-          />
+          <input v-model="formData.email" class="px-3 py-2" type="email" required />
         </div>
 
         <div class="flex flex-col w-full gap-y-4">
@@ -240,13 +228,7 @@
           >
             Q6: 您的聯絡電話
           </p>
-          <input
-            v-model="formData.phone"
-            class="px-3 py-2"
-            type="text"
-            placeholder="您的回答"
-            required
-          />
+          <input v-model="formData.phone" class="px-3 py-2" type="text" required />
         </div>
         <p class="text-[#999] text-[14.5px] tracking-[0.5px] leading-[30px] mt-8 w-[676px]">
           因本片規格特殊，將不會進行院線上映。包場詳細規則如下：<br /><br />
