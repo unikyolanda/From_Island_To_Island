@@ -1,4 +1,6 @@
 <script setup>
+  import 'lite-youtube-embed/src/lite-yt-embed.css'
+  import 'lite-youtube-embed'
   const { $gsap: gsap, $ScrollTrigger: ScrollTrigger } = useNuxtApp()
   const menuRef = ref(null)
   const windowWidth = ref(window.innerWidth)
@@ -276,6 +278,16 @@
 </script>
 
 <style>
+  lite-youtube {
+    background-color: #000;
+    position: relative;
+    display: block;
+    contain: content;
+    background-position: center center;
+    background-size: cover;
+    cursor: pointer;
+  }
+
   .ripple-effect {
     background-size: cover;
     background-position: center top;
@@ -462,15 +474,11 @@
         </NuxtLink>
       </div>
       <div class="flex flex-col">
-        <iframe
-          src="https://www.youtube.com/embed/YkEfOmfF5FM?si=y8Clq6RWv6QLCHfb"
+        <lite-youtube
+          videoid="YkEfOmfF5FM"
           class="w-full sm:w-[568px] h-[220px] sm:h-[362px] mt-10 sm:mt-24 shadow-md"
-          title="由島至島 From Island to Island"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        >
-        </iframe>
+          playlabel="由島至島 From Island to Island"
+        ></lite-youtube>
         <img src="/images-webp/forth_logo.webp" alt="forth_logo" class="mt-6 sm:mt-20" />
       </div>
       <div class="flex flex-col mt-9 sm:hidden items-center">
