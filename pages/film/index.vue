@@ -180,14 +180,14 @@
             屆金馬獎最佳紀錄片、最佳音效獎、台北電影節百萬首獎等。
           </p>
           <p class="font-wix text-white leading-[36px] mt-[42px] w-[710px] text-justify">
-            Lau, Kek-Huat Malaysia-born filmmaker based in Taiwan. His debut film Boluomi competed
-            at the Busan International Film Festival, New Currents section and Golden Horse  Best
-            New Director nominated. The project won him the Tokyo Talent Award 2015, Best Script
-            Award in 2013 Taiwan, and was selected for La Fabrique. Cinema du monde. His
+            Lau Kek-huat is a Malaysia-born filmmaker based in Taiwan. His debut film Boluomi
+            competed at the Busan International Film Festival, New Currents section and Golden
+            Horse  Best New Director nominated. The project won him the Tokyo Talent Award 2015,
+            Best Script Award in 2013 Taiwan, and was selected for La Fabrique. Cinema du monde. His
             documentaries won Best Documentary in Golden Horse, Taipei Film Festival, and TIDF. His
             short film Nia’s Door won the Best Short Film Award, and Sonje Award at the Busan
-            International Film Festival, selected for the 38th Clermont-Ferrand International Short
-            Film Festival.
+            International Film Festival and was selected for the 38th Clermont-Ferrand International
+            Short Film Festival.
           </p>
           <div
             id="parallax-container"

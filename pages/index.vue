@@ -360,27 +360,27 @@
             <img
               src="/images-webp/first_photo5.webp"
               alt="photo5"
-              class="opacity-40 h-[437px] min-w-[514.12px] sm:h-[709px] sm:min-w-[834px]"
+              class="opacity-40 h-[437px] w-[514.12px] sm:h-[709px] sm:w-[834px]"
             />
             <img
               src="/images-webp/first_photo4.webp"
               alt="photo4"
-              class="opacity-40 h-[437px] min-w-[514.12px] sm:h-[709px] sm:min-w-[834px] absolute top-0"
+              class="opacity-40 h-[437px] w-[514.12px] sm:h-[709px] sm:w-[834px] absolute top-0"
             />
             <img
               src="/images-webp/first_photo3.webp"
               alt="photo3"
-              class="opacity-40 h-[437px] min-w-[514.12px] sm:h-[709px] sm:min-w-[834px] absolute top-0"
+              class="opacity-40 h-[437px] w-[514.12px] sm:h-[709px] sm:w-[834px] absolute top-0"
             />
             <img
               src="/images-webp/first_photo2.webp"
               alt="photo2"
-              class="opacity-40 h-[437px] min-w-[514.12px] sm:h-[709px] sm:min-w-[834px] absolute top-0"
+              class="opacity-40 h-[437px] w-[514.12px] sm:h-[709px] sm:w-[834px] absolute top-0"
             />
             <img
               src="/images-webp/first_photo1.webp"
               alt="photo1"
-              class="opacity-40 h-[437px] min-w-[514.12px] sm:h-[709px] sm:min-w-[834px] absolute top-0"
+              class="opacity-40 h-[437px] w-[514.12px] sm:h-[709px] sm:w-[834px] absolute top-0"
             />
           </div>
           <div
@@ -479,7 +479,11 @@
           class="w-full sm:w-[568px] h-[220px] sm:h-[362px] mt-10 sm:mt-24 shadow-md"
           playlabel="由島至島 From Island to Island"
         ></lite-youtube>
-        <img src="/images-webp/forth_logo.webp" alt="forth_logo" class="mt-6 sm:mt-20" />
+        <img
+          src="/images-webp/forth_logo.webp"
+          alt="forth_logo"
+          class="mt-6 sm:mt-20 w-[568px] h-auto"
+        />
       </div>
       <div class="flex flex-col mt-9 sm:hidden items-center">
         <p
