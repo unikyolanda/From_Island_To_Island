@@ -10,7 +10,7 @@
 </script>
 <style>
   .bg-shadow {
-    background-image: url('/images/bg_shadow.jpg');
+    background-image: url('/images-webp/bg_shadow.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -24,7 +24,7 @@
   <div class="flex flex-col bg-white w-screen h-auto min-h-screen items-center">
     <div class="fixed inset-0 bg-shadow z-0"></div>
     <div class="absolute top-11 left-12 w-10 h-[61px] flex flex-col z-20">
-      <NuxtLink to="/"><img src="/images/logo_gray.png" /></NuxtLink>
+      <NuxtLink to="/"><img src="/images-webp/logo_gray.webp" /></NuxtLink>
       <NuxtLink to="/film" class="font-wix text-[#999] tracking-[4px] text-xs mt-7">FILM</NuxtLink>
       <NuxtLink to="/lesson" class="font-wix text-[#999] tracking-[4px] text-xs mt-5"
         >LESSON</NuxtLink
@@ -68,7 +68,7 @@
           </div>
           <div class="w-[365px] h-[227px]">
             <img
-              src="/images/stills/lesson_1.jpg"
+              src="/images-webp/stills/lesson_1.webp"
               alt="lesson"
               class="w-full h-full object-cover rounded-l-[15px]"
             />
@@ -98,7 +98,7 @@
           </div>
           <div class="w-[365px] h-[227px]">
             <img
-              src="/images/stills/lesson_2.jpg"
+              src="/images-webp/stills/lesson_2.webp"
               alt="lesson"
               class="w-full h-full object-cover rounded-l-[15px]"
             />
@@ -127,7 +127,7 @@
           </div>
           <div class="w-[365px] h-[227px]">
             <img
-              src="/images/stills/lesson_3.jpg"
+              src="/images-webp/stills/lesson_3.webp"
               alt="lesson"
               class="w-full h-full object-cover rounded-l-[15px]"
             />
@@ -156,7 +156,7 @@
           </div>
           <div class="w-[365px] h-[227px]">
             <img
-              src="/images/stills/lesson_4.jpg"
+              src="/images-webp/stills/lesson_4.webp"
               alt="lesson"
               class="w-full h-full object-cover rounded-l-[15px]"
             />
@@ -187,7 +187,7 @@
           </div>
           <div class="w-[365px] h-[227px]">
             <img
-              src="/images/stills/lesson_5.jpg"
+              src="/images-webp/stills/lesson_5.webp"
               alt="lesson"
               class="w-full h-full object-cover rounded-l-[15px]"
             />

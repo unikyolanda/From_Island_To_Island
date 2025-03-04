@@ -10,7 +10,7 @@
 </script>
 <style>
   .bg-shoes {
-    background-image: url('/images/stills/still_1.jpg');
+    background-image: url('/images-webp/stills/still_1.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -24,7 +24,7 @@
   <div class="flex flex-col bg-white w-screen h-auto min-h-screen items-center">
     <div class="fixed inset-0 bg-shoes z-0"></div>
     <div class="fixed top-11 left-12 w-10 h-[61px] flex flex-col z-20">
-      <NuxtLink to="/"><img src="/images/logo_gray.png" /></NuxtLink>
+      <NuxtLink to="/"><img src="/images-webp/logo_gray.webp" /></NuxtLink>
       <NuxtLink to="/film" class="font-wix text-[#999] tracking-[4px] text-xs mt-7">FILM</NuxtLink>
       <NuxtLink to="/lesson" class="font-wix text-[#999] tracking-[4px] text-xs mt-5"
         >LESSON</NuxtLink
@@ -49,8 +49,8 @@
       <div class="flex flex-col mt-12 mb-20 gap-y-11 items-center">
         <div class="bg-white w-[1075px] h-auto relative flex flex-col mt-72">
           <div class="flex gap-x-5 absolute -top-[270px] left-[190px]">
-            <img src="/images/poster_man.jpg" alt="poster" class="w-[345px] h-[492px]" />
-            <img src="/images/poster_woman.jpg" alt="poster" class="w-[345px] h-[492px]" />
+            <img src="/images-webp/poster_man.webp" alt="poster" class="w-[345px] h-[492px]" />
+            <img src="/images-webp/poster_woman.webp" alt="poster" class="w-[345px] h-[492px]" />
           </div>
           <div class="flex flex-col py-9 pl-[60px] mt-64 items-center">
             <p class="font-shippori text-[#999] text-[28px] tracking-[4px] text-center">
@@ -78,7 +78,7 @@
               信件內容請包涵：  1. 單位簡介 2. 預計播映的時間 3. 預計參與播映的人數<br />
               4. 是否需安排導演映後（出席與交通費另計）5. 其他特別需求 (若無則免)
             </p>
-            <img src="/images/usb.png" alt="usb" class="w-[365px] h-[215px] mt-16" />
+            <img src="/images-webp/usb.webp" alt="usb" class="w-[365px] h-[215px] mt-16" />
             <p class="font-noto text-[17px] tracking-[2px] text-[#D0BC9C] font-semibold mt-10">
               USB 規格說明
             </p>

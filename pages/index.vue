@@ -280,19 +280,19 @@
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
-    background-image: url('/images/first_bg.jpg');
+    background-image: url('/images-webp/first_bg.webp');
   }
   .third-bg {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-image: url('/images/third_bg.jpg');
+    background-image: url('/images-webp/third_bg.webp');
   }
   .forth-bg {
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
-    background-image: url('/images/fourth_bg.jpg');
+    background-image: url('/images-webp/fourth_bg.webp');
   }
   .rotateText {
     writing-mode: vertical-rl;
@@ -309,7 +309,7 @@
     <div class="ripple-effect absolute flex flex-col items-center w-full h-full overflow-x-hidden">
       <div class="title w-full min-h-screen relative flex items-center">
         <div class="sm:hidden absolute left-10 z-10 top-[55px]">
-          <img src="/images/title.png" alt="title" class="w-[140px] h-[81px]" />
+          <img src="/images-webp/title.webp" alt="title" class="w-[140px] h-[81px]" />
         </div>
         <div class="fixed right-10 sm:right-12 top-10 cursor-pointer z-20">
           <img src="/images/menu.svg" alt="menu" class="w-10 h-8" @click="toggleMenu" />
@@ -346,27 +346,27 @@
           </div>
           <div class="image-box mt-16 sm:mt-[100px] relative flex justify-center w-screen">
             <img
-              src="/images/first_photo5.png"
+              src="/images-webp/first_photo5.webp"
               alt="photo5"
               class="opacity-40 h-[437px] min-w-[514.12px] sm:h-[709px] sm:min-w-[834px]"
             />
             <img
-              src="/images/first_photo4.png"
+              src="/images-webp/first_photo4.webp"
               alt="photo4"
               class="opacity-40 h-[437px] min-w-[514.12px] sm:h-[709px] sm:min-w-[834px] absolute top-0"
             />
             <img
-              src="/images/first_photo3.png"
+              src="/images-webp/first_photo3.webp"
               alt="photo3"
               class="opacity-40 h-[437px] min-w-[514.12px] sm:h-[709px] sm:min-w-[834px] absolute top-0"
             />
             <img
-              src="/images/first_photo2.png"
+              src="/images-webp/first_photo2.webp"
               alt="photo2"
               class="opacity-40 h-[437px] min-w-[514.12px] sm:h-[709px] sm:min-w-[834px] absolute top-0"
             />
             <img
-              src="/images/first_photo1.png"
+              src="/images-webp/first_photo1.webp"
               alt="photo1"
               class="opacity-40 h-[437px] min-w-[514.12px] sm:h-[709px] sm:min-w-[834px] absolute top-0"
             />
@@ -374,7 +374,7 @@
           <div
             class="vertical-text-section hidden absolute top-[106px] right-[162px] sm:flex flex-col z-10"
           >
-            <img src="/images/title.png" alt="title" class="w-[276px] h-[160px]" />
+            <img src="/images-webp/title.webp" alt="title" class="w-[276px] h-[160px]" />
             <div class="mt-24 -translate-x-2 flex">
               <NuxtLink
                 to="/lesson/five"
@@ -433,7 +433,7 @@
       </div>
       <div class="flex w-full h-screen translate-y-[var(--parallax-y)] mask-leathers">
         <img
-          src="/images/still_3.jpg"
+          src="/images-webp/still_3.webp"
           alt="stills2"
           class="stills2 size-full origin-center object-cover"
         />
@@ -471,7 +471,7 @@
           allowfullscreen
         >
         </iframe>
-        <img src="/images/forth_logo.png" alt="forth_logo" class="mt-6 sm:mt-20" />
+        <img src="/images-webp/forth_logo.webp" alt="forth_logo" class="mt-6 sm:mt-20" />
       </div>
       <div class="flex flex-col mt-9 sm:hidden items-center">
         <p

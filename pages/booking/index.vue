@@ -53,7 +53,7 @@
 <template>
   <div class="flex flex-col bg-[#f6f6f6] w-screen h-auto min-h-screen items-center">
     <div class="fixed top-11 left-12 w-10 h-[61px] flex flex-col z-20">
-      <NuxtLink to="/"><img src="/images/logo_gray.png" /></NuxtLink>
+      <NuxtLink to="/"><img src="/images-webp/logo_gray.webp" /></NuxtLink>
       <NuxtLink to="/film" class="font-wix text-[#999] tracking-[4px] text-xs mt-7">FILM</NuxtLink>
       <NuxtLink to="/lesson" class="font-wix text-[#999] tracking-[4px] text-xs mt-5"
         >LESSON</NuxtLink
@@ -75,7 +75,7 @@
           </p>
         </div>
       </div>
-      <img src="/images/booking.png" alt="booking" class="w-[676px] h-[389px] mt-12" />
+      <img src="/images-webp/booking.webp" alt="booking" class="w-[676px] h-[389px] mt-12" />
       <p class="text-[#999] text-[14.5px] tracking-[0.5px] leading-[30px] mt-20 w-[676px]">
         首先感謝您對《由島至島》的支持，因本片規格特殊，將不會進行院線上映。<br />
         若您有興趣包場觀賞電影，再請撥冗填寫本表單，將會有專人與您聯繫。<br />

@@ -12,7 +12,7 @@
 <template>
   <div class="flex flex-col bg-black w-screen h-auto min-h-screen items-center">
     <div class="fixed top-11 left-12 w-10 h-[61px] flex flex-col z-20">
-      <NuxtLink to="/"><img src="/images/logo.png" /></NuxtLink>
+      <NuxtLink to="/"><img src="/images-webp/logo.webp" /></NuxtLink>
       <NuxtLink to="/film" class="font-wix text-white tracking-[4px] text-xs mt-7">FILM</NuxtLink>
       <NuxtLink to="/lesson" class="font-wix text-white tracking-[4px] text-xs mt-5"
         >LESSON</NuxtLink
@@ -27,10 +27,10 @@
       <div @click="() => router.back()" class="fixed top-12 right-56 cursor-pointer">
         <img src="/images/xmark.svg" />
       </div>
-      <img src="/images/reports/popbox/popbox_5_1.png" class="w-screen h-auto" />
+      <img src="/images-webp/reports/popbox/popbox_5_1.webp" class="w-screen h-auto" />
       <div class="flex items-center gap-x-12 my-16">
         <img
-          src="/images/reports/chen.jpg"
+          src="/images-webp/reports/chen.webp"
           alt="chen"
           class="rounded-full w-[134px] h-[134px] object-cover"
         />
@@ -50,22 +50,25 @@
         著有《軍艦旗下：臺灣海軍特別志願兵（1943-1945）》、《護國丸：被遺忘的二戰臺籍海軍史》等書，現為國家鐵道博物館籌備處助理研究員的陳柏棕，於映後座談不吝感謝《由島至島》挖掘出新的歷史觀點。
       </p>
       <div class="flex gap-x-4 my-12">
-        <img src="/images/reports/popbox/popbox_5_2.png" class="w-[412px] h-auto" />
-        <img src="/images/reports/popbox/popbox_5_3.png" class="w-[412px] h-auto" />
+        <img src="/images-webp/reports/popbox/popbox_5_2.webp" class="w-[412px] h-auto" />
+        <img src="/images-webp/reports/popbox/popbox_5_3.webp" class="w-[412px] h-auto" />
       </div>
       <p class="font-noto tracking-[2px] text-white w-[841px] text-justify leading-[36px]">
         「我們容易自溺於自身的立場。」陳柏棕助理研究員分享，起初對於《由島至島》影像所呈現的也曾抗拒，覺得和認識的不一樣。後來思考許久，才明白要了解一個群體不能只記得良善，而是好壞皆需記錄。對於過去所認知到的台籍日本兵，大多在理解他們的受苦，卻往往忽略身為士兵，不論軍伕或其他角色，在異國為日軍服務本就是侵略性的角色——即使不拿槍，有些通譯雖不動武，卻可能透過語言傷害他人。這是過去他未曾理解的。<br /><br />
         「我擔心的是這種敘述可能會讓人覺得所有台灣人到東南亞都做過這些事，但事實並非如此。根據我研究，並非所有人都符合這種敘述。有些人被派到東南亞擔任文書或通譯，不一定是憲兵，且不具資格當憲兵，但這些人確實需承擔罪責。」他提醒，不應將所有台籍日本兵同質化，不同時期加入台籍日本兵至南洋的脈絡都不盡相同。尤其大多台灣人是以「臺灣特設勤勞團」的身分在1943年被派遣至東南亞等地，當時戰況已經不一樣，許多人在前線面臨砲火、飢餓、疾病等威脅，甚至遭遇游擊隊清洗。並非所有人的經歷或行為都一樣。
       </p>
       <div class="flex gap-x-4 my-12">
-        <img src="/images/reports/popbox/popbox_5_4.png" class="w-[412px] h-auto" />
-        <img src="/images/reports/popbox/popbox_5_5.png" class="w-[412px] h-auto" />
+        <img src="/images-webp/reports/popbox/popbox_5_4.webp" class="w-[412px] h-auto" />
+        <img src="/images-webp/reports/popbox/popbox_5_5.webp" class="w-[412px] h-auto" />
       </div>
       <p class="font-noto tracking-[2px] text-white w-[841px] text-justify leading-[36px]">
         廖克發導演同意「當我們看一個群體時，不要把群體想成很容易的，想成他是同質性的。每一群體裡面，仍相當多音、多元。作為台灣人，怎麼記憶這段歷史是我們的責任，我們要如何記得這些事情、能否看見他人傷痛，而不是僅專注在自己的傷痛上。」<br /><br />
         最後，陳柏棕助理研究員鼓勵大家多了解自己的歷史，對於這段歷史能有更多的探尋。
       </p>
-      <img src="/images/reports/popbox/popbox_5_6.png" class="w-screen h-auto mt-12 mb-[97px]" />
+      <img
+        src="/images-webp/reports/popbox/popbox_5_6.webp"
+        class="w-screen h-auto mt-12 mb-[97px]"
+      />
     </div>
   </div>
 </template>

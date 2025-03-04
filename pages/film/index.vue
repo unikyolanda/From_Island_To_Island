@@ -51,7 +51,7 @@
 
 <style>
   .bg-film {
-    background-image: url('/images/third_bg.jpg');
+    background-image: url('/images-webp/third_bg.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -63,7 +63,7 @@
   <div class="flex flex-col bg-black w-screen h-auto min-h-screen items-center">
     <div class="fixed inset-0 bg-film z-0"></div>
     <div class="fixed top-11 left-12 w-10 h-[61px] flex flex-col z-20">
-      <NuxtLink to="/"><img src="/images/logo.png" /></NuxtLink>
+      <NuxtLink to="/"><img src="/images-webp/logo.webp" /></NuxtLink>
       <NuxtLink to="/film" class="font-wix text-white tracking-[4px] text-xs mt-7">FILM</NuxtLink>
       <NuxtLink to="/lesson" class="font-wix text-white tracking-[4px] text-xs mt-5"
         >LESSON</NuxtLink
@@ -104,7 +104,7 @@
             class="relative overflow-hidden w-[443px] h-[249px] flex items-center"
           >
             <img
-              src="/images/stills/still_1.jpg"
+              src="/images-webp/stills/still_1.webp"
               alt="still1"
               id="parallax-content"
               class="absolute left-0 top-0 max-w-[120%] h-[120%] object-cover object-top"
@@ -121,7 +121,7 @@
             class="relative overflow-hidden w-[443px] h-[502px] mt-[246px]"
           >
             <img
-              src="/images/director.jpg"
+              src="/images-webp/director.webp"
               alt="director"
               id="parallax-content"
               class="max-w-[100%] h-[120%] object-cover object-center"
@@ -138,7 +138,7 @@
             class="relative overflow-hidden w-[443px] h-[249px] mt-[318px]"
           >
             <img
-              src="/images/stills/lesson_2.jpg"
+              src="/images-webp/stills/lesson_2.webp"
               alt="lesson2"
               id="parallax-content"
               class="absolute max-w-[150%] h-[130%] oboject-cover object-top"
@@ -147,10 +147,10 @@
         </div>
         <div class="flex flex-col mr-[182px] items-center">
           <div class="flex gap-x-5">
-            <img src="/images/poster_man.jpg" alt="poster" class="w-[345px] h-[492px]" />
-            <img src="/images/poster_woman.jpg" alt="poster" class="w-[345px] h-[492px]" />
+            <img src="/images-webp/poster_man.webp" alt="poster" class="w-[345px] h-[492px]" />
+            <img src="/images-webp/poster_woman.webp" alt="poster" class="w-[345px] h-[492px]" />
           </div>
-          <img src="/images/forth_logo.png" alt="logo" class="w-[592px] h-[129px] mt-5" />
+          <img src="/images-webp/forth_logo.webp" alt="logo" class="w-[592px] h-[129px] mt-5" />
           <p class="font-noto text-white tracking-[2px] leading-[36px] mt-[42px] w-[710px]">
             台灣在二戰期間是日本帝國的一部分。本片以此為主題，努力挖掘和重新整理台灣在二戰期間的隱藏記憶，探索在日本帝國內的台灣士兵、醫生與生活在東南亞的海外台灣人之經歷。全片從兒子對父親的提問開場，透過跨世代的對話、家書、日記和家庭成員之間的影片，探討台灣歷史記憶的複雜性，以及這一時期存在的各種身分。
           </p>
@@ -166,7 +166,7 @@
             class="relative overflow-hidden w-[710px] h-[350px] flex items-center mt-[42px]"
           >
             <img
-              src="/images/stills/still_4.jpg"
+              src="/images-webp/stills/still_4.webp"
               alt="still4"
               id="parallax-content"
               class="max-w-[150%] h-[130%] object-cover object-center"
@@ -194,7 +194,7 @@
             class="relative overflow-hidden w-[710px] h-[400px] flex items-center mt-[100px]"
           >
             <img
-              src="/images/stills/lesson_5.jpg"
+              src="/images-webp/stills/lesson_5.webp"
               alt="lesson5"
               id="parallax-content"
               class="max-w-[120%] h-[120%]"
@@ -226,7 +226,7 @@
       </div>
       <div id="parallax-container" class="relative w-full aspect-[1440/810] overflow-hidden">
         <img
-          src="/images/stills/lesson_4.jpg"
+          src="/images-webp/stills/lesson_4.webp"
           alt="lesson4"
           id="parallax-content"
           class="max-w-[120%] h-[120%]"
@@ -246,7 +246,7 @@
             class="relative overflow-hidden w-[443px] h-[502px] flex items-center mt-[246px]"
           >
             <img
-              src="/images/historical.png"
+              src="/images-webp/historical.webp"
               alt="historical"
               id="parallax-content"
               class="max-w-[120%] h-[120%]"
@@ -289,7 +289,7 @@
       </div>
       <div id="parallax-container" class="w-full aspect-[1440/810] overflow-hidden mt-[118px]">
         <img
-          src="/images/stills/still_12.jpg"
+          src="/images-webp/stills/still_12.webp"
           alt="still12"
           id="parallax-content"
           class="max-w-[100%] h-[120%] object-cover object-center"
@@ -309,7 +309,7 @@
             class="relative overflow-hidden w-[443px] h-[249px] flex items-center mt-[158px]"
           >
             <img
-              src="/images/stills/still_1.jpg"
+              src="/images-webp/stills/still_1.webp"
               alt="still1"
               id="parallax-content"
               class="absolute left-0 max-w-[100%] h-[150%] object-cover object-center"
@@ -327,7 +327,7 @@
             class="relative overflow-hidden w-[443px] h-[249px] flex items-center mt-[482px]"
           >
             <img
-              src="/images/stills/lesson_3.jpg"
+              src="/images-webp/stills/lesson_3.webp"
               alt="lesson3"
               id="parallax-content"
               class="max-w-[100%] h-[150%] object-cover object-center"
@@ -338,7 +338,7 @@
             class="relative overflow-hidden w-[443px] h-[249px] flex items-center mt-[1470px]"
           >
             <img
-              src="/images/stills/still_13.jpg"
+              src="/images-webp/stills/still_13.webp"
               alt="still13"
               id="parallax-content"
               class="max-w-[100%] h-[150%] object-cover object-center"
@@ -391,7 +391,7 @@
             class="relative overflow-hidden w-[710px] h-[400px] flex items-center mt-[100px]"
           >
             <img
-              src="/images/stills/still_7.jpg"
+              src="/images-webp/stills/still_7.webp"
               alt="still7"
               id="parallax-content"
               class="w-[710px] h-[400px] mt-[100px]"
@@ -481,7 +481,7 @@
       </div>
       <div id="parallax-container" class="w-full aspect-[1440/810] overflow-hidden mt-[138px]">
         <img
-          src="/images/stills/still_15.jpg"
+          src="/images-webp/stills/still_15.webp"
           alt="still15"
           id="parallax-content"
           class="max-w-[100%] h-[120%] object-cover object-center"

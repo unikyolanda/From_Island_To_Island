@@ -10,7 +10,7 @@
 </script>
 <style>
   .bg-shadow {
-    background-image: url('/images/bg_shadow.jpg');
+    background-image: url('/images-webp/bg_shadow.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -21,7 +21,7 @@
   <div class="flex flex-col bg-white w-screen h-auto min-h-screen items-center">
     <div class="fixed inset-0 bg-shadow z-0"></div>
     <div class="fixed top-11 left-12 w-10 h-[61px] flex flex-col z-20">
-      <NuxtLink to="/"><img src="/images/logo_gray.png" /></NuxtLink>
+      <NuxtLink to="/"><img src="/images-webp/logo_gray.webp" /></NuxtLink>
       <NuxtLink to="/film" class="font-wix text-[#999] tracking-[4px] text-xs mt-7">FILM</NuxtLink>
       <NuxtLink to="/lesson" class="font-wix text-[#999] tracking-[4px] text-xs mt-5"
         >LESSON</NuxtLink
@@ -57,7 +57,7 @@
         </div>
       </div>
       <div class="flex flex-col">
-        <img src="/images/stills/lesson_1.jpg" class="w-[895px] h-[532px] object-cover" />
+        <img src="/images-webp/stills/lesson_1.webp" class="w-[895px] h-[532px] object-cover" />
         <div class="w-full h-auto bg-white/50 flex justify-center py-6">
           <div class="w-[651px] flex flex-col">
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
@@ -219,7 +219,7 @@
                 >
                   林宗洧
                 </p>
-                <img src="/images/author_1.png" class="w-[166px] h-[166px] ml-9" />
+                <img src="/images-webp/author_1.webp" class="w-[166px] h-[166px] ml-9" />
               </div>
               <p
                 class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] mt-9 leading-[30px]"
@@ -237,7 +237,7 @@
                 >
                   陳一隆
                 </p>
-                <img src="/images/author_2.png" class="w-[166px] h-[166px] ml-9" />
+                <img src="/images-webp/author_2.webp" class="w-[166px] h-[166px] ml-9" />
               </div>
               <p
                 class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] mt-9 leading-[30px]"

@@ -12,7 +12,7 @@
 <template>
   <div class="flex flex-col bg-black w-screen h-auto min-h-screen items-center">
     <div class="fixed top-11 left-12 w-10 h-[61px] flex flex-col z-20">
-      <NuxtLink to="/"><img src="/images/logo.png" /></NuxtLink>
+      <NuxtLink to="/"><img src="/images-webp/logo.webp" /></NuxtLink>
       <NuxtLink to="/film" class="font-wix text-white tracking-[4px] text-xs mt-7">FILM</NuxtLink>
       <NuxtLink to="/lesson" class="font-wix text-white tracking-[4px] text-xs mt-5"
         >LESSON</NuxtLink
@@ -27,10 +27,10 @@
       <div @click="() => router.back()" class="fixed top-12 right-56 cursor-pointer">
         <img src="/images/xmark.svg" />
       </div>
-      <img src="/images/reports/popbox/popbox_3_1.png" class="w-screen h-auto" />
+      <img src="/images-webp/reports/popbox/popbox_3_1.webp" class="w-screen h-auto" />
       <div class="flex items-center gap-x-12 my-16">
         <img
-          src="/images/reports/chu.png"
+          src="/images-webp/reports/chu.webp"
           alt="chu"
           class="rounded-full w-[134px] h-[134px] object-cover"
         />
@@ -53,8 +53,8 @@
         「阿嬤在爪哇開雜貨店的日子，是她一輩子過得最好的時期。」朱惠足教授分享自己的祖父母1938年前往爪哇島開設雜貨店，家裡聘請傭人、生活條件理想。因為「受日本殖民」的身份，台灣人到了東南亞反而成為「日本人」，得以享有比當地人更優渥的資源與更高的權力，歷史學者稱之為「暫時的殖民者」。直到各國對日戰事升溫，任何旅居荷屬印尼的台灣人一概被視為敵國(日本)子民，才讓一切風雲變色，阿嬤趕在太平洋戰爭爆發前帶著在當地出生的姑姑回台，阿公則被遣送至澳洲集中營。觀看《由島至島》，教授看見自己的家族記憶，長久以來卻以一種沈默的方式被遺忘。
       </p>
       <div class="flex gap-x-4 my-12">
-        <img src="/images/reports/popbox/popbox_3_2.png" class="w-[412px] h-auto" />
-        <img src="/images/reports/popbox/popbox_3_3.png" class="w-[412px] h-auto" />
+        <img src="/images-webp/reports/popbox/popbox_3_2.webp" class="w-[412px] h-auto" />
+        <img src="/images-webp/reports/popbox/popbox_3_3.webp" class="w-[412px] h-auto" />
       </div>
       <p class="font-noto tracking-[2px] text-white w-[841px] text-justify leading-[36px]">
         <span class="font-semibold"> ● 台籍日本兵：受害與加害的身份是並存的</span><br /><br />
@@ -62,14 +62,17 @@
         「我開始思考，如果阿公當年不是在爪哇開店，而是被日本徵召擔任軍夫，抑或成為志願兵，他被派至南洋或中國，必須依照日軍指示傷害他人的時候，我會不會覺得這是個污點？還是我會慶幸他活下來了，而有現在的我？」教授從個人家族歷史輻散出台灣集體的歷史記憶，每個人的祖父輩可能曾被捲入戰爭中，彼時台灣人面對著「國家和民族是衝突的」矛盾困境，他們被動員上戰場、成為日軍中最底層的軍夫——某種程度上是受害者，卻也可能因為熟稔福建話，在指認、圍捕、拷問甚至屠殺行動中扮演關鍵的翻譯角色，台籍日本兵便從一個受害者的身份，成為了戰場上的加害者。
       </p>
       <div class="flex gap-x-4 my-12">
-        <img src="/images/reports/popbox/popbox_3_4.png" class="w-[412px] h-auto" />
-        <img src="/images/reports/popbox/popbox_3_5.png" class="w-[412px] h-auto" />
+        <img src="/images-webp/reports/popbox/popbox_3_4.webp" class="w-[412px] h-auto" />
+        <img src="/images-webp/reports/popbox/popbox_3_5.webp" class="w-[412px] h-auto" />
       </div>
       <p class="font-noto tracking-[2px] text-white w-[841px] text-justify leading-[36px]">
         「紀錄片中聽到受害者的言語或無法言語，讓我深刻感覺到我們對於戰爭的思考與反省實在遠遠不夠。」導演在這些人們生命最後幾年，紀錄下他們的身影與聲音，
         讓觀眾可以回到戰時現場，閉上眼想像自身可能扮演哪一個角色，當以國家之名所動員的暴力與犯罪，我們怎麼樣可以記得這個教訓、這些聲音，創造一個什麼樣的歷史記憶，可以帶領我們邁下一個更好的未來，是台灣人需要持續思考的。
       </p>
-      <img src="/images/reports/popbox/popbox_3_6.png" class="w-screen h-auto mt-12 mb-[97px]" />
+      <img
+        src="/images-webp/reports/popbox/popbox_3_6.webp"
+        class="w-screen h-auto mt-12 mb-[97px]"
+      />
     </div>
   </div>
 </template>

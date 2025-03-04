@@ -10,14 +10,14 @@
 </script>
 <style>
   .bg-reports {
-    background-image: url('/images/stills/still_4.jpg');
+    background-image: url('/images-webp/stills/still_4.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0.4;
   }
   .bg-audience {
-    background-image: url('/images/fourth_bg.jpg');
+    background-image: url('/images-webp/fourth_bg.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -27,7 +27,7 @@
   <div class="flex flex-col bg-black w-screen h-auto min-h-screen items-center">
     <div class="fixed inset-0 bg-reports z-0"></div>
     <div class="fixed top-11 left-12 w-10 h-[61px] flex flex-col z-20">
-      <NuxtLink to="/"><img src="/images/logo.png" /></NuxtLink>
+      <NuxtLink to="/"><img src="/images-webp/logo.webp" /></NuxtLink>
       <NuxtLink to="/film" class="font-wix text-white tracking-[4px] text-xs mt-7">FILM</NuxtLink>
       <NuxtLink to="/lesson" class="font-wix text-white tracking-[4px] text-xs mt-5"
         >LESSON</NuxtLink
@@ -63,7 +63,7 @@
         <div class="flex flex-col border-b pb-10">
           <div class="flex gap-x-12">
             <img
-              src="/images/reports/tsai.jpeg"
+              src="/images-webp/reports/tsai.webp"
               alt="tsai"
               class="rounded-full w-[134px] h-[134px] object-cover"
             />
@@ -89,12 +89,12 @@
           <div class="flex gap-x-12">
             <div class="relative w-32">
               <img
-                src="/images/reports/kuo.jpg"
+                src="/images-webp/reports/kuo.webp"
                 alt="kuo"
                 class="absolute top-0 left-0 rounded-full w-[89px] h-[89px] object-cover"
               />
               <img
-                src="/images/reports/chung.jpeg"
+                src="/images-webp/reports/chung.webp"
                 alt="chung"
                 class="absolute top-10 left-14 rounded-full w-[89px] h-[89px] object-cover"
               />
@@ -121,7 +121,7 @@
         <div class="flex flex-col border-b pb-10">
           <div class="flex gap-x-12">
             <img
-              src="/images/reports/chu.png"
+              src="/images-webp/reports/chu.webp"
               alt="chu"
               class="rounded-full w-[134px] h-[134px] object-cover"
             />
@@ -148,7 +148,7 @@
         <div class="flex flex-col border-b pb-10">
           <div class="flex gap-x-12">
             <img
-              src="/images/reports/lan.jpg"
+              src="/images-webp/reports/lan.webp"
               alt="lan"
               class="rounded-full w-[134px] h-[134px] object-cover"
             />
@@ -173,7 +173,7 @@
         <div class="flex flex-col border-b pb-10">
           <div class="flex gap-x-12">
             <img
-              src="/images/reports/chen.jpg"
+              src="/images-webp/reports/chen.webp"
               alt="chen"
               class="rounded-full w-[134px] h-[134px] object-cover"
             />
@@ -196,7 +196,7 @@
         <div class="flex flex-col">
           <div class="flex gap-x-12">
             <img
-              src="/images/reports/cheng.jpg"
+              src="/images-webp/reports/cheng.webp"
               alt="cheng"
               class="rounded-full w-[134px] h-[134px] object-cover"
             />
@@ -219,7 +219,7 @@
       </div>
     </div>
     <div class="w-full z-10 opacity-90">
-      <img src="/images/stills/still_10.jpg" alt="still" class="w-full mt-24" />
+      <img src="/images-webp/stills/still_10.webp" alt="still" class="w-full mt-24" />
     </div>
     <div class="flex mt-[73px] w-full justify-between px-[184px] z-10 opacity-90">
       <div class="flex flex-col w-[372px]">
@@ -364,7 +364,7 @@
       </div>
     </div>
     <div class="w-full z-10 opacity-90">
-      <img src="/images/stills/still_11.jpg" alt="still" class="w-full mt-28" />
+      <img src="/images-webp/stills/still_11.webp" alt="still" class="w-full mt-28" />
     </div>
     <div class="w-full z-10 opacity-80 flex pt-[97px] justify-between px-[184px] bg-audience">
       <div class="flex flex-col w-[372px]">
