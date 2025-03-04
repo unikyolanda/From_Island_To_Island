@@ -38,7 +38,7 @@ const convertToWebp = async () => {
       const relativePath = dir.replace(sourceDir, '')
       const outputDir = join(targetDir, relativePath)
 
-      const files = await imagemin([`${dir}/*.{jpg,jpeg,png}`], {
+      const files = await imagemin([`${dir}/*.{jpg,jpeg,png,JPG,JPEG,PNG}`], {
         destination: outputDir,
         plugins: [
           imageminWebp({
