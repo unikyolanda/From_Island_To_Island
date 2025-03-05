@@ -1,7 +1,11 @@
 <script setup>
-  import 'lite-youtube-embed/src/lite-yt-embed.css'
-  import 'lite-youtube-embed'
   const { $gsap: gsap, $ScrollTrigger: ScrollTrigger } = useNuxtApp()
+
+  // 延遲載入 YouTube 相關資源
+  const loadYouTubeEmbed = async () => {
+    await import('lite-youtube-embed/src/lite-yt-embed.css')
+    await import('lite-youtube-embed')
+  }
   const menuRef = ref(null)
   const windowWidth = ref(window.innerWidth)
 
@@ -21,6 +25,9 @@
   onMounted(() => {
     // Initial window width
     updateWindowWidth()
+
+    // 延遲載入 YouTube 組件
+    setTimeout(loadYouTubeEmbed, 2000)
 
     // Listen for window resize
     window.addEventListener('resize', updateWindowWidth)
