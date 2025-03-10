@@ -11,7 +11,7 @@
 </script>
 <template>
   <div class="flex flex-col bg-black w-screen h-auto min-h-screen items-center">
-    <NavBar textColor="white" logoSrc="/images-webp/logo.webp" />
+    <NavBar textColor="white" logoSrc="/images/logo.png" />
     <SideMenu ref="menuRef" @close="closeMenu" />
     <div class="fixed right-10 sm:right-12 top-10 cursor-pointer z-20">
       <img src="/images/menu.svg" alt="menu" class="w-10 h-8" @click="toggleMenu" />

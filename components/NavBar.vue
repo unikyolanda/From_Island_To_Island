@@ -6,7 +6,7 @@ defineProps({
   },
   logoSrc: {
     type: String,
-    default: '/images-webp/logo_gray.webp' // Default gray logo
+    default: '/images/logo_gray.png' // Default gray logo
   }
 })
 </script>

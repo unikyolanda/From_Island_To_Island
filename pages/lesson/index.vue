@@ -23,7 +23,7 @@
 <template>
   <div class="flex flex-col bg-white w-screen h-auto min-h-screen items-center">
     <div class="fixed inset-0 bg-shadow z-0"></div>
-    <NavBar textColor="#999" logoSrc="/images-webp/logo_gray.webp" />
+    <NavBar textColor="#999" logoSrc="/images/logo_gray.png" />
     <SideMenu ref="menuRef" @close="closeMenu" />
     <div class="fixed right-10 sm:right-12 top-10 cursor-pointer z-20">
       <img src="/images/menu_gray.svg" alt="menu" class="w-10 h-8" @click="toggleMenu" />
