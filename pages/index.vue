@@ -397,31 +397,31 @@
             <div class="mt-24 -translate-x-2 flex">
               <NuxtLink
                 to="/lesson/five"
-                class="font-shippori text-white text-xl tracking-[8px] rotateText mr-8"
+                class="font-shippori text-white text-xl tracking-[8px] rotateText mr-8 hover:opacity-50"
               >
                 為什麼要記憶
               </NuxtLink>
               <NuxtLink
                 to="/lesson/four"
-                class="font-shippori text-white text-xl tracking-[8px] rotateText mr-8"
+                class="font-shippori text-white text-xl tracking-[8px] rotateText mr-8 hover:opacity-50"
               >
                 克服過去
               </NuxtLink>
               <NuxtLink
                 to="/lesson/three"
-                class="font-shippori text-white text-xl tracking-[8px] rotateText mr-8"
+                class="font-shippori text-white text-xl tracking-[8px] rotateText mr-8 hover:opacity-50"
               >
                 共犯結構
               </NuxtLink>
               <NuxtLink
                 to="/lesson/two"
-                class="font-shippori text-white text-xl tracking-[8px] rotateText mr-8"
+                class="font-shippori text-white text-xl tracking-[8px] rotateText mr-8 hover:opacity-50"
               >
                 加害與被害
               </NuxtLink>
               <NuxtLink
                 to="/lesson/one"
-                class="font-shippori text-white text-xl tracking-[8px] rotateText"
+                class="font-shippori text-white text-xl tracking-[8px] rotateText hover:opacity-50"
                 >移動與邊界</NuxtLink
               >
             </div>
@@ -547,20 +547,20 @@
         <a
           href="https://www.facebook.com/fromislandtoisland"
           target="_blank"
-          class="font-shippori text-[18px] text-white tracking-[10px]"
+          class="font-shippori text-[18px] text-white/50 tracking-[10px] hover:text-white"
           >由島至島</a
         >
-        <p class="font-shippori text-[18px] text-white tracking-[10px]">最新場次</p>
+        <p class="font-shippori text-[18px] text-white/50 tracking-[10px] hover:text-white">最新場次</p>
       </div>
       <div class="flex gap-x-[30px]">
         <a
           href="https://siddharam.com/"
           target="_blank"
-          class="font-noto text-[12px] text-white tracking-[1px]"
+          class="font-noto text-[12px] text-white/50 tracking-[1px] hover:text-white"
         >
           網站製作｜西打藍好內容有限公司
         </a>
-        <p class="font-wix text-[13px] text-white">Copyright © HUMMINGBIRD Production</p>
+        <p class="font-wix text-[13px] text-white/50 hover:text-white">Copyright © HUMMINGBIRD Production</p>
       </div>
     </div>
   </div>

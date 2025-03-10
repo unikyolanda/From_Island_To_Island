@@ -21,30 +21,20 @@
   }
 </style>
 <template>
-  <div class="flex flex-col bg-white w-screen h-auto min-h-screen items-center">
-    <div class="fixed inset-0 bg-shoes z-0"></div>
-    <div class="fixed top-11 left-12 w-10 h-[61px] flex flex-col z-20">
-      <NuxtLink to="/"><img src="/images-webp/logo_gray.webp" /></NuxtLink>
-      <NuxtLink to="/film" class="font-wix text-[#999] tracking-[4px] text-xs mt-7">FILM</NuxtLink>
-      <NuxtLink to="/lesson" class="font-wix text-[#999] tracking-[4px] text-xs mt-5"
-        >LESSON</NuxtLink
-      >
-      <p class="font-wix text-[#999] tracking-[4px] text-xs mt-5">CONTACT</p>
-    </div>
+  <div class="flex flex-col bg-[#f6f6f6] w-screen h-auto min-h-screen items-center">
+    <NavBar textColor="#999" logoSrc="/images-webp/logo_gray.webp" />
     <SideMenu ref="menuRef" @close="closeMenu" />
     <div class="fixed right-10 sm:right-12 top-10 cursor-pointer z-20">
       <img src="/images/menu_gray.svg" alt="menu" class="w-10 h-8" @click="toggleMenu" />
     </div>
     <div class="flex flex-col w-full z-10 items-center opacity-80">
-      <div class="flex w-full px-[184px] pt-[233px] justify-between items-end mt-10">
-        <div class="flex flex-col">
-          <p class="font-amiri italic text-[#999] tracking-[6px] text-lg sm:text-[28px]">
-            Educational Presentation
-          </p>
-          <p class="font-shippori text-[#999] text-[36px] sm:text-[44px] tracking-[8px]">
-            教育公播
-          </p>
-        </div>
+      <div class="flex flex-col items-center w-full mt-[233px]">
+        <p class="font-amiri italic text-[#999] tracking-[2px] text-lg sm:text-[28px]">
+          Educational Presentation
+        </p>
+        <p class="font-shippori text-[#999] text-[36px] sm:text-[44px] tracking-[8px]">
+          教育公播
+        </p>
       </div>
       <div class="flex flex-col mt-12 mb-20 gap-y-11 items-center">
         <div class="bg-white w-[1075px] h-auto relative flex flex-col mt-72">
@@ -64,7 +54,7 @@
               僅提供非營利之教育場合公開播映使用。
             </p>
             <p class="font-noto text-[17px] tracking-[2px] text-[#D0BC9C] font-semibold mt-10">
-              教育公播版預計於 2025 年 3 月上市，購買請聯繫由島至島 E-mail。
+              欲購買教育公播版，請聯繫由島至島 E-mail
             </p>
             <div
               class="font-noto text-[14.5px] text-[#999] tracking-[0.5px] leading-[30px] mt-10 text-center"
@@ -76,9 +66,9 @@
               class="font-noto text-[14.5px] text-[#999] tracking-[0.5px] leading-[30px] mt-10 text-center"
             >
               信件內容請包涵：  1. 單位簡介 2. 預計播映的時間 3. 預計參與播映的人數<br />
-              4. 是否需安排導演映後（出席與交通費另計）5. 其他特別需求 (若無則免)
+              4. 是否需安排導演映後（出席與交通費另計）5. 其他特別需求。 (若無則免)
             </p>
-            <img src="/images-webp/usb.webp" alt="usb" class="w-[365px] h-[215px] mt-16" />
+            <img src="/images/usb_1.png" alt="usb" class="w-[737px] h-[241px] mt-16" />
             <p class="font-noto text-[17px] tracking-[2px] text-[#D0BC9C] font-semibold mt-10">
               USB 規格說明
             </p>
@@ -92,8 +82,6 @@
 
               <br />
               <span class="font-semibold">播放平台 Windows</span><br />
-              · 支援 MP3 / MP4 / PDF 檔案<br />
-              · MP4 建議使用 Baseline/Main Profile 編碼<br />
               · Windows系統 : Win 10 / 11<br />
               · 支援高畫質 4K<br />
               · CPU: Intel i5 處理器以上或更高<br />
@@ -102,7 +90,6 @@
               · 需安裝 Visual C++ 可轉散發套件（會自動偵測與安裝）<br />
               <br />
               <span class="font-semibold">播放平台 MAC</span><br />
-              · 支援 MP3 / MP4 / PDF 檔案<br />
               · MAC 系統 : macOS High Sierra 10.15 / macOS Mojave 10.15 / macOS Catalina 10.15.7 /
               <br />
                 macOS Big Sur 11.6.6 / macOS Monterey 12.4 / MacOS Ventura 13.6<br />
@@ -113,30 +100,54 @@
             </div>
           </div>
         </div>
+        <div class="w-[1075px] h-auto flex flex-col items-center mt-14 mb-16">
+        <p class="font-shippori text-[#999] text-[28px] tracking-[4px]">保固說明</p>
+        <div class="flex gap-x-5 mt-14">
+          <div class="bg-white w-[345px] h-[280px] flex flex-col items-center p-9">
+            <p class="font-noto text-[20px] font-semibold tracking-[2px] text-[#d0bc9c]">
+              七天內
+            </p>
+            <p
+              class="font-noto text-[14.5px] text-[#999] tracking-[0.5px] leading-[30px] mt-7 text-justify"
+            >
+              若七天內晶片讀取有問題且非人為因素，將免費進行換貨。預購產品不予退貨退款，僅可進行換貨。運費部分：廠商負擔來回運費（只限台灣本島地區）。
+            </p>
+          </div>
+          <div class="bg-white w-[345px] h-[280px] flex flex-col items-center p-9">
+            <p class="font-noto text-[20px] font-semibold tracking-[2px] text-[#d0bc9c]">
+              一年內
+            </p>
+            <p
+              class="font-noto text-[14.5px] text-[#999] tracking-[0.5px] leading-[30px] mt-7 text-justify"
+            >
+              出貨一年內針對晶片本身非人為因素損壞保固，進行維修換貨處理，外觀損傷則不在保固範圍之中。運費部分：請客戶端自付寄回廠之運費，廠商負擔維修後回件貨運費（只限台灣本島地區）。
+            </p>
+          </div>
+          <div class="bg-white w-[345px] h-[280px] flex flex-col items-center p-9">
+            <p class="font-noto text-[20px] font-semibold tracking-[2px] text-[#d0bc9c]">
+              超過一年
+            </p>
+            <p
+              class="font-noto text-[14.5px] text-[#999] tracking-[0.5px] leading-[30px] mt-7 text-justify"
+            >
+              如衍生維修費、材料費、雷雕、印刷、運費等，依當下狀況另行報價，再由客戶決定是否維修寄回。運費部分：請客戶端自付寄回廠之運費，若不維修但需寄回，仍需支付廠商回件貨運費。
+            </p>
+          </div>
+        </div>
+        <p
+          class="font-noto text-[14.5px] text-[#999] tracking-[0.5px] leading-[30px] mt-10 text-center"
+        >
+          製作單位：蜂鳥影像 & 三穩國際 <br />
+          客服專線：02-7722-1799<br />
+          電子信箱：sales@3ausb.com
+        </p>
+      </div>
       </div>
     </div>
-    <div class="w-full h-[146px] bg-white flex px-20 items-center justify-center z-10">
-      <div class="max-w-[1440px] w-full flex items-center justify-between">
-        <div class="flex gap-x-[77px]">
-          <a
-            href="https://www.facebook.com/fromislandtoisland"
-            target="_blank"
-            class="font-shippori text-[18px] text-[#999] tracking-[10px]"
-            >由島至島</a
-          >
-          <p class="font-shippori text-[18px] text-[#999] tracking-[10px]">最新場次</p>
-        </div>
-        <div class="flex gap-x-[30px]">
-          <a
-            href="https://siddharam.com/"
-            target="_blank"
-            class="font-noto text-[12px] text-[#999] tracking-[1px]"
-          >
-            網站製作｜西打藍好內容有限公司
-          </a>
-          <p class="font-wix text-[13px] text-[#999]">Copyright © HUMMINGBIRD Production</p>
-        </div>
-      </div>
-    </div>
+    <Footer 
+      bgColor="white" 
+      textColor="#999" 
+      :opacity="60" 
+    />
   </div>
 </template>

@@ -12,85 +12,91 @@
       <nav class="flex flex-col items-end space-y-12 sm:space-y-20 w-full">
         <div class="flex justify-between w-full items-center">
           <div class="flex flex-col items-center w-1/2 ml-1">
-            <p class="font-shippori text-[22px] sm:text-[28px] tracking-[8px] sm:tracking-[12px]">
+            <p class="font-shippori text-[22px] sm:text-[24px] tracking-[8px] sm:tracking-[12px]">
               由島至島
             </p>
-            <p class="font-wix text-[13px] sm:text-lg tracking-[3px] sm:tracking-[4px] mt-2">
+            <p class="font-amiri italic text-[13px] sm:text-[17px] tracking-[3px] sm:tracking-[4px] mt-2">
               FILM
             </p>
           </div>
           <div class="flex flex-col items-start space-y-6 w-1/2 ml-8">
             <NuxtLink
               to="/film"
-              class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
+              class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light hover:opacity-50"
               >電影介紹</NuxtLink
             >
             <NuxtLink
               to="/reports"
-              class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
+              class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light hover:opacity-50"
               >座談與報導</NuxtLink
             >
           </div>
         </div>
         <div class="flex justify-between w-full items-center">
-          <NuxtLink to="/lesson" class="flex flex-col items-center w-1/2 ml-1">
-            <p class="font-shippori text-[22px] sm:text-[28px] tracking-[8px] sm:tracking-[12px]">
+          <div class="flex flex-col items-center w-1/2 ml-1">
+            <p class="font-shippori text-[22px] sm:text-[24px] tracking-[8px] sm:tracking-[12px]">
               主題教案
             </p>
-            <p class="font-wix text-[13px] sm:text-lg tracking-[3px] sm:tracking-[4px] mt-2">
+            <p class="font-amiri italic text-[13px] sm:text-[17px] tracking-[3px] sm:tracking-[4px] mt-2">
               LESSON
             </p>
-          </NuxtLink>
+          </div>
           <div class="flex flex-col items-start space-y-6 w-1/2 ml-8">
             <NuxtLink
+              to="/lesson"
+              class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light hover:opacity-50"
+              >教案介紹</NuxtLink
+            >
+            <NuxtLink
               to="/lesson/one"
-              class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
+              class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light hover:opacity-50"
               >移動與邊界</NuxtLink
             >
             <NuxtLink
               to="/lesson/two"
-              class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
+              class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light hover:opacity-50"
               >加害與被害</NuxtLink
             >
             <NuxtLink
               to="/lesson/three"
-              class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
+              class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light hover:opacity-50"
               >共犯結構</NuxtLink
             >
             <NuxtLink
               to="/lesson/four"
-              class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
+              class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light hover:opacity-50"
               >克服過去</NuxtLink
             >
             <NuxtLink
               to="/lesson/five"
-              class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
+              class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light hover:opacity-50"
               >為什麼要記憶</NuxtLink
             >
           </div>
         </div>
         <div class="flex justify-between w-full items-center">
           <div class="flex flex-col items-center w-1/2 ml-1">
-            <p class="font-shippori text-[22px] sm:text-[28px] tracking-[8px] sm:tracking-[12px]">
+            <p class="font-shippori text-[22px] sm:text-[24px] tracking-[8px] sm:tracking-[12px]">
               聯絡我們
             </p>
-            <p class="font-wix text-[13px] sm:text-lg tracking-[3px] sm:tracking-[4px] mt-2">
+            <p class="font-amiri italic text-[13px] sm:text-[17px] tracking-[3px] sm:tracking-[4px] mt-2">
               CONTACT
             </p>
           </div>
           <div class="flex flex-col items-start space-y-6 w-1/2 ml-8">
             <NuxtLink
               to="/educational"
-              class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
+              class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light hover:opacity-50"
               >教育公播</NuxtLink
             >
-            <a
-              href="/booking"
-              class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
-              >包場資訊</a
+            <NuxtLink
+              to="/booking"
+              class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light hover:opacity-50"
+              >包場資訊</NuxtLink
             >
-            <a href="#" class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light"
-              >聯絡資訊</a
+            <NuxtLink
+              to="/contact" class="font-noto text-[15px] sm:text-[17px] tracking-[3px] font-light hover:opacity-50"
+              >聯絡資訊</NuxtLink
             >
           </div>
         </div>

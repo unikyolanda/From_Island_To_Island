@@ -1,4 +1,13 @@
 <script setup>
+  const menuRef = ref(null)
+  const toggleMenu = () => {
+    menuRef.value.show()
+  }
+
+  const closeMenu = () => {
+    menuRef.value.hide()
+  }
+
   const formData = reactive({
     location: '',
     time: '',
@@ -52,28 +61,19 @@
 </script>
 <template>
   <div class="flex flex-col bg-[#f6f6f6] w-screen h-auto min-h-screen items-center">
-    <div class="fixed top-11 left-12 w-10 h-[61px] flex flex-col z-20">
-      <NuxtLink to="/"><img src="/images-webp/logo_gray.webp" /></NuxtLink>
-      <NuxtLink to="/film" class="font-wix text-[#999] tracking-[4px] text-xs mt-7">FILM</NuxtLink>
-      <NuxtLink to="/lesson" class="font-wix text-[#999] tracking-[4px] text-xs mt-5"
-        >LESSON</NuxtLink
-      >
-      <p class="font-wix text-[#999] tracking-[4px] text-xs mt-5">CONTACT</p>
-    </div>
+    <NavBar textColor="#999" logoSrc="/images-webp/logo_gray.webp" />
     <SideMenu ref="menuRef" @close="closeMenu" />
     <div class="fixed right-10 sm:right-12 top-10 cursor-pointer z-20">
       <img src="/images/menu_gray.svg" alt="menu" class="w-10 h-8" @click="toggleMenu" />
     </div>
     <div class="flex flex-col w-full z-10 items-center opacity-90">
-      <div class="flex w-full px-[184px] pt-[233px] justify-between items-end mt-10">
-        <div class="flex flex-col">
-          <p class="font-amiri italic text-[#999] tracking-[6px] text-lg sm:text-[28px]">
-            Private Screening Booking
-          </p>
-          <p class="font-shippori text-[#999] text-[36px] sm:text-[44px] tracking-[8px]">
-            包場申請
-          </p>
-        </div>
+      <div class="flex flex-col mt-[233px] items-center w-full">
+        <p class="font-amiri italic text-[#999] tracking-[2px] text-lg sm:text-[28px]">
+          Private Screening Booking
+        </p>
+        <p class="font-shippori text-[#999] text-[36px] sm:text-[44px] tracking-[8px]">
+          包場申請
+        </p>
       </div>
       <img src="/images-webp/booking.webp" alt="booking" class="w-[676px] h-[389px] mt-12" />
       <p class="text-[#999] text-[14.5px] tracking-[0.5px] leading-[30px] mt-20 w-[676px]">
@@ -230,6 +230,11 @@
           </p>
           <input v-model="formData.phone" class="px-3 py-2" type="text" required />
         </div>
+        <div class="w-full flex justify-center">
+          <button type="submit" :disabled="isSubmitting" class="font-wix w-[162px] text-[#999] flex justify-center py-3 bg-white border border-[#999]/70 hover:bg-[#999] hover:text-white mt-12">
+            {{ isSubmitting ? '提交中...' : '包場申請' }}
+          </button>
+        </div>
         <p class="text-[#999] text-[14.5px] tracking-[0.5px] leading-[30px] mt-8 w-[676px]">
           因本片規格特殊，將不會進行院線上映。包場詳細規則如下：<br /><br />
 
@@ -243,69 +248,15 @@
           distribution.mars@gmail.com<br />
           0987-068-689 林先生
         </p>
-        <button type="submit" :disabled="isSubmitting" class="submit-button">
-          {{ isSubmitting ? '提交中...' : '提交' }}
-        </button>
-
-        <div v-if="submitStatus" class="status-message" :class="submitStatus">
+        <!-- <div v-if="submitStatus" class="status-message" :class="submitStatus">
           {{ submitStatus === 'success' ? '提交成功！' : '提交失敗，請稍後再試' }}
-        </div>
+        </div> -->
       </form>
     </div>
   </div>
-  <div class="w-full h-[146px] bg-white flex px-20 items-center justify-center z-10">
-    <div class="max-w-[1440px] w-full flex items-center justify-between">
-      <div class="flex gap-x-[77px]">
-        <a
-          href="https://www.facebook.com/fromislandtoisland"
-          target="_blank"
-          class="font-shippori text-[18px] text-[#999] tracking-[10px]"
-          >由島至島</a
-        >
-        <p class="font-shippori text-[18px] text-[#999] tracking-[10px]">最新場次</p>
-      </div>
-      <div class="flex gap-x-[30px]">
-        <a
-          href="https://siddharam.com/"
-          target="_blank"
-          class="font-noto text-[12px] text-[#999] tracking-[1px]"
-        >
-          網站製作｜西打藍好內容有限公司
-        </a>
-        <p class="font-wix text-[13px] text-[#999]">Copyright © HUMMINGBIRD Production</p>
-      </div>
-    </div>
-  </div>
+  <Footer 
+      bgColor="white" 
+      textColor="#999" 
+      :opacity="60" 
+    />
 </template>
-
-<style scoped>
-  .submit-button {
-    padding: 10px 20px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-  .submit-button:disabled {
-    background-color: #cccccc;
-    cursor: not-allowed;
-  }
-
-  .status-message {
-    margin-top: 20px;
-    padding: 10px;
-    border-radius: 4px;
-  }
-
-  .status-message.success {
-    background-color: #dff0d8;
-    color: #3c763d;
-  }
-
-  .status-message.error {
-    background-color: #f2dede;
-    color: #a94442;
-  }
-</style>

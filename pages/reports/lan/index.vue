@@ -11,14 +11,7 @@
 </script>
 <template>
   <div class="flex flex-col bg-black w-screen h-auto min-h-screen items-center">
-    <div class="fixed top-11 left-12 w-10 h-[61px] flex flex-col z-20">
-      <NuxtLink to="/"><img src="/images-webp/logo.webp" /></NuxtLink>
-      <NuxtLink to="/film" class="font-wix text-white tracking-[4px] text-xs mt-7">FILM</NuxtLink>
-      <NuxtLink to="/lesson" class="font-wix text-white tracking-[4px] text-xs mt-5"
-        >LESSON</NuxtLink
-      >
-      <p class="font-wix text-white tracking-[4px] text-xs mt-5">CONTACT</p>
-    </div>
+    <NavBar textColor="white" logoSrc="/images-webp/logo.webp" />
     <SideMenu ref="menuRef" @close="closeMenu" />
     <div class="fixed right-10 sm:right-12 top-10 cursor-pointer z-20">
       <img src="/images/menu.svg" alt="menu" class="w-10 h-8" @click="toggleMenu" />

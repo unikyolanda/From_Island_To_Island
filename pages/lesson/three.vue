@@ -20,14 +20,7 @@
 <template>
   <div class="flex flex-col bg-white w-screen h-auto min-h-screen items-center">
     <div class="fixed inset-0 bg-shadow z-0"></div>
-    <div class="fixed top-11 left-12 w-10 h-[61px] flex flex-col z-20">
-      <NuxtLink to="/"><img src="/images-webp/logo_gray.webp" /></NuxtLink>
-      <NuxtLink to="/film" class="font-wix text-[#999] tracking-[4px] text-xs mt-7">FILM</NuxtLink>
-      <NuxtLink to="/lesson" class="font-wix text-[#999] tracking-[4px] text-xs mt-5"
-        >LESSON</NuxtLink
-      >
-      <p class="font-wix text-[#999] tracking-[4px] text-xs mt-5">CONTACT</p>
-    </div>
+    <NavBar textColor="#999" logoSrc="/images-webp/logo_gray.webp" />
     <SideMenu ref="menuRef" @close="closeMenu" />
     <div class="fixed right-10 sm:right-12 top-10 cursor-pointer z-20">
       <img src="/images/menu_gray.svg" alt="menu" class="w-10 h-8" @click="toggleMenu" />
@@ -50,7 +43,7 @@
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLScQxiV58k1T7PDf_2NiOaQOrz2sjgu5JQr9PD2jYEAIZef_dQ/viewform"
             target="_blank"
-            class="font-wix w-[162px] text-[#999] flex justify-center py-3 bg-white border border-[#999]/70 mt-10 mb-20"
+            class="font-wix w-[162px] text-[#999] flex justify-center py-3 bg-white border border-[#999]/70 mt-10 hover:bg-[#999] hover:text-white"
           >
             教案申請表單</a
           >
@@ -275,28 +268,10 @@
         </div>
       </div>
     </div>
-    <div class="w-full h-[146px] bg-white flex px-20 items-center justify-center z-10 opacity-60">
-      <div class="max-w-[1440px] w-full flex items-center justify-between">
-        <div class="flex gap-x-[77px]">
-          <a
-            href="https://www.facebook.com/fromislandtoisland"
-            target="_blank"
-            class="font-shippori text-[18px] text-[#999] tracking-[10px]"
-            >由島至島</a
-          >
-          <p class="font-shippori text-[18px] text-[#999] tracking-[10px]">最新場次</p>
-        </div>
-        <div class="flex gap-x-[30px]">
-          <a
-            href="https://siddharam.com/"
-            target="_blank"
-            class="font-noto text-[12px] text-[#999] tracking-[1px]"
-          >
-            網站製作｜西打藍好內容有限公司
-          </a>
-          <p class="font-wix text-[13px] text-[#999]">Copyright © HUMMINGBIRD Production</p>
-        </div>
-      </div>
-    </div>
+    <Footer 
+      bgColor="white" 
+      textColor="#999" 
+      :opacity="60" 
+    />
   </div>
 </template>
