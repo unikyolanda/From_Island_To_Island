@@ -1,4 +1,11 @@
 <script setup>
+  import { ref } from 'vue'
+
+  const showPopup = ref(false)
+
+  const togglePopup = () => {
+    showPopup.value = !showPopup.value
+  }
   const { $gsap: gsap, $ScrollTrigger: ScrollTrigger } = useNuxtApp()
 
   // 延遲載入 YouTube 相關資源
@@ -110,8 +117,8 @@
           // Calculate delay based on scroll direction
           const delay =
             direction === 1
-              ? index * 1 // Original order when scrolling down
-              : (totalElements - 1 - index) * 1 // Reverse order when scrolling up
+              ? index * 0.6 // Original order when scrolling down
+              : (totalElements - 1 - index) * 0.6 // Reverse order when scrolling up
 
           if (direction === 1) {
             // Scrolling down
@@ -262,7 +269,7 @@
 
           const delay =
             direction === 1
-              ? adjustedIndex * 0.5 // Odd indices first when scrolling down
+              ? adjustedIndex * 0.3 // Odd indices first when scrolling down
               : (totalElements - 1 - adjustedIndex) * 0.5 // Reverse order when scrolling up
 
           gsap.to(text, {
@@ -317,13 +324,13 @@
     writing-mode: vertical-rl;
   }
   .mask-leathers {
-    mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
-    -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 0) 100%);
   }
 </style>
 
 <template>
-  <div class="relative overflow-x-hidden h-[300vh] w-full">
+  <div class="relative overflow-x-hidden h-[270vh] w-full">
     <SideMenu ref="menuRef" @close="closeMenu" />
     <div class="ripple-effect absolute flex flex-col items-center w-full h-full overflow-x-hidden">
       <div class="title w-full min-h-screen relative flex items-center">
@@ -428,9 +435,9 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-col w-full min-h-screen items-center justify-center still relative">
+      <div class="flex flex-col w-full min-h-[70vh] items-center justify-center still relative">
         <p
-          class="font-shippori text-white text-[17px] sm:text-[22px] tracking-[5px] sm:tracking-[8px] mt-[220px] sm:mt-12"
+          class="font-shippori text-white text-[17px] sm:text-[22px] tracking-[5px] sm:tracking-[8px] mt-[250px] sm:mt-20"
         >
           記憶像水一樣流動
         </p>
@@ -550,18 +557,43 @@
           class="font-shippori text-[18px] text-white/50 tracking-[10px] hover:text-white"
           >由島至島</a
         >
-        <p class="font-shippori text-[18px] text-white/50 tracking-[10px] hover:text-white">最新場次</p>
+        <p
+          @click="togglePopup"
+          class="font-shippori text-[18px] text-white/50 tracking-[10px] cursor-pointer hover:text-white"
+        >
+          最新場次
+        </p>
       </div>
       <div class="flex gap-x-[30px]">
         <a
           href="https://siddharam.com/"
           target="_blank"
-          class="font-noto text-[12px] text-white/50 tracking-[1px] hover:text-white"
+          class="font-noto text-[12px] text-white/50 tracking-[1px]"
         >
           網站製作｜西打藍好內容有限公司
         </a>
-        <p class="font-wix text-[13px] text-white/50 hover:text-white">Copyright © HUMMINGBIRD Production</p>
+        <p class="font-wix text-[13px] text-white/50">Copyright © HUMMINGBIRD Production</p>
       </div>
+    </div>
+  </div>
+  <!-- Popup -->
+  <div
+    v-if="showPopup"
+    class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+    @click="togglePopup"
+  >
+    <div class="relative max-w-[90%] max-h-[90vh]">
+      <img
+        src="https://res.cloudinary.com/daznz2uvo/image/upload/v1740982012/3%E6%9C%88%E7%AC%AC%E4%B8%80%E6%B3%A2%E5%9C%96%E6%96%87_epboly.png"
+        alt="最新場次"
+        class="max-w-full max-h-[90vh] object-contain"
+      />
+      <button
+        @click.stop="togglePopup"
+        class="absolute top-4 right-4 text-white bg-black bg-opacity-50 rounded-full w-8 h-8 flex items-center justify-center hover:bg-opacity-70"
+      >
+        ✕
+      </button>
     </div>
   </div>
 </template>

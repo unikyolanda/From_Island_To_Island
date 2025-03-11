@@ -11,6 +11,7 @@
 </script>
 <template>
   <div class="flex flex-col bg-black w-screen h-auto min-h-screen items-center">
+    <div class="fixed inset-0 bg-reports z-0"></div>
     <NavBar textColor="white" logoSrc="/images/logo.png" />
     <SideMenu ref="menuRef" @close="closeMenu" />
     <div class="fixed right-10 sm:right-12 top-10 cursor-pointer z-20">
@@ -21,7 +22,7 @@
         <img src="/images/xmark.svg" />
       </div>
       <img src="/images-webp/reports/popbox/Popbox_1_1.webp" class="w-screen h-auto" />
-      <div class="flex items-center gap-x-12 my-16">
+      <div class="flex items-center gap-x-12 my-16 w-[841px]">
         <img
           src="/images-webp/reports/tsai.webp"
           alt="tsai"

@@ -30,7 +30,7 @@
       parallaxElements.forEach(element => {
         // Set initial position
         gsap.set(element, {
-          y: '-30%', // Start higher up to allow room for movement
+          y: '-20%', // Start higher up to allow room for movement
         })
 
         // Create the parallax effect
@@ -117,7 +117,7 @@
               src="/images-webp/director.webp"
               alt="director"
               id="parallax-content"
-              class="max-w-[100%] h-[120%] object-cover object-center"
+              class="max-w-[100%] h-[100%] object-cover object-center"
             />
           </div>
           <div class="flex items-center w-[443px] justify-center mt-[423px]">
@@ -134,7 +134,7 @@
               src="/images-webp/stills/lesson_2.webp"
               alt="lesson2"
               id="parallax-content"
-              class="absolute max-w-[150%] h-[130%] oboject-cover object-top"
+              class="absolute max-w-[100%] h-[100%] oboject-cover object-top"
             />
           </div>
         </div>
@@ -156,13 +156,13 @@
           </p>
           <div
             id="parallax-container"
-            class="relative overflow-hidden w-[710px] h-[350px] flex items-center mt-[42px]"
+            class="relative overflow-hidden w-[710px] h-[400px] flex items-center mt-[42px]"
           >
             <img
               src="/images-webp/stills/still_4.webp"
               alt="still4"
               id="parallax-content"
-              class="max-w-[150%] h-[130%] object-cover object-center"
+              class="max-w-[100%] h-[100%] object-cover object-center"
             />
           </div>
           <p class="font-noto text-white tracking-[2px] leading-[36px] mt-[191px] w-[710px]">
@@ -242,7 +242,7 @@
               src="/images-webp/historical.webp"
               alt="historical"
               id="parallax-content"
-              class="max-w-[120%] h-[120%]"
+              class="max-w-[100%] h-[100%]"
             />
           </div>
         </div>
@@ -323,7 +323,7 @@
               src="/images-webp/stills/lesson_3.webp"
               alt="lesson3"
               id="parallax-content"
-              class="max-w-[100%] h-[150%] object-cover object-center"
+              class="max-w-[100%] h-[100%] object-cover object-center"
             />
           </div>
           <div
@@ -480,11 +480,7 @@
           class="max-w-[100%] h-[120%] object-cover object-center"
         />
       </div>
-      <Footer 
-        bgColor="black" 
-        textColor="white" 
-        :opacity="100" 
-      />
+      <Footer bgColor="black" textColor="white" :opacity="100" />
     </div>
   </div>
 </template>

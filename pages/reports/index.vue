@@ -1,5 +1,7 @@
 <script setup>
   const menuRef = ref(null)
+  const { $gsap: gsap, $ScrollTrigger: ScrollTrigger } = useNuxtApp()
+
   const toggleMenu = () => {
     menuRef.value.show()
   }
@@ -7,6 +9,44 @@
   const closeMenu = () => {
     menuRef.value.hide()
   }
+
+  onMounted(() => {
+    const parallaxElements = document.querySelectorAll('#parallax-content')
+    const images = Array.from(parallaxElements)
+
+    // Check if each image is loaded
+    const imagePromises = images.map(img => {
+      if (img.complete) {
+        return Promise.resolve()
+      } else {
+        return new Promise(resolve => {
+          img.onload = resolve
+        })
+      }
+    })
+
+    // Initialize parallax after all images are loaded
+    Promise.all(imagePromises).then(() => {
+      parallaxElements.forEach(element => {
+        // Set initial position
+        gsap.set(element, {
+          y: '-5%', // Start higher up to allow room for movement
+        })
+
+        // Create the parallax effect
+        gsap.to(element, {
+          y: '0%', // Move down to show bottom portion
+          ease: 'none',
+          scrollTrigger: {
+            trigger: element.parentElement,
+            start: 'top bottom',
+            end: 'bottom 25%',
+            scrub: 1,
+          },
+        })
+      })
+    })
+  })
 </script>
 <style>
   .bg-reports {
@@ -75,7 +115,9 @@
             class="text-white font-noto text-[14.5px] tracking-[0.5px] text-justify font-light leading-[30px] mt-8"
           >
             「克發導演作為大馬新住民，有別於台灣人背負的歷史包袱、提供新鮮的觀點，《由島至島》填補了台灣二戰之後長期的歷史空缺、甚至是記憶的黑洞。」蔡崇隆導演觀察新住民導演正因與台灣隔了一段距離，視野更為清晰，其妻子阮金紅為越南裔新住民，同樣身為導演，她紀錄下這個世代台灣人跨國婚姻與家庭的歷史，克發導演則拍攝父祖輩在大東亞戰爭之下的記憶，相較於從國族出發的大敘事，兩者皆從屬於人民記憶的小敘事開展⋯⋯
-            <NuxtLink href="/reports/tsai" class="font-semibold cursor-pointer hover:opacity-50">看全文</NuxtLink>
+            <NuxtLink href="/reports/tsai" class="font-semibold cursor-pointer hover:opacity-50"
+              >看全文</NuxtLink
+            >
           </div>
         </div>
         <div class="flex flex-col border-b pb-10">
@@ -108,7 +150,9 @@
             class="text-white font-noto text-[14.5px] tracking-[0.5px] text-justify font-light leading-[30px] mt-16"
           >
             「《不即不離》、《還有一些樹》像是一種回望歷史動態的一種速寫，但《由島至島》超越了回望，以一種更逼近、甚至更為逼迫的視角，對於觀眾來說激進地、殘酷地把隱匿的事實一點一點挖開來，進而提問、尋找答案。」適芳老師點出導演作品經由重訪歷史，提出一種不同於教科書、不同於國家記憶的非主流敘事，以紀錄片來顯影這些被隱匿的歷史或禁忌題材。「正是透過這些歷史的見證，進行批判性地反省與反思，在歷史經驗裡思考人性與寬容。」力昕老師回應⋯⋯
-            <NuxtLink href="/reports/kuo" class="font-semibold cursor-pointer hover:opacity-50">看全文</NuxtLink>
+            <NuxtLink href="/reports/kuo" class="font-semibold cursor-pointer hover:opacity-50"
+              >看全文</NuxtLink
+            >
           </div>
         </div>
         <div class="flex flex-col border-b pb-10">
@@ -132,10 +176,12 @@
           <div
             class="text-white font-noto text-[14.5px] tracking-[0.5px] text-justify font-light leading-[30px] mt-8"
           >
-            「「阿嬤在爪哇開雜貨店的日子，是她一輩子過得最好的時期。」朱惠足教授分享自己的祖父母
-            1938
-            年前往爪哇島開設雜貨店，家裡聘請傭人、生活條件理想。因為「受日本殖民」的身份，台灣人到了東南亞反而成為「日本人」，得以享有比當地人更優渥的資源與更高的權力，歷史學者稱之為「暫時的殖民者」。直到各國對日戰事升溫，任何旅居荷屬印尼的台灣人一概被視為敵國（日本）子民，才讓一切風雲變色⋯⋯
-            <NuxtLink href="/reports/chu" class="font-semibold cursor-pointer hover:opacity-50">看全文</NuxtLink>
+            「阿嬤在爪哇開雜貨店的日子，是她一輩子過得最好的時期。」朱惠足教授分享自己的祖父母 1938
+            年前往爪哇島開設雜貨店，家裡聘請傭人、生活條件理想。因為「受日本殖民」的身份，台灣人到了東南亞反而成為「日本人」，得以享有比當地人更優渥的資源與更高的權力，歷史學者稱之為「暫時的殖民者」。直到各國對日戰事升溫，任何旅居荷屬印尼的台灣人一概被視為敵國
+            (日本) 子民，才讓一切風雲變色⋯⋯
+            <NuxtLink href="/reports/chu" class="font-semibold cursor-pointer hover:opacity-50"
+              >看全文</NuxtLink
+            >
           </div>
         </div>
         <div class="flex flex-col border-b pb-10">
@@ -160,7 +206,9 @@
             class="text-white font-noto text-[14.5px] tracking-[0.5px] text-justify font-light leading-[30px] mt-8"
           >
             「當克發導演讀過我的研究，說有興趣把這些比較沒有人知道的歷史拍成紀錄片的時候，大概真的是我自己做歷史研究最開心的一個時刻。」適齊老師分享，閱讀文字與觀看動態影像，對於情感的攪動與觸發全然不同，藉由影像這個媒介，除了易於進入大眾視野，更重要是當觀眾走過紀錄片五小時片長，感受到在那個歷史現場的人，不管是台灣人、還是在馬來亞的華人、日本士兵，或者是戰後繼續在討論這些戰爭歷史的人，他們到底在當下感受到什麼⋯⋯
-            <NuxtLink href="/reports/lan" class="font-semibold cursor-pointer hover:opacity-50">看全文</NuxtLink>
+            <NuxtLink href="/reports/lan" class="font-semibold cursor-pointer hover:opacity-50"
+              >看全文</NuxtLink
+            >
           </div>
         </div>
         <div class="flex flex-col border-b pb-10">
@@ -183,7 +231,9 @@
             class="text-white font-noto text-[14.5px] tracking-[0.5px] text-justify font-light leading-[30px] mt-8"
           >
             「我們容易自溺於自身的立場。」陳柏棕助理研究員分享，起初對於《由島至島》影像所呈現的也曾抗拒，覺得和認識的不一樣。後來思考許久，才明白要了解一個群體不能只記得良善，而是好壞皆需記錄。對於過去所認知到的台籍日本兵，大多在理解他們的受苦，卻往往忽略身為士兵，不論軍伕或其他角色，在異國為日軍服務本就是侵略性的角色——即使不拿槍，有些通譯雖不動武，卻可能透過語言傷害他人。這是過去他未曾理解的。⋯⋯
-            <NuxtLink href="/reports/chen" class="font-semibold cursor-pointer hover:opacity-50">看全文</NuxtLink>
+            <NuxtLink href="/reports/chen" class="font-semibold cursor-pointer hover:opacity-50"
+              >看全文</NuxtLink
+            >
           </div>
         </div>
         <div class="flex flex-col">
@@ -206,13 +256,20 @@
             class="text-white font-noto text-[14.5px] tracking-[0.5px] text-justify font-light leading-[30px] mt-8"
           >
             鄭政誠教授從台籍日本兵的歷史脈絡談起，1895年日本接收台灣，卻擔心「台灣人」從軍有損日本軍隊的榮耀，因而沒有設定服兵役的義務。然而，1937年中日戰爭爆發，日軍大量人力消耗，又為防範軍武與機密外洩，台灣人只得成為軍屬或軍夫，處理勤務、運輸彈藥、種植蔬菜來儲備戰力與物資，若將軍中階級由上至下排開來看：軍人－軍馬－軍犬－軍鴿，接著才是台灣人所在的軍屬－軍夫，不被視為正規軍人，地位連犬馬也不如。⋯⋯
-            <NuxtLink href="/reports/cheng" class="font-semibold cursor-pointer hover:opacity-50">看全文</NuxtLink>
+            <NuxtLink href="/reports/cheng" class="font-semibold cursor-pointer hover:opacity-50"
+              >看全文</NuxtLink
+            >
           </div>
         </div>
       </div>
     </div>
-    <div class="w-full z-10 opacity-90">
-      <img src="/images-webp/stills/still_10.webp" alt="still" class="w-full mt-24" />
+    <div class="w-full z-10 opacity-90 overflow-hidden mt-24" id="parallax-container">
+      <img
+        src="/images-webp/stills/still_10.webp"
+        alt="still"
+        class="w-full h-[110%]"
+        id="parallax-content"
+      />
     </div>
     <div class="flex mt-[73px] w-full justify-between px-[184px] z-10 opacity-90">
       <div class="flex flex-col w-[372px]">
@@ -356,15 +413,23 @@
         </div>
       </div>
     </div>
-    <div class="w-full z-10 opacity-90">
-      <img src="/images-webp/stills/still_11.webp" alt="still" class="w-full mt-28" />
+    <div class="w-full z-10 opacity-90 overflow-hidden mt-24" id="parallax-container">
+      <img
+        src="/images-webp/stills/still_11.webp"
+        alt="still"
+        class="w-full h-[110%]"
+        id="parallax-content"
+      />
     </div>
-    <div class="w-full z-10 opacity-80 flex pt-[97px] justify-between px-[184px] bg-audience">
+    <div class="w-full z-10 opacity-80 flex pt-[97px] justify-between px-[184px] bg-audience -mt-6">
       <div class="flex flex-col w-[372px]">
         <div class="flex items-center w-full">
           <div class="flex flex-col">
             <p class="font-shippori text-[28px] text-white tracking-[3px]">評論與回饋</p>
-            <p class="font-wix text-white tracking-[2px] mt-1">Film Reviews &<br /> Audience Feedback</p>
+            <p class="font-wix text-white tracking-[2px] mt-1">
+              Film Reviews &<br />
+              Audience Feedback
+            </p>
           </div>
         </div>
       </div>
@@ -471,10 +536,6 @@
         </div>
       </div>
     </div>
-    <Footer 
-        bgColor="black" 
-        textColor="white" 
-        :opacity="100" 
-      />
+    <Footer bgColor="black" textColor="white" :opacity="100" />
   </div>
 </template>

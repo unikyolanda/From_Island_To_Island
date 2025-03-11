@@ -27,7 +27,7 @@
     </div>
     <div class="flex w-full z-10 opacity-85 justify-center bg-[#d9d9d9]/30">
       <div class="flex mt-[221px] w-[548px]">
-        <div class="fixed flex flex-col ml-36">
+        <div class="sticky top-[221px] flex flex-col ml-36 mb-6 h-fit">
           <div class="flex items-center">
             <p class="font-amiri italic text-[#D0BC9C] tracking-[6px] text-lg sm:text-[28px]">
               LESSON
@@ -258,7 +258,7 @@
                 <a
                   href="https://drive.google.com/drive/folders/1f27nDrZNGGoNXQWJaHXQC8CF5QEMaVEQ"
                   target="_blank"
-                  class="font-wix w-[162px] text-[#999] flex justify-center py-3 bg-white border border-[#999]/70 mt-6 mb-20"
+                  class="font-wix w-[162px] text-[#999] flex justify-center py-3 bg-white border border-[#999]/70 mt-6 mb-20 hover:bg-[#999] hover:text-white"
                 >
                   台灣教案預覽</a
                 >
@@ -268,10 +268,6 @@
         </div>
       </div>
     </div>
-    <Footer 
-      bgColor="white" 
-      textColor="#999" 
-      :opacity="60" 
-    />
+    <Footer bgColor="white" textColor="#999" :opacity="60" />
   </div>
 </template>
