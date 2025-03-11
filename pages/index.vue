@@ -515,22 +515,40 @@
     </div>
   </div>
   <div class="h-screen flex forth-bg justify-center items-center lesson -mt-[100px]">
-    <div class="max-w-[1600px] flex my-[224px] lessonContent">
-      <div class="hidden sm:flex opacity-15 mr-[112px] lessonTopic">
-        <p class="font-shippori text-white text-[59px] tracking-[36px] rotateText mr-7">
+    <div class="max-w-[1600px] flex flex-col sm:flex-row my-[224px] lessonContent">
+      <div class="flex sm:hidden flex-col items-center sm:items-start">
+        <p class="font-amiri italic text-white tracking-[6px] text-lg sm:text-[28px]">LESSON</p>
+        <p class="font-shippori text-white text-[36px] sm:text-[44px] tracking-[8px]">主題教案</p>
+      </div>
+      <div class="flex opacity-20 sm:mr-[112px] lessonTopic justify-center mt-12 sm:mt-0">
+        <p
+          class="font-shippori text-white text-[34px] sm:text-[59px] tracking-[28px] sm:tracking-[36px] rotateText mr-4 sm:mr-7"
+        >
           為什麼要記憶
         </p>
-        <p class="font-shippori text-white text-[59px] tracking-[36px] rotateText mr-7 mt-12">
+        <p
+          class="font-shippori text-white text-[34px] sm:text-[59px] tracking-[28px] sm:tracking-[36px] rotateText mr-4 sm:mr-7 mt-9 sm:mt-12"
+        >
           克服過去
         </p>
-        <p class="font-shippori text-white text-[59px] tracking-[36px] rotateText mr-7">共犯結構</p>
-        <p class="font-shippori text-white text-[59px] tracking-[36px] rotateText mr-7 mt-12">
+        <p
+          class="font-shippori text-white text-[34px] sm:text-[59px] tracking-[28px] sm:tracking-[36px] rotateText mr-4 sm:mr-7"
+        >
+          共犯結構
+        </p>
+        <p
+          class="font-shippori text-white text-[34px] sm:text-[59px] tracking-[28px] sm:tracking-[36px] rotateText mr-4 sm:mr-7 mt-9 sm:mt-12"
+        >
           加害與被害
         </p>
-        <p class="font-shippori text-white text-[59px] tracking-[36px] rotateText">移動與邊界</p>
+        <p
+          class="font-shippori text-white text-[34px] sm:text-[59px] tracking-[28px] sm:tracking-[36px] rotateText"
+        >
+          移動與邊界
+        </p>
       </div>
       <div class="flex flex-col items-center sm:items-start gap-y-6 sm:gap-y-14 px-10 sm:px-0">
-        <div class="flex flex-col items-center sm:items-start">
+        <div class="hidden sm:flex flex-col items-center sm:items-start">
           <p class="font-amiri italic text-white tracking-[6px] text-lg sm:text-[28px]">LESSON</p>
           <p class="font-shippori text-white text-[36px] sm:text-[44px] tracking-[8px]">主題教案</p>
         </div>
@@ -548,31 +566,35 @@
       </div>
     </div>
   </div>
-  <div class="w-full h-[146px] bg-black -mt-[100px] flex px-20 items-center justify-center z-10">
-    <div class="max-w-[1440px] w-full flex items-center justify-between">
-      <div class="flex gap-x-[77px]">
+  <div
+    class="w-full h-[190px] sm:h-[146px] bg-black -mt-[100px] flex sm:px-20 items-center justify-center z-10"
+  >
+    <div class="max-w-[1440px] w-full flex flex-col sm:flex-row items-center justify-between">
+      <div class="flex gap-x-16 sm:gap-x-[77px]">
         <a
           href="https://www.facebook.com/fromislandtoisland"
           target="_blank"
-          class="font-shippori text-[18px] text-white/50 tracking-[10px] hover:text-white"
+          class="font-shippori text-[18px] text-white/80 tracking-[10px] hover:text-white"
           >由島至島</a
         >
         <p
           @click="togglePopup"
-          class="font-shippori text-[18px] text-white/50 tracking-[10px] cursor-pointer hover:text-white"
+          class="font-shippori text-[18px] text-white/80 tracking-[10px] cursor-pointer hover:text-white"
         >
           最新場次
         </p>
       </div>
-      <div class="flex gap-x-[30px]">
+      <div class="flex flex-col-reverse items-center sm:flex-row gap-x-[30px]">
         <a
           href="https://siddharam.com/"
           target="_blank"
-          class="font-noto text-[12px] text-white/50 tracking-[1px]"
+          class="font-noto text-[12px] text-white/80 tracking-[1px] mt-1 sm:mt-0"
         >
           網站製作｜西打藍好內容有限公司
         </a>
-        <p class="font-wix text-[13px] text-white/50">Copyright © HUMMINGBIRD Production</p>
+        <p class="font-wix text-[13px] text-white/80 mt-8 sm:mt-0">
+          Copyright © HUMMINGBIRD Production
+        </p>
       </div>
     </div>
   </div>

@@ -62,7 +62,7 @@
         <a
           href="https://siddharam.com/"
           target="_blank"
-          class="font-noto text-[12px] tracking-[1px] opacity-80"
+          class="font-noto text-[12px] tracking-[1px] opacity-80 mt-1 sm:mt-0"
           :style="{ color: textColor }"
         >
           網站製作｜西打藍好內容有限公司
