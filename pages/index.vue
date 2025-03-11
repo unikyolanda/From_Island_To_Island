@@ -332,14 +332,15 @@
 <template>
   <div class="relative overflow-x-hidden h-[270vh] w-full">
     <SideMenu ref="menuRef" @close="closeMenu" />
+    <div class="fixed right-10 sm:right-12 top-10 cursor-pointer z-20">
+      <img src="/images/menu.svg" alt="menu" class="w-10 h-8" @click="toggleMenu" />
+    </div>
     <div class="ripple-effect absolute flex flex-col items-center w-full h-full overflow-x-hidden">
       <div class="title w-full min-h-screen relative flex items-center">
         <div class="sm:hidden absolute left-10 z-10 top-[55px]">
           <img src="/images-webp/title.webp" alt="title" class="w-[140px] h-[81px]" />
         </div>
-        <div class="fixed right-10 sm:right-12 top-10 cursor-pointer z-20">
-          <img src="/images/menu.svg" alt="menu" class="w-10 h-8" @click="toggleMenu" />
-        </div>
+
         <div class="flex sm:px-[162px] justify-center relative w-full h-auto">
           <div
             class="title-text-section flex flex-col absolute top-[480px] sm:top-[447px] left-[60px] sm:left-[162px]"
@@ -553,7 +554,7 @@
           <p class="font-shippori text-white text-[36px] sm:text-[44px] tracking-[8px]">主題教案</p>
         </div>
         <p
-          class="font-noto text-white tracking-[1px] sm:tracking-[2px] w-full sm:w-[440px] leading-[36px] text-[14px] sm:text-[16px]"
+          class="font-noto text-white tracking-[1px] sm:tracking-[2px] w-[295px] sm:w-[440px] leading-[36px] text-[14px] sm:text-[16px] text-justify"
         >
           《由島至島》教育推廣規劃，從本片中節選出５個主題的片段，發展搭配教案，免費開放老師申請作為課程教授素材。五大主題為：移動與邊界、加害與被害、共犯結構－日本擴張行動、克服過去、為什麼要記憶，各有台灣、日本及馬來西亞教案可下載。
         </p>
