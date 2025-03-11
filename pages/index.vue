@@ -466,7 +466,7 @@
       </div>
     </div>
   </div>
-  <div class="h-auto sm:h-[100vh] flex third-bg justify-center items-center film">
+  <div class="h-auto sm:h-[100vh] flex third-bg justify-center items-center film z-0">
     <div
       class="sm:max-w-[1200px] w-screen h-full min-h-screen flex flex-col items-center justify-center sm:flex-row sm:gap-x-[142px] sm:mb-24 filmContent pt-12 pb-[150px] sm:pb-0 px-10"
     >
@@ -514,7 +514,7 @@
       </div>
     </div>
   </div>
-  <div class="h-screen flex forth-bg justify-center items-center lesson -mt-[100px]">
+  <div class="h-screen flex forth-bg justify-center items-center lesson -mt-[100px] z-0">
     <div class="max-w-[1600px] flex flex-col sm:flex-row my-[224px] lessonContent">
       <div class="flex sm:hidden flex-col items-center sm:items-start">
         <p class="font-amiri italic text-white tracking-[6px] text-lg sm:text-[28px]">LESSON</p>
@@ -522,22 +522,22 @@
       </div>
       <div class="flex opacity-20 sm:mr-[112px] lessonTopic justify-center mt-12 sm:mt-0">
         <p
-          class="font-shippori text-white text-[34px] sm:text-[59px] tracking-[28px] sm:tracking-[36px] rotateText mr-4 sm:mr-7"
+          class="font-shippori text-white text-[34px] sm:text-[59px] tracking-[28px] sm:tracking-[36px] rotateText mr-[14px] sm:mr-7"
         >
           為什麼要記憶
         </p>
         <p
-          class="font-shippori text-white text-[34px] sm:text-[59px] tracking-[28px] sm:tracking-[36px] rotateText mr-4 sm:mr-7 mt-9 sm:mt-12"
+          class="font-shippori text-white text-[34px] sm:text-[59px] tracking-[28px] sm:tracking-[36px] rotateText mr-[14px] sm:mr-7 mt-9 sm:mt-12"
         >
           克服過去
         </p>
         <p
-          class="font-shippori text-white text-[34px] sm:text-[59px] tracking-[28px] sm:tracking-[36px] rotateText mr-4 sm:mr-7"
+          class="font-shippori text-white text-[34px] sm:text-[59px] tracking-[28px] sm:tracking-[36px] rotateText mr-[14px] sm:mr-7"
         >
           共犯結構
         </p>
         <p
-          class="font-shippori text-white text-[34px] sm:text-[59px] tracking-[28px] sm:tracking-[36px] rotateText mr-4 sm:mr-7 mt-9 sm:mt-12"
+          class="font-shippori text-white text-[34px] sm:text-[59px] tracking-[28px] sm:tracking-[36px] rotateText mr-[14px] sm:mr-7 mt-9 sm:mt-12"
         >
           加害與被害
         </p>
