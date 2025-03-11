@@ -33,15 +33,15 @@
 
 <template>
   <div
-    class="w-full h-[146px] flex px-20 items-center justify-center z-0"
+    class="w-full h-[190px] sm:h-[146px] flex sm:px-20 items-center justify-center z-0"
     :style="{
       backgroundColor: bgColor,
       opacity: opacity / 100,
       marginTop: marginTop,
     }"
   >
-    <div class="max-w-[1440px] w-full flex items-center justify-between">
-      <div class="flex gap-x-[77px]">
+    <div class="max-w-[1440px] w-full flex flex-col sm:flex-row items-center justify-between">
+      <div class="flex gap-x-16 sm:gap-x-[77px]">
         <a
           href="https://www.facebook.com/fromislandtoisland"
           target="_blank"
@@ -58,7 +58,7 @@
           最新場次
         </p>
       </div>
-      <div class="flex gap-x-[30px]">
+      <div class="flex flex-col-reverse items-center sm:flex-row gap-x-[30px]">
         <a
           href="https://siddharam.com/"
           target="_blank"
@@ -67,7 +67,7 @@
         >
           網站製作｜西打藍好內容有限公司
         </a>
-        <p class="font-wix text-[13px] opacity-80" :style="{ color: textColor }">
+        <p class="font-wix text-[13px] opacity-80 mt-8 sm:mt-0" :style="{ color: textColor }">
           Copyright © HUMMINGBIRD Production
         </p>
       </div>
