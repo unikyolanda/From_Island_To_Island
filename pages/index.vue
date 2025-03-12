@@ -524,30 +524,30 @@
         <p class="font-shippori text-white text-[36px] sm:text-[44px] tracking-[8px]">主題教案</p>
       </div>
       <div
-        class="flex w-full sm:w-auto opacity-20 sm:mr-[112px] lessonTopic justify-center mt-12 sm:mt-0 px-4 sm:px-0 overflow-x-auto"
+        class="flex w-full sm:w-auto opacity-20 sm:mr-[112px] lessonTopic justify-center mt-12 sm:mt-0 mb-6 sm:mb-0 px-4 sm:px-0 overflow-x-auto"
       >
         <p
-          class="font-shippori text-white text-[24px] sm:text-[59px] tracking-[16px] sm:tracking-[36px] rotateText mr-[14px] sm:mr-7 whitespace-nowrap"
+          class="font-shippori text-white text-[30px] sm:text-[59px] tracking-[20px] sm:tracking-[36px] rotateText mr-[14px] sm:mr-7 whitespace-nowrap"
         >
           為什麼要記憶
         </p>
         <p
-          class="font-shippori text-white text-[24px] sm:text-[59px] tracking-[16px] sm:tracking-[36px] rotateText mr-[14px] sm:mr-7 mt-9 sm:mt-12 whitespace-nowrap"
+          class="font-shippori text-white text-[30px] sm:text-[59px] tracking-[20px] sm:tracking-[36px] rotateText mr-[14px] sm:mr-7 mt-9 sm:mt-12 whitespace-nowrap"
         >
           克服過去
         </p>
         <p
-          class="font-shippori text-white text-[24px] sm:text-[59px] tracking-[16px] sm:tracking-[36px] rotateText mr-[14px] sm:mr-7 whitespace-nowrap"
+          class="font-shippori text-white text-[30px] sm:text-[59px] tracking-[20px] sm:tracking-[36px] rotateText mr-[14px] sm:mr-7 whitespace-nowrap"
         >
           共犯結構
         </p>
         <p
-          class="font-shippori text-white text-[24px] sm:text-[59px] tracking-[16px] sm:tracking-[36px] rotateText mr-[14px] sm:mr-7 mt-9 sm:mt-12 whitespace-nowrap"
+          class="font-shippori text-white text-[30px] sm:text-[59px] tracking-[20px] sm:tracking-[36px] rotateText mr-[14px] sm:mr-7 mt-9 sm:mt-12 whitespace-nowrap"
         >
           加害與被害
         </p>
         <p
-          class="font-shippori text-white text-[24px] sm:text-[59px] tracking-[16px] sm:tracking-[36px] rotateText whitespace-nowrap"
+          class="font-shippori text-white text-[30px] sm:text-[59px] tracking-[20px] sm:tracking-[36px] rotateText whitespace-nowrap"
         >
           移動與邊界
         </p>
