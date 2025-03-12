@@ -515,9 +515,11 @@
       </div>
     </div>
   </div>
-  <div class="min-h-max h-screen flex forth-bg justify-center items-center lesson -mt-[100px] z-0">
+  <div
+    class="min-h-max sm:h-screen w-full flex forth-bg justify-center items-center lesson -mt-[100px] z-0"
+  >
     <div
-      class="max-w-[1600px] w-full flex flex-col items-center sm:flex-row my-[100px] sm:my-[224px] lessonContent"
+      class="max-w-[1600px] flex flex-col items-center sm:flex-row my-[100px] sm:my-[224px] lessonContent"
     >
       <div class="flex sm:hidden flex-col items-center sm:items-start">
         <p class="font-amiri italic text-white tracking-[6px] text-lg sm:text-[28px]">LESSON</p>
