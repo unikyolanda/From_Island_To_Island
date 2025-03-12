@@ -516,36 +516,38 @@
     </div>
   </div>
   <div class="min-h-max h-screen flex forth-bg justify-center items-center lesson -mt-[100px] z-0">
-    <div class="max-w-[1600px] flex flex-col items-center sm:flex-row my-[224px] lessonContent">
+    <div
+      class="max-w-[1600px] w-full flex flex-col items-center sm:flex-row my-[100px] sm:my-[224px] lessonContent"
+    >
       <div class="flex sm:hidden flex-col items-center sm:items-start">
         <p class="font-amiri italic text-white tracking-[6px] text-lg sm:text-[28px]">LESSON</p>
         <p class="font-shippori text-white text-[36px] sm:text-[44px] tracking-[8px]">主題教案</p>
       </div>
       <div
-        class="flex w-[295px] sm:w-auto opacity-20 sm:mr-[112px] lessonTopic justify-center mt-12 sm:mt-0"
+        class="flex w-full sm:w-auto opacity-20 sm:mr-[112px] lessonTopic justify-center mt-12 sm:mt-0 px-4 sm:px-0 overflow-x-auto"
       >
         <p
-          class="font-shippori text-white text-[34px] sm:text-[59px] tracking-[28px] sm:tracking-[36px] rotateText mr-[14px] sm:mr-7"
+          class="font-shippori text-white text-[24px] sm:text-[59px] tracking-[16px] sm:tracking-[36px] rotateText mr-[14px] sm:mr-7 whitespace-nowrap"
         >
           為什麼要記憶
         </p>
         <p
-          class="font-shippori text-white text-[34px] sm:text-[59px] tracking-[28px] sm:tracking-[36px] rotateText mr-[14px] sm:mr-7 mt-9 sm:mt-12"
+          class="font-shippori text-white text-[24px] sm:text-[59px] tracking-[16px] sm:tracking-[36px] rotateText mr-[14px] sm:mr-7 mt-9 sm:mt-12 whitespace-nowrap"
         >
           克服過去
         </p>
         <p
-          class="font-shippori text-white text-[34px] sm:text-[59px] tracking-[28px] sm:tracking-[36px] rotateText mr-[14px] sm:mr-7"
+          class="font-shippori text-white text-[24px] sm:text-[59px] tracking-[16px] sm:tracking-[36px] rotateText mr-[14px] sm:mr-7 whitespace-nowrap"
         >
           共犯結構
         </p>
         <p
-          class="font-shippori text-white text-[34px] sm:text-[59px] tracking-[28px] sm:tracking-[36px] rotateText mr-[14px] sm:mr-7 mt-9 sm:mt-12"
+          class="font-shippori text-white text-[24px] sm:text-[59px] tracking-[16px] sm:tracking-[36px] rotateText mr-[14px] sm:mr-7 mt-9 sm:mt-12 whitespace-nowrap"
         >
           加害與被害
         </p>
         <p
-          class="font-shippori text-white text-[34px] sm:text-[59px] tracking-[28px] sm:tracking-[36px] rotateText"
+          class="font-shippori text-white text-[24px] sm:text-[59px] tracking-[16px] sm:tracking-[36px] rotateText whitespace-nowrap"
         >
           移動與邊界
         </p>
