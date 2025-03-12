@@ -467,7 +467,7 @@
       </div>
     </div>
   </div>
-  <div class="h-auto sm:h-[100vh] flex third-bg justify-center items-center film z-0">
+  <div class="min-h-max sm:h-screnn flex third-bg justify-center items-center film z-0">
     <div
       class="sm:max-w-[1200px] w-screen h-full min-h-screen flex flex-col items-center justify-center sm:flex-row sm:gap-x-[142px] sm:mb-24 filmContent pt-12 pb-[150px] sm:pb-0 px-10"
     >
@@ -515,13 +515,15 @@
       </div>
     </div>
   </div>
-  <div class="h-screen flex forth-bg justify-center items-center lesson -mt-[100px] z-0">
-    <div class="max-w-[1600px] flex flex-col sm:flex-row my-[224px] lessonContent">
+  <div class="min-h-max h-screen flex forth-bg justify-center items-center lesson -mt-[100px] z-0">
+    <div class="max-w-[1600px] flex flex-col items-center sm:flex-row my-[224px] lessonContent">
       <div class="flex sm:hidden flex-col items-center sm:items-start">
         <p class="font-amiri italic text-white tracking-[6px] text-lg sm:text-[28px]">LESSON</p>
         <p class="font-shippori text-white text-[36px] sm:text-[44px] tracking-[8px]">主題教案</p>
       </div>
-      <div class="flex opacity-20 sm:mr-[112px] lessonTopic justify-center mt-12 sm:mt-0">
+      <div
+        class="flex w-[295px] sm:w-auto opacity-20 sm:mr-[112px] lessonTopic justify-center mt-12 sm:mt-0"
+      >
         <p
           class="font-shippori text-white text-[34px] sm:text-[59px] tracking-[28px] sm:tracking-[36px] rotateText mr-[14px] sm:mr-7"
         >
