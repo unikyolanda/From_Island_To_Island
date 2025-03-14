@@ -269,7 +269,7 @@
             src="/images-webp/stills/still_12.webp"
             alt="lesson5"
             id="parallax-content"
-            class="max-w-[120%] h-[120%]"
+            class="w-[100%] h-[120%] object-center object-cover"
           />
         </div>
         <div class="flex flex-col mt-8 items-center">
@@ -323,7 +323,7 @@
             src="/images-webp/stills/still_7.webp"
             alt="lesson5"
             id="parallax-content"
-            class="max-w-[120%] h-[120%]"
+            class="w-[100%] h-[120%] object-center object-cover"
           />
         </div>
         <div class="flex flex-col mt-8 items-center">
@@ -338,31 +338,32 @@
         >
           <p>製作／出品｜蜂鳥影像有限公司</p>
           <p>Produced and Presented by Hummingbird Production</p>
-          <p class="mt-8">共同出品｜財團法人公共電視文化事業基金會</p>
+          <p class="mt-6">共同出品｜財團法人公共電視文化事業基金會</p>
           <p>Co-Presented by Taiwan Public Television Service</p>
-          <p class="mt-8">製片 Producer｜ 林婉玉 LIN Wan-Yu</p>
+          <p class="mt-6">製片 Producer｜ 林婉玉 LIN Wan-Yu</p>
           <p>導演、攝影、剪輯、美術 a film by｜廖克發 LAU Kek-Huat</p>
-          <p class="mt-8">執行製片Line producer 台灣 Taiwan｜ 周欣 CHOU Hsin</p>
+          <p class="mt-6">執行製片Line producer 台灣 Taiwan｜ 周欣 CHOU Hsin</p>
           <p>馬來西亞 M'sia｜陳嘉豪 TAN Kah Hau</p>
           <p>日本 Japan｜陳詠雙 CHEN Yung Shuang</p>
-          <p class="mt-8">行政 Administration｜黃琳晶 HUANG Lin Ching</p>
+          <p class="mt-6">行政 Administration｜黃琳晶 HUANG Lin Ching</p>
           <p>歷史顧問 History Consultant｜藍適齊 LAN Shi Chi</p>
           <p>日語聯繫 Japanese Contact｜金想容 JIN Xiang Rong</p>
-          <p>現場翻譯 On-site Interpreter｜永田理乃 Ayano NAGATA 豬俁美咲 Misaki INOMATA</p>
-          <p>紙芝居繪畫 Illustrator｜魏閤廷 WEI Ho Ting 朱晉明 JU Jimm Ming</p>
+          <p>現場翻譯 On-site Interpreter｜永田理乃 Ayano NAGATA</p>
+          <p>豬俁美咲 Misaki INOMATA</p>
+          <p>紙芝居繪畫 Illustrator｜魏閤廷 WEI Ho Ting</p>
+          <p>朱晉明 JU Jimm Ming</p>
           <p>為何停動畫創意有限公司 whystop? studio</p>
           <p>環境錄音 Field Recording｜澎葉生 Yannick Dauby</p>
-          <p class="mt-8">
-            聲音後期製作 Audio Post Production ｜聲境有限公司 Buzzing Studio Co. Ltd.
-          </p>
+          <p class="mt-6">聲音後期製作 Audio Post Production ｜</p>
+          <p>聲境有限公司 Buzzing Studio Co. Ltd.</p>
           <p>混音Sound Mixer｜黃年永 Eddie HUANG</p>
           <p>音效製作Sound Edit｜陳奕伶 CHEN Yi Ling</p>
           <p>協調Sound Dept. Coordinator｜鄭維芝 Wing CHENG</p>
-          <p class="mt-8">時間軸影像製作有限公司 Timeline Studio</p>
+          <p class="mt-6">時間軸影像製作有限公司 Timeline Studio</p>
           <p>後期專案管理Post-production PM｜李慈恩 LEE Tzu En</p>
           <p>調光Colorist｜周佩儀 Penny CHOU</p>
           <p>調光助理Color-grading Assistant｜何冠儀 HO Kuan Yi</p>
-          <p class="mt-8">（台灣）戲劇仿拍演員｜辻政信 馬場克樹 Masaki BABA</p>
+          <p class="mt-6">（台灣）戲劇仿拍演員｜辻政信 馬場克樹 Masaki BABA</p>
           <p>演員｜台籍日本兵 魏雋展 WEI Chun-Chan</p>
           <p>演員｜台籍日本兵 張維佐 Zaduno Cheung</p>
           <p>演員｜台籍日本兵 王肇陽 WANG Chao Yang</p>
@@ -390,28 +391,32 @@
           <p>日本兵臨時演員｜陳禹同 李騁佺 陳昶瑋 徐定鴻</p>
           <p>拍攝協力｜卓紫嵐 羅苡珊 吳思鋒</p>
           <p>新加坡文物拍攝攝影師｜王文毅</p>
-          <p class="mt-8">檔案翻譯 Archive Translator</p>
+          <p class="mt-6">檔案翻譯 Archive Translator</p>
           <p>馬來文 Malay｜Zikri RAHMAN</p>
-          <p>日文 Japanese｜豬俁美咲 Misaki INOMATA 永田理乃 Ayano NAGATA 馬場克樹 Masaki BABA</p>
-          <p class="mt-8">旁白員 Narrator</p>
+          <p>日文 Japanese｜豬俁美咲 Misaki INOMATA 永田理乃 Ayano</p>
+          <p>NAGATA 馬場克樹 Masaki BABA</p>
+          <p class="mt-6">旁白員 Narrator</p>
           <p>馬來語 Malay｜Nor Huda binti Mohd IZAM</p>
           <p>印尼／馬來語 Indonesia & Malay｜Faiq Syazwan KUHIRI</p>
           <p>福建話（馬來西亞）Hokkien (M'sia) ｜</p>
-          <p>Lennard OUNG Chia Chun KC LEE 鄭振政 ZHENG Zhen Zheng</p>
-          <p>客話（馬來西亞） Hakka (M'sia) ｜何民慶 HE Min-Qing 龔艷清 GONG Yan Qing</p>
+          <p>
+            Lennard OUNG Chia Chun KC LEE 鄭振政<br />
+            ZHENG Zhen Zheng
+          </p>
+          <p>客話（馬來西亞） Hakka (M'sia) ｜何民慶 HE Min-Qing</p>
+          <p>龔艷清 GONG Yan Qing</p>
           <p>廣東話 （馬來西亞）Cantonese (M'sia)｜吳玉珍 WU Yu Zhen</p>
           <p>廣東話 （香港）Cantonese (Hong Kong)｜Cecilia CHAN</p>
           <p>英語 English｜陳秋慧 CHEN Qiu Hui</p>
           <p>日語 Japanese｜馬場克樹 Masaki BABA 永田理乃 Ayano NAGATA</p>
           <p>台語 Taiwanese ｜張維佐 Zaduno Cheung</p>
           <p>客語（台灣） Hakka (Taiwan)｜馮文星 FENG Wen Xing</p>
-          <p>英式英語 British English｜Norberto SANCHEZ Mike（生笙音效）</p>
-          <p class="mt-8">英文字幕翻譯 English Subtitles｜何美瑜 Isabella Ho</p>
-          <p>
-            日文字幕翻譯與 DCP 製作 Japanese Subtitles & DCP Production｜遠東譯像 Far East
-            Transvideo
-          </p>
-          <p>國際投展顧問 International Coordinator｜謝以萱 Ruby HSIEH I Hsuan</p>
+          <p>英式英語 British English｜Norberto SANCHEZ Mike<br />（生笙音效）</p>
+          <p class="mt-6">英文字幕翻譯 English Subtitles｜何美瑜 Isabella Ho</p>
+          <p>日文字幕翻譯與 DCP 製作 Japanese Subtitles & DCP</p>
+          <p>Production｜遠東譯像 Far East Transvideo</p>
+          <p>國際投展顧問 International Coordinator｜</p>
+          <p>謝以萱 Ruby HSIEH I Hsuan</p>
         </div>
         <div
           id="parallax-container"
@@ -421,7 +426,7 @@
             src="/images-webp/stills/still_15.webp"
             alt="lesson5"
             id="parallax-content"
-            class="max-w-[120%] h-[120%]"
+            class="w-[100%] h-[120%] object-center object-cover"
           />
         </div>
       </div>
@@ -759,13 +764,13 @@
             <p class="mt-8">
               聲音後期製作 Audio Post Production ｜聲境有限公司 Buzzing Studio Co. Ltd.
             </p>
-            <p>混音Sound Mixer｜黃年永 Eddie HUANG</p>
-            <p>音效製作Sound Edit｜陳奕伶 CHEN Yi Ling</p>
-            <p>協調Sound Dept. Coordinator｜鄭維芝 Wing CHENG</p>
+            <p>混音 Sound Mixer｜黃年永 Eddie HUANG</p>
+            <p>音效製作 Sound Edit｜陳奕伶 CHEN Yi Ling</p>
+            <p>協調 Sound Dept. Coordinator｜鄭維芝 Wing CHENG</p>
             <p class="mt-8">時間軸影像製作有限公司 Timeline Studio</p>
-            <p>後期專案管理Post-production PM｜李慈恩 LEE Tzu En</p>
-            <p>調光Colorist｜周佩儀 Penny CHOU</p>
-            <p>調光助理Color-grading Assistant｜何冠儀 HO Kuan Yi</p>
+            <p>後期專案管理 Post-production PM｜李慈恩 LEE Tzu En</p>
+            <p>調光 Colorist｜周佩儀 Penny CHOU</p>
+            <p>調光助理 Color-grading Assistant｜何冠儀 HO Kuan Yi</p>
             <p class="mt-8">（台灣）戲劇仿拍演員｜辻政信 馬場克樹 Masaki BABA</p>
             <p>演員｜台籍日本兵 魏雋展 WEI Chun-Chan</p>
             <p>演員｜台籍日本兵 張維佐 Zaduno Cheung</p>
