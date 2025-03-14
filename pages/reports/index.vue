@@ -85,6 +85,18 @@
         </div>
       </div>
     </div>
+    <div class="sm:hidden block w-full mt-12">
+      <div class="flex w-full font-noto text-[14px] text-white mb-8 gap-x-6 justify-center">
+        <div>映後座談</div>
+        <div>專訪報導</div>
+        <div>評論與回饋</div>
+      </div>
+      <img
+        src="/images-webp/stills/still_4.webp"
+        alt="still15"
+        class="w-full aspect-[1440/810] object-cover object-center"
+      />
+    </div>
     <div
       class="flex flex-col sm:flex-row mt-[73px] w-full justify-between px-4 sm:px-[184px] z-10 opacity-85"
     >
@@ -117,7 +129,7 @@
               >
                 國立中正大學傳播學系副教授、<br />《九槍》導演
               </div>
-              <p class="font-noto text-white font-light text-[13px] tracking-[2px] opacity-60 mt-2">
+              <p class="font-noto text-white font-light text-[13px] tracking-[2px] opacity-60 mt-6">
                 嘉義 in89 影城（2024.11.30）
               </p>
             </div>
@@ -171,7 +183,7 @@
               >
                 影像文化評論者
               </div>
-              <div class="font-noto font-semibold text-[20px] text-white tracking-[2px]">
+              <div class="font-noto font-semibold text-[20px] text-white tracking-[2px] mt-4">
                 鍾適芳
               </div>
               <div
@@ -179,7 +191,7 @@
               >
                 音樂與影像展演製作人／策展人
               </div>
-              <p class="font-noto text-white font-light text-[13px] tracking-[2px] opacity-60 mt-2">
+              <p class="font-noto text-white font-light text-[13px] tracking-[2px] opacity-60 mt-6">
                 屏東中影影城（2024.11.17）
               </p>
             </div>
@@ -227,7 +239,7 @@
               >
                 國立中興大學台灣文學與<br />跨國文化研究所教授
               </div>
-              <p class="font-noto text-white font-light text-[13px] tracking-[2px] opacity-60 mt-2">
+              <p class="font-noto text-white font-light text-[13px] tracking-[2px] opacity-60 mt-6">
                 台中日日新影城（2024.11.30）
               </p>
             </div>
@@ -276,7 +288,7 @@
               >
                 國立政治大學歷史系副教授、<br />《由島至島》歷史顧問
               </div>
-              <p class="font-noto text-white font-light text-[13px] tracking-[2px] opacity-60 mt-2">
+              <p class="font-noto text-white font-light text-[13px] tracking-[2px] opacity-60 mt-6">
                 台北欣欣秀泰影城（2024.10.27）
               </p>
             </div>
@@ -323,7 +335,7 @@
               >
                 國家鐵道博物館籌備處助理研究員
               </div>
-              <p class="font-noto text-white font-light text-[13px] tracking-[2px] opacity-60 mt-2">
+              <p class="font-noto text-white font-light text-[13px] tracking-[2px] opacity-60 mt-6">
                 台北欣欣秀泰影城（2024.10.27）
               </p>
             </div>
@@ -368,7 +380,7 @@
               >
                 國立中央大學歷史研究所特聘教授
               </div>
-              <p class="font-noto text-white font-light text-[13px] tracking-[2px] opacity-60 mt-2">
+              <p class="font-noto text-white font-light text-[13px] tracking-[2px] opacity-60 mt-6">
                 台北欣欣秀泰影城（2024.10.27）
               </p>
             </div>
@@ -564,7 +576,7 @@
       />
     </div>
     <div
-      class="w-full z-10 opacity-80 flex flex-col sm:flex-row pt-[97px] justify-between sm:px-[184px] bg-audience -mt-6 items-center sm:items-start"
+      class="w-full z-10 opacity-80 flex flex-col sm:flex-row pt-[97px] justify-between sm:px-[184px] bg-audience sm:-mt-6 items-center sm:items-start"
     >
       <div class="flex flex-col w-full sm:w-[372px]">
         <div class="flex items-center w-full sm:w-[443px]">
