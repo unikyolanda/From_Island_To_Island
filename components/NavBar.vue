@@ -25,7 +25,11 @@
 
 <template>
   <div
-    class="sticky sm:fixed top-0 sm:top-11 left-12 w-full sm:w-10 h-[78px] sm:h-[61px] flex flex-col justify-center sm:items-start sm:justify-start z-20 bg-black/50 sm:bg-transparent"
+    :class="[
+      'sticky sm:fixed top-0 sm:top-11 left-12 w-full sm:w-10 h-[78px] sm:h-[61px] flex flex-col justify-center sm:items-start sm:justify-start z-20',
+      textColor === 'white' ? 'bg-black/50' : 'bg-white/50',
+      'sm:bg-transparent',
+    ]"
   >
     <NuxtLink to="/" class="w-[22px] sm:w-10 hover:opacity-50"
       ><img

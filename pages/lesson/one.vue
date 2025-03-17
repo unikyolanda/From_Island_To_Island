@@ -22,11 +22,11 @@
     <div class="fixed inset-0 bg-shadow z-0"></div>
     <NavBar textColor="#999" logoSrc="/images/logo_gray.png" />
     <SideMenu ref="menuRef" @close="closeMenu" />
-    <div class="fixed right-10 sm:right-12 top-10 cursor-pointer z-20">
-      <img src="/images/menu_gray.svg" alt="menu" class="w-10 h-8" @click="toggleMenu" />
+    <div class="fixed right-10 sm:right-12 top-6 sm:top-10 cursor-pointer z-20">
+      <img src="/images/menu_gray.svg" alt="menu" class="w-8 sm:w-10 h-8" @click="toggleMenu" />
     </div>
     <div class="flex w-full z-10 opacity-85 justify-center bg-[#d9d9d9]/10">
-      <div class="flex mt-[221px] w-[548px]">
+      <div class="hidden sm:flex mt-[221px] w-[548px]">
         <div class="sticky top-[221px] flex flex-col ml-36 mb-6 h-fit">
           <div class="flex items-center">
             <p class="font-amiri italic text-[#D0BC9C] tracking-[6px] text-lg sm:text-[28px]">
@@ -50,9 +50,26 @@
         </div>
       </div>
       <div class="flex flex-col">
-        <img src="/images-webp/stills/lesson_1.webp" class="w-[895px] h-[532px] object-cover" />
+        <img
+          src="/images-webp/stills/lesson_1.webp"
+          class="w-full sm:w-[895px] h-[312px] sm:h-[532px] object-cover"
+        />
+        <div class="flex sm:hidden flex-col mb-12 ml-10 h-fit">
+          <div class="flex items-center">
+            <p class="font-amiri italic text-[#D0BC9C] tracking-[6px] text-[20px]">LESSON</p>
+            <p class="text-[#D0BC9C] font-caveat text-[88px] sm:text-[150px] font-semibold mb-10">
+              1
+            </p>
+          </div>
+          <p class="font-shippori text-[#999] text-[30px] tracking-[10px] -mt-12">移動與邊界—</p>
+          <p class="font-shippori text-[#999] text-[30px] tracking-[10px]">旅外台灣人</p>
+          <p class="font-amiri italic text-[#999] text-[20px] tracking-[0.5px] leading-[38px] mt-7">
+            Movement and Boundaries: <br />
+            Overseas Taiwanese
+          </p>
+        </div>
         <div class="w-full h-auto bg-white/50 flex justify-center py-6">
-          <div class="w-[651px] flex flex-col">
+          <div class="w-[295px] sm:w-[651px] flex flex-col">
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
               <p class="font-noto text-[17px] tracking-[2px] text-[#D0BC9C] font-semibold">
                 片段大綱
@@ -109,83 +126,95 @@
                   >（國中兩堂課·每堂45分鐘）</span
                 >
               </div>
-              <div class="flex mt-6 items-center">
+              <div class="flex flex-col sm:flex-row mt-6 items-start sm:items-center">
                 <p
                   class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] leading-[30px]"
                 >
                   第一節課
                 </p>
-                <div class="flex gap-x-3 ml-9 items-center">
+                <div class="flex gap-x-1 sm:gap-x-3 mt-2 sm:mt-0 sm:ml-9 items-center">
                   <div
-                    class="bg-white w-[115px] h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
+                    class="bg-white w-[88px] sm:w-[115px] h-[88px] sm:h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
                   >
-                    <div class="font-wix text-[36px] text-[#D0BC9C] font-semibold">
-                      5<span class="text-[16px] ml-[2px]">min</span>
+                    <div class="font-wix text-[28px] sm:text-[36px] text-[#D0BC9C] font-semibold">
+                      5<span class="text-[12px] sm:text-[16px] ml-[2px]">min</span>
                     </div>
-                    <p class="font-noto text-[#757575] text-[13px] font-semibold tracking-[2px]">
+                    <p
+                      class="font-noto text-[#757575] text-[12px] sm:text-[13px] font-semibold tracking-[2px] mb-2 sm:mb-0"
+                    >
                       課程引導
                     </p>
                   </div>
                   <img src="/images/right.svg" class="w-[10px] h-[12px]" />
                   <div
-                    class="bg-white w-[115px] h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
+                    class="bg-white w-[88px] sm:w-[115px] h-[88px] sm:h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
                   >
-                    <div class="font-wix text-[36px] text-[#D0BC9C] font-semibold">
-                      20<span class="text-[16px] ml-[2px]">min</span>
+                    <div class="font-wix text-[28px] sm:text-[36px] text-[#D0BC9C] font-semibold">
+                      20<span class="text-[12px] sm:text-[16px] ml-[2px]">min</span>
                     </div>
-                    <p class="font-noto text-[#757575] text-[13px] font-semibold tracking-[2px]">
+                    <p
+                      class="font-noto text-[#757575] text-[12px] sm:text-[13px] font-semibold tracking-[2px] mb-2 sm:mb-0"
+                    >
                       活動體驗
                     </p>
                   </div>
                   <img src="/images/right.svg" class="w-[10px] h-[12px]" />
                   <div
-                    class="bg-white w-[115px] h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
+                    class="bg-white w-[88px] sm:w-[115px] h-[88px] sm:h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
                   >
-                    <div class="font-wix text-[36px] text-[#D0BC9C] font-semibold">
-                      20<span class="text-[16px] ml-[2px]">min</span>
+                    <div class="font-wix text-[28px] sm:text-[36px] text-[#D0BC9C] font-semibold">
+                      20<span class="text-[12px] sm:text-[16px] ml-[2px]">min</span>
                     </div>
-                    <p class="font-noto text-[#757575] text-[13px] font-semibold tracking-[2px]">
+                    <p
+                      class="font-noto text-[#757575] text-[12px] sm:text-[13px] font-semibold tracking-[2px] mb-2 sm:mb-0"
+                    >
                       影片放映
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="flex mt-6 items-center">
+              <div class="flex flex-col sm:flex-row mt-6 items-start sm:items-center">
                 <p
                   class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] leading-[30px]"
                 >
                   第二節課
                 </p>
-                <div class="flex gap-x-3 ml-9 items-center">
+                <div class="flex gap-x-1 sm:gap-x-3 mt-2 sm:mt-0 sm:ml-9 items-center">
                   <div
-                    class="bg-white w-[115px] h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
+                    class="bg-white w-[88px] sm:w-[115px] h-[88px] sm:h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
                   >
-                    <div class="font-wix text-[36px] text-[#D0BC9C] font-semibold">
-                      10<span class="text-[16px] ml-[2px]">min</span>
+                    <div class="font-wix text-[28px] sm:text-[36px] text-[#D0BC9C] font-semibold">
+                      10<span class="text-[12px] sm:text-[16px] ml-[2px]">min</span>
                     </div>
-                    <p class="font-noto text-[#757575] text-[13px] font-semibold tracking-[2px]">
+                    <p
+                      class="font-noto text-[#757575] text-[12px] sm:text-[13px] font-semibold tracking-[2px] mb-2 sm:mb-0"
+                    >
                       映後討論
                     </p>
                   </div>
                   <img src="/images/right.svg" class="w-[10px] h-[12px]" />
                   <div
-                    class="bg-white w-[115px] h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
+                    class="bg-white w-[88px] sm:w-[115px] h-[88px] sm:h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
                   >
-                    <div class="font-wix text-[36px] text-[#D0BC9C] font-semibold">
-                      20<span class="text-[16px] ml-[2px]">min</span>
+                    <div class="font-wix text-[28px] sm:text-[36px] text-[#D0BC9C] font-semibold">
+                      20<span class="text-[12px] sm:text-[16px] ml-[2px]">min</span>
                     </div>
-                    <p class="font-noto text-[#757575] text-[13px] font-semibold tracking-[2px]">
+                    <p
+                      class="font-noto text-[#757575] text-[12px] sm:text-[13px] font-semibold tracking-[2px]"
+                    >
                       議題分析
                     </p>
                   </div>
                   <img src="/images/right.svg" class="w-[10px] h-[12px]" />
                   <div
-                    class="bg-white w-[115px] h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
+                    class="bg-white w-[88px] sm:w-[115px] h-[88px] sm:h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
                   >
-                    <div class="font-wix text-[36px] text-[#D0BC9C] font-semibold">
-                      15<span class="text-[16px] ml-[2px]">min</span>
+                    <div class="font-wix text-[28px] sm:text-[36px] text-[#D0BC9C] font-semibold">
+                      15<span class="text-[12px] sm:text-[16px] ml-[2px]">min</span>
                     </div>
-                    <p class="font-noto text-[#757575] text-[13px] font-semibold tracking-[2px]">
+                    <p
+                      class="font-noto text-[#757575] text-[12px] sm:text-[13px] font-semibold tracking-[2px]"
+                    >
                       延伸討論
                     </p>
                   </div>
@@ -212,7 +241,10 @@
                 >
                   林宗洧
                 </p>
-                <img src="/images-webp/author_1.webp" class="w-[166px] h-[166px] ml-9" />
+                <img
+                  src="/images-webp/author_1.webp"
+                  class="w-[145px] sm:w-[166px] h-[145px] sm:h-[166px] ml-9"
+                />
               </div>
               <p
                 class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] mt-9 leading-[30px]"
@@ -230,7 +262,10 @@
                 >
                   陳一隆
                 </p>
-                <img src="/images-webp/author_2.webp" class="w-[166px] h-[166px] ml-9" />
+                <img
+                  src="/images-webp/author_2.webp"
+                  class="w-[145px] sm:w-[166px] h-[145px] sm:h-[166px] ml-9"
+                />
               </div>
               <p
                 class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] mt-9 leading-[30px]"
@@ -244,10 +279,19 @@
               >
                 欲申請短片與教案，歡迎填寫《由島至島》申請表單。本教案提供自：台灣。
               </p>
+            </div>
+            <div class="flex flex-col items-center sm:items-start py-8">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLScQxiV58k1T7PDf_2NiOaQOrz2sjgu5JQr9PD2jYEAIZef_dQ/viewform"
+                target="_blank"
+                class="font-wix w-[162px] text-[#999] flex sm:hidden justify-center py-3 bg-white border border-[#999]/70 hover:bg-[#999] hover:text-white"
+              >
+                教案申請表單</a
+              >
               <a
                 href="https://drive.google.com/drive/folders/19TnafgMPlVw79rdpa6jOPDCUtzlMs1qs"
                 target="_blank"
-                class="font-wix w-[162px] text-[#999] flex justify-center py-3 bg-white border border-[#999]/70 mt-6 mb-20 hover:bg-[#999] hover:text-white"
+                class="font-wix w-[162px] text-[#999] flex justify-center py-3 bg-white border border-[#999]/70 mt-4 mb-20 hover:bg-[#999] hover:text-white"
               >
                 台灣教案預覽</a
               >

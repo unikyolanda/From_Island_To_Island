@@ -4,7 +4,7 @@
     ref="menuRef"
   >
     <div class="absolute top-12 right-10">
-      <div class="cursor-pointer" @click="$emit('close')">
+      <div class="cursor-pointer w-8 sm:w-10" @click="$emit('close')">
         <img src="/public/images/xmark.svg" />
       </div>
     </div>
