@@ -22,8 +22,8 @@
     <div class="fixed inset-0 bg-shadow z-0"></div>
     <NavBar textColor="#999" logoSrc="/images/logo_gray.png" />
     <SideMenu ref="menuRef" @close="closeMenu" />
-    <div class="fixed right-10 sm:right-12 top-10 cursor-pointer z-20">
-      <img src="/images/menu_gray.svg" alt="menu" class="w-10 h-8" @click="toggleMenu" />
+    <div class="fixed right-10 sm:right-12 top-6 sm:top-10 cursor-pointer z-20">
+      <img src="/images/menu_gray.svg" alt="menu" class="w-8 sm:w-10 h-8" @click="toggleMenu" />
     </div>
     <div class="flex w-full z-10 opacity-85 justify-center bg-[#d9d9d9]/30">
       <div class="hidden sm:flex mt-[221px] w-[548px]">
