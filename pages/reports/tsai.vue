@@ -61,7 +61,7 @@
         </div>
       </div>
       <p
-        class="font-noto tracking-[0.5px] sm:tracking-[0.5px] sm:tracking-[2px] text-white w-[295px] sm:w-[841px] text-[14px] sm:text-[16px] text-justify leading-[30px] sm:leading-[36px]"
+        class="font-noto tracking-[0.5px] sm:tracking-[2px] text-white w-[295px] sm:w-[841px] text-[14px] sm:text-[16px] text-justify leading-[30px] sm:leading-[36px]"
       >
         <span class="sm:inline-block hidden font-semibold">《由島至島》紀錄片映演計畫——嘉義場</span
         ><br /><br />
