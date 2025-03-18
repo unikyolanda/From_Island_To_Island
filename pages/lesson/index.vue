@@ -21,7 +21,7 @@
   }
 </style>
 <template>
-  <div class="flex flex-col bg-white w-screen h-auto min-h-screen items-center">
+  <div class="flex flex-col bg-white w-full h-auto min-h-screen items-center">
     <div class="fixed inset-0 bg-shadow z-0"></div>
     <NavBar textColor="#999" logoSrc="/images/logo_gray.png" />
     <SideMenu ref="menuRef" @close="closeMenu" />
@@ -244,7 +244,9 @@
           教案申請表單</a
         >
       </div>
-      <div class="w-[1075px] h-auto flex flex-col items-center mt-14 mb-10 sm:mb-[160px]">
+      <div
+        class="w-[295px] sm:w-[1075px] h-auto flex flex-col items-center mt-14 mb-10 sm:mb-[160px]"
+      >
         <p class="font-shippori text-[#999] text-[22px] sm:text-[28px] tracking-[4px]">
           成為夥伴與回饋機制
         </p>
