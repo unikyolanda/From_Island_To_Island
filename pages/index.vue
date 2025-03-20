@@ -2,6 +2,26 @@
   import { ref } from 'vue'
 
   const showPopup = ref(false)
+  const isLoading = ref(true)
+
+  const checkImagesLoaded = () => {
+    const images = [
+      '/images-webp/first_bg.webp',
+      '/images-webp/third_bg.webp',
+      '/images-webp/fourth_bg.webp',
+    ]
+
+    return Promise.all(
+      images.map(src => {
+        return new Promise(resolve => {
+          const img = new Image()
+          img.src = src
+          img.onload = () => resolve()
+          img.onerror = () => resolve() // Continue even if image fails to load
+        })
+      })
+    )
+  }
 
   const togglePopup = () => {
     showPopup.value = !showPopup.value
@@ -33,6 +53,14 @@
     // Initial window width
     updateWindowWidth()
 
+    // Handle loading state
+    Promise.all([
+      checkImagesLoaded(),
+      new Promise(resolve => setTimeout(resolve, 3000)), // Minimum 3s loading time
+    ]).then(() => {
+      isLoading.value = false
+    })
+
     // 延遲載入 YouTube 組件
     setTimeout(loadYouTubeEmbed, 2000)
 
@@ -47,247 +75,256 @@
       '.filmContent > .filmText, .filmContent > div:nth-child(2), .filmContent > div:nth-child(3)'
     )
 
-    // Set initial state for title sections
-    gsap.set(filmContentElements, {
-      opacity: 0,
-      y: 30,
-      filter: 'blur(5px)',
+    // Wait for loading to complete before starting animations
+    watch(isLoading, newValue => {
+      if (newValue === false) {
+        initializeAnimations()
+      }
     })
 
-    gsap.set(titleSections, {
-      opacity: 0,
-      filter: 'blur(15px)',
-    })
-
-    // Animate title sections
-    gsap.to(titleSections, {
-      opacity: 1,
-      filter: 'blur(0px)',
-      duration: 2,
-      delay: 0.5,
-      ease: 'power2.out',
-    })
-
-    // Initialize all images as hidden
-    allImages.forEach((img, index) => {
-      gsap.set(img, {
-        opacity: 0,
-        y: 5,
-        filter: 'blur(5px)',
-        zIndex: index + 1, // photo5 (index 0) gets z-index 1, photo1 (index 4) gets z-index 5
-      })
-    })
-
-    // Create sequential animation for images
-    const tl = gsap.timeline({ delay: 0.1 })
-    allImages.forEach((img, index) => {
-      tl.to(
-        img,
-        {
-          opacity: 0.4,
-          y: 0,
-          filter: 'blur(0px)',
-          duration: 1.5,
-          ease: 'power1.inOut',
-        },
-        index * 0.8
-      ) // Stagger the animations
-    })
-
-    // Text animations
-    textElements.forEach(text => {
-      gsap.set(text, {
+    const initializeAnimations = () => {
+      // Set initial state for title sections
+      gsap.set(filmContentElements, {
         opacity: 0,
         y: 30,
         filter: 'blur(5px)',
       })
-    })
 
-    ScrollTrigger.create({
-      trigger: '.still',
-      start: 'top center',
-      end: 'bottom bottom',
-      scrub: true,
-      onUpdate: self => {
-        const progress = self.progress
-        const direction = self.direction
-        const totalElements = textElements.length
+      gsap.set(titleSections, {
+        opacity: 0,
+        filter: 'blur(15px)',
+      })
 
-        textElements.forEach((text, index) => {
-          // Calculate delay based on scroll direction
-          const delay =
-            direction === 1
-              ? index * 0.6 // Original order when scrolling down
-              : (totalElements - 1 - index) * 0.6 // Reverse order when scrolling up
+      // Animate title sections
+      gsap.to(titleSections, {
+        opacity: 1,
+        filter: 'blur(0px)',
+        duration: 2,
+        delay: 0.5,
+        ease: 'power2.out',
+      })
 
-          if (direction === 1) {
-            // Scrolling down
-            gsap.to(text, {
-              opacity: progress * 1.5,
-              y: progress * -30,
-              filter: 'blur(0px)',
-              duration: 2.5,
-              delay: delay,
-              ease: 'power2.out',
-            })
-          } else {
-            // Scrolling up
-            gsap.to(text, {
-              opacity: progress,
-              y: (1 - progress) * 30,
-              filter: 'blur(5px)',
-              duration: 2.5,
-              delay: delay,
-              ease: 'power2.out',
-            })
-          }
+      // Initialize all images as hidden
+      allImages.forEach((img, index) => {
+        gsap.set(img, {
+          opacity: 0,
+          y: 5,
+          filter: 'blur(5px)',
+          zIndex: index + 1, // photo5 (index 0) gets z-index 1, photo1 (index 4) gets z-index 5
         })
-      },
-    })
+      })
 
-    gsap.set(stills2Image, {
-      opacity: 0,
-      maskImage: 'linear-gradient(to top, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 0) 100%)',
-    })
+      // Create sequential animation for images
+      const tl = gsap.timeline({ delay: 0.1 })
+      allImages.forEach((img, index) => {
+        tl.to(
+          img,
+          {
+            opacity: 0.4,
+            y: 0,
+            filter: 'blur(0px)',
+            duration: 1.5,
+            ease: 'power1.inOut',
+          },
+          index * 0.8
+        ) // Stagger the animations
+      })
 
-    // Create ScrollTrigger for both images
-    ScrollTrigger.create({
-      trigger: stills2Image,
-      start: 'top bottom',
-      end: 'bottom bottom',
-
-      scrub: true,
-      onUpdate: self => {
-        const progress = self.progress
-
-        gsap.to(stills2Image, {
-          opacity: progress < 0.5 ? 0 : (progress - 0.5) * 2,
-          duration: 0.2,
-          maskImage: `linear-gradient(to top, rgba(0, 0, 0, 1) ${20 + progress * 50}%, rgba(0, 0, 0, 0) 100%)`,
-          ease: 'power1.out',
+      // Text animations
+      textElements.forEach(text => {
+        gsap.set(text, {
+          opacity: 0,
+          y: 30,
+          filter: 'blur(5px)',
         })
-      },
-    })
+      })
 
-    gsap.set(['.filmContent', 'lessonContent'], { opacity: 0, y: 30, filter: 'blur(5px)' })
-    ScrollTrigger.create({
-      trigger: '.film',
-      start: 'top bottom',
-      end: 'top 25%',
-      scrub: true,
-      onUpdate: self => {
-        const progress = self.progress
-        gsap.to('.film', {
-          y: progress * -100,
-          duration: 0.2,
-          ease: 'power1.out',
-        })
-        gsap.to('.filmContent', {
-          opacity: progress,
-          y: (1 - progress) * 30,
-          filter: `blur(${(1 - progress) * 5}px)`,
-          duration: 0.2,
-          ease: 'power1.out',
-        })
-      },
-    })
+      ScrollTrigger.create({
+        trigger: '.still',
+        start: 'top center',
+        end: 'bottom bottom',
+        scrub: true,
+        onUpdate: self => {
+          const progress = self.progress
+          const direction = self.direction
+          const totalElements = textElements.length
 
-    ScrollTrigger.create({
-      trigger: '.lesson',
-      start: 'top bottom',
-      end: 'top 25%',
-      scrub: true,
-      onUpdate: self => {
-        const progress = self.progress
-        gsap.to('.lesson', {
-          y: progress * -100,
-          duration: 0.2,
-          ease: 'power1.out',
-        })
-        gsap.to('.lessonContent', {
-          opacity: progress,
-          y: (1 - progress) * 30,
-          filter: `blur(${(1 - progress) * 5}px)`,
-          duration: 0.2,
-          ease: 'power1.out',
-        })
-      },
-    })
+          textElements.forEach((text, index) => {
+            // Calculate delay based on scroll direction
+            const delay =
+              direction === 1
+                ? index * 0.6 // Original order when scrolling down
+                : (totalElements - 1 - index) * 0.6 // Reverse order when scrolling up
 
-    ScrollTrigger.create({
-      trigger: '.film',
-      start: 'top 75%',
-      end: 'top 25%',
-      scrub: true,
-      onUpdate: self => {
-        const progress = self.progress
-        const direction = self.direction
-        const totalElements = filmContentElements.length
+            if (direction === 1) {
+              // Scrolling down
+              gsap.to(text, {
+                opacity: progress * 1.5,
+                y: progress * -30,
+                filter: 'blur(0px)',
+                duration: 2.5,
+                delay: delay,
+                ease: 'power2.out',
+              })
+            } else {
+              // Scrolling up
+              gsap.to(text, {
+                opacity: progress,
+                y: (1 - progress) * 30,
+                filter: 'blur(5px)',
+                duration: 2.5,
+                delay: delay,
+                ease: 'power2.out',
+              })
+            }
+          })
+        },
+      })
 
-        filmContentElements.forEach((element, index) => {
-          const delay =
-            direction === 1
-              ? index * 0.3 // Faster sequence when scrolling down
-              : (totalElements - 1 - index) * 0.3 // Reverse order when scrolling up
+      gsap.set(stills2Image, {
+        opacity: 0,
+        maskImage: 'linear-gradient(to top, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 0) 100%)',
+      })
 
-          gsap.to(element, {
+      // Create ScrollTrigger for both images
+      ScrollTrigger.create({
+        trigger: stills2Image,
+        start: 'top bottom',
+        end: 'bottom bottom',
+
+        scrub: true,
+        onUpdate: self => {
+          const progress = self.progress
+
+          gsap.to(stills2Image, {
+            opacity: progress < 0.5 ? 0 : (progress - 0.5) * 2,
+            duration: 0.2,
+            maskImage: `linear-gradient(to top, rgba(0, 0, 0, 1) ${20 + progress * 50}%, rgba(0, 0, 0, 0) 100%)`,
+            ease: 'power1.out',
+          })
+        },
+      })
+
+      gsap.set(['.filmContent', 'lessonContent'], { opacity: 0, y: 30, filter: 'blur(5px)' })
+      ScrollTrigger.create({
+        trigger: '.film',
+        start: 'top bottom',
+        end: 'top 25%',
+        scrub: true,
+        onUpdate: self => {
+          const progress = self.progress
+          gsap.to('.film', {
+            y: progress * -100,
+            duration: 0.2,
+            ease: 'power1.out',
+          })
+          gsap.to('.filmContent', {
             opacity: progress,
             y: (1 - progress) * 30,
-            filter: direction === 1 ? 'blur(0px)' : 'blur(5px)',
-            duration: 1.5,
-            delay: delay,
-            ease: 'power2.out',
+            filter: `blur(${(1 - progress) * 5}px)`,
+            duration: 0.2,
+            ease: 'power1.out',
           })
-        })
-      },
-    })
-
-    // Set initial state for lessonTopic
-    lessonTopic.forEach(text => {
-      gsap.set(text, {
-        opacity: 0,
-        filter: 'blur(5px)',
+        },
       })
-    })
 
-    ScrollTrigger.create({
-      trigger: '.lesson',
-      start: 'top 75%',
-      end: 'top 25%',
-      scrub: true,
-      onUpdate: self => {
-        const progress = self.progress
-        const direction = self.direction
-        const totalElements = lessonTopic.length
-
-        lessonTopic.forEach((text, index) => {
-          // Calculate delay based on scroll direction and odd/even index
-          const isOdd = index % 2 !== 0
-          const adjustedIndex = isOdd
-            ? Math.floor(totalElements / 2) + Math.floor(index / 2)
-            : Math.floor(index / 2)
-
-          const delay =
-            direction === 1
-              ? adjustedIndex * 0.3 // Odd indices first when scrolling down
-              : (totalElements - 1 - adjustedIndex) * 0.5 // Reverse order when scrolling up
-
-          gsap.to(text, {
-            opacity: progress,
-            filter: direction === 1 ? 'blur(0px)' : 'blur(5px)',
-            duration: 2.5,
-            delay: delay,
-            ease: 'power2.out',
+      ScrollTrigger.create({
+        trigger: '.lesson',
+        start: 'top bottom',
+        end: 'top 25%',
+        scrub: true,
+        onUpdate: self => {
+          const progress = self.progress
+          gsap.to('.lesson', {
+            y: progress * -100,
+            duration: 0.2,
+            ease: 'power1.out',
           })
-        })
-      },
-    })
+          gsap.to('.lessonContent', {
+            opacity: progress,
+            y: (1 - progress) * 30,
+            filter: `blur(${(1 - progress) * 5}px)`,
+            duration: 0.2,
+            ease: 'power1.out',
+          })
+        },
+      })
 
-    // Cleanup
-    onUnmounted(() => {
-      window.removeEventListener('resize', updateWindowWidth)
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill())
-    })
+      ScrollTrigger.create({
+        trigger: '.film',
+        start: 'top 75%',
+        end: 'top 25%',
+        scrub: true,
+        onUpdate: self => {
+          const progress = self.progress
+          const direction = self.direction
+          const totalElements = filmContentElements.length
+
+          filmContentElements.forEach((element, index) => {
+            const delay =
+              direction === 1
+                ? index * 0.3 // Faster sequence when scrolling down
+                : (totalElements - 1 - index) * 0.3 // Reverse order when scrolling up
+
+            gsap.to(element, {
+              opacity: progress,
+              y: (1 - progress) * 30,
+              filter: direction === 1 ? 'blur(0px)' : 'blur(5px)',
+              duration: 1.5,
+              delay: delay,
+              ease: 'power2.out',
+            })
+          })
+        },
+      })
+
+      // Set initial state for lessonTopic
+      lessonTopic.forEach(text => {
+        gsap.set(text, {
+          opacity: 0,
+          filter: 'blur(5px)',
+        })
+      })
+
+      ScrollTrigger.create({
+        trigger: '.lesson',
+        start: 'top 75%',
+        end: 'top 25%',
+        scrub: true,
+        onUpdate: self => {
+          const progress = self.progress
+          const direction = self.direction
+          const totalElements = lessonTopic.length
+
+          lessonTopic.forEach((text, index) => {
+            // Calculate delay based on scroll direction and odd/even index
+            const isOdd = index % 2 !== 0
+            const adjustedIndex = isOdd
+              ? Math.floor(totalElements / 2) + Math.floor(index / 2)
+              : Math.floor(index / 2)
+
+            const delay =
+              direction === 1
+                ? adjustedIndex * 0.3 // Odd indices first when scrolling down
+                : (totalElements - 1 - adjustedIndex) * 0.5 // Reverse order when scrolling up
+
+            gsap.to(text, {
+              opacity: progress,
+              filter: direction === 1 ? 'blur(0px)' : 'blur(5px)',
+              duration: 2.5,
+              delay: delay,
+              ease: 'power2.out',
+            })
+          })
+        },
+      })
+
+      // Cleanup
+      onUnmounted(() => {
+        window.removeEventListener('resize', updateWindowWidth)
+        ScrollTrigger.getAll().forEach(trigger => trigger.kill())
+      })
+    }
   })
 </script>
 
@@ -327,9 +364,137 @@
     mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 0) 100%);
     -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 0) 100%);
   }
+  /* :not(:required) hides this rule from IE9 and below */
+  .inner-circles-loader:not(:required) {
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background: rgba(63, 107, 139, 0.5);
+    border-radius: 50%;
+    overflow: hidden;
+    text-indent: -9999px;
+    opacity: 0.9;
+    /* Hides inner circles outside base circle at safari */
+    -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+  }
+  .inner-circles-loader:not(:required):before,
+  .inner-circles-loader:not(:required):after {
+    content: '';
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  .inner-circles-loader:not(:required):before {
+    -moz-animation: inner-circles-loader 3s infinite;
+    -webkit-animation: inner-circles-loader 3s infinite;
+    animation: inner-circles-loader 3s infinite;
+    -moz-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    left: 0;
+    background: #032535;
+    opacity: 0.9;
+  }
+  .inner-circles-loader:not(:required):after {
+    -moz-animation: inner-circles-loader 3s 0.2s reverse infinite;
+    -webkit-animation: inner-circles-loader 3s 0.2s reverse infinite;
+    animation: inner-circles-loader 3s 0.2s reverse infinite;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    right: 0;
+    background: #ffffff;
+    opacity: 0.9;
+  }
+
+  @-moz-keyframes inner-circles-loader {
+    0% {
+      -moz-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    50% {
+      -moz-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+    100% {
+      -moz-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  }
+  @-webkit-keyframes inner-circles-loader {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    50% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+    100% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  }
+  @keyframes inner-circles-loader {
+    0% {
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    50% {
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+    100% {
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  }
+  @-moz-keyframes pong-loader {
+    0% {
+      left: 5px;
+      top: 0;
+    }
+    25% {
+      left: 65px;
+      top: 20px;
+    }
+    50% {
+      left: 5px;
+    }
+    62.5% {
+      top: 50px;
+    }
+    75% {
+      left: 65px;
+      top: 70%;
+    }
+    100% {
+      left: 5px;
+      top: 0%;
+    }
+  }
 </style>
 
 <template>
+  <div v-if="isLoading" class="fixed inset-0 bg-[#032535] z-30 flex items-center justify-center">
+    <div class="inner-circles-loader"></div>
+  </div>
   <div class="relative overflow-x-hidden h-[270vh] w-full">
     <SideMenu ref="menuRef" @close="closeMenu" />
     <div class="fixed right-10 sm:right-12 top-10 cursor-pointer z-20">
