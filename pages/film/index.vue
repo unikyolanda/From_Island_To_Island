@@ -13,6 +13,9 @@
   onMounted(() => {
     const parallaxElements = document.querySelectorAll('#parallax-content')
     const images = Array.from(parallaxElements)
+    const textElements = document.querySelectorAll(
+      'p.font-noto, p.font-wix, p.font-shippori, p.font-amiri'
+    )
 
     // Check if each image is loaded
     const imagePromises = images.map(img => {
@@ -25,10 +28,13 @@
       }
     })
 
-    // Initialize parallax after all images are loaded
+    // Initialize animations after all images are loaded
     Promise.all(imagePromises).then(() => {
+      // Setup parallax effects
       parallaxElements.forEach(element => {
-        // Set initial position
+        const container = element.parentElement
+
+        // Set initial position for parallax
         gsap.set(element, {
           y: '-20%', // Start higher up to allow room for movement
         })
@@ -38,10 +44,36 @@
           y: '0%', // Move down to show bottom portion
           ease: 'none',
           scrollTrigger: {
-            trigger: element.parentElement,
+            trigger: container,
             start: 'top bottom',
             end: 'bottom 25%',
             scrub: 1,
+          },
+        })
+
+        // Create fade-in effect for image containers
+        gsap.from(container, {
+          opacity: 0,
+          duration: 1,
+          scrollTrigger: {
+            trigger: container,
+            start: 'top bottom-=100',
+            toggleActions: 'play none none none',
+            once: true,
+          },
+        })
+      })
+
+      // Setup text fade-in effects
+      textElements.forEach(element => {
+        gsap.from(element, {
+          opacity: 0,
+          duration: 1,
+          scrollTrigger: {
+            trigger: element,
+            start: 'top 75%',
+            toggleActions: 'play none none none',
+            once: true,
           },
         })
       })
@@ -60,6 +92,7 @@
 </style>
 
 <template>
+  <!-- Rest of the template remains unchanged -->
   <div class="flex flex-col bg-black w-screen h-auto min-h-screen items-center">
     <div class="fixed inset-0 bg-film z-0"></div>
     <NavBar textColor="white" logoSrc="/images/logo.png" />

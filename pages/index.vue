@@ -71,8 +71,10 @@
     const stills2Image = document.querySelector('.stills2')
     const titleSections = document.querySelectorAll('.title-text-section, .vertical-text-section')
     const lessonTopic = document.querySelectorAll('.lessonTopic p')
+    const filmTitleElement = document.querySelector('.filmText > div')
+    const filmTextElement = document.querySelector('.filmText > p')
     const filmContentElements = document.querySelectorAll(
-      '.filmContent > .filmText, .filmContent > div:nth-child(2), .filmContent > div:nth-child(3)'
+      '.filmContent > div:nth-child(2), .filmContent > div:nth-child(3)'
     )
 
     // Wait for loading to complete before starting animations
@@ -83,8 +85,8 @@
     })
 
     const initializeAnimations = () => {
-      // Set initial state for title sections
-      gsap.set(filmContentElements, {
+      // Set initial state for film sections
+      gsap.set([filmTitleElement, filmTextElement, ...filmContentElements], {
         opacity: 0,
         y: 30,
         filter: 'blur(5px)',
@@ -258,13 +260,33 @@
         onUpdate: self => {
           const progress = self.progress
           const direction = self.direction
-          const totalElements = filmContentElements.length
 
+          // Animate title first
+          gsap.to(filmTitleElement, {
+            opacity: progress,
+            y: (1 - progress) * 30,
+            filter: direction === 1 ? 'blur(0px)' : 'blur(5px)',
+            duration: 1.5,
+            delay: 0, // No delay for title
+            ease: 'power2.out',
+          })
+
+          // Animate text with delay
+          gsap.to(filmTextElement, {
+            opacity: progress,
+            y: (1 - progress) * 30,
+            filter: direction === 1 ? 'blur(0px)' : 'blur(5px)',
+            duration: 1.5,
+            delay: direction === 1 ? 0.3 : 0, // Delay text when scrolling down
+            ease: 'power2.out',
+          })
+
+          // Animate other content elements
           filmContentElements.forEach((element, index) => {
             const delay =
               direction === 1
-                ? index * 0.3 // Faster sequence when scrolling down
-                : (totalElements - 1 - index) * 0.3 // Reverse order when scrolling up
+                ? (index + 2) * 0.3 // Start delay after text (index + 2)
+                : (filmContentElements.length - 1 - index) * 0.3 // Reverse order when scrolling up
 
             gsap.to(element, {
               opacity: progress,
@@ -329,6 +351,15 @@
 </script>
 
 <style>
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 0.5s ease;
+  }
+  .fade-enter-from,
+  .fade-leave-to {
+    opacity: 0;
+  }
+
   lite-youtube {
     background-color: #000;
     position: relative;
@@ -492,13 +523,18 @@
 </style>
 
 <template>
-  <div v-if="isLoading" class="fixed inset-0 bg-[#032535] z-30 flex items-center justify-center">
-    <div class="inner-circles-loader"></div>
-  </div>
+  <Transition name="fade">
+    <div
+      v-show="isLoading"
+      class="fixed inset-0 bg-[#032535] z-30 flex items-center justify-center"
+    >
+      <div class="inner-circles-loader"></div>
+    </div>
+  </Transition>
   <div class="relative overflow-x-hidden h-[270vh] w-full">
     <SideMenu ref="menuRef" @close="closeMenu" />
-    <div class="fixed right-10 sm:right-12 top-10 cursor-pointer z-20">
-      <img src="/images/menu.svg" alt="menu" class="w-10 h-8" @click="toggleMenu" />
+    <div class="fixed right-10 sm:right-12 top-6 sm:top-10 cursor-pointer z-20">
+      <img src="/images/menu.svg" alt="menu" class="w-8 sm:w-10 h-8" @click="toggleMenu" />
     </div>
     <div class="ripple-effect absolute flex flex-col items-center w-full h-full overflow-x-hidden">
       <div class="title w-full min-h-screen relative flex items-center">

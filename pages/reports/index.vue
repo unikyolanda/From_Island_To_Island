@@ -13,6 +13,9 @@
   onMounted(() => {
     const parallaxElements = document.querySelectorAll('#parallax-content')
     const images = Array.from(parallaxElements)
+    const textElements = document.querySelectorAll(
+      'p.font-noto, p.font-wix, p.font-shippori, p.font-amiri, a.font-noto, div.font-noto'
+    )
 
     // Check if each image is loaded
     const imagePromises = images.map(img => {
@@ -42,6 +45,31 @@
             start: 'top bottom',
             end: 'bottom 25%',
             scrub: 1,
+          },
+        })
+
+        // Create fade-in effect for parallax elements
+        gsap.from(element, {
+          opacity: 0,
+          duration: 1,
+          scrollTrigger: {
+            trigger: element,
+            start: 'top bottom-=100',
+            toggleActions: 'play none none reset',
+          },
+        })
+      })
+
+      // Setup text fade-in effects
+      textElements.forEach(element => {
+        gsap.from(element, {
+          opacity: 0,
+          duration: 1,
+          scrollTrigger: {
+            trigger: element,
+            start: 'top 75%',
+            toggleActions: 'play none none none',
+            once: true,
           },
         })
       })

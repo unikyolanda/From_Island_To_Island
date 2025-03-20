@@ -50,13 +50,13 @@
         >
           由島至島
         </a>
-        <p
+        <div
           @click="togglePopup"
           class="font-shippori text-[18px] tracking-[10px] opacity-80 hover:opacity-100 cursor-pointer"
           :style="{ color: textColor }"
         >
           最新場次
-        </p>
+        </div>
       </div>
       <div class="flex flex-col-reverse items-center sm:flex-row gap-x-[30px]">
         <a
@@ -67,9 +67,9 @@
         >
           網站製作｜西打藍好內容有限公司
         </a>
-        <p class="font-wix text-[13px] opacity-80 mt-8 sm:mt-0" :style="{ color: textColor }">
+        <div class="font-wix text-[13px] opacity-80 mt-8 sm:mt-0" :style="{ color: textColor }">
           Copyright © HUMMINGBIRD Production
-        </p>
+        </div>
       </div>
     </div>
   </div>
