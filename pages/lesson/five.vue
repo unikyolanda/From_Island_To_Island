@@ -77,11 +77,9 @@
               <p
                 class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] mt-9 leading-[30px]"
               >
-                林俊田的父親為維持會成員，日軍入侵後，他跟著村莊的其他孩子們帶著物資歡喜迎接抵達村莊的日軍。聽聞隔壁村莊遭大屠殺的消息後，卻沒想到此刻的安寧是用村莊裡的數位女性所交換來的。<br />
-                <br />
-                二戰期間，慰安婦除了成為讓城鎮倖免於日軍大屠殺的祭品，更是殖民政府與在地資本家合作經營的戰時補給產業鏈中的一環。多年後，遲來的傷痛修復與集體歷史記憶重建依舊困難重重。<br />
-                <br />
-                ＊此片段為 12 分鐘，請填寫表單索取，僅供教育用途使用，版權歸《由島至島》所有。
+                二戰期間，日軍侵略馬來半島，林俊田的父親身為維持會成員，他與村中孩童攜帶物資，熱切迎接進駐的日軍。然而翌日，他們聽聞鄰村遭到大屠殺，卻未察覺村莊的短暫安寧，是以數名女性的犧牲換來的。這些女性究竟是性工作者，還是平民寡婦？個人記憶與口述歷史中，留下了歧異的詮釋與爭議。
+                <br /><br />
+                慰安婦不僅是日軍暴行下的受害者，更深陷於戰時軍需產業鏈，成為日本與在地資本家共構的剝削體制的一環。多年後，她們的經歷仍未能獲得國家與社會的正視，歷史記憶的重建與遲來的傷痛修復依舊困難重重。
               </p>
             </div>
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
@@ -91,12 +89,12 @@
               <div
                 class="font-shippori text-[23px] sm:text-[28px] tracking-[4px] leading-[40px] text-[#757575] mt-7"
               >
-                沈默並非不存在—記憶慰安婦
+                被噤聲的傷痛——記憶慰安婦
               </div>
               <p
                 class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] mt-9 leading-[30px]"
               >
-                本教案之設計與議題討論之目的在於協助學生結構性學習慰安婦的歷史，結合國際人權之概念進行討論與分析，認識日本政府對慰安婦的系統性暴力結構，接著體驗代入時代下的各個社會角色，同理並反思慰安婦倖存後所面臨的社會困境。
+                本教案透過文本分析、角色扮演與議題關鍵字躺論，幫助學生系統性學習慰安婦的歷史，深入了解日本軍事性奴隸制度下受害者的處境，以及臺灣慰安婦募集動員系統所牽涉的關鍵人物與途徑。透過角色代入回答系列問題，引導學生思考不同身份與立場如何成為共犯結構中的一部分。最終，藉由台灣、日本與韓國慰安婦爭議事件的搜尋，了解慰安婦倖存者戰後面臨的困境，進而反思記憶這段歷史的重要性。
               </p>
             </div>
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
@@ -106,7 +104,7 @@
               <p
                 class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] mt-9 leading-[30px]"
               >
-                透過閱讀文本與觀看文本，覺知慰安婦實為日本政府所為的系統性國家暴力，而受害者之傷痛與經驗並未被國家及社會所正視之事實，並解析該系統性國家暴力之結構下的各種社會角色，最後省思受難者未竟的創傷重建之心境、探討國家的對慰安婦問題的作為。
+                在認識二戰日本軍事性奴隸制度的歷史後，引導學生理解慰安婦的困境是國家暴力與共犯結構交織下的結果。透過解析慰安婦動員系統中的各個角色，並查找不同國家對慰安婦議題的爭議與論述，探討受害者的傷痛與經歷為何難以被國家與社會記憶與討論，進而反思自己可以怎麼記憶這段歷史。
               </p>
             </div>
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
@@ -116,13 +114,14 @@
               <p
                 class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] mt-9 leading-[30px]"
               >
-                如何理解慰安婦問題作為日本政府的系統性國家暴力，並反思社會與國家對受害者創傷重建的忽視與應對？
+                二戰期間，日本的軍事性奴隸制度是如何構成的？<br />
+                慰安婦的經歷與傷痛可以如何被大眾所記憶與討論？
               </p>
             </div>
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
               <div class="font-noto text-[17px] tracking-[2px] text-[#D0BC9C] font-semibold">
                 活動流程<span class="text-[14.5px] tracking-[0.5px] text-[#757575] font-normal"
-                  >（國中兩堂課·每堂50分鐘）</span
+                  >（高中兩堂課·每堂50分鐘）</span
                 >
               </div>
               <div class="flex flex-col sm:flex-row mt-6 items-start sm:items-center">
@@ -167,7 +166,7 @@
                       class="bg-white w-[88px] sm:w-[115px] h-[88px] sm:h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
                     >
                       <div class="font-wix text-[28px] sm:text-[36px] text-[#D0BC9C] font-semibold">
-                        20<span class="text-[16px] ml-[2px]">min</span>
+                        10<span class="text-[16px] ml-[2px]">min</span>
                       </div>
                       <p
                         class="font-noto text-[#757575] text-[12px] sm:text-[13px] font-semibold tracking-[2px] mb-2 sm:mb-0"
@@ -180,12 +179,12 @@
                       class="bg-white w-[88px] sm:w-[115px] h-[88px] sm:h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
                     >
                       <div class="font-wix text-[28px] sm:text-[36px] text-[#D0BC9C] font-semibold">
-                        10<span class="text-[16px] ml-[2px]">min</span>
+                        20<span class="text-[16px] ml-[2px]">min</span>
                       </div>
                       <p
                         class="font-noto text-[#757575] text-[12px] sm:text-[13px] font-semibold tracking-[2px] mb-2 sm:mb-0"
                       >
-                        映後導讀
+                        文本分析
                       </p>
                     </div>
                   </div>
@@ -197,44 +196,63 @@
                 >
                   第二節課
                 </p>
-                <div class="flex gap-x-1 sm:gap-x-3 mt-2 sm:mt-0 sm:ml-9 items-center">
-                  <div
-                    class="bg-white w-[88px] sm:w-[115px] h-[88px] sm:h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
-                  >
-                    <div class="font-wix text-[28px] sm:text-[36px] text-[#D0BC9C] font-semibold">
-                      20<span class="text-[16px] ml-[2px]">min</span>
-                    </div>
-                    <p
-                      class="font-noto text-[#757575] text-[12px] sm:text-[13px] font-semibold tracking-[2px] mb-2 sm:mb-0"
+                <div
+                  class="flex flex-col sm:flex-row gap-x-1 sm:gap-x-3 mt-2 sm:mt-0 sm:ml-9 items-center"
+                >
+                  <div class="flex gap-x-1 items-center">
+                    <div
+                      class="bg-white w-[88px] sm:w-[115px] h-[88px] sm:h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
                     >
-                      文本討論
-                    </p>
+                      <div class="font-wix text-[28px] sm:text-[36px] text-[#D0BC9C] font-semibold">
+                        10<span class="text-[16px] ml-[2px]">min</span>
+                      </div>
+                      <p
+                        class="font-noto text-[#757575] text-[12px] sm:text-[13px] font-semibold tracking-[2px] mb-2 sm:mb-0"
+                      >
+                        活動體驗
+                      </p>
+                    </div>
+                    <img src="/images/right.svg" class="w-[10px] h-[12px]" />
+                    <div
+                      class="bg-white w-[88px] sm:w-[115px] h-[88px] sm:h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
+                    >
+                      <div class="font-wix text-[28px] sm:text-[36px] text-[#D0BC9C] font-semibold">
+                        20<span class="text-[16px] ml-[2px]">min</span>
+                      </div>
+                      <p
+                        class="font-noto text-[#757575] text-[12px] sm:text-[13px] font-semibold tracking-[2px] mb-2 sm:mb-0"
+                      >
+                        議題分析
+                      </p>
+                    </div>
+                    <img src="/images/right.svg" class="w-[10px] h-[12px]" />
                   </div>
-                  <img src="/images/right.svg" class="w-[10px] h-[12px]" />
-                  <div
-                    class="bg-white w-[88px] sm:w-[115px] h-[88px] sm:h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
-                  >
-                    <div class="font-wix text-[28px] sm:text-[36px] text-[#D0BC9C] font-semibold">
-                      10<span class="text-[16px] ml-[2px]">min</span>
-                    </div>
-                    <p
-                      class="font-noto text-[#757575] text-[12px] sm:text-[13px] font-semibold tracking-[2px]"
+                  <div class="flex gap-x-1 items-center mt-4 sm:mt-0 ml-16 sm:ml-0">
+                    <div
+                      class="bg-white w-[88px] sm:w-[115px] h-[88px] sm:h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
                     >
-                      映後導讀
-                    </p>
-                  </div>
-                  <img src="/images/right.svg" class="w-[10px] h-[12px]" />
-                  <div
-                    class="bg-white w-[88px] sm:w-[115px] h-[88px] sm:h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
-                  >
-                    <div class="font-wix text-[28px] sm:text-[36px] text-[#D0BC9C] font-semibold">
-                      20<span class="text-[16px] ml-[2px]">min</span>
+                      <div class="font-wix text-[28px] sm:text-[36px] text-[#D0BC9C] font-semibold">
+                        10<span class="text-[16px] ml-[2px]">min</span>
+                      </div>
+                      <p
+                        class="font-noto text-[#757575] text-[12px] sm:text-[13px] font-semibold tracking-[2px] mb-2 sm:mb-0"
+                      >
+                        成果分享
+                      </p>
                     </div>
-                    <p
-                      class="font-noto text-[#757575] text-[12px] sm:text-[13px] font-semibold tracking-[2px]"
+                    <img src="/images/right.svg" class="w-[10px] h-[12px]" />
+                    <div
+                      class="bg-white w-[88px] sm:w-[115px] h-[88px] sm:h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
                     >
-                      延伸討論
-                    </p>
+                      <div class="font-wix text-[28px] sm:text-[36px] text-[#D0BC9C] font-semibold">
+                        10<span class="text-[16px] ml-[2px]">min</span>
+                      </div>
+                      <p
+                        class="font-noto text-[#757575] text-[12px] sm:text-[13px] font-semibold tracking-[2px] mb-2 sm:mb-0"
+                      >
+                        延伸討論
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -246,7 +264,7 @@
               <p
                 class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] mt-9 leading-[30px]"
               >
-                資訊環境、國家動員、宣傳、立場、能動性、人的局限性
+                軍事性奴隸、國家暴力、共犯結構、慰安婦、記憶、創傷
               </p>
             </div>
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
@@ -306,7 +324,7 @@
                   教案申請表單</a
                 >
                 <a
-                  href="https://drive.google.com/drive/folders/1f27nDrZNGGoNXQWJaHXQC8CF5QEMaVEQ"
+                  href="https://www.canva.com/design/DAGhUFrqqjk/R9SJqF5_8kEXWm_RYUqnCg/view?utm_content=DAGhUFrqqjk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3f9dcd5c88"
                   target="_blank"
                   class="font-wix w-[162px] text-[#999] flex justify-center py-3 bg-white border border-[#999]/70 mt-6 mb-20 hover:bg-[#999] hover:text-white"
                 >

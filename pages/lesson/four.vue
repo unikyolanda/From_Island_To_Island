@@ -77,11 +77,9 @@
               <p
                 class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] mt-9 leading-[30px]"
               >
-                台灣在二戰期間是日本帝國的殖民地，其中有不少台灣人志願或被雇用，成為日本軍隊的一員，參與日本在東南亞的戰爭。而在日本攻佔新加坡、馬來西亞的三年又八個月中，軍隊虐殺戰俘、迫使婦女成為慰安婦，甚至有計劃地屠殺當地華人。<br />
-                <br />
-                然而二戰後，遭軍事法庭審判犯下違反和平罪、傳統戰爭罪或違反人道罪而處以死刑的日本「軍事犯人」，在行刑前寫下的一百六十五封遺書中，卻只有一封提到了遭受日本軍隊凌虐、屠殺的受害者。然而，當時來自殖民地台灣的人民，是否目睹，甚至參與了這些暴行？在暴行之後，我們能夠如何傾聽加害者、受難者和見證者的沈默？又能如何面對、克服過去？<br />
-                <br />
-                ＊此片段為 21 分鐘，請填寫表單索取，僅供教育用途使用，版權歸《由島至島》所有。
+                二戰期間，在日本佔領新加坡和馬來亞長達三年八個月的日子中，軍隊虐殺戰俘、迫使婦女成為軍事性奴隸，並計劃性地屠殺當地華人。然而戰後，遭軍事法庭審判犯下違反和平罪、傳統戰爭罪或違反人道罪而處以死刑的日本軍事犯人，在行刑前寫下的一百六十五封遺書中，僅有一封提到了日本軍隊所犯的暴行受害者。
+                <br /><br />
+                來自日本的高嶋伸欣先生前往東南亞尋找戰時日本屠殺人民的地點進行調查，並年年籌組日本和平教育團，踏訪受難地點、清掃蒙難者的墳墓，帶著年輕世代與屠殺倖存者面對面對話，多年來重複地拜訪與聆聽。而戰時受日本動員前往南洋戰場的台灣人在圍捕、拷問等行動中扮演關鍵角色，加害者、受難者和見證者的沈默？我們又該如何面對與克服過去的歷史傷痕？
               </p>
             </div>
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
@@ -98,7 +96,7 @@
               <p
                 class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] mt-9 leading-[30px]"
               >
-                本教案從中日戰爭、歐戰爆發後，日本帝國向東南亞的侵略，以及二戰開打後，日本對殖民地台灣的志願兵政策導入。藉由紀錄短片、文本，讓學生探究台籍日本兵、軍夫、軍屬在日本軍隊中的遭遇，其在日本於東南亞的戰爭與暴行中的角色，以及東南亞當地人民在二戰期間的遭遇。進而分析、覺察不同史料的差異與重要性，及其如何影響對歷史的理解與詮釋，進而反思自身對二戰的認知與其建構的過程，並發想個人能夠如何記憶戰爭，克服過去。
+                本教案從中日戰爭、歐戰爆發後日本向東南亞的侵略，與二戰開打後日本對殖民地台灣的志願兵政策導入。藉由紀錄短片與文本，讓學生探究台籍日本兵、軍夫、軍屬在日本軍隊中的遭遇，及其在東南亞戰場與暴行中的角色，並了解當地人民在戰爭期間的經歷。課程引導學生分析、覺察不同史料的差異與重要性，並思考這些檔案如何影響歷史的理解與詮釋，進而反思自身對二戰的認知與認知建構的過程，並發想個人能夠如何記憶戰爭，克服過去。
               </p>
             </div>
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
@@ -108,7 +106,7 @@
               <p
                 class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] mt-9 leading-[30px]"
               >
-                在學生既有的、對於二戰如何在「國家間」發生與其影響（國中）的理解下，使學生從人民／個人的角度出發，深化對台籍日本兵、軍夫、軍屬在日本軍隊中的遭遇，及其在日本於東南亞的戰爭與暴行中的角色；以及東南亞當地人民在二戰期間的遭遇的理解。進而討論、覺察不同史料的差異與重要性，及其如何影響對歷史的理解與詮釋。最終反思自身對二戰的認知與其建構的過程，並發想個人能夠如何記憶戰爭，克服過去。
+                在學生具備「二戰如何在國家間發生及影響」的理解基礎上，引導學生從人民／個人角度出發，透過史料與文本分析，深入了解南洋戰場上的台灣人及東南亞當地人民在二戰期間的經歷，並比較台灣報導台籍軍夫與馬來西亞見證者描述的異同。閱讀不同文本後，學生將分析兩者在呈現臺籍戰俘監視員的「事實」與「陳述」上的差異，並透過影片中「見證」性質史料，理解其在歷史詮釋中的特性與重要性。最終，學生將反思課程前後對二戰認知的變化，探討「克服過去」的意涵與方法。
               </p>
             </div>
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
@@ -118,13 +116,15 @@
               <p
                 class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] mt-9 leading-[30px]"
               >
-                在暴行之後，我們能夠如何傾聽加害者、受難者和見證者的沈默？又能如何面對、克服過去？
+                前往南洋的台籍日本兵是否目睹或甚至參與了日本在東南亞的屠殺與暴行？<br />
+                不同的史料如何影響我們對於同一段歷史的理解與詮釋？<br />
+                戰後，我們應如何傾聽加害者、受難者和見證者的沉默？又能如何面對、克服過去？
               </p>
             </div>
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
               <div class="font-noto text-[17px] tracking-[2px] text-[#D0BC9C] font-semibold">
                 活動流程<span class="text-[14.5px] tracking-[0.5px] text-[#757575] font-normal"
-                  >（國中兩堂課·每堂50分鐘）</span
+                  >（高中兩堂課·每堂50分鐘）</span
                 >
               </div>
               <div class="flex flex-col sm:flex-row mt-6 items-start sm:items-center">
@@ -143,7 +143,7 @@
                     <p
                       class="font-noto text-[#757575] text-[12px] sm:text-[13px] font-semibold tracking-[2px] mb-2 sm:mb-0"
                     >
-                      課程引導
+                      課堂導入
                     </p>
                   </div>
                   <img src="/images/right.svg" class="w-[10px] h-[12px]" />
@@ -156,7 +156,7 @@
                     <p
                       class="font-noto text-[#757575] text-[12px] sm:text-[13px] font-semibold tracking-[2px] mb-2 sm:mb-0"
                     >
-                      影片放映
+                      影片放映(一)
                     </p>
                   </div>
                   <img src="/images/right.svg" class="w-[10px] h-[12px]" />
@@ -180,29 +180,63 @@
                 >
                   第二節課
                 </p>
-                <div class="flex gap-x-1 sm:gap-x-3 mt-2 sm:mt-0 sm:ml-9 items-center">
-                  <div
-                    class="bg-white w-[88px] sm:w-[115px] h-[88px] sm:h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
-                  >
-                    <div class="font-wix text-[28px] sm:text-[36px] text-[#D0BC9C] font-semibold">
-                      14<span class="text-[16px] ml-[2px]">min</span>
-                    </div>
-                    <p class="font-noto text-[#757575] text-[13px] font-semibold tracking-[2px]">
-                      文本討論
-                    </p>
-                  </div>
-                  <img src="/images/right.svg" class="w-[10px] h-[12px]" />
-                  <div
-                    class="bg-white w-[88px] sm:w-[115px] h-[88px] sm:h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
-                  >
-                    <div class="font-wix text-[28px] sm:text-[36px] text-[#D0BC9C] font-semibold">
-                      36<span class="text-[16px] ml-[2px]">min</span>
-                    </div>
-                    <p
-                      class="font-noto text-[#757575] text-[12px] sm:text-[13px] font-semibold tracking-[2px]"
+                <div
+                  class="flex flex-col sm:flex-row gap-x-1 sm:gap-x-3 mt-2 sm:mt-0 sm:ml-9 items-center"
+                >
+                  <div class="flex gap-x-1 items-center">
+                    <div
+                      class="bg-white w-[88px] sm:w-[115px] h-[88px] sm:h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
                     >
-                      分享與回饋
-                    </p>
+                      <div class="font-wix text-[28px] sm:text-[36px] text-[#D0BC9C] font-semibold">
+                        14<span class="text-[16px] ml-[2px]">min</span>
+                      </div>
+                      <p
+                        class="font-noto text-[#757575] text-[12px] sm:text-[13px] font-semibold tracking-[2px] mb-2 sm:mb-0"
+                      >
+                        文本分析
+                      </p>
+                    </div>
+                    <img src="/images/right.svg" class="w-[10px] h-[12px]" />
+                    <div
+                      class="bg-white w-[88px] sm:w-[115px] h-[88px] sm:h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
+                    >
+                      <div class="font-wix text-[28px] sm:text-[36px] text-[#D0BC9C] font-semibold">
+                        12<span class="text-[16px] ml-[2px]">min</span>
+                      </div>
+                      <p
+                        class="font-noto text-[#757575] text-[12px] sm:text-[13px] font-semibold tracking-[2px] mb-2 sm:mb-0"
+                      >
+                        成果分享
+                      </p>
+                    </div>
+                    <img src="/images/right.svg" class="w-[10px] h-[12px]" />
+                  </div>
+                  <div class="flex gap-x-1 items-center mt-4 sm:mt-0 ml-16 sm:ml-0">
+                    <div
+                      class="bg-white w-[88px] sm:w-[115px] h-[88px] sm:h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
+                    >
+                      <div class="font-wix text-[28px] sm:text-[36px] text-[#D0BC9C] font-semibold">
+                        14<span class="text-[16px] ml-[2px]">min</span>
+                      </div>
+                      <p
+                        class="font-noto text-[#757575] text-[12px] sm:text-[13px] font-semibold tracking-[2px]"
+                      >
+                        影片放映(二)
+                      </p>
+                    </div>
+                    <img src="/images/right.svg" class="w-[10px] h-[12px]" />
+                    <div
+                      class="bg-white w-[88px] sm:w-[115px] h-[88px] sm:h-[115px] rounded-full flex flex-col items-center justify-center opacity-100"
+                    >
+                      <div class="font-wix text-[28px] sm:text-[36px] text-[#D0BC9C] font-semibold">
+                        10<span class="text-[16px] ml-[2px]">min</span>
+                      </div>
+                      <p
+                        class="font-noto text-[#757575] text-[12px] sm:text-[13px] font-semibold tracking-[2px] mb-2 sm:mb-0"
+                      >
+                        映後討論
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -214,7 +248,7 @@
               <p
                 class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] mt-9 leading-[30px]"
               >
-                國家／個人、受害者／加害者、見證、克服過去（Vergangenheitsbewältigung）、行動
+                國家／個人、加害者／被害者、見證、歷史詮釋、克服過去（Vergangenheitsbewältigung）
               </p>
             </div>
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
@@ -278,7 +312,7 @@
                   教案申請表單</a
                 >
                 <a
-                  href="https://drive.google.com/drive/folders/1sn_54ICsVtrOTuRy1WU8PDiGdugvh3nU"
+                  href="https://www.canva.com/design/DAGhUD9cqkg/m4USosdU-BAiq9TlHIUwMg/view?utm_content=DAGhUD9cqkg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h6e722e3d7e"
                   target="_blank"
                   class="font-wix w-[162px] text-[#999] flex justify-center py-3 bg-white border border-[#999]/70 mt-6 mb-20 hover:bg-[#999] hover:text-white"
                 >

@@ -77,11 +77,11 @@
               <p
                 class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] mt-9 leading-[30px]"
               >
-                在馬來半島，日本軍政府利用馬來人希望獨立的情緒，拉攏馬來人社群組織軍隊與義警，幫助日本軍控制社會、維持治安與鎮壓抗日勢力。日本軍隊利用學校教育、歌曲創作、宗教宣傳、展示戰俘來證明協助日本人可以達成獨立的目標，並傳播大東亞共榮圈的概念。馬來人因此被動員，並與華人為主的抗日軍發生衝突。<br />
+                二戰期間，日軍佔領馬來亞，利用馬來人對獨立的渴望，與馬來青年同盟*（KMM）合作秘密蒐集情報，扶持當地勢力組建維持會，以鞏固統治、維持治安，並鎮壓抗日勢力。<br /><br />
+                日本透過宗教、文化、經濟與教育等層面積極宣揚日本精神，以「大東亞共榮圈」作為口號，拉攏馬來社群，加劇其與支持抗日的華人之間的對立。台灣成為日本展示現代化進程與培訓「文化戰士」的基地，人民更被動員製作慰問袋以鼓舞馬來人，甚至隨軍進入南洋戰場，成為殘酷戰爭機器的一部分。
                 <br />
-                台灣除了被當作馬來人社群的訓練基地，也被用來生產鼓舞馬來人的物資。隨著日軍前往東南亞的台灣人，更是將自己視為日本人，在共享同樣的情緒時，也在國家動員之下，成為殘酷戰爭機器的一部份。<br />
                 <br />
-                ＊此片段為 14 分鐘，請填寫表單索取，僅供教育用途使用，版權歸《由島至島》所有。
+                ＊馬來青年同盟：Kesatuan Melayu Muda（KMM），又譯「馬來青年協會」。
               </p>
             </div>
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
@@ -96,7 +96,7 @@
               <p
                 class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] mt-9 leading-[30px]"
               >
-                本教案設計希望透過讓學生以角色扮演與核心問答的方式，了解馬來西亞與臺灣在二戰時期如何被日本軍事動員的過程，並且藉由扮演不同角色並進行討論與分享，讓學生更能同理在戰爭的時代背景與脈絡下，不同的人會因為立場、外在環境等種種因素，決定與誰合作以達成目標。
+                本教案透過角色扮演和核心問答，讓學生了解二戰期間日本在馬來亞與台灣的軍事動員過程。藉由置換不同身份立場進行討論與分享，讓學生同理在戰爭期間，人們如何因應外在環境、利益交換等因素，互相為謀或彼此對立，以達成各自的目標。
               </p>
             </div>
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
@@ -106,7 +106,7 @@
               <p
                 class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] mt-9 leading-[30px]"
               >
-                藉由討論與歷史素材，幫助高中生了解接收資訊時，資訊傳遞者的立場、資訊的表達方式、資訊接収者面臨的環境，如何影響資訊產生的效果，進而能夠理解歷史事件的複雜性，並應用於對社會議題的理解與思考之中。
+                在了解台灣人在二戰中的多重身份後，學生能夠體認到台灣人並非單純戰爭底下的受害者，還是日本軍事動員的一環，並反思戰爭責任的分配。透過與歷史情境相呼應的活動體驗，幫助學生理解接收資訊時，資訊傳遞者的立場、表達方式以及資訊接收者所處環境，如何影響資訊產生的效果，進而體會歷史事件的複雜性，並應用於對社會議題的理解與思考之中。
               </p>
             </div>
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
@@ -116,7 +116,7 @@
               <p
                 class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] mt-9 leading-[30px]"
               >
-                在複雜的歷史中，如何看見不同個體行動當下的選擇與背景？
+                在複雜的歷史情境中，我們如何理解不同個體的行動選擇及其背景？
               </p>
             </div>
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
@@ -144,7 +144,7 @@
                       <p
                         class="font-noto text-[#757575] text-[12px] sm:text-[13px] font-semibold tracking-[2px] mb-2 sm:mb-0"
                       >
-                        課程引導
+                        課堂導入
                       </p>
                     </div>
                     <img src="/images/right.svg" class="w-[10px] h-[12px]" />
@@ -207,7 +207,7 @@
                     <p
                       class="font-noto text-[#757575] text-[12px] sm:text-[13px] font-semibold tracking-[2px] mb-2 sm:mb-0"
                     >
-                      回顧與引導
+                      成果分享
                     </p>
                   </div>
                   <img src="/images/right.svg" class="w-[10px] h-[12px]" />
@@ -246,7 +246,7 @@
               <p
                 class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] mt-9 leading-[30px]"
               >
-                資訊環境、國家動員、宣傳、立場、能動性、人的局限性
+                共犯結構、軍事動員、戰爭責任、資訊環境、能動性
               </p>
             </div>
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
@@ -306,7 +306,7 @@
                   教案申請表單</a
                 >
                 <a
-                  href="https://drive.google.com/drive/folders/1IPMMCSWYWwCXt4ds5-xRXdol_V-Y-8DR"
+                  href="https://www.canva.com/design/DAGhUK6U92U/F8uLUTzcASQwrjAQ1iWIJQ/view?utm_content=DAGhUK6U92U&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hbb1efecbfe"
                   target="_blank"
                   class="font-wix w-[162px] text-[#999] flex justify-center py-3 bg-white border border-[#999]/70 mt-6 mb-20 hover:bg-[#999] hover:text-white"
                 >

@@ -77,12 +77,12 @@
               <p
                 class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] mt-9 leading-[30px]"
               >
-                二戰期間，梁盈秋女士的父親因參與抗日而遠赴印尼，但隨戰爭爆發，荷蘭殖民政府將包括臺灣人在內的日籍華僑抓捕並送往澳洲集中營。梁女士回憶，在船上未知命運的28天讓人忐忑，抵澳後卻因澳洲軍人的善意，學會了第一句英文：「Give
-                me, sir.」 集中營生活有童年的記憶，孩子們能讀書、拿零用錢，甚至野餐。 <br />
-                <br />
-                江貴秋先生回憶過去，荷蘭士兵強行沒收財物，男性被銬押至澳洲，父親更因病過世。江秀蓮女士多年後憑藉書信找回父親的照片，終於一睹父親的模樣，既是追憶，也是對家族情感的深刻連結。<br />
-                <br />
-                ＊此片段為 17 分鐘，請填寫表單索取，僅供教育用途使用，版權歸《由島至島》所有。
+                二戰期間，梁盈秋女士的父親因參與抗日而遠赴荷屬印尼。然而，隨著對日戰事升溫，旅居印尼的台灣籍民*一概被視為敵國日本的子民，一家因而遭到荷蘭殖民政府逮捕、送往澳洲集中營。梁女士回憶，乘船長達二十八天的日子裡滿懷忐忑，上陸後看見澳洲軍人手中的巧克力，脫口而出了第一句英文：「Give
+                me, sir.」 她在集中營度過童年，在營裡孩子能讀書、拿零用錢，甚至野餐。
+                <br /><br />
+                出生於澳洲集中營的江秀蓮女士，卻在營中與父親生死別離。荷蘭士兵強行沒收財物，將男性雙手上銬、押至澳洲，父親因病客死異鄉。多年後，江女士憑藉書信找到家人照片，終於一睹父親的模樣，既是追憶，也是對家族情感的深刻連結。
+                <br /><br />
+                ＊台灣籍民：隸屬台灣殖民地籍的日本國民，尤指旅居中國及東南亞等地的台灣人。
               </p>
             </div>
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
@@ -97,7 +97,7 @@
               <p
                 class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] mt-9 leading-[30px]"
               >
-                本教案設計透過分組討論、新聞報導閱讀與情境模擬等活動，幫助學生深入了解不同時代臺灣人「離開家鄉」的歷程。藉由對比過去與現在的遷徙故事，引導學生思考每一次離開背後的情感與抉擇，並意識到並非所有人都能選擇歸來，進而反思如何在日常中保有同理心支持和接納那些離開家鄉的人。
+                本教案透過分組討論、情境模擬與新聞報導閱讀等活動，引導學生探討不同時代中人們「離開家鄉」的歷程。藉由了解過去與現在的遷徙故事，促使學生思考每一次離開背後的抉擇與困難，並意識到並非所有人都能選擇歸來，進而反思如何在日常中保有同理心支持與接納那些離開家鄉的人。
               </p>
             </div>
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
@@ -107,7 +107,7 @@
               <p
                 class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] mt-9 leading-[30px]"
               >
-                在了解旅外臺灣人遣送至澳洲集中營的困境後，藉由未來輪想像與模擬生命故事，讓學生同理「離開家鄉」的經驗，對於紀錄片被攝者之經歷產生情感共鳴，進而反思如何於生活中透過個人行動支持離開家鄉者。
+                在了解旅外臺灣人遣送至澳洲集中營的困境後，藉由未來輪想像來模擬生命故事，讓學生同理「離開家鄉」的挑戰，對於紀錄片被攝者之經歷產生情感共鳴，進而反思如何於生活中透過個人行動支持離開家鄉的人們。
               </p>
             </div>
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
@@ -117,7 +117,8 @@
               <p
                 class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] mt-9 leading-[30px]"
               >
-                第二次世界大戰結束後，南洋地區的臺灣人為何被迫離開原地？他們在生活環境、心理或物質上會面臨哪些挑戰？
+                二戰期間，旅居南洋的台灣人為何被迫離開家園？<br />
+                遭遣送至澳洲集中營的台灣籍民，在不同生活環境下精神層面與物質生活面臨哪些挑戰？
               </p>
             </div>
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
@@ -142,7 +143,7 @@
                     <p
                       class="font-noto text-[#757575] text-[12px] sm:text-[13px] font-semibold tracking-[2px] mb-2 sm:mb-0"
                     >
-                      課程引導
+                      課堂導入
                     </p>
                   </div>
                   <img src="/images/right.svg" class="w-[10px] h-[12px]" />
@@ -228,7 +229,7 @@
               <p
                 class="font-noto text-[14.5px] tracking-[0.5px] text-justify text-[#757575] mt-9 leading-[30px]"
               >
-                旅外／海外臺灣人、澳洲集中營、身份、離開、歸來、遷徙
+                澳洲集中營、台灣籍民、移動、邊界、離開、歸來
               </p>
             </div>
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
@@ -289,7 +290,7 @@
                 教案申請表單</a
               >
               <a
-                href="https://drive.google.com/drive/folders/19TnafgMPlVw79rdpa6jOPDCUtzlMs1qs"
+                href="https://www.canva.com/design/DAGhToo-kU0/poeS5ThYTpTrZ07Sei_Y6Q/view?utm_content=DAGhToo-kU0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h1db9b0e3da"
                 target="_blank"
                 class="font-wix w-[162px] text-[#999] flex justify-center py-3 bg-white border border-[#999]/70 mt-4 mb-20 hover:bg-[#999] hover:text-white"
               >
