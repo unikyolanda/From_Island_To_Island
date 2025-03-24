@@ -34,12 +34,6 @@
     await import('lite-youtube-embed')
   }
   const menuRef = ref(null)
-  const windowWidth = ref(window.innerWidth)
-
-  // Update window width on resize
-  const updateWindowWidth = () => {
-    windowWidth.value = window.innerWidth
-  }
 
   const toggleMenu = () => {
     menuRef.value.show()
@@ -50,9 +44,6 @@
   }
 
   onMounted(() => {
-    // Initial window width
-    updateWindowWidth()
-
     // Handle loading state
     Promise.all([
       checkImagesLoaded(),
@@ -65,7 +56,6 @@
     setTimeout(loadYouTubeEmbed, 2000)
 
     // Listen for window resize
-    window.addEventListener('resize', updateWindowWidth)
     const allImages = Array.from(document.querySelectorAll('.image-box img'))
     const textElements = document.querySelectorAll('.still p')
     const stills2Image = document.querySelector('.stills2')
@@ -148,37 +138,19 @@
         scrub: true,
         onUpdate: self => {
           const progress = self.progress
-          const direction = self.direction
           const totalElements = textElements.length
 
           textElements.forEach((text, index) => {
-            // Calculate delay based on scroll direction
-            const delay =
-              direction === 1
-                ? index * 0.6 // Original order when scrolling down
-                : (totalElements - 1 - index) * 0.6 // Reverse order when scrolling up
+            const delay = index * 0.6 // Original order when scrolling down
 
-            if (direction === 1) {
-              // Scrolling down
-              gsap.to(text, {
-                opacity: progress * 1.5,
-                y: progress * -30,
-                filter: 'blur(0px)',
-                duration: 2.5,
-                delay: delay,
-                ease: 'power2.out',
-              })
-            } else {
-              // Scrolling up
-              gsap.to(text, {
-                opacity: progress,
-                y: (1 - progress) * 30,
-                filter: 'blur(5px)',
-                duration: 2.5,
-                delay: delay,
-                ease: 'power2.out',
-              })
-            }
+            gsap.to(text, {
+              opacity: progress * 1.5,
+              y: progress * -30,
+              filter: 'blur(0px)',
+              duration: 2.5,
+              delay: delay,
+              ease: 'power2.out',
+            })
           })
         },
       })
@@ -259,13 +231,12 @@
         scrub: true,
         onUpdate: self => {
           const progress = self.progress
-          const direction = self.direction
 
           // Animate title first
           gsap.to(filmTitleElement, {
             opacity: progress,
             y: (1 - progress) * 30,
-            filter: direction === 1 ? 'blur(0px)' : 'blur(5px)',
+            filter: 'blur(0px)',
             duration: 1.5,
             delay: 0, // No delay for title
             ease: 'power2.out',
@@ -275,23 +246,20 @@
           gsap.to(filmTextElement, {
             opacity: progress,
             y: (1 - progress) * 30,
-            filter: direction === 1 ? 'blur(0px)' : 'blur(5px)',
+            filter: 'blur(0px)',
             duration: 1.5,
-            delay: direction === 1 ? 0.3 : 0, // Delay text when scrolling down
+            delay: 0.3, // Consistent delay
             ease: 'power2.out',
           })
 
           // Animate other content elements
           filmContentElements.forEach((element, index) => {
-            const delay =
-              direction === 1
-                ? (index + 2) * 0.3 // Start delay after text (index + 2)
-                : (filmContentElements.length - 1 - index) * 0.3 // Reverse order when scrolling up
+            const delay = (index + 2) * 0.3 // Start delay after text (index + 2)
 
             gsap.to(element, {
               opacity: progress,
               y: (1 - progress) * 30,
-              filter: direction === 1 ? 'blur(0px)' : 'blur(5px)',
+              filter: 'blur(0px)',
               duration: 1.5,
               delay: delay,
               ease: 'power2.out',
@@ -315,24 +283,20 @@
         scrub: true,
         onUpdate: self => {
           const progress = self.progress
-          const direction = self.direction
           const totalElements = lessonTopic.length
 
           lessonTopic.forEach((text, index) => {
-            // Calculate delay based on scroll direction and odd/even index
+            // Calculate delay based on odd/even index
             const isOdd = index % 2 !== 0
             const adjustedIndex = isOdd
               ? Math.floor(totalElements / 2) + Math.floor(index / 2)
               : Math.floor(index / 2)
 
-            const delay =
-              direction === 1
-                ? adjustedIndex * 0.3 // Odd indices first when scrolling down
-                : (totalElements - 1 - adjustedIndex) * 0.5 // Reverse order when scrolling up
+            const delay = adjustedIndex * 0.3 // Consistent delay for odd indices first
 
             gsap.to(text, {
               opacity: progress,
-              filter: direction === 1 ? 'blur(0px)' : 'blur(5px)',
+              filter: 'blur(0px)',
               duration: 2.5,
               delay: delay,
               ease: 'power2.out',
@@ -343,7 +307,6 @@
 
       // Cleanup
       onUnmounted(() => {
-        window.removeEventListener('resize', updateWindowWidth)
         ScrollTrigger.getAll().forEach(trigger => trigger.kill())
       })
     }
@@ -572,31 +535,33 @@
               Memory and Dialogue
             </p>
           </div>
-          <div class="image-box mt-16 sm:mt-[100px] relative flex justify-center w-screen">
+          <div
+            class="image-box mt-16 sm:mt-[100px] relative flex justify-center w-screen overflow-hidden"
+          >
             <img
               src="/images-webp/first_photo5.webp"
               alt="photo5"
-              class="opacity-40 h-[437px] w-[514.12px] sm:h-[709px] sm:w-[834px]"
+              class="opacity-40 h-[437px] w-[514.12px] min-w-[514.12px] sm:h-[709px] sm:w-[834px] sm:min-w-[834px]"
             />
             <img
               src="/images-webp/first_photo4.webp"
               alt="photo4"
-              class="opacity-40 h-[437px] w-[514.12px] sm:h-[709px] sm:w-[834px] absolute top-0"
+              class="opacity-40 h-[437px] w-[514.12px] min-w-[514.12px] sm:h-[709px] sm:w-[834px] sm:min-w-[834px] absolute top-0"
             />
             <img
               src="/images-webp/first_photo3.webp"
               alt="photo3"
-              class="opacity-40 h-[437px] w-[514.12px] sm:h-[709px] sm:w-[834px] absolute top-0"
+              class="opacity-40 h-[437px] w-[514.12px] min-w-[514.12px] sm:h-[709px] sm:w-[834px] sm:min-w-[834px] absolute top-0"
             />
             <img
               src="/images-webp/first_photo2.webp"
               alt="photo2"
-              class="opacity-40 h-[437px] w-[514.12px] sm:h-[709px] sm:w-[834px] absolute top-0"
+              class="opacity-40 h-[437px] w-[514.12px] min-w-[514.12px] sm:h-[709px] sm:w-[834px] sm:min-w-[834px] absolute top-0"
             />
             <img
               src="/images-webp/first_photo1.webp"
               alt="photo1"
-              class="opacity-40 h-[437px] w-[514.12px] sm:h-[709px] sm:w-[834px] absolute top-0"
+              class="opacity-40 h-[437px] w-[514.12px] min-w-[514.12px] sm:h-[709px] sm:w-[834px] sm:min-w-[834px] absolute top-0"
             />
           </div>
           <div
@@ -730,27 +695,27 @@
         class="flex w-full sm:w-auto opacity-20 sm:mr-[112px] lessonTopic justify-center mt-12 sm:mt-0 mb-6 sm:mb-0 px-4 sm:px-0 overflow-x-auto"
       >
         <p
-          class="font-shippori text-white text-[30px] sm:text-[59px] tracking-[20px] sm:tracking-[36px] rotateText mr-[14px] sm:mr-7 whitespace-nowrap"
+          class="font-shippori text-white text-[30px] sm:text-[59px] tracking-[22px] sm:tracking-[36px] rotateText mr-4 sm:mr-7 whitespace-nowrap"
         >
           為什麼要記憶
         </p>
         <p
-          class="font-shippori text-white text-[30px] sm:text-[59px] tracking-[20px] sm:tracking-[36px] rotateText mr-[14px] sm:mr-7 mt-9 sm:mt-12 whitespace-nowrap"
+          class="font-shippori text-white text-[30px] sm:text-[59px] tracking-[22px] sm:tracking-[36px] rotateText mr-4 sm:mr-7 mt-9 sm:mt-12 whitespace-nowrap"
         >
           克服過去
         </p>
         <p
-          class="font-shippori text-white text-[30px] sm:text-[59px] tracking-[20px] sm:tracking-[36px] rotateText mr-[14px] sm:mr-7 whitespace-nowrap"
+          class="font-shippori text-white text-[30px] sm:text-[59px] tracking-[22px] sm:tracking-[36px] rotateText mr-4 sm:mr-7 whitespace-nowrap"
         >
           共犯結構
         </p>
         <p
-          class="font-shippori text-white text-[30px] sm:text-[59px] tracking-[20px] sm:tracking-[36px] rotateText mr-[14px] sm:mr-7 mt-9 sm:mt-12 whitespace-nowrap"
+          class="font-shippori text-white text-[30px] sm:text-[59px] tracking-[22px] sm:tracking-[36px] rotateText mr-4 sm:mr-7 mt-9 sm:mt-12 whitespace-nowrap"
         >
           加害與被害
         </p>
         <p
-          class="font-shippori text-white text-[30px] sm:text-[59px] tracking-[20px] sm:tracking-[36px] rotateText whitespace-nowrap"
+          class="font-shippori text-white text-[30px] sm:text-[59px] tracking-[22px] sm:tracking-[36px] rotateText whitespace-nowrap"
         >
           移動與邊界
         </p>
@@ -761,7 +726,7 @@
           <p class="font-shippori text-white text-[36px] sm:text-[44px] tracking-[8px]">主題教案</p>
         </div>
         <p
-          class="font-noto text-white tracking-[1px] sm:tracking-[2px] w-[295px] sm:w-[440px] leading-[36px] text-[14px] sm:text-[16px] text-justify"
+          class="font-noto text-white tracking-[1px] sm:tracking-[2px] w-full sm:w-[440px] leading-[36px] text-[14px] sm:text-[16px] text-justify"
         >
           《由島至島》教育推廣規劃，從本片中節選出５個主題的片段，發展搭配教案，免費開放老師申請作為課程教授素材。五大主題為：移動與邊界、加害與被害、共犯結構－日本擴張行動、克服過去、為什麼要記憶，各有台灣、日本及馬來西亞教案可下載。
         </p>
