@@ -52,7 +52,7 @@
               class="w-[143px] sm:w-[345px] h-[204px] sm:h-[492px]"
             />
           </div>
-          <div class="flex flex-col sm:py-9 sm:pl-[60px] mt-8 sm:mt-64 items-center">
+          <div class="flex flex-col px-10 sm:py-9 sm:pl-[60px] mt-8 sm:mt-64 items-center">
             <p
               class="font-shippori text-[#999] text-[22px] sm:text-[28px] tracking-[4px] text-center"
             >
@@ -100,7 +100,7 @@
               USB 規格說明
             </p>
             <div
-              class="w-[295px] sm:w-[737px] font-noto text-[14.5px] text-[#999] tracking-[0.5px] leading-[30px] mt-10 sm:mb-[68px] flex flex-col"
+              class="w-full sm:w-[737px] font-noto text-[14.5px] text-[#999] tracking-[0.5px] leading-[30px] mt-10 sm:mb-[68px] flex flex-col"
             >
               <div class="flex">
                 <span class="shrink-0">·</span>
@@ -178,13 +178,13 @@
             </div>
           </div>
         </div>
-        <div class="w-[295px] sm:w-[1075px] h-auto flex flex-col items-center sm:mt-14 mb-16">
+        <div class="w-full px-10 sm:w-[1075px] h-auto flex flex-col items-center sm:mt-14 mb-16">
           <p class="font-shippori text-[#999] text-[22px] sm:text-[28px] tracking-[4px]">
             保固說明
           </p>
           <div class="flex flex-col sm:flex-row gap-5 mt-14">
             <div
-              class="bg-white w-[295px] sm:w-[345px] h-auto sm:h-[280px] flex flex-col items-center p-9"
+              class="bg-white w-full sm:w-[345px] h-auto sm:h-[280px] flex flex-col items-center p-9"
             >
               <p class="font-noto text-[20px] font-semibold tracking-[2px] text-[#d0bc9c]">
                 七天內
@@ -196,7 +196,7 @@
               </p>
             </div>
             <div
-              class="bg-white w-[295px] sm:w-[345px] h-auto sm:h-[280px] flex flex-col items-center p-9"
+              class="bg-white w-full sm:w-[345px] h-auto sm:h-[280px] flex flex-col items-center p-9"
             >
               <p class="font-noto text-[20px] font-semibold tracking-[2px] text-[#d0bc9c]">
                 一年內
@@ -208,7 +208,7 @@
               </p>
             </div>
             <div
-              class="bg-white w-[295px] sm:w-[345px] h-auto sm:h-[280px] flex flex-col items-center p-9"
+              class="bg-white w-full sm:w-[345px] h-auto sm:h-[280px] flex flex-col items-center p-9"
             >
               <p class="font-noto text-[20px] font-semibold tracking-[2px] text-[#d0bc9c]">
                 超過一年

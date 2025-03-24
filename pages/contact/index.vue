@@ -37,11 +37,11 @@
         alt="booking"
         class="w-full sm:w-[676px] h-auto sm:h-[389px] mt-12"
       />
-      <div class="flex flex-col py-9 items-center gap-y-8">
+      <div class="flex flex-col px-10 py-9 items-center gap-y-8">
         <p class="font-shippori text-[#999] text-[22px] sm:text-[28px] tracking-[4px] text-center">
           《由島至島》<span class="sm:hidden"><br /></span>常見問答
         </p>
-        <div class="w-[295px] sm:w-[676px] flex flex-col">
+        <div class="w-full sm:w-[676px] flex flex-col">
           <div
             class="w-full h-auto py-2 flex items-center px-3 sm:px-6 bg-[#d0bc9c] text-white text-[15px] sm:text-[17px] font-noto font-semibold tracking-[2px]"
           >
@@ -61,7 +61,7 @@
             。目前已成功舉辦超過十場滿座放映，期待您持續關注並支持！
           </div>
         </div>
-        <div class="w-[295px] sm:w-[676px] flex flex-col">
+        <div class="w-full sm:w-[676px] flex flex-col">
           <div
             class="w-full h-auto py-2 flex items-center px-3 sm:px-6 bg-[#d0bc9c] text-white text-[15px] sm:text-[17px] font-noto font-semibold tracking-[2px]"
           >
@@ -80,7 +80,7 @@
             ，我們的包場專員將儘快與您聯繫並提供更多詳情。
           </div>
         </div>
-        <div class="w-[295px] sm:w-[676px] flex flex-col">
+        <div class="w-full sm:w-[676px] flex flex-col">
           <div
             class="w-full h-auto py-2 flex items-center px-3 sm:px-6 bg-[#d0bc9c] text-white text-[15px] sm:text-[17px] font-noto font-semibold tracking-[2px]"
           >
@@ -101,7 +101,7 @@
             >。
           </div>
         </div>
-        <div class="w-[295px] sm:w-[676px] flex flex-col">
+        <div class="w-full sm:w-[676px] flex flex-col">
           <div
             class="w-full h-auto py-2 flex items-center px-3 sm:px-6 bg-[#d0bc9c] text-white text-[15px] sm:text-[17px] font-noto font-semibold tracking-[2px]"
           >
@@ -114,7 +114,7 @@
             USB，敬請期待並支持！更多資訊將在即將公布的預購資訊中提供。歡迎追蹤我們的粉絲專頁，得到最新消息。
           </div>
         </div>
-        <div class="w-[295px] sm:w-[676px] flex flex-col">
+        <div class="w-full sm:w-[676px] flex flex-col">
           <div
             class="w-full h-auto py-2 flex items-center px-4 sm:px-6 bg-[#d0bc9c] text-white text-[15px] sm:text-[17px] font-noto font-semibold tracking-[2px]"
           >
@@ -132,13 +132,17 @@
         </div>
       </div>
       <div
-        class="w-[295px] sm:w-[676px] flex justify-center gap-x-9 mt-6 sm:mt-20 mb-16 sm:mb-[118px]"
+        class="w-full sm:w-[676px] flex justify-center gap-x-9 mt-6 sm:mt-20 mb-16 sm:mb-[118px]"
       >
         <a href="https://www.facebook.com/fromislandtoisland" target="_blank"
           ><img src="/images/fb.svg" alt="facebook" class="w-13 h-13 hover:opacity-80"
         /></a>
-        <img src="/images/ig.svg" alt="instagram" class="w-13 h-13" />
-        <img src="/images/email.svg" alt="youtube" class="w-13 h-13" />
+        <a href="https://www.instagram.com/from_island_to_island_2024/"
+          ><img src="/images/ig.svg" alt="instagram" class="w-13 h-13 hover:opacity-80"
+        /></a>
+        <a href="mailto:fromislandtoisland2024@gmail.com">
+          <img src="/images/email.svg" alt="email" class="w-13 h-13 hover:opacity-80" />
+        </a>
       </div>
     </div>
   </div>

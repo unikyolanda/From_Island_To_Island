@@ -68,8 +68,8 @@
             Japanese Peace Education Tour
           </p>
         </div>
-        <div class="w-full h-auto bg-white/50 flex justify-center py-6">
-          <div class="w-[295px] sm:w-[651px] flex flex-col">
+        <div class="w-full h-auto bg-white/50 flex justify-center py-6 px-10">
+          <div class="w-full sm:w-[651px] flex flex-col">
             <div class="flex flex-col border-b border-[#D0BC9C] py-12">
               <p class="font-noto text-[17px] tracking-[2px] text-[#D0BC9C] font-semibold">
                 片段大綱
@@ -156,7 +156,7 @@
                     <p
                       class="font-noto text-[#757575] text-[12px] sm:text-[13px] font-semibold tracking-[2px] mb-2 sm:mb-0"
                     >
-                      影片放映(一)
+                      影片放映❶
                     </p>
                   </div>
                   <img src="/images/right.svg" class="w-[10px] h-[12px]" />
@@ -219,9 +219,9 @@
                         14<span class="text-[16px] ml-[2px]">min</span>
                       </div>
                       <p
-                        class="font-noto text-[#757575] text-[12px] sm:text-[13px] font-semibold tracking-[2px]"
+                        class="font-noto text-[#757575] text-[12px] sm:text-[13px] font-semibold tracking-[2px] mb-2 sm:mb-0"
                       >
-                        影片放映(二)
+                        影片放映❷
                       </p>
                     </div>
                     <img src="/images/right.svg" class="w-[10px] h-[12px]" />

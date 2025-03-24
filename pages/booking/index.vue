@@ -66,7 +66,7 @@
     <div class="fixed right-10 sm:right-12 top-6 sm:top-10 cursor-pointer z-20">
       <img src="/images/menu_gray.svg" alt="menu" class="w-8 sm:w-10 h-8" @click="toggleMenu" />
     </div>
-    <div class="flex flex-col w-full z-10 items-center opacity-80">
+    <div class="flex flex-col w-full z-10 items-center opacity-80 px-10">
       <div class="flex flex-col items-center w-full mt-12 sm:mt-[233px]">
         <p
           class="font-amiri italic text-[#999] tracking-[1px] sm:tracking-[2px] text-[20px] sm:text-[28px]"
@@ -81,7 +81,7 @@
         class="w-full sm:w-[676px] h-auto sm:h-[389px] mt-12"
       />
       <p
-        class="w-[295px] sm:w-[676px] text-[#999] text-[14.5px] tracking-[0.5px] leading-[30px] mt-8 sm:mt-20 border-b border-[#D0BC9C] pb-10 sm:border-none"
+        class="w-full sm:w-[676px] text-[#999] text-[14.5px] tracking-[0.5px] leading-[30px] mt-8 sm:mt-20 border-b border-[#D0BC9C] pb-10 sm:border-none"
       >
         首先感謝您對《由島至島》的支持，因本片規格特殊，將不會進行院線上映。<br />
         若您有興趣包場觀賞電影，再請撥冗填寫本表單，將會有專人與您聯繫。<br />
@@ -95,7 +95,7 @@
       </p>
       <form
         @submit.prevent="submitForm"
-        class="flex flex-col mt-10 mb-20 gap-y-10 w-full max-w-[295px] sm:max-w-[676px]"
+        class="flex flex-col mt-10 mb-20 gap-y-10 w-full sm:max-w-[676px]"
       >
         <div class="flex flex-col w-full gap-y-4">
           <p
@@ -265,7 +265,7 @@
           </button>
         </div>
         <div
-          class="flex flex-col w-[295px] sm:w-[676px] text-[#999] text-[14.5px] tracking-[0.5px] leading-[30px] mt-8"
+          class="flex flex-col w-full sm:w-[676px] text-[#999] text-[14.5px] tracking-[0.5px] leading-[30px] mt-8"
         >
           因本片規格特殊，將不會進行院線上映。包場詳細規則如下：<br /><br />
 
@@ -293,15 +293,12 @@
           </div>
         </div>
         <p
-          class="text-[#999] text-[14.5px] tracking-[0.5px] leading-[30px] w-[295px] sm:w-[676px] mb-10"
+          class="text-[#999] text-[14.5px] tracking-[0.5px] leading-[30px] w-full sm:w-[676px] mb-10"
         >
           若您尚有其他問題，歡迎聯繫：<br />
           distribution.mars@gmail.com<br />
           0987-068-689 林先生
         </p>
-        <!-- <div v-if="submitStatus" class="status-message" :class="submitStatus">
-          {{ submitStatus === 'success' ? '提交成功！' : '提交失敗，請稍後再試' }}
-        </div> -->
       </form>
     </div>
   </div>
