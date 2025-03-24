@@ -121,26 +121,24 @@
         allowfullscreen
       >
       </iframe>
-      <div class="flex sm:hidden flex-col w-full items-center">
-        <img src="/images-webp/forth_logo.webp" alt="logo" class="w-[295px] h-[64px] mt-8" />
-        <div class="flex gap-x-5 mt-8">
-          <img src="/images-webp/poster_man.webp" alt="poster" class="w-[143.35px] h-[204.42px]" />
-          <img
-            src="/images-webp/poster_woman.webp"
-            alt="poster"
-            class="w-[143.35px] h-[204.42px]"
-          />
+      <div class="flex sm:hidden flex-col w-full items-center px-10">
+        <img src="/images-webp/forth_logo.webp" alt="logo" class="w-full h-[64px] mt-8" />
+        <div class="grid grid-cols-2 gap-x-5 mt-8">
+          <img src="/images-webp/poster_man.webp" alt="poster" class="w-full h-auto" />
+          <img src="/images-webp/poster_woman.webp" alt="poster" class="w-full h-auto" />
         </div>
         <div class="flex flex-col mt-8 items-center">
           <p class="font-shippori text-[22px] text-white tracking-[3px]">電影簡介</p>
           <p class="font-wix text-[14px] text-white tracking-[2px] mt-1">Synopsis</p>
         </div>
-        <p class="font-noto text-[14px] text-white tracking-[0.5px] leading-[30px] mt-8 w-[295px]">
+        <p
+          class="font-noto text-[14px] text-white tracking-[0.5px] leading-[30px] mt-8 w-full text-justify"
+        >
           台灣在二戰期間是日本帝國的一部分。本片以此為主題，努力挖掘和重新整理台灣在二戰期間的隱藏記憶，探索在日本帝國內的台灣士兵、醫生與生活在東南亞的海外台灣人之經歷。全片從兒子對父親的提問開場，透過跨世代的對話、家書、日記和家庭成員之間的影片，探討台灣歷史記憶的複雜性，以及這一時期存在的各種身分。
         </p>
         <div
           id="parallax-container"
-          class="relative overflow-hidden w-[295px] h-[166px] flex items-center mt-[42px]"
+          class="relative overflow-hidden w-full h-auto flex items-center mt-[42px]"
         >
           <img
             src="/images-webp/stills/still_4.webp"
@@ -149,7 +147,7 @@
             class="max-w-[100%] h-[100%] object-cover object-center"
           />
         </div>
-        <p class="font-wix text-[14px] text-white leading-[30px] mt-8 w-[295px] text-justify">
+        <p class="font-wix text-[14px] text-white leading-[30px] mt-8 w-full text-justify">
           During World War II, Taiwan was part of the Japanese Empire. This documentary explores the
           experiences of Taiwanese soldiers, doctors, and overseas residents in Southeast Asia
           during that time. Using cross-generational memory dialogues, family letters, diaries, and
@@ -168,7 +166,9 @@
           <p class="font-shippori text-[22px] text-white tracking-[3px]">廖克發導演</p>
           <p class="font-wix text-[14px] text-white tracking-[2px] mt-1">Director LAU Kek-huat</p>
         </div>
-        <p class="font-noto text-[14px] text-white tracking-[0.5px] leading-[30px] mt-8 w-[295px]">
+        <p
+          class="font-noto text-[14px] text-white tracking-[0.5px] leading-[30px] mt-8 w-full text-justify"
+        >
           馬來西亞出生的台灣導演，從事紀錄片與劇情片創作。2019
           年首部劇情長片《菠蘿蜜》入圍釜山影展新潮流競賽單元與金馬獎最佳新導演。創作持續反映真實世界，兩部拍攝家鄉的紀錄片《不即不離》與《還有一些樹》觸及馬共與離散歷史，至今仍遭馬來西亞政府禁演。曾參與金馬電影學院、東京與柏林影展新銳營；也常擔任
           DOC DOC 紀錄片工作坊、Asiadoc 東南亞紀錄片工作坊、New Asian Scenery
@@ -177,7 +177,7 @@
         </p>
         <div
           id="parallax-container"
-          class="relative overflow-hidden w-[298px] h-[168px] flex items-center mt-12"
+          class="relative overflow-hidden w-full h-auto flex items-center mt-12"
         >
           <img
             src="/images-webp/stills/lesson_5.webp"
@@ -186,7 +186,7 @@
             class="max-w-[120%] h-[120%]"
           />
         </div>
-        <p class="font-wix text-[14px] text-white leading-[30px] mt-12 w-[295px] text-justify">
+        <p class="font-wix text-[14px] text-white leading-[30px] mt-12 w-full text-justify">
           Lau Kek-huat is a Malaysia-born filmmaker based in Taiwan. His debut film Boluomi competed
           at the Busan International Film Festival, New Currents section and Golden Horse  Best New
           Director nominated. The project won him the Tokyo Talent Award 2015, Best Script Award in
@@ -197,7 +197,7 @@
         </p>
         <div
           id="parallax-container"
-          class="relative overflow-hidden w-[298px] h-[168px] flex items-center mt-12"
+          class="relative overflow-hidden w-full h-auto flex items-center mt-12"
         >
           <img
             src="/images-webp/stills/lesson_2.webp"
@@ -211,13 +211,13 @@
           <p class="font-wix text-[14px] text-white tracking-[2px] mt-1">Director's Quotes</p>
         </div>
         <p
-          class="font-noto text-[14px] text-white tracking-[0.5px] leading-[30px] mt-8 w-[295px] text-justify"
+          class="font-noto text-[14px] text-white tracking-[0.5px] leading-[30px] mt-8 w-full text-justify"
         >
           廖克發：「這部片無法以台灣、馬來西亞或新加坡任何地方的本位來思考，因為面對各地的事件，我認為都應以人本的態度去責問、思考和反省。片中我同樣問馬來西亞人，我們可以為了村子不被屠殺而獻出慰安婦嗎？我們要為了懲罰而公審慰安婦的家屬嗎？我們應該相信人性是脆弱的，所有人都會為了生存做出各種可怕的事。我不認為人可以覺得自己是正義的，所有邪惡的理由和正義的理由都很相似。訪問中，唯一必須而且直接傷害他人的是日本老兵，但我也選擇花些篇幅去陳述他們的痛楚。這不是責怪他們可能做過的事，而是質問，人為什麼可以選擇沉默？我們不應該相信人性是本善的，或認為只有少數邪惡的人會造成無辜的人受害，因為這是大部分旁觀者合理化自己旁觀的理由。所以更適切地說，人總是隨時合理化自己自私的行為和記憶，我們應該提醒自己『謹慎』地當一個人。」
         </p>
         <div
           id="parallax-container"
-          class="relative overflow-hidden w-[298px] h-[168px] flex items-center mt-12"
+          class="relative overflow-hidden w-full h-auto flex items-center mt-12"
         >
           <img
             src="/images-webp/stills/still_1.webp"
@@ -226,7 +226,7 @@
             class="max-w-[120%] h-[120%]"
           />
         </div>
-        <p class="font-wix text-[14px] text-white leading-[30px] mt-12 w-[295px] text-justify">
+        <p class="font-wix text-[14px] text-white leading-[30px] mt-12 w-full text-justify">
           ‘As an intermediary who immigrated from Malaysia to Taiwan, it gives me the courage to
           make this film. Although I do not deny that personally, there is anger and incomprehension
           towards the 70 years of silence in Taiwanese society; in Malaysia, we live with constant
@@ -254,7 +254,7 @@
           <p class="font-wix text-[14px] text-white tracking-[2px] mt-1">Historical consultant</p>
         </div>
         <p
-          class="font-noto text-[14px] text-white tracking-[0.5px] leading-[30px] w-[295px] mt-10 text-justify"
+          class="font-noto text-[14px] text-white tracking-[0.5px] leading-[30px] w-full mt-10 text-justify"
         >
           藍適齊，美國芝加哥大學歷史學博士。曾執教於新加坡南洋理工大學及國立中正大學，現爲國立政治大學歷史系副教授。另曾任日本東京大學特任客座教授、日本立教大學客座研究員、日本京都大學外国人研究員（客座副教授）。主要研究興趣爲近現代東亞史、帝國主義與二戰、歷史記憶、移民史。研究成果曾發表於positions:
           Asia Critique（美國）、China
@@ -263,7 +263,7 @@
         </p>
         <div
           id="parallax-container"
-          class="relative overflow-hidden w-[298px] h-[168px] flex items-center mt-12"
+          class="relative overflow-hidden w-full h-auto flex items-center mt-12"
         >
           <img
             src="/images-webp/stills/lesson_2.webp"
@@ -272,7 +272,7 @@
             class="max-w-[120%] h-[120%]"
           />
         </div>
-        <p class="font-wix text-[14px] text-white leading-[30px] mt-12 w-[295px] text-justify">
+        <p class="font-wix text-[14px] text-white leading-[30px] mt-12 w-full text-justify">
           Shi-chi Mike Lan (PhD., Chicago) is an associate professor at the Department of History of
           the National Chengchi University, Taiwan. Previously, he taught at Nanyang Technological
           University in Singapore and held visiting positions at University of Tokyo, Rikkyo
@@ -350,7 +350,7 @@
         </div>
         <div
           id="parallax-container"
-          class="relative overflow-hidden w-[295px] h-[166px] flex items-center mt-12"
+          class="relative overflow-hidden w-full h-auto flex items-center mt-12"
         >
           <img
             src="/images-webp/stills/still_7.webp"
@@ -369,99 +369,99 @@
         <div
           class="flex flex-col w-[314px] gap-y-2 mt-12 text-[10px] tracking-[0.5px] font-noto text-white"
         >
-          <p>製作／出品｜蜂鳥影像有限公司</p>
-          <p>Produced and Presented by Hummingbird Production</p>
-          <p class="mt-6">共同出品｜財團法人公共電視文化事業基金會</p>
-          <p>Co-Presented by Taiwan Public Television Service</p>
-          <p class="mt-6">製片 Producer｜ 林婉玉 LIN Wan-Yu</p>
-          <p>導演、攝影、剪輯、美術 a film by｜廖克發 LAU Kek-Huat</p>
-          <p class="mt-6">執行製片Line producer 台灣 Taiwan｜ 周欣 CHOU Hsin</p>
-          <p>馬來西亞 M'sia｜陳嘉豪 TAN Kah Hau</p>
-          <p>日本 Japan｜陳詠雙 CHEN Yung Shuang</p>
-          <p class="mt-6">行政 Administration｜黃琳晶 HUANG Lin Ching</p>
-          <p>歷史顧問 History Consultant｜藍適齊 LAN Shi Chi</p>
-          <p>日語聯繫 Japanese Contact｜金想容 JIN Xiang Rong</p>
-          <p>現場翻譯 On-site Interpreter｜永田理乃 Ayano NAGATA</p>
-          <p>豬俁美咲 Misaki INOMATA</p>
-          <p>紙芝居繪畫 Illustrator｜魏閤廷 WEI Ho Ting</p>
-          <p>朱晉明 JU Jimm Ming</p>
-          <p>為何停動畫創意有限公司 whystop? studio</p>
-          <p>環境錄音 Field Recording｜澎葉生 Yannick Dauby</p>
-          <p class="mt-6">聲音後期製作 Audio Post Production ｜</p>
-          <p>聲境有限公司 Buzzing Studio Co. Ltd.</p>
-          <p>混音Sound Mixer｜黃年永 Eddie HUANG</p>
-          <p>音效製作Sound Edit｜陳奕伶 CHEN Yi Ling</p>
-          <p>協調Sound Dept. Coordinator｜鄭維芝 Wing CHENG</p>
-          <p class="mt-6">時間軸影像製作有限公司 Timeline Studio</p>
-          <p>後期專案管理Post-production PM｜李慈恩 LEE Tzu En</p>
-          <p>調光Colorist｜周佩儀 Penny CHOU</p>
-          <p>調光助理Color-grading Assistant｜何冠儀 HO Kuan Yi</p>
-          <p class="mt-6">（台灣）戲劇仿拍演員｜辻政信 馬場克樹 Masaki BABA</p>
-          <p>演員｜台籍日本兵 魏雋展 WEI Chun-Chan</p>
-          <p>演員｜台籍日本兵 張維佐 Zaduno Cheung</p>
-          <p>演員｜台籍日本兵 王肇陽 WANG Chao Yang</p>
-          <p>演員｜日本軍官 松田強尼 Johnny MATSUDA</p>
-          <p>演員｜日本軍官 尤柏耘 YU Po Yun</p>
-          <p>攝影指導｜蔡維隆 TSAI Wei Long</p>
-          <p>攝影大助｜劉濱鴈 LIU Pin Yen</p>
-          <p>攝影二助｜郭俊佐 KUO Chun Tso</p>
-          <p>燈光師｜尤泰偉 YU Tai Wei 洪峻逸 HONG Jun Yi</p>
-          <p>燈光助理｜趙思齊 Jimmy CHAO 李建宏LI Jian Hong</p>
-          <p>錄音師｜閔曉宜 Mandy MAN</p>
-          <p>錄音助理｜羅友辰 LUO You Chen</p>
-          <p>美術指導｜霍達華 FOK Tat Wa Terrence</p>
-          <p>美術助理｜謝承頤 HSIEH Chen YI 錢江漢 CHIEN Kong Hon Cub</p>
-          <p>造型指導｜劉幸媛 Sandy LIU</p>
-          <p>服裝管理｜蔡雯婷 TSAI Wen Ting</p>
-          <p>化妝師｜王芷婷 Elsie WANG</p>
-          <p>梳化助理｜林心虹 LIN Shin Hung</p>
-          <p>副導 / 製片｜周欣 CHOU Hsin</p>
-          <p>執行製片｜陳可兒 Claire TAN Ke Er</p>
-          <p>製片助理｜白永馨 Alex PAI 黃勇嵻 Ben Oui</p>
-          <p>日語劇本翻譯｜馬場克樹 Masaki BABA</p>
-          <p>演員經紀人｜紀又文 CHI Yu Wen</p>
-          <p>演員經紀人｜陳芷如 CHEN Chih Ju</p>
-          <p>日本兵臨時演員｜陳禹同 李騁佺 陳昶瑋 徐定鴻</p>
-          <p>拍攝協力｜卓紫嵐 羅苡珊 吳思鋒</p>
-          <p>新加坡文物拍攝攝影師｜王文毅</p>
-          <p class="mt-6">檔案翻譯 Archive Translator</p>
-          <p>馬來文 Malay｜Zikri RAHMAN</p>
-          <p>日文 Japanese｜豬俁美咲 Misaki INOMATA 永田理乃 Ayano</p>
-          <p>NAGATA 馬場克樹 Masaki BABA</p>
-          <p class="mt-6">旁白員 Narrator</p>
-          <p>馬來語 Malay｜Nor Huda binti Mohd IZAM</p>
-          <p>印尼／馬來語 Indonesia & Malay｜Faiq Syazwan KUHIRI</p>
-          <p>福建話（馬來西亞）Hokkien (M'sia) ｜</p>
-          <p>
+          <p class="font-noto">製作／出品｜蜂鳥影像有限公司</p>
+          <p class="font-noto">Produced and Presented by Hummingbird Production</p>
+          <p class="mt-6 font-noto">共同出品｜財團法人公共電視文化事業基金會</p>
+          <p class="font-noto">Co-Presented by Taiwan Public Television Service</p>
+          <p class="mt-6 font-noto">製片 Producer｜ 林婉玉 LIN Wan-Yu</p>
+          <p class="font-noto">導演、攝影、剪輯、美術 a film by｜廖克發 LAU Kek-Huat</p>
+          <p class="mt-6 font-noto">執行製片Line producer 台灣 Taiwan｜ 周欣 CHOU Hsin</p>
+          <p class="font-noto">馬來西亞 M'sia｜陳嘉豪 TAN Kah Hau</p>
+          <p class="font-noto">日本 Japan｜陳詠雙 CHEN Yung Shuang</p>
+          <p class="mt-6 font-noto">行政 Administration｜黃琳晶 HUANG Lin Ching</p>
+          <p class="font-noto">歷史顧問 History Consultant｜藍適齊 LAN Shi Chi</p>
+          <p class="font-noto">日語聯繫 Japanese Contact｜金想容 JIN Xiang Rong</p>
+          <p class="font-noto">現場翻譯 On-site Interpreter｜永田理乃 Ayano NAGATA</p>
+          <p class="font-noto">豬俁美咲 Misaki INOMATA</p>
+          <p class="font-noto">紙芝居繪畫 Illustrator｜魏閤廷 WEI Ho Ting</p>
+          <p class="font-noto">朱晉明 JU Jimm Ming</p>
+          <p class="font-noto">為何停動畫創意有限公司 whystop? studio</p>
+          <p class="font-noto">環境錄音 Field Recording｜澎葉生 Yannick Dauby</p>
+          <p class="mt-6 font-noto">聲音後期製作 Audio Post Production ｜</p>
+          <p class="font-noto">聲境有限公司 Buzzing Studio Co. Ltd.</p>
+          <p class="font-noto">混音Sound Mixer｜黃年永 Eddie HUANG</p>
+          <p class="font-noto">音效製作Sound Edit｜陳奕伶 CHEN Yi Ling</p>
+          <p class="font-noto">協調Sound Dept. Coordinator｜鄭維芝 Wing CHENG</p>
+          <p class="mt-6 font-noto">時間軸影像製作有限公司 Timeline Studio</p>
+          <p class="font-noto">後期專案管理Post-production PM｜李慈恩 LEE Tzu En</p>
+          <p class="font-noto">調光Colorist｜周佩儀 Penny CHOU</p>
+          <p class="font-noto">調光助理Color-grading Assistant｜何冠儀 HO Kuan Yi</p>
+          <p class="mt-6 font-noto">（台灣）戲劇仿拍演員｜辻政信 馬場克樹 Masaki BABA</p>
+          <p class="font-noto">演員｜台籍日本兵 魏雋展 WEI Chun-Chan</p>
+          <p class="font-noto">演員｜台籍日本兵 張維佐 Zaduno Cheung</p>
+          <p class="font-noto">演員｜台籍日本兵 王肇陽 WANG Chao Yang</p>
+          <p class="font-noto">演員｜日本軍官 松田強尼 Johnny MATSUDA</p>
+          <p class="font-noto">演員｜日本軍官 尤柏耘 YU Po Yun</p>
+          <p class="font-noto">攝影指導｜蔡維隆 TSAI Wei Long</p>
+          <p class="font-noto">攝影大助｜劉濱鴈 LIU Pin Yen</p>
+          <p class="font-noto">攝影二助｜郭俊佐 KUO Chun Tso</p>
+          <p class="font-noto">燈光師｜尤泰偉 YU Tai Wei 洪峻逸 HONG Jun Yi</p>
+          <p class="font-noto">燈光助理｜趙思齊 Jimmy CHAO 李建宏LI Jian Hong</p>
+          <p class="font-noto">錄音師｜閔曉宜 Mandy MAN</p>
+          <p class="font-noto">錄音助理｜羅友辰 LUO You Chen</p>
+          <p class="font-noto">美術指導｜霍達華 FOK Tat Wa Terrence</p>
+          <p class="font-noto">美術助理｜謝承頤 HSIEH Chen YI 錢江漢 CHIEN Kong Hon Cub</p>
+          <p class="font-noto">造型指導｜劉幸媛 Sandy LIU</p>
+          <p class="font-noto">服裝管理｜蔡雯婷 TSAI Wen Ting</p>
+          <p class="font-noto">化妝師｜王芷婷 Elsie WANG</p>
+          <p class="font-noto">梳化助理｜林心虹 LIN Shin Hung</p>
+          <p class="font-noto">副導 / 製片｜周欣 CHOU Hsin</p>
+          <p class="font-noto">執行製片｜陳可兒 Claire TAN Ke Er</p>
+          <p class="font-noto">製片助理｜白永馨 Alex PAI 黃勇嵻 Ben Oui</p>
+          <p class="font-noto">日語劇本翻譯｜馬場克樹 Masaki BABA</p>
+          <p class="font-noto">演員經紀人｜紀又文 CHI Yu Wen</p>
+          <p class="font-noto">演員經紀人｜陳芷如 CHEN Chih Ju</p>
+          <p class="font-noto">日本兵臨時演員｜陳禹同 李騁佺 陳昶瑋 徐定鴻</p>
+          <p class="font-noto">拍攝協力｜卓紫嵐 羅苡珊 吳思鋒</p>
+          <p class="font-noto">新加坡文物拍攝攝影師｜王文毅</p>
+          <p class="mt-6 font-noto">檔案翻譯 Archive Translator</p>
+          <p class="font-noto">馬來文 Malay｜Zikri RAHMAN</p>
+          <p class="font-noto">日文 Japanese｜豬俁美咲 Misaki INOMATA 永田理乃 Ayano</p>
+          <p class="font-noto">NAGATA 馬場克樹 Masaki BABA</p>
+          <p class="mt-6 font-noto">旁白員 Narrator</p>
+          <p class="font-noto">馬來語 Malay｜Nor Huda binti Mohd IZAM</p>
+          <p class="font-noto">印尼／馬來語 Indonesia & Malay｜Faiq Syazwan KUHIRI</p>
+          <p class="font-noto">福建話（馬來西亞）Hokkien (M'sia) ｜</p>
+          <p class="font-noto">
             Lennard OUNG Chia Chun KC LEE 鄭振政<br />
             ZHENG Zhen Zheng
           </p>
-          <p>客話（馬來西亞） Hakka (M'sia) ｜何民慶 HE Min-Qing</p>
-          <p>龔艷清 GONG Yan Qing</p>
-          <p>廣東話 （馬來西亞）Cantonese (M'sia)｜吳玉珍 WU Yu Zhen</p>
-          <p>廣東話 （香港）Cantonese (Hong Kong)｜Cecilia CHAN</p>
-          <p>英語 English｜陳秋慧 CHEN Qiu Hui</p>
-          <p>日語 Japanese｜馬場克樹 Masaki BABA 永田理乃 Ayano NAGATA</p>
-          <p>台語 Taiwanese ｜張維佐 Zaduno Cheung</p>
-          <p>客語（台灣） Hakka (Taiwan)｜馮文星 FENG Wen Xing</p>
-          <p>英式英語 British English｜Norberto SANCHEZ Mike<br />（生笙音效）</p>
-          <p class="mt-6">英文字幕翻譯 English Subtitles｜何美瑜 Isabella Ho</p>
-          <p>日文字幕翻譯與 DCP 製作 Japanese Subtitles & DCP</p>
-          <p>Production｜遠東譯像 Far East Transvideo</p>
-          <p>國際投展顧問 International Coordinator｜</p>
-          <p>謝以萱 Ruby HSIEH I Hsuan</p>
+          <p class="font-noto">客話（馬來西亞） Hakka (M'sia) ｜何民慶 HE Min-Qing</p>
+          <p class="font-noto">龔艷清 GONG Yan Qing</p>
+          <p class="font-noto">廣東話 （馬來西亞）Cantonese (M'sia)｜吳玉珍 WU Yu Zhen</p>
+          <p class="font-noto">廣東話 （香港）Cantonese (Hong Kong)｜Cecilia CHAN</p>
+          <p class="font-noto">英語 English｜陳秋慧 CHEN Qiu Hui</p>
+          <p class="font-noto">日語 Japanese｜馬場克樹 Masaki BABA 永田理乃 Ayano NAGATA</p>
+          <p class="font-noto">台語 Taiwanese ｜張維佐 Zaduno Cheung</p>
+          <p class="font-noto">客語（台灣） Hakka (Taiwan)｜馮文星 FENG Wen Xing</p>
+          <p class="font-noto">英式英語 British English｜Norberto SANCHEZ Mike<br />（生笙音效）</p>
+          <p class="mt-6 font-noto">英文字幕翻譯 English Subtitles｜何美瑜 Isabella Ho</p>
+          <p class="font-noto">日文字幕翻譯與 DCP 製作 Japanese Subtitles & DCP</p>
+          <p class="font-noto">Production｜遠東譯像 Far East Transvideo</p>
+          <p class="font-noto">國際投展顧問 International Coordinator｜</p>
+          <p class="font-noto">謝以萱 Ruby HSIEH I Hsuan</p>
         </div>
-        <div
-          id="parallax-container"
-          class="relative overflow-hidden w-[375px] h-[210px] flex items-center mt-12"
-        >
-          <img
-            src="/images-webp/stills/still_15.webp"
-            alt="lesson5"
-            id="parallax-content"
-            class="w-[100%] h-[120%] object-center object-cover"
-          />
-        </div>
+      </div>
+      <div
+        id="parallax-container"
+        class="sm:hidden relative overflow-hidden w-full h-auto flex items-center mt-12 -mb-8"
+      >
+        <img
+          src="/images-webp/stills/still_15.webp"
+          alt="lesson5"
+          id="parallax-content"
+          class="w-[100%] h-[120%] object-center object-cover"
+        />
       </div>
       <div class="hidden sm:flex gap-x-[105px] mt-[73px] w-full justify-between">
         <div class="flex flex-col">
@@ -778,82 +778,90 @@
           <div
             class="flex flex-col w-[716px] gap-y-2 mt-[120px] text-[14.5px] tracking-[0.5px] font-noto text-white"
           >
-            <p>製作／出品｜蜂鳥影像有限公司</p>
-            <p>Produced and Presented by Hummingbird Production</p>
-            <p class="mt-8">共同出品｜財團法人公共電視文化事業基金會</p>
-            <p>Co-Presented by Taiwan Public Television Service</p>
-            <p class="mt-8">製片 Producer｜ 林婉玉 LIN Wan-Yu</p>
-            <p>導演、攝影、剪輯、美術 a film by｜廖克發 LAU Kek-Huat</p>
-            <p class="mt-8">執行製片Line producer 台灣 Taiwan｜ 周欣 CHOU Hsin</p>
-            <p>馬來西亞 M'sia｜陳嘉豪 TAN Kah Hau</p>
-            <p>日本 Japan｜陳詠雙 CHEN Yung Shuang</p>
-            <p class="mt-8">行政 Administration｜黃琳晶 HUANG Lin Ching</p>
-            <p>歷史顧問 History Consultant｜藍適齊 LAN Shi Chi</p>
-            <p>日語聯繫 Japanese Contact｜金想容 JIN Xiang Rong</p>
-            <p>現場翻譯 On-site Interpreter｜永田理乃 Ayano NAGATA 豬俁美咲 Misaki INOMATA</p>
-            <p>紙芝居繪畫 Illustrator｜魏閤廷 WEI Ho Ting 朱晉明 JU Jimm Ming</p>
-            <p>為何停動畫創意有限公司 whystop? studio</p>
-            <p>環境錄音 Field Recording｜澎葉生 Yannick Dauby</p>
-            <p class="mt-8">
+            <p class="font-noto">製作／出品｜蜂鳥影像有限公司</p>
+            <p class="font-noto">Produced and Presented by Hummingbird Production</p>
+            <p class="mt-8 font-noto">共同出品｜財團法人公共電視文化事業基金會</p>
+            <p class="font-noto">Co-Presented by Taiwan Public Television Service</p>
+            <p class="mt-8 font-noto">製片 Producer｜ 林婉玉 LIN Wan-Yu</p>
+            <p class="font-noto">導演、攝影、剪輯、美術 a film by｜廖克發 LAU Kek-Huat</p>
+            <p class="mt-8 font-noto">執行製片Line producer 台灣 Taiwan｜ 周欣 CHOU Hsin</p>
+            <p class="font-noto">馬來西亞 M'sia｜陳嘉豪 TAN Kah Hau</p>
+            <p class="font-noto">日本 Japan｜陳詠雙 CHEN Yung Shuang</p>
+            <p class="mt-8 font-noto">行政 Administration｜黃琳晶 HUANG Lin Ching</p>
+            <p class="font-noto">歷史顧問 History Consultant｜藍適齊 LAN Shi Chi</p>
+            <p class="font-noto">日語聯繫 Japanese Contact｜金想容 JIN Xiang Rong</p>
+            <p class="font-noto">
+              現場翻譯 On-site Interpreter｜永田理乃 Ayano NAGATA 豬俁美咲 Misaki INOMATA
+            </p>
+            <p class="font-noto">紙芝居繪畫 Illustrator｜魏閤廷 WEI Ho Ting 朱晉明 JU Jimm Ming</p>
+            <p class="font-noto">為何停動畫創意有限公司 whystop? studio</p>
+            <p class="font-noto">環境錄音 Field Recording｜澎葉生 Yannick Dauby</p>
+            <p class="mt-8 font-noto">
               聲音後期製作 Audio Post Production ｜聲境有限公司 Buzzing Studio Co. Ltd.
             </p>
-            <p>混音 Sound Mixer｜黃年永 Eddie HUANG</p>
-            <p>音效製作 Sound Edit｜陳奕伶 CHEN Yi Ling</p>
-            <p>協調 Sound Dept. Coordinator｜鄭維芝 Wing CHENG</p>
-            <p class="mt-8">時間軸影像製作有限公司 Timeline Studio</p>
-            <p>後期專案管理 Post-production PM｜李慈恩 LEE Tzu En</p>
-            <p>調光 Colorist｜周佩儀 Penny CHOU</p>
-            <p>調光助理 Color-grading Assistant｜何冠儀 HO Kuan Yi</p>
-            <p class="mt-8">（台灣）戲劇仿拍演員｜辻政信 馬場克樹 Masaki BABA</p>
-            <p>演員｜台籍日本兵 魏雋展 WEI Chun-Chan</p>
-            <p>演員｜台籍日本兵 張維佐 Zaduno Cheung</p>
-            <p>演員｜台籍日本兵 王肇陽 WANG Chao Yang</p>
-            <p>演員｜日本軍官 松田強尼 Johnny MATSUDA</p>
-            <p>演員｜日本軍官 尤柏耘 YU Po Yun</p>
-            <p>攝影指導｜蔡維隆 TSAI Wei Long</p>
-            <p>攝影大助｜劉濱鴈 LIU Pin Yen</p>
-            <p>攝影二助｜郭俊佐 KUO Chun Tso</p>
-            <p>燈光師｜尤泰偉 YU Tai Wei 洪峻逸 HONG Jun Yi</p>
-            <p>燈光助理｜趙思齊 Jimmy CHAO 李建宏LI Jian Hong</p>
-            <p>錄音師｜閔曉宜 Mandy MAN</p>
-            <p>錄音助理｜羅友辰 LUO You Chen</p>
-            <p>美術指導｜霍達華 FOK Tat Wa Terrence</p>
-            <p>美術助理｜謝承頤 HSIEH Chen YI 錢江漢 CHIEN Kong Hon Cub</p>
-            <p>造型指導｜劉幸媛 Sandy LIU</p>
-            <p>服裝管理｜蔡雯婷 TSAI Wen Ting</p>
-            <p>化妝師｜王芷婷 Elsie WANG</p>
-            <p>梳化助理｜林心虹 LIN Shin Hung</p>
-            <p>副導 / 製片｜周欣 CHOU Hsin</p>
-            <p>執行製片｜陳可兒 Claire TAN Ke Er</p>
-            <p>製片助理｜白永馨 Alex PAI 黃勇嵻 Ben Oui</p>
-            <p>日語劇本翻譯｜馬場克樹 Masaki BABA</p>
-            <p>演員經紀人｜紀又文 CHI Yu Wen</p>
-            <p>演員經紀人｜陳芷如 CHEN Chih Ju</p>
-            <p>日本兵臨時演員｜陳禹同 李騁佺 陳昶瑋 徐定鴻</p>
-            <p>拍攝協力｜卓紫嵐 羅苡珊 吳思鋒</p>
-            <p>新加坡文物拍攝攝影師｜王文毅</p>
-            <p class="mt-8">檔案翻譯 Archive Translator</p>
-            <p>馬來文 Malay｜Zikri RAHMAN</p>
-            <p>日文 Japanese｜豬俁美咲 Misaki INOMATA 永田理乃 Ayano NAGATA 馬場克樹 Masaki BABA</p>
-            <p class="mt-8">旁白員 Narrator</p>
-            <p>馬來語 Malay｜Nor Huda binti Mohd IZAM</p>
-            <p>印尼／馬來語 Indonesia & Malay｜Faiq Syazwan KUHIRI</p>
-            <p>福建話（馬來西亞）Hokkien (M'sia) ｜</p>
-            <p>Lennard OUNG Chia Chun KC LEE 鄭振政 ZHENG Zhen Zheng</p>
-            <p>客話（馬來西亞） Hakka (M'sia) ｜何民慶 HE Min-Qing 龔艷清 GONG Yan Qing</p>
-            <p>廣東話 （馬來西亞）Cantonese (M'sia)｜吳玉珍 WU Yu Zhen</p>
-            <p>廣東話 （香港）Cantonese (Hong Kong)｜Cecilia CHAN</p>
-            <p>英語 English｜陳秋慧 CHEN Qiu Hui</p>
-            <p>日語 Japanese｜馬場克樹 Masaki BABA 永田理乃 Ayano NAGATA</p>
-            <p>台語 Taiwanese ｜張維佐 Zaduno Cheung</p>
-            <p>客語（台灣） Hakka (Taiwan)｜馮文星 FENG Wen Xing</p>
-            <p>英式英語 British English｜Norberto SANCHEZ Mike（生笙音效）</p>
-            <p class="mt-8">英文字幕翻譯 English Subtitles｜何美瑜 Isabella Ho</p>
-            <p>
+            <p class="font-noto">混音 Sound Mixer｜黃年永 Eddie HUANG</p>
+            <p class="font-noto">音效製作 Sound Edit｜陳奕伶 CHEN Yi Ling</p>
+            <p class="font-noto">協調 Sound Dept. Coordinator｜鄭維芝 Wing CHENG</p>
+            <p class="mt-8 font-noto">時間軸影像製作有限公司 Timeline Studio</p>
+            <p class="font-noto">後期專案管理 Post-production PM｜李慈恩 LEE Tzu En</p>
+            <p class="font-noto">調光 Colorist｜周佩儀 Penny CHOU</p>
+            <p class="font-noto">調光助理 Color-grading Assistant｜何冠儀 HO Kuan Yi</p>
+            <p class="mt-8 font-noto">（台灣）戲劇仿拍演員｜辻政信 馬場克樹 Masaki BABA</p>
+            <p class="font-noto">演員｜台籍日本兵 魏雋展 WEI Chun-Chan</p>
+            <p class="font-noto">演員｜台籍日本兵 張維佐 Zaduno Cheung</p>
+            <p class="font-noto">演員｜台籍日本兵 王肇陽 WANG Chao Yang</p>
+            <p class="font-noto">演員｜日本軍官 松田強尼 Johnny MATSUDA</p>
+            <p class="font-noto">演員｜日本軍官 尤柏耘 YU Po Yun</p>
+            <p class="font-noto">攝影指導｜蔡維隆 TSAI Wei Long</p>
+            <p class="font-noto">攝影大助｜劉濱鴈 LIU Pin Yen</p>
+            <p class="font-noto">攝影二助｜郭俊佐 KUO Chun Tso</p>
+            <p class="font-noto">燈光師｜尤泰偉 YU Tai Wei 洪峻逸 HONG Jun Yi</p>
+            <p class="font-noto">燈光助理｜趙思齊 Jimmy CHAO 李建宏LI Jian Hong</p>
+            <p class="font-noto">錄音師｜閔曉宜 Mandy MAN</p>
+            <p class="font-noto">錄音助理｜羅友辰 LUO You Chen</p>
+            <p class="font-noto">美術指導｜霍達華 FOK Tat Wa Terrence</p>
+            <p class="font-noto">美術助理｜謝承頤 HSIEH Chen YI 錢江漢 CHIEN Kong Hon Cub</p>
+            <p class="font-noto">造型指導｜劉幸媛 Sandy LIU</p>
+            <p class="font-noto">服裝管理｜蔡雯婷 TSAI Wen Ting</p>
+            <p class="font-noto">化妝師｜王芷婷 Elsie WANG</p>
+            <p class="font-noto">梳化助理｜林心虹 LIN Shin Hung</p>
+            <p class="font-noto">副導 / 製片｜周欣 CHOU Hsin</p>
+            <p class="font-noto">執行製片｜陳可兒 Claire TAN Ke Er</p>
+            <p class="font-noto">製片助理｜白永馨 Alex PAI 黃勇嵻 Ben Oui</p>
+            <p class="font-noto">日語劇本翻譯｜馬場克樹 Masaki BABA</p>
+            <p class="font-noto">演員經紀人｜紀又文 CHI Yu Wen</p>
+            <p class="font-noto">演員經紀人｜陳芷如 CHEN Chih Ju</p>
+            <p class="font-noto">日本兵臨時演員｜陳禹同 李騁佺 陳昶瑋 徐定鴻</p>
+            <p class="font-noto">拍攝協力｜卓紫嵐 羅苡珊 吳思鋒</p>
+            <p class="font-noto">新加坡文物拍攝攝影師｜王文毅</p>
+            <p class="mt-8 font-noto">檔案翻譯 Archive Translator</p>
+            <p class="font-noto">馬來文 Malay｜Zikri RAHMAN</p>
+            <p class="font-noto">
+              日文 Japanese｜豬俁美咲 Misaki INOMATA 永田理乃 Ayano NAGATA 馬場克樹 Masaki BABA
+            </p>
+            <p class="mt-8 font-noto">旁白員 Narrator</p>
+            <p class="font-noto">馬來語 Malay｜Nor Huda binti Mohd IZAM</p>
+            <p class="font-noto">印尼／馬來語 Indonesia & Malay｜Faiq Syazwan KUHIRI</p>
+            <p class="font-noto">福建話（馬來西亞）Hokkien (M'sia) ｜</p>
+            <p class="font-noto">Lennard OUNG Chia Chun KC LEE 鄭振政 ZHENG Zhen Zheng</p>
+            <p class="font-noto">
+              客話（馬來西亞） Hakka (M'sia) ｜何民慶 HE Min-Qing 龔艷清 GONG Yan Qing
+            </p>
+            <p class="font-noto">廣東話 （馬來西亞）Cantonese (M'sia)｜吳玉珍 WU Yu Zhen</p>
+            <p class="font-noto">廣東話 （香港）Cantonese (Hong Kong)｜Cecilia CHAN</p>
+            <p class="font-noto">英語 English｜陳秋慧 CHEN Qiu Hui</p>
+            <p class="font-noto">日語 Japanese｜馬場克樹 Masaki BABA 永田理乃 Ayano NAGATA</p>
+            <p class="font-noto">台語 Taiwanese ｜張維佐 Zaduno Cheung</p>
+            <p class="font-noto">客語（台灣） Hakka (Taiwan)｜馮文星 FENG Wen Xing</p>
+            <p class="font-noto">英式英語 British English｜Norberto SANCHEZ Mike（生笙音效）</p>
+            <p class="mt-8 font-noto">英文字幕翻譯 English Subtitles｜何美瑜 Isabella Ho</p>
+            <p class="font-noto">
               日文字幕翻譯與 DCP 製作 Japanese Subtitles & DCP Production｜遠東譯像 Far East
               Transvideo
             </p>
-            <p>國際投展顧問 International Coordinator｜謝以萱 Ruby HSIEH I Hsuan</p>
+            <p class="font-noto">
+              國際投展顧問 International Coordinator｜謝以萱 Ruby HSIEH I Hsuan
+            </p>
           </div>
         </div>
       </div>
