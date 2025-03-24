@@ -11,27 +11,31 @@
 </script>
 <template>
   <div class="flex flex-col bg-black w-screen h-auto min-h-screen items-center">
-    <div class="fixed inset-0 bg-reports z-0"></div>
+    <div class="hidden sm:fixed inset-0 bg-reports z-0"></div>
     <NavBar textColor="white" logoSrc="/images/logo.png" />
     <SideMenu ref="menuRef" @close="closeMenu" />
     <div class="fixed right-10 sm:right-12 top-10 cursor-pointer z-20">
       <img src="/images/menu.svg" alt="menu" class="w-10 h-8" @click="toggleMenu" />
     </div>
-    <div class="w-full sm:w-[1116px] relative flex flex-col items-center">
+    <img src="/images-webp/reports/popbox/popbox_3_1.webp" class="sm:hidden w-full h-auto" />
+    <div class="w-full sm:w-[1116px] relative flex flex-col items-center px-10">
       <div
         @click="() => router.back()"
         class="hidden sm:block fixed top-12 right-56 cursor-pointer"
       >
         <img src="/images/xmark.svg" />
       </div>
-      <img src="/images-webp/reports/popbox/popbox_3_1.webp" class="w-screen h-auto" />
+      <img
+        src="/images-webp/reports/popbox/popbox_3_1.webp"
+        class="hidden sm:block w-full h-auto"
+      />
       <div
-        class="w-[295px] flex sm:hidden justify-center py-6 text-white text-center leading-[30px] font-noto tracking-[2px]"
+        class="w-full flex sm:hidden justify-center py-6 text-white text-center leading-[30px] font-noto tracking-[2px]"
       >
         《由島至島》紀錄片映演計畫—<br />台中場
       </div>
       <div
-        class="flex flex-col sm:flex-row items-center sm:items-start border-y sm:border-none border-white w-[295px] sm:w-[841px] py-16 gap-x-12"
+        class="flex flex-col sm:flex-row items-center sm:items-start border-y sm:border-none border-white w-full sm:w-[841px] py-16 gap-x-12"
       >
         <img
           src="/images-webp/reports/chu.webp"
@@ -61,7 +65,7 @@
         </div>
       </div>
       <p
-        class="font-noto tracking-[0.5px] sm:tracking-[2px] text-white w-[295px] sm:w-[841px] text-[14px] sm:text-[16px] text-justify leading-[30px] sm:leading-[36px]"
+        class="font-noto tracking-[0.5px] sm:tracking-[2px] text-white w-full sm:w-[841px] text-[14px] sm:text-[16px] text-justify leading-[30px] sm:leading-[36px]"
       >
         <span class="sm:inline-block hidden font-semibold">《由島至島》紀錄片映演計畫——台中場</span
         ><br /><br />
@@ -71,10 +75,13 @@
       </p>
       <div class="flex gap-x-4 my-12">
         <img src="/images-webp/reports/popbox/popbox_3_2.webp" class="w-[412px] h-auto" />
-        <img src="/images-webp/reports/popbox/popbox_3_3.webp" class="w-[412px] h-auto" />
+        <img
+          src="/images-webp/reports/popbox/popbox_3_3.webp"
+          class="w-[412px] h-auto hidden sm:block"
+        />
       </div>
       <p
-        class="font-noto tracking-[0.5px] sm:tracking-[2px] text-white w-[295px] sm:w-[841px] text-[14px] sm:text-[16px] text-justify leading-[30px] sm:leading-[36px]"
+        class="font-noto tracking-[0.5px] sm:tracking-[2px] text-white w-full sm:w-[841px] text-[14px] sm:text-[16px] text-justify leading-[30px] sm:leading-[36px]"
       >
         <span class="font-semibold"> ● 台籍日本兵：受害與加害的身份是並存的</span><br /><br />
 
@@ -82,10 +89,13 @@
       </p>
       <div class="flex gap-x-4 my-12">
         <img src="/images-webp/reports/popbox/popbox_3_4.webp" class="w-[412px] h-auto" />
-        <img src="/images-webp/reports/popbox/popbox_3_5.webp" class="w-[412px] h-auto" />
+        <img
+          src="/images-webp/reports/popbox/popbox_3_5.webp"
+          class="w-[412px] h-auto hidden sm:block"
+        />
       </div>
       <p
-        class="font-noto tracking-[0.5px] sm:tracking-[2px] text-white w-[295px] sm:w-[841px] text-[14px] sm:text-[16px] text-justify leading-[30px] sm:leading-[36px]"
+        class="font-noto tracking-[0.5px] sm:tracking-[2px] text-white w-full sm:w-[841px] text-[14px] sm:text-[16px] text-justify leading-[30px] sm:leading-[36px]"
       >
         「紀錄片中聽到受害者的言語或無法言語，讓我深刻感覺到我們對於戰爭的思考與反省實在遠遠不夠。」導演在這些人們生命最後幾年，紀錄下他們的身影與聲音，
         讓觀眾可以回到戰時現場，閉上眼想像自身可能扮演哪一個角色，當以國家之名所動員的暴力與犯罪，我們怎麼樣可以記得這個教訓、這些聲音，創造一個什麼樣的歷史記憶，可以帶領我們邁下一個更好的未來，是台灣人需要持續思考的。

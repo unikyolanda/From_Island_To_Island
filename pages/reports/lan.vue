@@ -17,21 +17,25 @@
     <div class="fixed right-10 sm:right-12 top-6 sm:top-10 cursor-pointer z-20">
       <img src="/images/menu.svg" alt="menu" class="w-10 h-8" @click="toggleMenu" />
     </div>
-    <div class="w-full sm:w-[1116px] relative flex flex-col items-center">
+    <img src="/images-webp/reports/popbox/popbox_4_1.webp" class="sm:hidden w-full h-auto" />
+    <div class="w-full sm:w-[1116px] relative flex flex-col items-center px-10">
       <div
         @click="() => router.back()"
         class="hidden sm:block fixed top-12 right-56 cursor-pointer"
       >
         <img src="/images/xmark.svg" />
       </div>
-      <img src="/images-webp/reports/popbox/popbox_4_1.webp" class="w-screen h-auto" />
+      <img
+        src="/images-webp/reports/popbox/popbox_4_1.webp"
+        class="hidden sm:block w-full h-auto"
+      />
       <div
-        class="w-[295px] flex sm:hidden justify-center py-6 text-white text-center leading-[30px] font-noto tracking-[2px]"
+        class="w-full flex sm:hidden justify-center py-6 text-white text-center leading-[30px] font-noto tracking-[2px]"
       >
         《由島至島》紀錄片映演計畫—<br />台北場
       </div>
       <div
-        class="flex flex-col sm:flex-row items-center sm:items-start border-y sm:border-none border-white w-[295px] sm:w-[841px] py-16 gap-x-12"
+        class="flex flex-col sm:flex-row items-center sm:items-start border-y sm:border-none border-white w-full sm:w-[841px] py-16 gap-x-12"
       >
         <img
           src="/images-webp/reports/lan.webp"
@@ -62,7 +66,7 @@
       </div>
 
       <p
-        class="font-noto tracking-[0.5px] sm:tracking-[2px] text-white w-[295px] sm:w-[841px] text-[14px] sm:text-[16px] text-justify leading-[30px] sm:leading-[36px]"
+        class="font-noto tracking-[0.5px] sm:tracking-[2px] text-white w-full sm:w-[841px] text-[14px] sm:text-[16px] text-justify leading-[30px] sm:leading-[36px]"
       >
         <span class="sm:inline-block hidden font-semibold"> 《由島至島》紀錄片映演計畫——台北場</span
         ><br /><br />
@@ -71,20 +75,26 @@
       </p>
       <div class="flex gap-x-4 my-12">
         <img src="/images-webp/reports/popbox/popbox_4_2.webp" class="w-[412px] h-auto" />
-        <img src="/images-webp/reports/popbox/popbox_4_3.webp" class="w-[412px] h-auto" />
+        <img
+          src="/images-webp/reports/popbox/popbox_4_3.webp"
+          class="w-[412px] h-auto hidden sm:block"
+        />
       </div>
       <p
-        class="font-noto tracking-[0.5px] sm:tracking-[2px] text-white w-[295px] sm:w-[841px] text-[14px] sm:text-[16px] text-justify leading-[30px] sm:leading-[36px]"
+        class="font-noto tracking-[0.5px] sm:tracking-[2px] text-white w-full sm:w-[841px] text-[14px] sm:text-[16px] text-justify leading-[30px] sm:leading-[36px]"
       >
         很多年前適齊老師在新加坡教書時，和一位做新加坡與馬來西亞社會歷史研究的澳洲同事閒聊，同事提到二戰日軍佔領馬來半島、新加坡幾件事情，「可是他知道我是台灣來的，突然講了一句話，開啟我過去十年的研究。『日軍很壞，但台灣人也很壞/甚至更壞。』這是當地老一輩華人告訴他的，將近二十年前的事情。」那時才意識到原來台灣在二戰期間，因為人的流動、送去擔任軍屬與執行各種軍事工作，與東南亞有非常密切的關係。片名《由島至島》，可以看見台灣跟外界的連結
         ，過去所熟知的經貿關係與文化交流之外，不要忘記我們在歷史上有一些比較痛苦的時刻。戰爭其實也讓台灣跟世界連結在一起。
       </p>
       <div class="flex gap-x-4 my-12">
         <img src="/images-webp/reports/popbox/popbox_4_4.webp" class="w-[412px] h-auto" />
-        <img src="/images-webp/reports/popbox/popbox_4_5.webp" class="w-[412px] h-auto" />
+        <img
+          src="/images-webp/reports/popbox/popbox_4_5.webp"
+          class="w-[412px] h-auto hidden sm:block"
+        />
       </div>
       <p
-        class="font-noto tracking-[0.5px] sm:tracking-[2px] text-white w-[295px] sm:w-[841px] text-[14px] sm:text-[16px] text-justify leading-[30px] sm:leading-[36px]"
+        class="font-noto tracking-[0.5px] sm:tracking-[2px] text-white w-full sm:w-[841px] text-[14px] sm:text-[16px] text-justify leading-[30px] sm:leading-[36px]"
       >
         「我越學歷史越體會到，特別從這個紀錄片中——我們其實都是在一個群體當中。」不只是台灣這個群體，包含我們所到之地：東南亞各地、日本、太平洋戰爭的各個戰場，跟這些人們或許良善、對立、甚至互相傷害的互動，都是歷史的一部分，克發導演帶觀眾看到另一個面向，其他人在戰爭中經歷了什麼、他們如何面對與記得這段歷史，這也許啟動我們想要知道得更多。
       </p>

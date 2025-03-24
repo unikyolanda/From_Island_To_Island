@@ -17,21 +17,25 @@
     <div class="fixed right-10 sm:right-12 top-6 sm:top-10 cursor-pointer z-20">
       <img src="/images/menu.svg" alt="menu" class="w-8 sm:w-10 h-8" @click="toggleMenu" />
     </div>
-    <div class="w-full sm:w-[1116px] relative flex flex-col items-center">
+    <img src="/images-webp/reports/popbox/popbox_2_1.webp" class="sm:hidden w-full h-auto" />
+    <div class="w-full sm:w-[1116px] relative flex flex-col items-center px-10">
       <div
         @click="() => router.back()"
         class="hidden sm:block fixed top-12 right-56 cursor-pointer"
       >
         <img src="/images/xmark.svg" />
       </div>
-      <img src="/images-webp/reports/popbox/popbox_2_1.webp" class="w-screen h-auto" />
+      <img
+        src="/images-webp/reports/popbox/popbox_2_1.webp"
+        class="hidden sm:block w-full h-auto"
+      />
       <div
-        class="w-[295px] flex sm:hidden justify-center py-6 text-white text-center leading-[30px] font-noto tracking-[2px]"
+        class="w-full flex sm:hidden justify-center py-6 text-white text-center leading-[30px] font-noto tracking-[2px]"
       >
         《由島至島》紀錄片映演計畫—<br />屏東場
       </div>
       <div
-        class="flex flex-col sm:flex-row items-center sm:items-start gap-x-12 relative border-y sm:border-none border-white w-[295px] sm:w-[841px] py-16"
+        class="flex flex-col sm:flex-row items-center sm:items-start gap-x-12 relative border-y sm:border-none border-white w-full sm:w-[841px] py-16"
       >
         <div class="relative w-32 h-[140px]">
           <img
@@ -77,7 +81,7 @@
         </div>
       </div>
       <p
-        class="font-noto tracking-[0.5px] sm:tracking-[2px] text-white w-[295px] sm:w-[841px] text-[14px] sm:text-[16px] text-justify leading-[30px] sm:leading-[36px]"
+        class="font-noto tracking-[0.5px] sm:tracking-[2px] text-white w-full sm:w-[841px] text-[14px] sm:text-[16px] text-justify leading-[30px] sm:leading-[36px]"
       >
         <span class="sm:inline-block hidden font-semibold">《由島至島》紀錄片映演計畫——屏東場</span
         ><br /><br />
@@ -88,30 +92,39 @@
       </p>
       <div class="flex gap-x-4 my-12">
         <img src="/images-webp/reports/popbox/popbox_2_2.webp" class="w-[412px] h-auto" />
-        <img src="/images-webp/reports/popbox/popbox_2_3.webp" class="w-[412px] h-auto" />
+        <img
+          src="/images-webp/reports/popbox/popbox_2_3.webp"
+          class="w-[412px] h-auto hidden sm:block"
+        />
       </div>
       <p
-        class="font-noto tracking-[0.5px] sm:tracking-[2px] text-white w-[295px] sm:w-[841px] text-[14px] sm:text-[16px] text-justify leading-[30px] sm:leading-[36px]"
+        class="font-noto tracking-[0.5px] sm:tracking-[2px] text-white w-full sm:w-[841px] text-[14px] sm:text-[16px] text-justify leading-[30px] sm:leading-[36px]"
       >
         《由島至島》中，導演口白不時與孩子對話，每當訴說「孩子」便讓人心頭一震，「因為我知道我們也是那個孩子——導演欲對話的對象。」適芳老師思考人們如何從孩子成長成一個殺戮者，在戰爭當中的人性為了存活，如何成爲壓迫者、又何者才是被壓迫者，這些問題不斷迴旋，提醒著不可遺忘。然而，在經歷五小時的觀影、見證這些口述與影像檔案後，我們無法再像孩子那樣，假裝純真或無知。於是，導演更殘酷地問了觀眾要怎麼選擇？從鏡頭逼近這些受訪者的回憶，同時藉由紀錄片本身來逼近我們，這種急切地提問是殘酷的，「但是我要說的是這種『殘酷的必要』、『沉重的必要』。」不可以只當作一個旁聽者跟旁觀者，我們必須回答。力昕老師補充「紀錄片不論是拍攝受訪者，讓其面對鏡頭、面對導演提問，或挖掘歷史本身都非常殘酷，但這也是華人社會中非常缺乏——
         一種不近人情的冷酷提問。」是我們社會裡長期不太重視歷史，是戒嚴時期慣以銷毀資料所遺留下的特性，但不應該只是遺忘，而是應留下記憶。
       </p>
       <div class="flex gap-x-4 my-12">
         <img src="/images-webp/reports/popbox/popbox_2_4.webp" class="w-[412px] h-auto" />
-        <img src="/images-webp/reports/popbox/popbox_2_5.webp" class="w-[412px] h-auto" />
+        <img
+          src="/images-webp/reports/popbox/popbox_2_5.webp"
+          class="w-[412px] h-auto hidden sm:block"
+        />
       </div>
       <p
-        class="font-noto tracking-[0.5px] sm:tracking-[2px] text-white w-[295px] sm:w-[841px] text-[14px] sm:text-[16px] text-justify leading-[30px] sm:leading-[36px]"
+        class="font-noto tracking-[0.5px] sm:tracking-[2px] text-white w-full sm:w-[841px] text-[14px] sm:text-[16px] text-justify leading-[30px] sm:leading-[36px]"
       >
         「一個人的多重身份有時交疊、有時互斥，逐步形成國族認同與邊界的複雜性。如同台籍日本兵在紀錄片中有數種不同的身份描述，是說福建話的日本兵、在英國人的檔案裡是
         Formosan，Hokkien，Chinese……他們到底是誰？這樣的身份流動，從片頭口白對應到廖克發導演身上——來自馬來西亞、移民台灣，讓紀錄片的思考與辯證更為深刻。又戰場上的殺戮者回到日本的身份也是好父親、好丈夫，雙重的道德標準，讓力昕老師提及漢娜．鄂蘭「平庸的邪惡」概念，行刑的劊子手戰犯並沒有自身的意志，他僅是聽命行事的軍官，那些台籍日本兵到東南亞屠殺馬來西亞與新加波華人，在彼時是否也是一個口令一個動作，那人性終究要如何判斷？
       </p>
       <div class="flex gap-x-4 my-12">
         <img src="/images-webp/reports/popbox/popbox_2_6.webp" class="w-[412px] h-auto" />
-        <img src="/images-webp/reports/popbox/popbox_2_7.webp" class="w-[412px] h-auto" />
+        <img
+          src="/images-webp/reports/popbox/popbox_2_7.webp"
+          class="w-[412px] h-auto hidden sm:block"
+        />
       </div>
       <p
-        class="font-noto tracking-[0.5px] sm:tracking-[2px] text-white w-[295px] sm:w-[841px] text-[14px] sm:text-[16px] text-justify leading-[30px] sm:leading-[36px]"
+        class="font-noto tracking-[0.5px] sm:tracking-[2px] text-white w-full sm:w-[841px] text-[14px] sm:text-[16px] text-justify leading-[30px] sm:leading-[36px]"
       >
         適芳老師最後選以黃仁宇《緬北之戰》中〈拉班追擊戰〉篇章作結，作者看到一具日本大尉的屍體倒臥在橋墩下，這位敵軍的頭顱浸在水中，身旁樹枝掛著地圖和英日辭典，文字平實寫下「無需多久我就發現死者和我有許多共同點，我們屬於同樣的年齡層、有類似的教育背景。在死前一天他還努力溫習他的英文，誰敢說他不是大學學生？脫下黑色的學生裝、換上卡其軍裝，想想看要養大及教育他得花多少心力？接受軍事訓練得花多長時間？然後他在長崎或神戶上船經過香港、新加坡、仰光長途跋涉，還要搭上火車、汽車、行軍
         ，最後達到他在地圖上標示著拉班的這個地方，千里迢迢赴死，喉嚨中彈，以殘餘的本能，企圖用手護著喉嚨。」。

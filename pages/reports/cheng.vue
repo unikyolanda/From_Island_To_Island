@@ -17,21 +17,25 @@
     <div class="fixed right-10 sm:right-12 top-10 cursor-pointer z-20">
       <img src="/images/menu.svg" alt="menu" class="w-10 h-8" @click="toggleMenu" />
     </div>
-    <div class="w-full sm:w-[1116px] relative flex flex-col items-center">
+    <img src="/images-webp/reports/popbox/popbox_6_1.webp" class="sm:hidden w-full h-auto" />
+    <div class="w-full sm:w-[1116px] relative flex flex-col items-center px-10">
       <div
         @click="() => router.back()"
         class="hidden sm:block fixed top-12 right-56 cursor-pointer"
       >
         <img src="/images/xmark.svg" />
       </div>
-      <img src="/images-webp/reports/popbox/popbox_6_1.webp" class="w-screen h-auto" />
+      <img
+        src="/images-webp/reports/popbox/popbox_6_1.webp"
+        class="hidden sm:block w-full h-auto"
+      />
       <div
-        class="w-[295px] flex sm:hidden justify-center py-6 text-white text-center leading-[30px] font-noto tracking-[2px]"
+        class="w-full flex sm:hidden justify-center py-6 text-white text-center leading-[30px] font-noto tracking-[2px]"
       >
         《由島至島》紀錄片映演計畫—<br />桃園場
       </div>
       <div
-        class="flex flex-col sm:flex-row items-center sm:items-start border-y sm:border-none border-white w-[295px] sm:w-[841px] py-16 gap-x-12"
+        class="flex flex-col sm:flex-row items-center sm:items-start border-y sm:border-none border-white w-full sm:w-[841px] py-16 gap-x-12"
       >
         <img
           src="/images-webp/reports/cheng.webp"
@@ -60,7 +64,7 @@
       </div>
 
       <p
-        class="font-noto tracking-[0.5px] sm:tracking-[2px] text-white w-[295px] sm:w-[841px] text-[14px] sm:text-[16px] text-justify leading-[30px] sm:leading-[36px]"
+        class="font-noto tracking-[0.5px] sm:tracking-[2px] text-white w-full sm:w-[841px] text-[14px] sm:text-[16px] text-justify leading-[30px] sm:leading-[36px]"
       >
         <span class="sm:inline-block hidden font-semibold">《由島至島》紀錄片映演計畫——桃園場</span
         ><br /><br />
@@ -70,19 +74,25 @@
       </p>
       <div class="flex gap-x-4 my-12">
         <img src="/images-webp/reports/popbox/popbox_6_2.webp" class="w-[412px] h-auto" />
-        <img src="/images-webp/reports/popbox/popbox_6_3.webp" class="w-[412px] h-auto" />
+        <img
+          src="/images-webp/reports/popbox/popbox_6_3.webp"
+          class="w-[412px] h-auto hidden sm:block"
+        />
       </div>
       <p
-        class="font-noto tracking-[0.5px] sm:tracking-[2px] text-white w-[295px] sm:w-[841px] text-[14px] sm:text-[16px] text-justify leading-[30px] sm:leading-[36px]"
+        class="font-noto tracking-[0.5px] sm:tracking-[2px] text-white w-full sm:w-[841px] text-[14px] sm:text-[16px] text-justify leading-[30px] sm:leading-[36px]"
       >
         「1942年，日本才開始在台招募「陸軍特別志願兵」，第一期招募只錄取1020人，卻高達四五十萬人報名（事實上人民也不敢不去），第二期報名者更突破六十萬，幾乎所有青壯年男性都報名參與，後續應募陸軍、海軍，直到1945年才正式在台灣施行徵兵制度。因此直至日本戰敗，台灣約有二十多萬人被動員至日本部隊中，或派遣至中國或至南洋戰場，五萬多人喪命，對台灣而言是沈重的歷史記憶。
       </p>
       <div class="flex gap-x-4 my-12">
         <img src="/images-webp/reports/popbox/popbox_6_4.webp" class="w-[412px] h-auto" />
-        <img src="/images-webp/reports/popbox/popbox_6_5.webp" class="w-[412px] h-auto" />
+        <img
+          src="/images-webp/reports/popbox/popbox_6_5.webp"
+          class="w-[412px] h-auto hidden sm:block"
+        />
       </div>
       <p
-        class="font-noto tracking-[0.5px] sm:tracking-[2px] text-white w-[295px] sm:w-[841px] text-[14px] sm:text-[16px] text-justify leading-[30px] sm:leading-[36px]"
+        class="font-noto tracking-[0.5px] sm:tracking-[2px] text-white w-full sm:w-[841px] text-[14px] sm:text-[16px] text-justify leading-[30px] sm:leading-[36px]"
       >
         鄭政誠教授笑說「這部片很長，但就歷史觀點來看，它似乎也還不夠長。」
       </p>

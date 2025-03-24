@@ -17,21 +17,25 @@
     <div class="fixed right-10 sm:right-12 top-10 cursor-pointer z-20">
       <img src="/images/menu.svg" alt="menu" class="w-10 h-8" @click="toggleMenu" />
     </div>
-    <div class="w-full sm:w-[1116px] relative flex flex-col items-center">
+    <img src="/images-webp/reports/popbox/popbox_5_1.webp" class="sm:hidden w-full h-auto" />
+    <div class="w-full sm:w-[1116px] relative flex flex-col items-center px-10">
       <div
         @click="() => router.back()"
         class="hidden sm:block fixed top-12 right-56 cursor-pointer"
       >
         <img src="/images/xmark.svg" />
       </div>
-      <img src="/images-webp/reports/popbox/popbox_5_1.webp" class="w-screen h-auto" />
+      <img
+        src="/images-webp/reports/popbox/popbox_5_1.webp"
+        class="hidden sm:block w-full h-auto"
+      />
       <div
-        class="w-[295px] flex sm:hidden justify-center py-6 text-white text-center leading-[30px] font-noto tracking-[2px]"
+        class="w-full flex sm:hidden justify-center py-6 text-white text-center leading-[30px] font-noto tracking-[2px]"
       >
         《由島至島》紀錄片映演計畫—<br />新竹場
       </div>
       <div
-        class="flex flex-col sm:flex-row items-center sm:items-start border-y sm:border-none border-white w-[295px] sm:w-[841px] py-16 gap-x-12"
+        class="flex flex-col sm:flex-row items-center sm:items-start border-y sm:border-none border-white w-full sm:w-[841px] py-16 gap-x-12"
       >
         <img
           src="/images-webp/reports/chen.webp"
@@ -60,7 +64,7 @@
       </div>
 
       <p
-        class="font-noto tracking-[0.5px] sm:tracking-[2px] text-white w-[295px] sm:w-[841px] text-[14px] sm:text-[16px] text-justify leading-[30px] sm:leading-[36px]"
+        class="font-noto tracking-[0.5px] sm:tracking-[2px] text-white w-full sm:w-[841px] text-[14px] sm:text-[16px] text-justify leading-[30px] sm:leading-[36px]"
       >
         <span class="sm:inline-block hidden font-semibold"> 《由島至島》紀錄片映演計畫——新竹場</span
         ><br /><br />
@@ -69,20 +73,26 @@
       </p>
       <div class="flex gap-x-4 my-12">
         <img src="/images-webp/reports/popbox/popbox_5_2.webp" class="w-[412px] h-auto" />
-        <img src="/images-webp/reports/popbox/popbox_5_3.webp" class="w-[412px] h-auto" />
+        <img
+          src="/images-webp/reports/popbox/popbox_5_3.webp"
+          class="w-[412px] h-auto hidden sm:block"
+        />
       </div>
       <p
-        class="font-noto tracking-[0.5px] sm:tracking-[2px] text-white w-[295px] sm:w-[841px] text-[14px] sm:text-[16px] text-justify leading-[30px] sm:leading-[36px]"
+        class="font-noto tracking-[0.5px] sm:tracking-[2px] text-white w-full sm:w-[841px] text-[14px] sm:text-[16px] text-justify leading-[30px] sm:leading-[36px]"
       >
         「我們容易自溺於自身的立場。」陳柏棕助理研究員分享，起初對於《由島至島》影像所呈現的也曾抗拒，覺得和認識的不一樣。後來思考許久，才明白要了解一個群體不能只記得良善，而是好壞皆需記錄。對於過去所認知到的台籍日本兵，大多在理解他們的受苦，卻往往忽略身為士兵，不論軍伕或其他角色，在異國為日軍服務本就是侵略性的角色——即使不拿槍，有些通譯雖不動武，卻可能透過語言傷害他人。這是過去他未曾理解的。<br /><br />
         「我擔心的是這種敘述可能會讓人覺得所有台灣人到東南亞都做過這些事，但事實並非如此。根據我研究，並非所有人都符合這種敘述。有些人被派到東南亞擔任文書或通譯，不一定是憲兵，且不具資格當憲兵，但這些人確實需承擔罪責。」他提醒，不應將所有台籍日本兵同質化，不同時期加入台籍日本兵至南洋的脈絡都不盡相同。尤其大多台灣人是以「臺灣特設勤勞團」的身分在1943年被派遣至東南亞等地，當時戰況已經不一樣，許多人在前線面臨砲火、飢餓、疾病等威脅，甚至遭遇游擊隊清洗。並非所有人的經歷或行為都一樣。
       </p>
       <div class="flex gap-x-4 my-12">
         <img src="/images-webp/reports/popbox/popbox_5_4.webp" class="w-[412px] h-auto" />
-        <img src="/images-webp/reports/popbox/popbox_5_5.webp" class="w-[412px] h-auto" />
+        <img
+          src="/images-webp/reports/popbox/popbox_5_5.webp"
+          class="w-[412px] h-auto hidden sm:block"
+        />
       </div>
       <p
-        class="font-noto tracking-[0.5px] sm:tracking-[2px] text-white w-[295px] sm:w-[841px] text-[14px] sm:text-[16px] text-justify leading-[30px] sm:leading-[36px]"
+        class="font-noto tracking-[0.5px] sm:tracking-[2px] text-white w-full sm:w-[841px] text-[14px] sm:text-[16px] text-justify leading-[30px] sm:leading-[36px]"
       >
         廖克發導演同意「當我們看一個群體時，不要把群體想成很容易的，想成他是同質性的。每一群體裡面，仍相當多音、多元。作為台灣人，怎麼記憶這段歷史是我們的責任，我們要如何記得這些事情、能否看見他人傷痛，而不是僅專注在自己的傷痛上。」<br /><br />
         最後，陳柏棕助理研究員鼓勵大家多了解自己的歷史，對於這段歷史能有更多的探尋。
