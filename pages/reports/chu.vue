@@ -67,8 +67,8 @@
     <div class="hidden sm:fixed inset-0 bg-reports z-0"></div>
     <NavBar textColor="white" logoSrc="/images/logo.png" />
     <SideMenu ref="menuRef" @close="closeMenu" />
-    <div class="fixed right-10 sm:right-12 top-10 cursor-pointer z-20">
-      <img src="/images/menu.svg" alt="menu" class="w-10 h-8" @click="toggleMenu" />
+    <div class="fixed right-10 sm:right-12 top-6 sm:top-10 cursor-pointer z-20">
+      <img src="/images/menu.svg" alt="menu" class="w-8 sm:w-10 h-8" @click="toggleMenu" />
     </div>
     <img
       src="/images-webp/reports/popbox/popbox_3_1.webp"

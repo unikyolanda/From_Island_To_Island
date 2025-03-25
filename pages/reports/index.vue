@@ -469,7 +469,7 @@
       />
     </div>
     <div
-      class="flex flex-col sm:flex-row mt-[73px] w-full justify-between sm:px-[184px] z-10 opacity-90 items-center sm:items-start"
+      class="flex flex-col sm:flex-row mt-[73px] w-full justify-between px-10 sm:px-[184px] z-10 opacity-90 items-center sm:items-start"
     >
       <div id="interview" class="flex flex-col w-full sm:w-[372px]">
         <div class="flex items-center w-full sm:w-[443px]">
@@ -483,7 +483,7 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-col mt-12 sm:mt-[150px] gap-y-8 w-[295px] sm:w-auto">
+      <div class="flex flex-col mt-12 sm:mt-[150px] gap-y-8 w-full sm:w-auto">
         <div class="flex flex-col">
           <div class="font-noto text-[20px] font-semibold text-white tracking-[2px] leading-[36px]">
             BIOS monthly<span class="text-[14px]">／陳劭任</span>
@@ -625,7 +625,7 @@
       />
     </div>
     <div
-      class="w-full z-10 opacity-80 flex flex-col sm:flex-row pt-[97px] justify-between sm:px-[184px] bg-audience sm:-mt-6 items-center sm:items-start"
+      class="w-full z-10 opacity-80 flex flex-col sm:flex-row pt-[97px] justify-between px-10 sm:px-[184px] bg-audience sm:-mt-6 items-center sm:items-start"
     >
       <div id="review" class="flex flex-col w-full sm:w-[372px]">
         <div class="flex items-center w-full sm:w-[443px]">
@@ -642,7 +642,7 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-col mt-[60px] gap-y-14 items-center sm:items-start w-[295px] sm:w-auto">
+      <div class="flex flex-col mt-[60px] gap-y-14 items-center sm:items-start w-full sm:w-auto">
         <div class="flex flex-col w-full sm:w-[710px] gap-y-7 border-b border-white pb-14">
           <div
             class="flex flex-col sm:flex-row items-center font-noto text-[20px] font-semibold text-white tracking-[2px] leading-[36px]"
