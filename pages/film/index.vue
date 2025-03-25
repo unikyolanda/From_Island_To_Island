@@ -1,6 +1,6 @@
 <script setup>
   const menuRef = ref(null)
-  const { $gsap: gsap, $ScrollTrigger: ScrollTrigger } = useNuxtApp()
+  const { $gsap: gsap } = useNuxtApp()
 
   const toggleMenu = () => {
     menuRef.value.show()

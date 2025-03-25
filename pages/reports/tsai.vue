@@ -1,4 +1,8 @@
 <script setup>
+  import { gsap } from 'gsap'
+  import { ScrollTrigger } from 'gsap/ScrollTrigger'
+  gsap.registerPlugin(ScrollTrigger)
+
   const router = useRouter()
   const menuRef = ref(null)
   const toggleMenu = () => {
@@ -8,6 +12,55 @@
   const closeMenu = () => {
     menuRef.value.hide()
   }
+
+  onMounted(() => {
+    const images = document.querySelectorAll('.fade-image')
+    const textElements = document.querySelectorAll('p.font-noto, div.font-noto')
+
+    // Check if each image is loaded
+    const imagePromises = Array.from(images).map(img => {
+      if (img.complete) {
+        return Promise.resolve()
+      } else {
+        return new Promise(resolve => {
+          img.onload = resolve
+        })
+      }
+    })
+
+    // Initialize animations after all images are loaded
+    Promise.all(imagePromises).then(() => {
+      // Setup image fade-in effects
+      images.forEach(element => {
+        gsap.from(element, {
+          opacity: 0,
+          y: 30,
+          duration: 1,
+          scrollTrigger: {
+            trigger: element,
+            start: 'top 75%',
+            toggleActions: 'play none none none',
+            once: true,
+          },
+        })
+      })
+
+      // Setup text fade-in effects
+      textElements.forEach(element => {
+        gsap.from(element, {
+          opacity: 0,
+          y: 30,
+          duration: 1,
+          scrollTrigger: {
+            trigger: element,
+            start: 'top 75%',
+            toggleActions: 'play none none none',
+            once: true,
+          },
+        })
+      })
+    })
+  })
 </script>
 <template>
   <div class="flex flex-col bg-black w-screen h-auto min-h-screen items-center">
@@ -17,17 +70,20 @@
     <div class="fixed right-10 sm:right-12 top-6 sm:top-10 cursor-pointer z-20">
       <img src="/images/menu.svg" alt="menu" class="w-8 sm:w-10 h-8" @click="toggleMenu" />
     </div>
-    <img src="/images-webp/reports/popbox/Popbox_1_1.webp" class="sm:hidden w-full h-auto" />
+    <img
+      src="/images-webp/reports/popbox/Popbox_1_1.webp"
+      class="sm:hidden w-full h-auto fade-image"
+    />
     <div class="w-full sm:w-[1116px] relative flex flex-col items-center px-10">
       <div
         @click="() => router.back()"
-        class="hidden sm:block fixed top-12 right-56 cursor-pointer"
+        class="hidden sm:block fixed top-12 right-56 cursor-pointer z-10"
       >
         <img src="/images/xmark.svg" />
       </div>
       <img
         src="/images-webp/reports/popbox/Popbox_1_1.webp"
-        class="hidden sm:block w-full h-auto"
+        class="hidden sm:block w-full h-auto fade-image"
       />
       <div
         class="w-full flex sm:hidden justify-center py-6 text-white text-center leading-[30px] font-noto tracking-[2px]"
@@ -35,12 +91,12 @@
         《由島至島》紀錄片映演計畫—<br />嘉義場
       </div>
       <div
-        class="flex flex-col sm:flex-row items-center sm:items-start border-y sm:border-none border-white w-full sm:w-[841px] py-16 gap-x-12"
+        class="flex flex-col sm:flex-row items-center border-y sm:border-none border-white w-full sm:w-[841px] py-16 gap-x-12"
       >
         <img
           src="/images-webp/reports/tsai.webp"
           alt="tsai"
-          class="rounded-full w-[134px] h-[134px] object-cover"
+          class="rounded-full w-[134px] h-[134px] object-cover fade-image"
         />
         <div class="flex sm:hidden flex-col items-center h-full justify-center mt-5">
           <div class="font-noto font-semibold text-[20px] text-white tracking-[2px]">蔡崇隆</div>
@@ -74,10 +130,13 @@
         「克發導演作為大馬新住民，有別於台灣人背負的歷史包袱、提供新鮮的觀點，《由島至島》填補了台灣二戰之後長期的歷史空缺、甚至是記憶的黑洞。」蔡崇隆導演觀察新住民導演正因與台灣隔了一段距離，視野更為清晰，其妻子阮金紅為越南裔新住民，同樣身為導演，她紀錄下這個世代台灣人跨國婚姻與家庭的歷史，克發導演則拍攝父祖輩在大東亞戰爭之下的記憶，相較於從國族出發的大敘事，兩者皆從屬於人民記憶的小敘事開展。
       </p>
       <div class="flex gap-x-4 my-12">
-        <img src="/images-webp/reports/popbox/Popbox_1_2.webp" class="w-full sm:w-[412px] h-auto" />
+        <img
+          src="/images-webp/reports/popbox/Popbox_1_2.webp"
+          class="w-full sm:w-[412px] h-auto fade-image"
+        />
         <img
           src="/images-webp/reports/popbox/Popbox_1_3.webp"
-          class="hidden sm:block w-[412px] h-auto"
+          class="hidden sm:block w-[412px] h-auto fade-image"
         />
       </div>
       <p
@@ -90,10 +149,13 @@
         《由島至島》透過細緻的資料收集、考察、採訪，架構出龐大格局，不只限於台灣，橫跨馬來西亞、日本、中國、泰國……，如同亞洲版的《夜與霧》一般，並非特別要譴責誰，而是一個很重要的提醒——很多事情可能不是「同情」就好，更多是要去理解，意識到自身的偏見與歧視。「沒有自覺是危險的，而情況會越來越糟。現在進行式的，30年來對東南亞移工在制度跟政策上的壓迫，他們背著債務在幫台灣人勞動、不能自由轉換雇主，面對來自於檯面下跟檯面上的剝削沒有辦法改變。」過去的歷史必須被挖掘與注視，而東南亞移工目前所面臨的種族跟階級的壓迫根源也必須正視，許多來自克發導演片中所提及的個人選擇，當然可以說一部分責任來自國家、民族，但自身的判斷、決定與行為，做與不做只有自己知道、要對自己負責。
       </p>
       <div class="flex gap-x-4 my-12">
-        <img src="/images-webp/reports/popbox/Popbox_1_4.webp" class="w-full sm:w-[412px] h-auto" />
+        <img
+          src="/images-webp/reports/popbox/Popbox_1_4.webp"
+          class="w-full sm:w-[412px] h-auto fade-image"
+        />
         <img
           src="/images-webp/reports/popbox/Popbox_1_5.webp"
-          class="hidden sm:block w-[412px] h-auto"
+          class="hidden sm:block w-[412px] h-auto fade-image"
         />
       </div>
       <p
@@ -103,7 +165,7 @@
       </p>
       <img
         src="/images-webp/reports/popbox/Popbox_1_5.webp"
-        class="sm:hidden block w-full sm:w-[412px] h-auto mt-8"
+        class="sm:hidden block w-full sm:w-[412px] h-auto mt-8 fade-image"
       />
       <p
         class="font-noto tracking-[0.5px] sm:tracking-[2px] text-white w-full sm:w-[841px] text-[14px] sm:text-[16px] text-justify leading-[30px] sm:leading-[36px] mt-8"
@@ -118,7 +180,7 @@
       </div>
       <img
         src="/images-webp/reports/popbox/Popbox_1_6.webp"
-        class="w-screen h-auto mt-12 mb-[205px]"
+        class="w-screen h-auto mt-12 mb-[205px] fade-image"
       />
     </div>
   </div>

@@ -1,4 +1,8 @@
 <script setup>
+  import { gsap } from 'gsap'
+  import { ScrollTrigger } from 'gsap/ScrollTrigger'
+  gsap.registerPlugin(ScrollTrigger)
+
   const menuRef = ref(null)
   const toggleMenu = () => {
     menuRef.value.show()
@@ -7,6 +11,26 @@
   const closeMenu = () => {
     menuRef.value.hide()
   }
+
+  onMounted(() => {
+    const fadeBoxElements = document.querySelectorAll('.fade-box')
+
+    // Setup fade-in effects for boxes with stagger
+    fadeBoxElements.forEach((element, index) => {
+      gsap.from(element, {
+        opacity: 0,
+        y: 30,
+        duration: 1,
+        delay: index * 0.1, // Add stagger effect
+        scrollTrigger: {
+          trigger: element,
+          start: 'top 75%',
+          toggleActions: 'play none none none',
+          once: true,
+        },
+      })
+    })
+  })
 </script>
 <style>
   .bg-shadow {
@@ -30,7 +54,7 @@
     </div>
     <div class="flex flex-col w-full z-10 items-center opacity-80 px-10">
       <div
-        class="flex flex-col sm:flex-row w-full sm:px-[184px] sm:pt-[233px] justify-between items-center sm:items-end mt-10"
+        class="fade-box flex flex-col sm:flex-row w-full sm:px-[184px] sm:pt-[233px] justify-between items-center sm:items-end mt-10"
       >
         <div class="flex flex-col items-center sm:items-start">
           <p class="font-amiri italic text-[#999] tracking-[6px] text-lg sm:text-[28px]">LESSON</p>
@@ -54,7 +78,7 @@
       <div class="flex flex-col my-12 gap-y-11">
         <NuxtLink
           to="/lesson/one"
-          class="w-full sm:w-[1075px] h-auto sm:h-[227px] bg-white rounded-[15px] shadow-md flex flex-col sm:flex-row relative hover:shadow-lg"
+          class="fade-box w-full sm:w-[1075px] h-auto sm:h-[227px] bg-white rounded-[15px] shadow-md flex flex-col sm:flex-row relative hover:shadow-lg"
         >
           <div
             class="absolute top-0 -right-[1px] label bg-[#d0bc9c] w-[91px] h-[91px] rounded-tr-[15px]"
@@ -90,7 +114,7 @@
         </NuxtLink>
         <NuxtLink
           to="/lesson/two"
-          class="w-full sm:w-[1075px] h-auto sm:h-[227px] bg-white rounded-[15px] shadow-md flex flex-col sm:flex-row relative hover:shadow-lg"
+          class="fade-box w-full sm:w-[1075px] h-auto sm:h-[227px] bg-white rounded-[15px] shadow-md flex flex-col sm:flex-row relative hover:shadow-lg"
         >
           <div
             class="absolute top-0 -right-[1px] label bg-[#d0bc9c] w-[91px] h-[91px] rounded-tr-[15px]"
@@ -126,7 +150,7 @@
         </NuxtLink>
         <NuxtLink
           to="/lesson/three"
-          class="w-full sm:w-[1075px] h-auto sm:h-[227px] bg-white rounded-[15px] shadow-md flex flex-col sm:flex-row relative hover:shadow-lg"
+          class="fade-box w-full sm:w-[1075px] h-auto sm:h-[227px] bg-white rounded-[15px] shadow-md flex flex-col sm:flex-row relative hover:shadow-lg"
         >
           <div
             class="absolute top-0 -right-[1px] label bg-[#d0bc9c] w-[91px] h-[91px] rounded-tr-[15px]"
@@ -162,7 +186,7 @@
         </NuxtLink>
         <NuxtLink
           to="/lesson/four"
-          class="w-full sm:w-[1075px] h-auto sm:h-[227px] bg-white rounded-[15px] shadow-md flex flex-col sm:flex-row relative hover:shadow-lg"
+          class="fade-box w-full sm:w-[1075px] h-auto sm:h-[227px] bg-white rounded-[15px] shadow-md flex flex-col sm:flex-row relative hover:shadow-lg"
         >
           <div
             class="absolute top-0 -right-[1px] label bg-[#d0bc9c] w-[91px] h-[91px] rounded-tr-[15px]"
@@ -198,7 +222,7 @@
         </NuxtLink>
         <NuxtLink
           to="/lesson/five"
-          class="w-full sm:w-[1075px] h-auto sm:h-[227px] bg-white rounded-[15px] shadow-md flex flex-col sm:flex-row relative hover:shadow-lg"
+          class="fade-box w-full sm:w-[1075px] h-auto sm:h-[227px] bg-white rounded-[15px] shadow-md flex flex-col sm:flex-row relative hover:shadow-lg"
         >
           <div
             class="absolute top-0 -right-[1px] label bg-[#d0bc9c] w-[91px] h-[91px] rounded-tr-[15px]"
@@ -234,7 +258,7 @@
         </NuxtLink>
       </div>
       <div
-        class="w-full sm:w-[1075px] h-auto flex flex-col items-center mt-14 border-b border-[#999]/70"
+        class="fade-box w-full sm:w-[1075px] h-auto flex flex-col items-center mt-14 border-b border-[#999]/70"
       >
         <p class="font-shippori text-[#999] text-[22px] sm:text-[28px] tracking-[4px]">
           免費教材申請
@@ -257,13 +281,15 @@
           教案申請表單</a
         >
       </div>
-      <div class="w-full sm:w-[1075px] h-auto flex flex-col items-center mt-14 mb-10 sm:mb-[160px]">
+      <div
+        class="fade-box w-full sm:w-[1075px] h-auto flex flex-col items-center mt-14 mb-10 sm:mb-[160px]"
+      >
         <p class="font-shippori text-[#999] text-[22px] sm:text-[28px] tracking-[4px]">
           成為夥伴與回饋機制
         </p>
         <div class="flex flex-col sm:flex-row gap-y-8 sm:gap-x-5 mt-8 sm:mt-14">
           <div
-            class="bg-white w-full sm:w-[345px] h-auto sm:h-[280px] flex flex-col items-center p-9"
+            class="fade-box bg-white w-full sm:w-[345px] h-auto sm:h-[280px] flex flex-col items-center p-9"
           >
             <p class="font-noto text-[20px] font-semibold tracking-[2px] text-[#d0bc9c]">
               撰寫教案
@@ -275,7 +301,7 @@
             </p>
           </div>
           <div
-            class="bg-white w-full sm:w-[345px] h-auto sm:h-[280px] flex flex-col items-center p-9"
+            class="fade-box bg-white w-full sm:w-[345px] h-auto sm:h-[280px] flex flex-col items-center p-9"
           >
             <p class="font-noto text-[20px] font-semibold tracking-[2px] text-[#d0bc9c]">
               教案格式
@@ -287,7 +313,7 @@
             </p>
           </div>
           <div
-            class="bg-white w-full sm:w-[345px] h-auto sm:h-[280px] flex flex-col items-center p-9"
+            class="fade-box bg-white w-full sm:w-[345px] h-auto sm:h-[280px] flex flex-col items-center p-9"
           >
             <p class="font-noto text-[20px] font-semibold tracking-[2px] text-[#d0bc9c]">
               回饋機制

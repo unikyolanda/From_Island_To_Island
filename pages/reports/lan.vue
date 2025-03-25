@@ -1,4 +1,8 @@
 <script setup>
+  import { gsap } from 'gsap'
+  import { ScrollTrigger } from 'gsap/ScrollTrigger'
+  gsap.registerPlugin(ScrollTrigger)
+
   const router = useRouter()
   const menuRef = ref(null)
   const toggleMenu = () => {
@@ -8,6 +12,55 @@
   const closeMenu = () => {
     menuRef.value.hide()
   }
+
+  onMounted(() => {
+    const images = document.querySelectorAll('.fade-image')
+    const textElements = document.querySelectorAll('p.font-noto, div.font-noto')
+
+    // Check if each image is loaded
+    const imagePromises = Array.from(images).map(img => {
+      if (img.complete) {
+        return Promise.resolve()
+      } else {
+        return new Promise(resolve => {
+          img.onload = resolve
+        })
+      }
+    })
+
+    // Initialize animations after all images are loaded
+    Promise.all(imagePromises).then(() => {
+      // Setup image fade-in effects
+      images.forEach(element => {
+        gsap.from(element, {
+          opacity: 0,
+          y: 30,
+          duration: 1,
+          scrollTrigger: {
+            trigger: element,
+            start: 'top 75%',
+            toggleActions: 'play none none none',
+            once: true,
+          },
+        })
+      })
+
+      // Setup text fade-in effects
+      textElements.forEach(element => {
+        gsap.from(element, {
+          opacity: 0,
+          y: 30,
+          duration: 1,
+          scrollTrigger: {
+            trigger: element,
+            start: 'top 75%',
+            toggleActions: 'play none none none',
+            once: true,
+          },
+        })
+      })
+    })
+  })
 </script>
 <template>
   <div class="flex flex-col bg-black w-screen h-auto min-h-screen items-center">
@@ -17,17 +70,20 @@
     <div class="fixed right-10 sm:right-12 top-6 sm:top-10 cursor-pointer z-20">
       <img src="/images/menu.svg" alt="menu" class="w-10 h-8" @click="toggleMenu" />
     </div>
-    <img src="/images-webp/reports/popbox/popbox_4_1.webp" class="sm:hidden w-full h-auto" />
+    <img
+      src="/images-webp/reports/popbox/popbox_4_1.webp"
+      class="sm:hidden w-full h-auto fade-image"
+    />
     <div class="w-full sm:w-[1116px] relative flex flex-col items-center px-10">
       <div
         @click="() => router.back()"
-        class="hidden sm:block fixed top-12 right-56 cursor-pointer"
+        class="hidden sm:block fixed top-12 right-56 cursor-pointer z-10"
       >
         <img src="/images/xmark.svg" />
       </div>
       <img
         src="/images-webp/reports/popbox/popbox_4_1.webp"
-        class="hidden sm:block w-full h-auto"
+        class="hidden sm:block w-full h-auto fade-image"
       />
       <div
         class="w-full flex sm:hidden justify-center py-6 text-white text-center leading-[30px] font-noto tracking-[2px]"
@@ -35,12 +91,12 @@
         《由島至島》紀錄片映演計畫—<br />台北場
       </div>
       <div
-        class="flex flex-col sm:flex-row items-center sm:items-start border-y sm:border-none border-white w-full sm:w-[841px] py-16 gap-x-12"
+        class="flex flex-col sm:flex-row items-center border-y sm:border-none border-white w-full sm:w-[841px] py-16 gap-x-12"
       >
         <img
           src="/images-webp/reports/lan.webp"
           alt="tsai"
-          class="rounded-full w-[134px] h-[134px] object-cover"
+          class="rounded-full w-[134px] h-[134px] object-cover fade-image"
         />
         <div class="flex sm:hidden flex-col items-center h-full justify-center mt-5">
           <div class="font-noto font-semibold text-[20px] text-white tracking-[2px]">藍適齊</div>
@@ -74,10 +130,13 @@
         「當克發導演讀過我的研究，說有興趣把這些比較沒有人知道的歷史拍成紀錄片的時候，大概真的是我自己做歷史研究最開心的一個時刻。」適齊老師分享，閱讀文字與觀看動態影像，對於情感的攪動與觸發全然不同，藉由影像這個媒介，除了易於進入大眾視野，更重要是當觀眾走過紀錄片五小時片長，感受到在那個歷史現場的人，不管是台灣人、還是在馬來亞的華人、日本士兵，或者是戰後繼續在討論這些戰爭歷史的人，他們到底在當下感受到什麼？面對鏡頭時，受訪者可能談得更多，講出過去可能沒有意識到的某些感受或想法，這部片珍貴地紀錄下來，讓觀眾體認到當事人的情感。
       </p>
       <div class="flex gap-x-4 my-12">
-        <img src="/images-webp/reports/popbox/popbox_4_2.webp" class="w-[412px] h-auto" />
+        <img
+          src="/images-webp/reports/popbox/popbox_4_2.webp"
+          class="w-[412px] h-auto fade-image"
+        />
         <img
           src="/images-webp/reports/popbox/popbox_4_3.webp"
-          class="w-[412px] h-auto hidden sm:block"
+          class="w-[412px] h-auto hidden sm:block fade-image"
         />
       </div>
       <p
@@ -87,10 +146,13 @@
         ，過去所熟知的經貿關係與文化交流之外，不要忘記我們在歷史上有一些比較痛苦的時刻。戰爭其實也讓台灣跟世界連結在一起。
       </p>
       <div class="flex gap-x-4 my-12">
-        <img src="/images-webp/reports/popbox/popbox_4_4.webp" class="w-[412px] h-auto" />
+        <img
+          src="/images-webp/reports/popbox/popbox_4_4.webp"
+          class="w-[412px] h-auto fade-image"
+        />
         <img
           src="/images-webp/reports/popbox/popbox_4_5.webp"
-          class="w-[412px] h-auto hidden sm:block"
+          class="w-[412px] h-auto hidden sm:block fade-image"
         />
       </div>
       <p
@@ -106,7 +168,7 @@
       </div>
       <img
         src="/images-webp/reports/popbox/popbox_4_6.webp"
-        class="w-screen h-auto mt-12 mb-[97px]"
+        class="w-screen h-auto mt-12 mb-[97px] fade-image"
       />
     </div>
   </div>

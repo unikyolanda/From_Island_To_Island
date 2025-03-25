@@ -9,6 +9,14 @@ export default defineNuxtConfig({
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'description', content: '由島至島，記憶與對話' },
+        // Open Graph
+        { property: 'og:title', content: 'From Island To Island' },
+        { property: 'og:description', content: '由島至島，記憶與對話' },
+        { property: 'og:image', content: './ogimage.jpg' },
+        { property: 'og:image:width', content: '1200' },
+        { property: 'og:image:height', content: '630' },
+        { property: 'og:type', content: 'website' },
+        // { property: 'og:url', content: 'https://yourwebsite.com' },
       ],
       link: [
         {
