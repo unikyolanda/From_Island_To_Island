@@ -12,7 +12,11 @@ export default defineNuxtConfig({
         // Open Graph
         { property: 'og:title', content: 'From Island To Island' },
         { property: 'og:description', content: '由島至島，記憶與對話' },
-        { property: 'og:image', content: './ogimage.jpg' },
+        {
+          property: 'og:image',
+          content:
+            'https://drive.google.com/file/d/1JHGdKiCJySpKyN7644NndfDJIcXtl7ts/view?usp=drive_link',
+        },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
         { property: 'og:type', content: 'website' },
