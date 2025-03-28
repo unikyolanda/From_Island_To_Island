@@ -190,7 +190,7 @@
           Lau Kek-huat is a Malaysia-born filmmaker based in Taiwan. His debut film Boluomi competed
           at the Busan International Film Festival, New Currents section and Golden Horse  Best New
           Director nominated. The project won him the Tokyo Talent Award 2015, Best Script Award in
-          2013 Taiwan, and was selected for La Fabrique. Cinema du monde. His documentaries won Best
+          2013 Taiwan, and was selected for La Fabrique, Cinema du monde. His documentaries won Best
           Documentary in Golden Horse, Taipei Film Festival, and TIDF. His short film Nia’s Door won
           the Best Short Film Award, and Sonje Award at the Busan International Film Festival and
           was selected for the 38th Clermont-Ferrand International Short Film Festival.
@@ -367,7 +367,7 @@
           <p class="font-wix text-[14px] text-white tracking-[2px] mt-1">Film Crew</p>
         </div>
         <div
-          class="flex flex-col w-[314px] gap-y-2 mt-12 text-[10px] tracking-[0.5px] font-noto text-white"
+          class="flex flex-col w-[314px] gap-y-2 mt-12 text-[11px] tracking-[0.5px] font-noto text-white"
         >
           <p class="font-noto">製作／出品｜蜂鳥影像有限公司</p>
           <p class="font-noto">Produced and Presented by Hummingbird Production</p>
@@ -375,7 +375,8 @@
           <p class="font-noto">Co-Presented by Taiwan Public Television Service</p>
           <p class="mt-6 font-noto">製片 Producer｜ 林婉玉 LIN Wan-Yu</p>
           <p class="font-noto">導演、攝影、剪輯、美術 a film by｜廖克發 LAU Kek-Huat</p>
-          <p class="mt-6 font-noto">執行製片Line producer 台灣 Taiwan｜ 周欣 CHOU Hsin</p>
+          <p class="mt-6 font-noto">執行製片Line producer</p>
+          <p class="font-noto">台灣 Taiwan｜ 周欣 CHOU Hsin</p>
           <p class="font-noto">馬來西亞 M'sia｜陳嘉豪 TAN Kah Hau</p>
           <p class="font-noto">日本 Japan｜陳詠雙 CHEN Yung Shuang</p>
           <p class="mt-6 font-noto">行政 Administration｜黃琳晶 HUANG Lin Ching</p>
@@ -396,7 +397,8 @@
           <p class="font-noto">後期專案管理Post-production PM｜李慈恩 LEE Tzu En</p>
           <p class="font-noto">調光Colorist｜周佩儀 Penny CHOU</p>
           <p class="font-noto">調光助理Color-grading Assistant｜何冠儀 HO Kuan Yi</p>
-          <p class="mt-6 font-noto">（台灣）戲劇仿拍演員｜辻政信 馬場克樹 Masaki BABA</p>
+          <p class="mt-6 font-noto">（台灣）戲劇仿拍</p>
+          <p class="font-noto">演員｜辻政信 馬場克樹 Masaki BABA</p>
           <p class="font-noto">演員｜台籍日本兵 魏雋展 WEI Chun-Chan</p>
           <p class="font-noto">演員｜台籍日本兵 張維佐 Zaduno Cheung</p>
           <p class="font-noto">演員｜台籍日本兵 王肇陽 WANG Chao Yang</p>
@@ -555,7 +557,7 @@
             Lau Kek-huat is a Malaysia-born filmmaker based in Taiwan. His debut film Boluomi
             competed at the Busan International Film Festival, New Currents section and Golden
             Horse  Best New Director nominated. The project won him the Tokyo Talent Award 2015,
-            Best Script Award in 2013 Taiwan, and was selected for La Fabrique. Cinema du monde. His
+            Best Script Award in 2013 Taiwan, and was selected for La Fabrique, Cinema du monde. His
             documentaries won Best Documentary in Golden Horse, Taipei Film Festival, and TIDF. His
             short film Nia’s Door won the Best Short Film Award, and Sonje Award at the Busan
             International Film Festival and was selected for the 38th Clermont-Ferrand International
@@ -687,7 +689,7 @@
             class="relative overflow-hidden w-[443px] h-[249px] flex items-center mt-[158px]"
           >
             <img
-              src="/images-webp/stills/still_1.webp"
+              src="/images-webp/stills/still_3.webp"
               alt="still1"
               id="parallax-content"
               class="absolute left-0 max-w-[100%] h-[150%] object-cover object-center"
@@ -784,7 +786,8 @@
             <p class="font-noto">Co-Presented by Taiwan Public Television Service</p>
             <p class="mt-8 font-noto">製片 Producer｜ 林婉玉 LIN Wan-Yu</p>
             <p class="font-noto">導演、攝影、剪輯、美術 a film by｜廖克發 LAU Kek-Huat</p>
-            <p class="mt-8 font-noto">執行製片Line producer 台灣 Taiwan｜ 周欣 CHOU Hsin</p>
+            <p class="mt-8 font-noto">執行製片Line producer</p>
+            <p class="font-noto">台灣 Taiwan｜ 周欣 CHOU Hsin</p>
             <p class="font-noto">馬來西亞 M'sia｜陳嘉豪 TAN Kah Hau</p>
             <p class="font-noto">日本 Japan｜陳詠雙 CHEN Yung Shuang</p>
             <p class="mt-8 font-noto">行政 Administration｜黃琳晶 HUANG Lin Ching</p>
@@ -806,7 +809,8 @@
             <p class="font-noto">後期專案管理 Post-production PM｜李慈恩 LEE Tzu En</p>
             <p class="font-noto">調光 Colorist｜周佩儀 Penny CHOU</p>
             <p class="font-noto">調光助理 Color-grading Assistant｜何冠儀 HO Kuan Yi</p>
-            <p class="mt-8 font-noto">（台灣）戲劇仿拍演員｜辻政信 馬場克樹 Masaki BABA</p>
+            <p class="mt-8 font-noto">（台灣）戲劇仿拍</p>
+            <p class="font-noto">演員｜辻政信 馬場克樹 Masaki BABA</p>
             <p class="font-noto">演員｜台籍日本兵 魏雋展 WEI Chun-Chan</p>
             <p class="font-noto">演員｜台籍日本兵 張維佐 Zaduno Cheung</p>
             <p class="font-noto">演員｜台籍日本兵 王肇陽 WANG Chao Yang</p>

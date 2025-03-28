@@ -91,7 +91,7 @@
         《由島至島》紀錄片映演計畫—<br />新竹場
       </div>
       <div
-        class="flex flex-col sm:flex-row items-center border-y sm:border-none border-white w-full sm:w-[841px] py-16 gap-x-12"
+        class="flex flex-col sm:flex-row items-center border-y sm:border-none border-white/50 w-full sm:w-[841px] py-16 gap-x-12"
       >
         <img
           src="/images-webp/reports/chen.webp"

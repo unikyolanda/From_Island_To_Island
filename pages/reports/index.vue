@@ -653,7 +653,7 @@
             >
           </div>
           <p
-            class="font-noto text-[12px] sm:text-[14.5px] font-light text-white tracking-[0.5px] leading-[30px] text-justify"
+            class="font-noto text-[14px] sm:text-[14.5px] font-light text-white tracking-[0.5px] leading-[30px] text-justify"
           >
             作為歷史共犯結構一環的主動或被動的「加害者」，卻絲毫沒有身為「加害者」的自我意識，這大概就是吉本光宏在寫日本電影史時，曾提到戰敗後的「被害者意識」（victim
             consciousness）的形成吧，亦即加害者把責任歸咎於某種抽象的「大時代」以及「不得不然」，最終將自身即便是被動的加害結構一環，卻也自圓其說地代換成某種和稀泥的「我們都是歷史的受害者」，但廖克發蠻有力地證成了，在加害與被害的生態鏈裡，永遠會有更慘且更沒文化政經資本翻身的下面一攤，說不出自己的聲音，或者找不到適切的敘事框架（尤其在複合式的、大寫的「電影」體制裡）。
@@ -680,13 +680,13 @@
             >
           </div>
           <p
-            class="font-noto text-[12px] sm:text-[14.5px] font-light text-white tracking-[0.5px] leading-[30px] text-justify"
+            class="font-noto text-[14px] sm:text-[14.5px] font-light text-white tracking-[0.5px] leading-[30px] text-justify"
           >
             長達 290
             分鐘的《由島至島》揭露日本殖民下、台灣的複雜情感和認同問題，細述戰爭的暴力與戰後的沉默。老一輩的電影創作者可能會試圖記錄歷史，而廖克發的電影則是一首對「記憶」的頌歌。
           </p>
           <p
-            class="font-noto text-[12px] sm:text-[14.5px] font-light text-white tracking-[0.5px] leading-[30px] text-justify"
+            class="font-noto text-[14px] sm:text-[14.5px] font-light text-white tracking-[0.5px] leading-[30px] text-justify"
           >
             The 290-minute long From Island to Island（由島至島，2024）opened up complex emotions
             and identity issues under Japan’s colonization of Taiwan, detailing the violence of war
@@ -702,23 +702,23 @@
             <span class="text-[14px]"><span class="hidden sm:inline-block">／</span>藝評人</span>
           </div>
           <p
-            class="font-noto text-[12px] sm:text-[14.5px] font-light text-white tracking-[0.5px] leading-[30px] text-justify"
+            class="font-noto text-[14px] sm:text-[14.5px] font-light text-white tracking-[0.5px] leading-[30px] text-justify"
           >
             由島至島，是華南討海先民的移民路徑，是太陽旗大東亞共榮的全面侵略，也是二戰同盟國fight
             back日軍的跳島路徑，同是第三國際在戰前戰後佈局的島鏈共黨，也是導演挖掘線索和他生平移動的島際軌跡。片中多次提及的「沉默」，包覆在全片290分鐘常有細緻聲響堆疊以至震耳欲聾的環境音爆，開場第一景的混音企圖就絲毫不遜於奧本海默的企圖，也應該是我所聽過Yannick在所有協作者角色裡施出最大力度的編曲。
           </p>
           <p
-            class="font-noto text-[12px] sm:text-[14.5px] font-light text-white tracking-[0.5px] leading-[30px] text-justify"
+            class="font-noto text-[14px] sm:text-[14.5px] font-light text-white tracking-[0.5px] leading-[30px] text-justify"
           >
             無論是史料影像和劇情式彷拍、口述歷史的聲音演出，如錄像藝術在疊影上技巧，與偶有為之、有限度的影像效果，看得出廖克發導演在按捺波濤的情緒裡，適當地和憤怒與說教的紀錄片流行病「保持劇離」。它是如此迥異於亞洲電影、紀錄片或錄像藝術，關於轉型正義——要不就是大唱安撫受害族裔安魂曲，要不，就是過度輕巧轉移難以逼視的重點和人性的責任，隱遁進入藝術蒙太奇的懷抱。
           </p>
           <p
-            class="font-noto text-[12px] sm:text-[14.5px] font-light text-white tracking-[0.5px] leading-[30px] text-justify"
+            class="font-noto text-[14px] sm:text-[14.5px] font-light text-white tracking-[0.5px] leading-[30px] text-justify"
           >
             連著這麼多年，台灣少說有上百部關於轉型正義的各種錄像或視覺系統的作品，99%都有我前段提到的兩種病。《由島至島》是到目前為止，我心目中唯一具備宏觀角度反視、文人知識情懷自問的轉型正義作品，關於過去常常和朋友納悶台灣怎麼拍轉型正義的作品，和德國、與其受侵略的鄰國等作者，程度還是差那麼多，終於在2024年，我們等到了《由島至島》。
           </p>
           <p
-            class="font-noto text-[12px] sm:text-[14.5px] font-light text-white tracking-[0.5px] leading-[30px] text-justify"
+            class="font-noto text-[14px] sm:text-[14.5px] font-light text-white tracking-[0.5px] leading-[30px] text-justify"
           >
             它甚至值得台灣的台北電影獎和金馬獎，應慎重思考一部紀錄片也能競逐首獎之列（『最佳劇情片』應該更名為『最佳影片』），在這種non
             fiction寫作和紀錄劇情交錯使用的創作文體年代，如同三大影展一樣，傑出的紀錄片，理當有資格角逐最佳影片。
@@ -734,22 +734,22 @@
             >
           </div>
           <p
-            class="font-noto text-[12px] sm:text-[14.5px] font-light text-white tracking-[0.5px] leading-[30px] text-justify"
+            class="font-noto text-[14px] sm:text-[14.5px] font-light text-white tracking-[0.5px] leading-[30px] text-justify"
           >
             採訪經歷過那個年代的日本人卻勸著眼前的年輕人不要相信這「莫須有」、「不是事實」的論述。看到畫面當時想著：「如果沒有發生可怕的事，為什麼你要一邊說沒有、一邊卻慢慢眼眶含淚？」那一幕讓我直到現在還記得。
           </p>
           <p
-            class="font-noto text-[12px] sm:text-[14.5px] font-light text-white tracking-[0.5px] leading-[30px] text-justify"
+            class="font-noto text-[14px] sm:text-[14.5px] font-light text-white tracking-[0.5px] leading-[30px] text-justify"
           >
             《由島至島》是目前為止人生中看過最長的紀錄片，也意猶未盡的希望導演可以出續集，持續以這樣的觀點及角度來引發更多人的關注。
           </p>
           <p
-            class="font-noto text-[12px] sm:text-[14.5px] font-light text-white tracking-[0.5px] leading-[30px] text-justify"
+            class="font-noto text-[14px] sm:text-[14.5px] font-light text-white tracking-[0.5px] leading-[30px] text-justify"
           >
             這部紀錄片留下一部分重要的口述歷史，為我們紀錄從不同觀點回顧同一段歷史。不管哪個角度切入、從誰的觀點論述，構築出來的歷史才是完整的，才是最應該被記得的。受害者及加害者的觀點同樣重要，而非勝利者、既得利益者的歷史論述才值得被流傳千古。
           </p>
           <p
-            class="font-noto text-[12px] sm:text-[14.5px] font-light text-white tracking-[0.5px] leading-[30px] text-justify"
+            class="font-noto text-[14px] sm:text-[14.5px] font-light text-white tracking-[0.5px] leading-[30px] text-justify"
           >
             如果連歷史這種已發生的事實都能被控制只能選擇對某些人有利的「記得」，那人類豈不活得太「虛假」了？沒有想要誰道歉，只是想要記取教訓的「記得」，而非一無所知的「無知」。謝謝活在和平的時代，不用經歷太多的「不得已」，不用做「你不死我也無法活」的選擇。
           </p>
@@ -764,7 +764,7 @@
             >
           </div>
           <p
-            class="font-noto text-[12px] sm:text-[14.5px] font-light text-white tracking-[0.5px] leading-[30px] text-justify"
+            class="font-noto text-[14px] sm:text-[14.5px] font-light text-white tracking-[0.5px] leading-[30px] text-justify"
           >
             我感到傷心及憤怒，原來我家鄉麻坡發生屠殺，這段歷史我是如此陌生且熟悉，憤怒在於歷史的話語權是統治者的選取，讓你淡忘、陌生。被空襲炸開的建築、山芭裡的大窟窿、墳場邊的怪異傳說的鬼屋（當時富商一家被清算的現場），熟悉的物件依然擺在那，訴說二戰家鄉的歷史。但人證都凋零或不說。當了解時事經過時，內心像廣島原子彈一樣的炸裂。從沒見過的太祖（阿嬤的媽媽）從來都是家裡不可談的禁忌，老舅孩童時真的是從樹上摔下，死去？大人們不說，說不想再來一個
             513。

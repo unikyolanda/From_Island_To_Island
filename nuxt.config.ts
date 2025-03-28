@@ -4,14 +4,14 @@ export default defineNuxtConfig({
   app: {
     baseURL: '/From_Island_To_Island/', // GitHub repository name
     head: {
-      title: 'From Island To Island',
+      title: '由島至島——記憶與對話\nFrom Island to Island: Memory and Dialogue',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: '由島至島，記憶與對話' },
+        { name: 'description', content: '記憶像水一樣流動  我們可以選擇如何記憶' },
         // Open Graph
         { property: 'og:title', content: 'From Island To Island' },
-        { property: 'og:description', content: '由島至島，記憶與對話' },
+        { property: 'og:description', content: '記憶像水一樣流動  我們可以選擇如何記憶' },
         {
           property: 'og:image',
           content: 'https://unikyolanda.github.io/From_Island_To_Island/ogimage.jpg',

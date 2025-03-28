@@ -628,7 +628,7 @@
         <img
           src="/images-webp/still_3.webp"
           alt="stills2"
-          class="stills2 size-full origin-center object-cover"
+          class="stills2 size-full origin-center object-cover object-[37%_center] sm:object-center"
         />
       </div>
     </div>

@@ -32,7 +32,7 @@
         <p
           class="font-amiri italic text-[#999] tracking-[1px] sm:tracking-[2px] text-[20px] sm:text-[28px]"
         >
-          Educational Presentation
+          Educational Presentation Edition
         </p>
         <p class="font-shippori text-[#999] text-[30px] sm:text-[44px] tracking-[8px]">教育公播</p>
       </div>
@@ -71,6 +71,11 @@
               class="font-noto text-[17px] tracking-[2px] text-[#D0BC9C] leading-[30px] font-semibold mt-10 text-center"
             >
               欲購買教育公播版，<span class="sm:hidden"><br /></span>請聯繫由島至島 E-mail
+            </p>
+            <p
+              class="font-noto text-[17px] tracking-[2px] text-[#D0BC9C] leading-[30px] font-semibold text-center"
+            >
+              For overseas purchases,<span class="sm:hidden"><br /></span> please contact us.
             </p>
             <div
               class="font-noto text-[14.5px] text-[#999] tracking-[0.5px] leading-[30px] mt-10 text-center"
@@ -230,6 +235,6 @@
         </div>
       </div>
     </div>
-    <Footer bgColor="white" textColor="#999" :opacity="60" />
+    <Footer bgColor="white" textColor="#757575" :opacity="80" />
   </div>
 </template>

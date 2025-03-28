@@ -91,7 +91,7 @@
         《由島至島》紀錄片映演計畫—<br />屏東場
       </div>
       <div
-        class="flex flex-col sm:flex-row items-center gap-x-12 relative border-y sm:border-none border-white w-full sm:w-[841px] py-16"
+        class="flex flex-col sm:flex-row items-center gap-x-12 relative border-y sm:border-none border-white/50 w-full sm:w-[841px] py-16"
       >
         <div class="relative w-32 h-[140px]">
           <img

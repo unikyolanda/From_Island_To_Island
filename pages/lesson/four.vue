@@ -324,6 +324,6 @@
         </div>
       </div>
     </div>
-    <Footer bgColor="white" textColor="#999" :opacity="60" />
+    <Footer bgColor="white" textColor="#757575" :opacity="80" />
   </div>
 </template>

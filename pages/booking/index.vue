@@ -78,13 +78,12 @@
       <img
         src="/images-webp/booking.webp"
         alt="booking"
-        class="w-full sm:w-[676px] h-auto sm:h-[389px] mt-12"
+        class="w-full sm:w-[650px] h-auto sm:h-[440px] mt-12"
       />
       <p
         class="w-full sm:w-[676px] text-[#999] text-[14.5px] tracking-[0.5px] leading-[30px] mt-8 sm:mt-20 border-b border-[#D0BC9C] pb-10 sm:border-none"
       >
-        首先感謝您對《由島至島》的支持，因本片規格特殊，將不會進行院線上映。<br />
-        若您有興趣包場觀賞電影，再請撥冗填寫本表單，將會有專人與您聯繫。<br />
+        若您有興趣包場觀賞電影，請撥冗填寫本表單，將會有專人與您聯繫。<br />
         更多關於電影《由島至島》的訊息，請密切關注臉書公告。<br /><br />
         《由島至島》From Island to Island<br />
         ★ 第61屆金馬獎最佳紀錄片、最佳音效<br />
@@ -267,11 +266,13 @@
         <div
           class="flex flex-col w-full sm:w-[676px] text-[#999] text-[14.5px] tracking-[0.5px] leading-[30px] mt-8"
         >
-          因本片規格特殊，將不會進行院線上映。包場詳細規則如下：<br /><br />
+          包場詳細規則如下：<br /><br />
 
           <div class="flex">
             <span class="shrink-0">1. </span>
-            <span class="flex-1 pl-2">電影片長：290分鐘，保護級，未滿6歲禁止入場</span>
+            <span class="flex-1 pl-2"
+              >電影片長：290分鐘，分上下集播映。保護級，未滿6歲禁止入場</span
+            >
           </div>
           <div class="flex">
             <span class="shrink-0">2. </span>
@@ -302,5 +303,5 @@
       </form>
     </div>
   </div>
-  <Footer bgColor="white" textColor="#999" :opacity="60" />
+  <Footer bgColor="white" textColor="#757575" :opacity="80" />
 </template>
